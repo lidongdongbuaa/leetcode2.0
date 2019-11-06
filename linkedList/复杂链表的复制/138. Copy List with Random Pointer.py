@@ -9,7 +9,7 @@
 '''
 1.要求：each node of linked list contains an additional random pointer which could
 point to any node in the list or null;return a deep copy of the list
-2.类型：1. linkedList; deepcopy
+2.类型：linkedList; deepcopy
 3.方法：核心问题是在建立新的node及链表的时候，如何保证完整存储和建立random关系；
 方法一：建立新链表时dic对两个链表node之间的对应关系的保存，利用原链的random关系，映射到新链上
 方法二：在原链上插空建立新链，这样新的插空链有了next关系，原链的random关系也能通过next关系建立到新链上
