@@ -1,0 +1,304 @@
+递归和回溯的区别：
+    递归：
+        格式：self.XX是最后一行
+        含义: 在self.XX之前已经完成了所有的操作
+    回溯：
+        格式：先self.XXX,再语句1
+        含义：self.XXX之后，在回滚的过程中，操作一些语句1
+
+1.recursive：
+    基本结构：
+    def recursive(self,变量....)
+        结束条件 (if A: return )
+           +
+        语句1 (C)
+           +
+        self.recursive(self,变量...)
+
+    递进过程及特点：
+        1.变量从初始值开始，一步步递进，直到为止。变量可以同时构造/加入一个储存结构，存储全部的变量
+        2.变量往上层一步步回溯，直到变成初始值为止，变量的地址在回溯.但是储存结构不变
+        3.函数结束
+
+        不受回溯影响的：主函数中定义的self.变量；initial定义的self.变量；储存结构；函数套函数中的nonlocal 变量(lc92)
+        受回溯影响的：一般变量
+
+    题目返回值分类：
+        1. 满足结束条件A时，变量的值
+        2. 变量构成的结构的头节点，比如变量构成了链表，输出链表的头节点
+        3. 变量构成的结构整体，即存储结构，比如list等
+
+    由于变量值有回溯的特点，针对不同的返回值分类，有如下的方法:
+        1. 满足结束条件A时，变量的值
+            方法1 用return及时返回满足结束条件A时的变量值，即结束条件return+self.recursive return
+                方式：
+                    a. 仅递归函数
+                    b. 主函数+递归
+            方法2 对变量进行类属性化，即self.变量，此种情况下，在递进过程2中，self.变量不会回溯
+                方式：
+                    a. init.变量+递归
+                    b. 主函数(含self.变量) + 递归，a是b方法的简化版
+
+        2. 变量构成的结构的头节点
+            2.1. 头节点是初始位置的节点
+                利用backtrack的性质，头节点自然会返回到初始位置，适当返回即可
+            2.2. 头节点是结束条件处的节点
+                在结束条件处，及时返回头节点
+
+        3. 变量构成的结构整体
+            结构体不会随着backtrack而变化，适当返回即可
+
+
+    结构上分类：
+     1. 仅递归函数：
+        1.1 两个return，第一个return 结束条件值，第二个 l1.next = self.XXX + return l1
+            功能上整体返回的是l1，也是最终值的通过next回滚后的值, 即“原值”
+            如例1
+        1.2 两个return，第一个return 结束条件值，第二个return YY*self.XXX
+            功能上整体返回的是最终值*YY，即“新值”
+            如例2
+
+     2. init.变量 + 递归：
+        两个return，第二个 self.XXX + return init.变量值
+            功能上整体返回的是init.变量值，也是回滚前的值，即“新值”
+            例3例4
+
+     3. 主函数 + 递归：
+        3.1 主函数中self.XXX(x,y,新变量)+return新变量；递归函数只有一个return，且为空
+            功能上 返回的是新变量，是回滚后的值，即“原值”
+            如例5
+        3.2 主函数中return self.(x,y,新变量)；递归函数有两个return，第一个return 结束条件值，第二个return self.(x,y,新变量)
+            功能上 返回的是最终值，是回滚前的值，即“新值”
+            类似1.仅递归函数
+            如例6
+
+     init.变量 <=> self.XXX(x,y,新变量)
+     2.1和3.1以互相转化
+     2.2和3.2可以互相转化
+
+    用途上分类：
+        1.针对单通道问题，即一个while/if就可以解决的问题，比如链表转置等问题，可以采用
+            1.1 while/if
+            1.2 递归（仅递归/init+递归/主函数+递归）
+        2.针对复杂多通道问题，即多个if/while才能判定解决的问题，而不考虑之后的结果的话，能简化过程
+            比如树状结构/链表的合并，可以采用：
+            2.1 递归（仅递归/init+递归/主函数+递归）
+
+
+    写法上分类：
+        想好题目求的是什么，
+        若在原输入上做文章，没有新的变量加入，用仅递归函数法；
+        1.针对可以直接输出的：
+        仅递归函数法：
+        边界条件及按照题目需求的返回值--第一个return
+        写出常态下(把self.xxx当作常数)的公式
+        写出按照题目需求的返回值--第二个return
+        用self.XXX替换常数
+
+        若无法直接生成，用主函数+递归函数法,或者仅递归函数+来定义中间或者输出变量
+        2.针对需要用到新建变量输出的：
+        2.1 def __init__(self): self.新变量 + 仅递归函数法. ->有self.变量->弹出回滚之前的值
+        2.2 主函数+递归函数
+            先定义新变量，确定递归函数的输入输出，写出主函数
+            再写递归函数：
+                若新变量需要显式返回（return返回），则按照仅递归函数来书写 -> 有显式返回 -> 弹出回滚之前的值
+                若新变量不需要显示返回，则写出第一个return的if条件，并写出如何用新变量合理保存题目需求的返回值（注意这个新变量不要因为
+                回溯的影响而回滚了）添加self.XXX -> 无显式返回 -> 弹出回滚之前的值
+
+
+
+     返回值上分类
+         1.返回'原值'
+            1.1 仅递归/init.变量+递归：两个return，第一个return 结束条件值，第二个 l1.next = self.XXX + return l1
+            1.2 主函数 + 递归：主函数中self.XXX(x,y,新变量)+return新变量；递归函数只有一个return，且为空
+         2.返回‘新值’
+            2.1 仅递归: 两个return，第一个return 结束条件值，第二个return YY*self.XXX
+            2.2 init.变量+递归: 两个return，第二个 self.XXX + return init.变量值
+            2.3 主函数 + 递归: 主函数中return self.(x,y,新变量)；递归函数有两个return，第一个return 结束条件值，第二个return self.(x,y,新变量)
+
+
+    ######################## 例1  ###########
+    class Solution:
+        def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
+            if l1 == None:
+                return l2
+            if l2 == None:
+                return l1
+
+            if l1.val < l2.val:
+                l1.next = self.mergeTwoLists(l1.next, l2)
+                return l1 #发现只要不把pointer后移，即x=x.next,pointer一直在首位的，这样，返回该pointer就好，不用一开始复制pointer
+            else:
+                l2.next = self.mergeTwoLists(l1, l2.next)
+                return l2
+
+    例1理解：
+    先思考一层的做法，设small_node表示为已经排序好的链表头，输入是l1和l2，返回是完成的排序链表，则可以写如下的代码：
+        if l1.val < l2.val:
+            l1.next = small_node
+            return l1
+        else:
+            l2.next = small_node
+            return l2
+    再思考用递归部分替换small_node:
+    由于l1.next = small_node/l2.next = small_nodesmall_node后，l1/l2已经确定用掉了，故small中的输入是l1.next+l2 或l2.next+l1
+        if l1.val < l2.val:
+            l1.next = self.mergeTwoLists(l1.next,l2)
+            return l1
+        else:
+            l2.next = self.mergeTwoLists(l1,l2.next)
+            return l2
+
+      ######################## 例2  ###########
+    class X:
+    def list_num(self,n):
+        if n == 1 or n == 2:
+            return 1
+
+        return self.list_num(n-1) + self.list_num(n-2)
+
+     ######################## 例3  ###########
+    class Solution:
+        def __init__(self):
+            self.visitHash = {}
+
+        def copyRandomList(self, head):
+            if head == None:
+                return None
+
+            new_node = Node(head.val, None, None)
+            self.visitHash[head] = new_node
+            new_node.next = self.copyRandomList(head.next) #建立node和next全部完成
+
+            if head.random != None:
+                new_node.random = self.visitHash[head.random]
+            else:
+                pass
+
+            return new_node
+
+    ######################## 例4  ###########
+    class Solution:
+        def __init__(self):
+            self.prev = None
+
+        def reverseList(self, head: ListNode) -> ListNode:
+            if head == None:
+                return
+            tmp = head.next
+            head.next = self.prev
+            self.prev = head
+            head = tmp
+            self.reverseList(head)
+            return self.prev
+
+    ######################## 例5  ###########
+    class Solution:
+        def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
+            if l1 == None:
+                return l2
+            if l2 == None:
+                return l1
+
+            new_head = ListNode(0)
+            self.recursive(l1, l2, new_head)
+            return new_head.next
+
+        def recursive(self, l1, l2, new_head):
+            if l1 == None and l2 == None:
+                return
+
+            if (l2 == None and l1 != None) or (l1 != None and l1.val < l2.val):
+                new_head.next = l1
+                self.recursive(l1.next, l2, new_head.next)
+
+            if (l1 == None and l2 != None) or (l2 != None and l2.val <= l1.val):
+                new_head.next = l2
+                self.recursive(l1, l2.next, new_head.next)
+
+
+    例1例5对比分析：
+    例1分析：仅一个递归函数；最终return返回的是题目要求的链表，每层return的是新确定的链表pointer节点，故核心是该链表pointer节点；
+    例5分析：主函数+递归函数；递归函数return无返回，主函数return的是在递归函数中新变量，故核心是新变量；
+
+    ######################## 例6  ##########
+    class Solution:
+    def reverseList(self, head: ListNode) -> ListNode:
+        prev = None
+        return self.recursive(head, prev)
+
+    def recursive(self, curr, prev):
+        if curr == None:
+            return prev
+        nextTemp = curr.next
+        curr.next = prev
+        prev = curr
+        curr = nextTemp
+        return self.recursive(curr, prev)
+
+    例5，例6对比分析
+    共性：主函数+递归函数 形式
+    区别 例5：主函数中 self.XXX+return新变量；递归函数只有一个return，且为空
+         针对新变量分析：新变量在递归的过程中逐步建立，位置从头点到尾点，此时不符合链表输出的要求
+                        之后层层return，新变量回滚到头点，然后正好用于链表的输出
+                        即弹出回滚之后新变量的值
+         例6：主函数中return self.XXX；递归函数两个return，if..return 新变量，条件... return self.XXX
+         针对新变量分析：新变量在递归的过程中逐步建立，对于老变量是位置从头点到尾点，对于新变量是为尾点到头点，此时恰好适合输出新变量
+                       故在递归判断条件if成立后，返回新变量此刻的值，并通过下面的return self.XXX，从递归函数中弹出，
+                       再在主函数return self.XXX从主函数中弹出。即新变量经历了if..return-> 递归函数return self.XXX ->主函数return self.XXX
+                       最终弹出。即弹出未回滚之前新变量的值
+    总结：递归return为空的，返回的一定是回滚后的值；
+          递归return不为空的，大部分返回的是回滚前的值，小部分如A.next = self.XXx,返回的是回滚后的值
+
+
+2.backtracking:
+    基本结构：
+    def recursive(self,变量1)
+        结束条件 (if A: return B)
+           +
+        语句1 (C)
+           +
+        self.recursive(self,变量1)
+           +
+        语句2 (D)
+    表象：
+    def XXX:
+        if XXX:
+         return AAA
+        语句1
+        YYY = self.XXX
+        语句2
+        return ZZZ
+    内核：
+        a. 由于不满足if条件，故运行了m次语句1和self.XXX(无return)
+        b. 满足if条件后，返回AAA到上一层的self.XXX，即运行上一层的self.XXX，其代表值为AAA，赋给YYY
+        c. 之后，（self.XXX与语句2是同一层def），紧接着运行语句2，并return YYY到上一层self.XXX，继续开始运行语句2，再return ZZZ，
+        直到运行m次，在这m次中由于是返回上层，故语句1中的值也在不断复现到刚开始运行语句1时候的值，并且语句2中的值也在受语句1中值的影响，在
+        变化。
+        d. 最终返回的是经过语句2处理的ZZZ，也是从AAA到YYY再到ZZZ
+    核心：
+        如何在回溯中返回AAA，用YYY = self.XXX+回溯部分+return YYY，把AAA用YYY保存一下，再返回，类似于结构上分类-仅递归函数1.1
+
+    与递归的关系：
+        其实是利用递归里面，当满足ifXXX，运行完毕self.XXX 时，会运行进阶这return语句2，同时其值会不断向上给出，此时如在return句后添加语句2是会对参数，尤其是语句1中参数产生影响的参数。
+
+    关键：
+        语句2受语句1回滚变化
+
+    class Solution:
+    def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
+        if l1 == None:
+            return l2
+        if l2 == None:
+            return l1
+
+        if l1.val < l2.val:
+            p = self.mergeTwoLists(l1.next, l2)
+            l1.next = p
+            return l1 #发现只要不把pointer后移，即x=x.next,pointer一直在首位的，这样，返回该pointer就好，不用一开始复制pointer
+        else:
+            l2.next = self.mergeTwoLists(l1, l2.next)
+            return l2
+
+3.特殊情况
+    若计算中，需要用list/dic去储存其他很多个list的浅复制值/深复制值，则需要对这多个list使用copy.copy()/copy.deepcopy()

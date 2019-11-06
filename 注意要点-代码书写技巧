@@ -1,0 +1,15 @@
+1.  某一变量的两个取值
+    if curA:
+        curA = X
+    else:
+        curA = Y
+    与
+    curA = X if curA else Y 相同
+
+2. 将整个模块(somemodule)导入，格式为： import somemodule
+
+从某个模块中导入某个函数,格式为： from somemodule import somefunction
+
+从某个模块中导入多个函数,格式为： from somemodule import firstfunc, secondfunc, thirdfunc
+
+将某个模块中的全部函数导入，格式为： from somemodule import *
