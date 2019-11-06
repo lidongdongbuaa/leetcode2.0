@@ -5,7 +5,7 @@
 # @FileName: 19. Remove Nth Node From End of List.py
 ''''''
 '''
-题目分析22
+题目分析
 1.要求：Given a linked list, remove the n-th node from the end of list and return its head.
     Follow up:Could you do this in one pass?
 2.理解：删除倒数第n个节点
