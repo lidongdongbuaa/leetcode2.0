@@ -2,17 +2,19 @@
 # @Time    : 2019/10/13 11:23
 # @Author  : LI Dongdong
 # @FileName: 21. Merge Two Sorted Lists.py
-
-######################## 题目分析    #################
+''
 '''
+题目分析
 1.要求：Merge two sorted linked lists and return it as a new list.
-The new list should be made by splicing together the nodes of the first two lists.
-2.类型：链表题；合并题
-3.方法：Iterative法；recursion法
-4.边界条件：l1 or l2 = None
+    The new list should be made by splicing together the nodes of the first two lists.
+2.理解: 合并链表，只能用合并node的方式，不能用list重构法
+3.类型：链表题，合并链表
+4.方法：迭代法；递归法
+time complexity order: 迭代法 O(m+n) = 递归法 O(m+n)
+space complexity order: 迭代法 O(1) < 递归法 O(m+n)
 '''
-######################## Iterative法  ################
 '''
+Iterative法
 思路：先边界，比较大小，然后用next连接
 方法：建立新头，比较大小后，next连接
 边界条件：l1 = None or l2 = None
@@ -44,8 +46,9 @@ class Solution:
                 l2 = l2.next
 
         return new_node.next
-######################## Iterative法2  ################
+
 '''
+Iterative法2
 思路：先边界，比较大小，然后用next连接
 方法：建立新头，比较大小后，next连接，最后剩下的不用比较，直接连接
 边界条件：l1 = None or l2 = None
@@ -82,8 +85,9 @@ class Solution:
 
         return new_node.next
 
-######################## recursion 1  #################################
+
 '''
+recursion 1法
 思路：建立新的链表，next指向l1或l2中较小的那个
 方法：recursion法
 边界条件：l1 = None and l2 = None
