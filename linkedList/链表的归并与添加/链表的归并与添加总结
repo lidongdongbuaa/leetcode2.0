@@ -1,0 +1,38 @@
+1. 链表转化为数字相加，加完的数字再转换为链表
+    核心：为了相加等操作，必须转化成正常顺序的数字(先大后小)
+    假设链表可能为1->2->0->1 或 1-> 0-> 2 ->1,数字为1201，一千二百零一
+    a)链表转化为数字
+        a.1) 链表是正序
+            numb = 0
+            while head:
+                numb = numb*10 + head.val
+                head = head.next
+            return numb
+            即原数不断乘倍数
+        a.2) 链表是逆序
+            numb = 0
+            times = 1
+            while head:
+                numb = numb + times*head.val
+                times = times*10
+                head = head.next
+            return numb
+            即用新变量建立倍数，再乘以节点值
+            或者转置一下链表，再用a.1)的方法
+    b)数字numb(int)转化为链表
+        b.1) 链表是正序
+            pre = new_list = LinkedList(0)
+            for elem in str(numb):
+                new = LinkedList(int(elem))
+                pre.next = new
+                pre = pre.next
+            return new_list.next
+            即把int的数字转化成string进行traverse,然后再建立每个node，相连
+        b.2) 链表是逆序
+            pre = new_list = LinkedList(0)
+            for elem in str(numb)[::-1]: #or reversed(str(numb))
+                new = LinkedList(int(elem))
+                pre.next = new
+                pre = pre.next
+            return new_list.next
+            或者把b.1)的链表转置一下即可
