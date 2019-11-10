@@ -80,9 +80,62 @@ class Solution:
 
 '''
 转化为数字法
-思路：
-方法: 
-time complex: tO(N)
-space complex: sO(N)
-易错点：
+思路：把两个链表都转化为整数，然后相加得到结果，最后把结果转成链表并转置输出
+方法: 使用while遍历链表，每遍历一次，node.val乘以10，同时累加这个结果，得到最后的转化整数；
+    相加两个整数；
+    把这个整数转化为string；
+    遍历这个string的每个elem，再把每个elem转化为int；
+    同时再构造为新的链表,然后转置输出！
+边界条件：head = None
+time complex: O(N) + O(1) + O(1) + O(N) + O(N) = O(N)
+space complex: O(1) + O(1) + O(1) + O(N) = O(N)
+易错点：算完和之后，结果整数是正常顺序的，而题目要求是倒叙数，故在采用转成string再转int再建链表时，得到的链表也是正常顺序的，故最后需要转置后输出
 '''
+class ListNode:
+    def __init__(self, x):
+        self.val = x
+        self.next = None
+
+
+class Solution:
+    def LinkedListToNum(self,head):
+        num = 0
+        times = 1
+        while head:
+            num += head.val*times
+            head = head.next
+            times *= 10
+        return num
+
+    def reverse_Linkedlist(self, head):
+        if head is None:
+            return None #check head is None
+        pre = None
+        while head:
+            next_head = head.next
+            head.next = pre
+            pre = head
+            head = next_head
+        return pre
+
+    def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
+        num1 = self.LinkedListToNum(l1)
+        num2 = self.LinkedListToNum(l2)
+
+        total= num1 + num2
+        total_string = str(total)
+        pre = new_head = ListNode(0)
+        for elem in total_string:
+            new_node = ListNode(int(elem))
+            pre.next = new_node
+            pre = pre.next
+
+        return self.reverse_Linkedlist(new_head.next)
+
+'''
+test case
+'''
+b = ListNode(5)
+a = ListNode(5)
+x = Solution()
+print(x.addTwoNumbers(a,b).val)
