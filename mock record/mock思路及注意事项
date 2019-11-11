@@ -1,10 +1,48 @@
-191026
-    1. 关于题目的理解
-        1.1 问面试官
-            对于list：考虑是否有序/无序，是否有重复数字，无解返回什么
-        1.2 自己写代码时候注意
-            对于list：空list，只有1个数，无限数字
+1.态度：
+    不卑不亢，有自信
 
-191110
-    1. 遇到特别大的数进行运算时，可以说“当使用python时，可以避免像c++那样的数据溢出问题（overflow）”
-    2.
+2. 重复题目，确认要求：
+    确认sample input/output
+    edge case:
+        对于list：考虑是否有序/无序，为空，重复数字，无解，只有1个数，数字是正/负/零/#
+
+3. 思考过程的交流
+
+4. 写出数据结构和算法，解释
+    写出idea及method
+        method：
+            定义code中要用的变量
+            要简单一些。eg.只要说traverse/scan index即可，不用说from i to j
+    给出space/time complexity
+        对于dic等space comp，要具体分析。由于题目条件，可能存在只有有限个(2个等)，故此时sO(2) = sO(1),而不是通常的O(N)
+    暴力+优化的层次分析
+
+5. code之前，'should I implement it in code? or you want me to continue to optimize it?'
+
+6. right coding
+    class和变量名的命名不要太长，解释意义
+    写出框架，再擦掉即可：
+        def func(self,input):
+            res = 0
+            方框
+            return res
+    开始就要对变量进行定义，不要后补
+    对关键句子的comments
+    code比method多内容时，进行解释和补充
+    技巧：
+        遇到特别大的数进行运算时，可以说“当使用python时，可以避免像c++那样的数据溢出问题（overflow）”
+        求list中的长度，j-i即可
+
+7. 跑test case
+    用面试官的case先跑
+    先针对helper function 进行test，后针对主函数 进行test
+    test case 分为两个部分，总结果表示各个关键变量的值，用table表示；小结果写在code的右边，即写即擦，展现具体的计算过程
+
+8. 发音和书写
+    发音：慢而清晰
+    书写：书写行距适中，缩进正确，可以两个空框表示缩进两位
+
+9. 考官交流
+    问了必答，比如在idea区域问space comp时，也必须要回答，虽然不清楚具体的结果，也要说我预计xxx，下面可能会有改变
+    说啥是啥，大部分是想给我提示的
+    following up没时间写时，可以只讲思路，怎么做就行。等面试结束后，可以查面试官邮箱，把具体方法发到他邮箱里。
