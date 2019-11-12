@@ -25,18 +25,17 @@ space complexity order:
 '''
 
 '''
-迭代法
+dic保存迭代法 - brute force
 思路：begin at a position, then traverse the tree, record the type and number, until find two type fruit, then record the sum of fruit.
     do this step from the first tree to the last 2nd tree. finally return the biggest sum
 方法：使用for，对point进行遍历，从第一个到倒数第二个：使用while寻找到两种水果，用dic的key记录种类，用value记录该种的个数，直到到达第三种key；
     sum = key1.val + key2.val, 用list记录所有的sum，然后对list进行sort，找到最大的sum，然后输出
     ->优化：用判断语句替代list，定义sum=0，若发现新的sum比原来的大，就替换掉原来的sum
 边界条件：list = []
-time complex: 
-space complex: 
-易错点：
+time complex: O(N2)
+space complex: O(N)
+易错点：dic只保存了两个数，故是sO(2)，不是sO(N)
 '''
-
 
 class Solution:
     def totalFruit(self, tree):
@@ -46,10 +45,10 @@ class Solution:
             return 1
 
         sum_list = []
-        for i in range(len(tree) - 1):
+        for i in range(len(tree) - 1): #tO(N)*O(N) = O(N2)
             fruit_dic = {}
             type_fruit = 0
-            for j in range(i, len(tree)):
+            for j in range(i, len(tree)): #tO(N)
                 if tree[j] not in fruit_dic:
                     if type_fruit == 2:
                         break
@@ -58,17 +57,22 @@ class Solution:
                 else:
                     fruit_dic[tree[j]] += 1
             sum_fruit = 0
-            for value in fruit_dic.values():
+            for value in fruit_dic.values(): #sO(2) = sO(1)
                 sum_fruit += value
-            sum_list.append(sum_fruit)
+            sum_list.append(sum_fruit) #sO(N)
 
-        sum_list.sort()
+        sum_list.sort() #tO(NlogN)
         return sum_list[-1]
 
 x = Solution()
 x.totalFruit([0])
 
-'升级版'
+
+'''
+升级版-用j-i+1/j-i表示区间长度；用max(x1,x2)找到最大值，替换掉list及list.sort
+time complex: O(N2)
+space complex: O(1)
+'''
 class Solution:
     def totalFruit(self, tree):
         if tree == []:
@@ -76,29 +80,33 @@ class Solution:
         if len(tree) == 1:
             return 1
 
-        sum_list = []
-        sum_fruit = 0
-        for i in range(len(tree) - 1):
-            fruit_dic = {}
-            type_fruit = 0
+        res_fruit = 0
+        for i in range(len(tree)): #tO(N)*O(N) = O(N2)
+            fruit_dic = {} #sO(2)= O(1)
             for j in range(i, len(tree)):
-                if tree[j] not in fruit_dic:
-                    if type_fruit == 2:
-                        break
+                if tree[j] not in fruit_dic and len(fruit_dic) == 2:
+                    new_sum_fruit = j - i
+                    break
+                elif tree[j] not in fruit_dic and len(fruit_dic) < 2:
                     fruit_dic[tree[j]] = 1
-                    type_fruit += 1
-                else:
+                    new_sum_fruit = j - i + 1
+                elif tree[j] in fruit_dic:
                     fruit_dic[tree[j]] += 1
-            new_sum_fruit = 0
-            for value in fruit_dic.values():
-                new_sum_fruit += value
-            if sum_fruit < new_sum_fruit:
-                sum_fruit = new_sum_fruit
+                    new_sum_fruit = j - i + 1
+            res_fruit = max(res_fruit, new_sum_fruit) #tO(2) = tO(1)
 
-        return sum_fruit
+        return res_fruit
 
-x = Solution()
-x.totalFruit([0])
+
+'''
+按块扫描法
+思路:
+方法：
+边界条件：
+time complex: 
+space complex: 
+易错点：
+'''
 
 
 
@@ -107,3 +115,5 @@ x.totalFruit([0])
 '''
 test case
 '''
+x = Solution()
+x.totalFruit([0])
