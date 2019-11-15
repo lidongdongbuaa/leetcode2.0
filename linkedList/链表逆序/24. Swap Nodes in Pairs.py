@@ -92,6 +92,35 @@ class Solution:
             head = head.next #or head = next_next_head
         return pre.next
 
+'''
+优化版
+'''
+class Solution:
+    #reverse head and head.next
+    def reverseNodes(self, before_hd,head):
+        next_hd = head.next
+        next_next_hd = head.next.next
+        before_hd.next = next_hd
+        next_hd.next = head
+        head.next = next_next_hd
+        before_hd = head
+        head = next_next_hd
+        return before_hd, head
+
+
+    def swapPairs(self, head) :
+        if head == None:
+            return None
+
+        if head.next == None:
+            return head
+
+        before = pre = ListNode(0)
+        before.next = head #建立头节点之前的空节点
+
+        while head and head.next:
+            before, head = self.reverseNodes(before, head)
+        return pre.next
 
 
 

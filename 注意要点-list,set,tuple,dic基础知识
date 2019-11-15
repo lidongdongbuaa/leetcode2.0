@@ -1,5 +1,8 @@
 1.list
-    list.pop([index = -1]) 移除列表中的一个元素（默认最后一个元素），并且返回该元素的值;即可以删除倒数第几个数
+    a) list.pop([index = -1]) 移除列表中的一个元素（默认最后一个元素），并且返回该元素的值;即可以删除倒数第几个数
+    b) a = [1, 2, 3, 4, 5] b = a[-1] -> b =5 / b= a[:-1] -> b = [1,2,3,4] / b = a[-3:-1] -> b = [3, 4]
+        即 []中有负号也是左开右闭
+    c) list.extend(other_list) 拆开otherlist加入/ list.append(other_list) otherlist整体加入
 
 2.set
     set.add的顺序和保存在set里面的顺序并不一致(list和dic的顺序是一致的)

@@ -3,4 +3,4 @@ time complex是O(n)(Iterative method/recursion method都可)；
 spcae complex 是O(1)->recursion method/是O(n)->iterative method
 2.开头要判断是否为None
 3.prev：先前的head；curr：目前的head；nextTemp：临时保存的下一个；tail：尾巴
-3.
+4. 余数rest
