@@ -1,6 +1,11 @@
-1.起始判断题目要求：是否是单链表（无环）；不符合条件情况下返回什么？（基本上是null）
-time complex是O(n)(Iterative method/recursion method都可)；
-spcae complex 是O(1)->recursion method/是O(n)->iterative method
-2.开头要判断是否为None
-3.prev：先前的head；curr：目前的head；nextTemp：临时保存的下一个；tail：尾巴
+1. 起始判断题目要求：是否是单链表（无环）；不符合条件情况下返回什么？（基本上是null）
+    time complex： 是O(n)(Iterative method/recursion method都可)；
+    space complex 是O(N)->recursion method/是O(1)->iterative method
+2. 开头要判断是否为None
+3. prev：先前的head；curr：目前的head；nextTemp：临时保存的下一个；tail：尾巴
 4. 余数rest
+5. 通用格式
+    while XXX:
+        保存下一位
+        转置next
+        node更新

@@ -6,6 +6,7 @@
     edge case:
         list：有序/无序，为空，重复数字，无解，只有1个数，数字是正/负/零/#
         LinkedList：改变node数值
+        对输入的任何数：都需要确认是否为0/为负，不能默认为正整数
 
 3. 思考过程的交流
 
@@ -23,12 +24,12 @@
 6. right coding
     class和变量名的命名不要太长，解释意义
     写出框架，再擦掉即可：
-        def func(self,input):
+        def func(self,input): #input：XXX， output：XXX
             res = 0
             方框
             return res
     开始就要对变量进行定义，不要后补
-    对关键句子的comments
+    对关键句子后面进行comments
     code比method多内容时，进行解释和补充
     技巧：
         遇到特别大的数进行运算时，可以说“当使用python时，可以避免像c++那样的数据溢出问题（overflow）”
@@ -41,7 +42,7 @@
 
 8. 发音和书写
     发音：慢而清晰
-    书写：书写行距适中，缩进正确，可以两个空框表示缩进两位
+    书写：书写行距适中，缩进4个空格
 
 9. 考官交流
     问了必答，比如在idea区域问space comp时，也必须要回答，虽然不清楚具体的结果，也要说我预计xxx，下面可能会有改变
