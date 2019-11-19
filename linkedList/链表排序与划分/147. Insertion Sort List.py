@@ -26,9 +26,9 @@ method：
     traverse node #t worst O(N2), best O(N) -> tO(N2); sO(1)
         if find curr node < next node:
             continue traverse
-        else:
+        elif curr node > next node, move next node:
             make curr pointer to the next next node
-            find position for next node by comparing it with all front node
+            find next node position by comparing it with all front node
                      
 time complex: O(N2)
 space complex: O(1)
@@ -48,16 +48,16 @@ class Solution:
         dummy.next = head
 
         while head and head.next:  # traverse linklist
-            if head.val < head.next.val:  # if order is right
+            if head.val < head.next.val:  # if head and head next order is right
                 head = head.next
-            else:
-                next_hd = head.next  # reserve next and next next node
+            else:  # if order is wrong, find next node's right position
+                next_hd = head.next  # reserve head next and next next node
                 next_next_hd = head.next.next
-                head.next = next_next_hd  # pointer to next next node
-                while next_hd.val > pre.next.val:  # next_hd between pre and pre.next
+                head.next = next_next_hd  # head pointer to next next node
+                while next_hd.val > pre.next.val:  # find next_hd position, between pre and pre.next
                     pre = pre.next
-                next_pre = pre.next  # change pointer
-                pre.next = next_hd
+                next_pre = pre.next  # reserve pre next node
+                pre.next = next_hd  # change pointer
                 next_hd.next = next_pre
                 pre = dummy  # reset pre
         return dummy.next
