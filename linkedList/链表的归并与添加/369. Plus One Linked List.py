@@ -19,16 +19,33 @@ space complexity order: 链表转置法 O(1) < 转化为数字法 O(N)
 '''
 转化为数字法
 思路：把链表保存成整数，整数加1，然后再还原成链表
-方法：先求链表长度 tO(N)
-    后根据长度，决定每一个node值的位置，乘以相应的分位数；tO(N) sO(1)
+方法：
+    traverse every node,  transfer to integer by numb = numb*10 + node.val；tO(N) sO(1)
     加一；tO(1) 
-    然后根据根据之前链表的长度或长度+1来得到确认新数的长度 tO(1)
-    再用//法来确定每一位的数，同时合并成新的链表 tO(N) sO(N)
+    transfer new_numb to string, then traverse it, and use int (every string elem) to rebuild the new Linklist # tO(N) sO(N)
 边界条件：
 time complex: O(N)
 space complex: O(N)
-易错点：
+易错点： integer 的拼写
 '''
+
+class Solution:
+    def plusOne(self, head):  # input: head; output: head
+        integer = 0
+        while head:  # transfer to integer
+            integer = integer * 10 + head.val
+            head = head.next
+
+        new_numb = integer + 1  # integer + 1
+
+        dummy = pre = ListNode(0)
+        for elem in str(new_numb):  # transfer to linklist
+            new_node = ListNode(int(elem))
+            pre.next = new_node
+            pre = pre.next
+
+        return dummy.next
+
 
 '''
 链表转置法
@@ -36,13 +53,14 @@ space complex: O(N)
 方法：先迭代整个链表进行转置；
     i=1, 后对新链表递归，若head.val + i == 10，head.val = 0, 继续下个迭代；若head.val +i !=10, head.val = head.val+ i,终止迭代，返回头节点
     对新链表转置，返回转置后的新链表
-边界条件：head.val = 0/最高位变为10，需要加1位数
+边界条件：head.val = 0 / 最高位变为10，需要加1位数
 time complex: tO(N)
 space complex: sO(1)
 易错点：一定要curr = curr.next
-    b = ListNode(2) a = b.next a = ListNode(9) 这样时a.val = 9,但是b.next依然为None,
-    即因为python等于号 = 的含义是赋地址，故在a = ListNode(9)后，a获得了新地址，b.next还是原来老a的，故不匹配
-    只有next可以链接地址，故在curr = curr.next之前把curr.next = ListNode(1)建立好
+            b = ListNode(2) a = b.next a = ListNode(9) 这样时a.val = 9,但是b.next依然为None,
+            即因为python等于号 = 的含义是赋地址，故在a = ListNode(9)后，a获得了新地址，b.next还是原来老a的，故不匹配
+            只有next可以链接地址，故在curr = curr.next之前把curr.next = ListNode(1)建立好
+        while curr反复练习
 '''
 class ListNode:
     def __init__(self, x):
