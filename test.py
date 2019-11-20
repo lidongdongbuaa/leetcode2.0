@@ -1,2 +1,2 @@
-x = 5*[None]
+x = 5//6
 print(x)

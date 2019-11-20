@@ -30,6 +30,7 @@ space complex:  O(k)
 易错点：链表一定要先保存head，再操作/ 情况的划分
 '''
 
+
 class ListNode:
     def __init__(self, x):
         self.val = x
@@ -39,9 +40,9 @@ class ListNode:
 class Solution:
     def buildGroup(self, head, contain, result):  # split contain numb node in linklist and save it in result
         temp = head
-        for _ in range(contain-1):
+        for _ in range(contain - 1):
             head = head.next
-        next_head = head.next # backup next head
+        next_head = head.next  # backup next head
         head.next = None
         result.append(temp)  # add slipt node
         head = next_head
@@ -49,7 +50,7 @@ class Solution:
 
     def splitListToParts(self, root: ListNode, k: int):
         if root is None:  # edge case
-            return k*[None]
+            return k * [None]
 
         curr = root
         length = 0
@@ -75,7 +76,7 @@ class Solution:
                     root, result = self.buildGroup(root, length // k, result)
                 return result
             else:
-                result = []   # split linklist into a/b two type group
+                result = []  # split linklist into a/b two type group
                 a_contain = length // k + 1  # elem a group contains
                 b_contain = length // k  # elem b group contains
                 a_numb = length - length // k * k  # numb of a
@@ -87,7 +88,60 @@ class Solution:
                 return result
 
 
+'''
+optimized code
+idea：l = total_len // k, r = total_len % k means that numb of (l + 1) value is r, numb of l value is k-r
+edge case： 
+method：
+time complex: O(N)
+space complex:  O(k)
+易错点：书写方法 -> for j in range(l + (1 if r >0 else 0)): 
+    一开始就用None全部填充，再逐步替换，避免了原方法的可能会忘记，ans = [None for _ in range(k)]
+'''
 
+class ListNode:
+    def __init__(self, x):
+        self.val = x
+        self.next = None
+
+
+class Solution:
+    def splitListToParts(self, root: ListNode, k: int):
+        if root is None:  # edge case
+            return k * [None]
+
+        total_len = 0
+        head = root
+        while head:
+            total_len += 1
+            head = head.next
+
+        ans = [None for _ in range(k)]
+
+        l, r = total_len // k, total_len % k
+
+        prev, head = None, root
+
+        for i in range(k):
+            ans[i] = head
+            for j in range(l + (1 if r >0 else 0)):
+                prev, head = head, head.next
+            if prev is not None:
+                prev.next = None
+            r -= 1
+
+        return ans
+
+'''
+variation problem
+数量多的放前面 -> 数量少的放前面
+idea：r = k - total_len % k, for j in range(l + (0 if r >0 else 1)):
+edge case： 
+method：
+time complex: O(N)
+space complex:  O(k)
+
+'''
 
 '''
 test case
@@ -100,8 +154,6 @@ A4 = ListNode(4)
 A5 = ListNode(5)
 A6 = ListNode(6)
 
-
-
 A1.next = A2
 A2.next = A3
 A3.next = A4
@@ -109,4 +161,4 @@ A4.next = A5
 A5.next = A6
 
 X = Solution()
-print(X.splitListToParts(None,7))
+print(X.splitListToParts(None, 7))
