@@ -11,7 +11,7 @@
     Input: -1->5->3->4->0 Output: -1->0->3->4->5
 2.理解：用堆/快速/归并 三种nlongn的排序方法在原链表上进行排序，使得space complexity 为constant，即为常数
 3.类型：链表排序
-4.方法及方法分析： list storage-rebuild; method O(1) storage method
+4.方法及方法分析： list storage-rebuild method； O(1) storage method
 time complexity order:  O(1) storage method O(N) < list storage-rebuild method O(NlogN) 
 space complexity order: O(1) storage method O(1) < list storage-rebuild method O(N) 
 '''

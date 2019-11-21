@@ -9,3 +9,16 @@
         保存下一位
         转置next
         node更新
+6. 题目要求：
+    a) Not return anything, modify head in-place instead
+        不返回任何东西，在原链表上进行就地操作
+        不返回：
+            方案1. 在原链表上操作
+            方案2. 新建链表，进行新旧链表连接，head.val = new_hd.val, head.next= new_head.next 操作
+        在原链表上进行就地操作
+            方案: 在原链表上操作
+
+    b) You may not modify the values in the list's nodes, only nodes itself may be changed.
+        不修改node的值，只能改变node的next指向
+        方案1.在原链表上操作
+        方案2. 新建链表
