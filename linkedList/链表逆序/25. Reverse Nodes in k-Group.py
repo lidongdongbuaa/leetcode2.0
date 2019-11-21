@@ -9,6 +9,11 @@
 1.要求：Given a linked list, reverse the nodes of a linked list k at a time and return its modified list.
     k is a positive integer and is less than or equal to the length of the linked list. 
     If the number of nodes is not a multiple of k then left-out nodes in the end should remain as it is.
+    Given this linked list: 1->2->3->4->5
+    For k = 2, you should return: 2->1->4->3->5
+    or k = 3, you should return: 3->2->1->4->5
+    Only constant extra memory is allowed.
+    You may not alter the values in the list's nodes, only nodes itself may be changed.
 2.理解：链表分段逆序，段长为k，O(1)的space complexity->不能用递归，只能迭代，不能用list保存； 不能改变node的值，只能改变next
 3.类型：链表复杂逆序
 4.方法及方法分析：part-reversed and together method

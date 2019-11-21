@@ -1,0 +1,20 @@
+题目分类：
+    链表划分：
+        划分成大块：86. Partition List
+        划分成小块：725. Split Linked List in Parts
+    链表排序：
+        基本排序法的应用
+            插入法 O(n2)：147. Insertion Sort List
+            堆/快速/归并法 O(nlgn): 148. Sort List
+        特色排序：
+            首末插花 1-5-2-4-3：143. Reorder List
+            前奇后偶 1-3-5-2-4：328. Odd Even Linked List
+            前后块对调 4-5-1-2-3, k=2: 61. Rotate List
+        转置：
+            全转置 5-4-3-2-1 ：206. Reverse Linked List
+            部分转置 m=2 n=3 1-3-2-4-5：92. Reverse Linked List II
+            连续转置k个：25. Reverse Nodes in k-Group
+                特殊情况 k=2 2-1-4-3-5: 24. Swap Nodes in Pairs
+
+
+
