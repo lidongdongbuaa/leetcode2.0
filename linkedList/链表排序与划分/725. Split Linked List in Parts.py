@@ -7,6 +7,8 @@
 '''
 题目分析
 1.要求：Given a (singly) linked list with head node root, write a function to split the linked list into k consecutive linked list "parts".
+    root = [1, 2, 3], k = 5 Output: [[1],[2],[3],[],[]]
+    root = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], k = 3 Output: [[1, 2, 3, 4], [5, 6, 7], [8, 9, 10]]
 2.理解：对链表(数组)进行k组分割，组之间数量差不能超过1，组可以为空，输出链表头
 3.类型：链表分割
 4.方法及方法分析： mathematical method

@@ -10,11 +10,11 @@
     reorder it to: L0→Ln→L1→Ln-1→L2→Ln-2→…
     You may not modify the values in the list's nodes, only nodes itself may be changed.
     Not return anything, modify head in-place instead
-2.理解：把链表的后半部分转置，然后挨个插入前半部分中;不能使用list存储法
+2.理解：把链表的后半部分转置，然后挨个插入前半部分中;使用特殊list存储法(若最后把head.next = pre.next.next, 不用返回，故list也行)
 3.类型：复杂排序
-4.方法及方法分析：reverse-TwoPointer Method
-time complexity order: reverse-TwoPointer Method O(N)
-space complexity order: reverse-TwoPointer Method O(1)
+4.方法及方法分析：reverse-TwoPointer Method， list store-rebuild method
+time complexity order: reverse-TwoPointer Method O(N) = list store-rebuild method O(N)
+space complexity order: reverse-TwoPointer Method O(1) < list store-rebuild method O(N)
 '''
 '''
 reverse-TwoPointer Method
@@ -67,7 +67,7 @@ class Solution:
             new_last_hd = last_hd
             last_hd = next_hd
 
-        #insert the reversed last half node to front half node
+        # insert the reversed last half node to front half node
         while new_last_hd:
             next_hd = head.next
             next_last_hd = new_last_hd.next
@@ -76,9 +76,9 @@ class Solution:
             head = next_hd
             new_last_hd = next_last_hd
 
+
 '''
-不符合题意
-list storage-rebuild method
+list store-rebuild method
 思路：storage node val in a list, then change the oder in list;last rebuild the Linkedlist
 边界条件：head is None/head.next is None
 方法：
@@ -87,8 +87,45 @@ list storage-rebuild method
     traverse new_list to rebuild the new linkedlist; #sO(N) tO(N)
 time complex: O(N)
 space complex: O(N)
-易错点：
+易错点：head.next = pre.next.next 由于不要求返回值，故必须在原有head上做改动，而直接赋值 head = new_head 不起作用，只有用next连接才行
 '''
+
+
+class ListNode:
+    def __init__(self, x):
+        self.val = x
+        self.next = None
+
+
+class Solution:
+    def reorderList(self, head: ListNode) -> None:
+        if head is None:
+            return None
+        if head.next is None:
+            return head
+
+        node_list = []
+        curr = head
+        while curr:  # transfer linklist val into list
+            node_list.append(curr.val)
+            curr = curr.next
+
+        new_list = []
+        length = len(node_list)
+        for i in range(length // 2):  # rearrange order of value
+            new_list.append(node_list[i])
+            new_list.append(node_list[-(i + 1)])
+        if length % 2 != 0:  # node numb of linklist is odd
+            new_list.append(node_list[length // 2])
+
+        new_head = pre = ListNode(0)
+        for elem in new_list:
+            new_node = ListNode(elem)
+            new_head.next = new_node
+            new_head = new_head.next
+
+        head.next = pre.next.next
+
 
 '''
 test case

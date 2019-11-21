@@ -13,6 +13,8 @@
 ####################### Two Pointer Approach ##################
 '''
 思路：用next连接的方法，构成小于x的链和大于等于x的链，之后再串起来
+    Input: head = 1->4->3->2->5->2, x = 3
+    Output: 1->2->2->4->3->5
 方法：建立两个新头，head1，head2，迭代head，val小于3，连接head1；val大于等于3，连接head2。
 迭代完毕之后，head1末尾连接head2的头；新头.next才是真正起始点;head2要收尾，即head2.next=None
 边界条件：head为None或单节点时，返回原节点
