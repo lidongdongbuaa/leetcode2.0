@@ -95,7 +95,7 @@ class Solution:
 自拟题2
 1.要求：在部分sorted single linklist 中插入node，keep linklist sorted
     即[4,5,1,2,3]中
-2.理解：在单链表中插入node
+2.理解：在部分sort单链表中插入node
 3.类型：链表插入
 4.方法及方法分析：
 time complexity order: 
