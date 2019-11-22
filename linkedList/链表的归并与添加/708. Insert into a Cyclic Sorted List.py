@@ -138,7 +138,7 @@ class Solution:
                     return ref
                 head = head.next
 
-'Optimized code'
+'Optimized code 1'
 class Solution:
     def insertNode(self, head, insertVal):
         next_node = head.next
@@ -167,10 +167,9 @@ class Solution:
                 self.insertNode(head, insertVal)
                 return ref
             head = head.next
-            if head is ref:  # all node are same
+            if head is ref:  # all node already traversed and they are same
                 self.insertNode(head, insertVal)
                 return head
-
 
 '''
 test case

@@ -46,7 +46,7 @@ method：
         node val > end node, insert, return
 time complex: O(N)
 space complex: O(1)
-易错点：
+易错点：本题对比head值，然后在pre后面加入；lc708，由于有环，对比head和head.next，在head后加入
 '''
 class Node:
     def __init__(self, val=None, next=None):
