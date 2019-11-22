@@ -1,15 +1,17 @@
-1. 起始判断题目要求：是否是单链表（无环）；不符合条件情况下返回什么？（基本上是null）
-    time complex： 是O(n)(Iterative method/recursion method都可)；
-    space complex 是O(N)->recursion method/是O(1)->iterative method
-2. 开头要判断是否为None
-3. prev：先前的head；curr：目前的head；nextTemp：临时保存的下一个；tail：尾巴
-4. 余数rest
-5. 通用格式
+1. edge case：
+    for linklist, single linklist? it is None? it has only one node? has repeated Node? all node are repeated?
+        the node value range?
+    for insertVal, it = linklist node val? value range?
+    for return what? None?
+3. 英文简称：
+    prev：先前的head；curr：目前的head；nextTemp：临时保存的下一个；tail：尾巴
+    rest: 余数
+4. 通用格式
     while XXX:
         保存下一位
         转置next
         node更新
-6. 题目要求：
+5. 题目要求：
     a) Not return anything, modify head in-place instead
         不返回任何东西，在原链表上进行就地操作
         不返回：
@@ -22,3 +24,9 @@
         不修改node的值，只能改变node的next指向
         方案1.在原链表上操作
         方案2. 新建链表
+6. 解题诀窍：
+    建立dummy = prev，并连接head
+    迭代head的过程中，也一直备份prev
+        有利于： case情况的减少（head.next is None）,
+                方便迭代head的判断  eg:708.自拟题1
+    涉及到head.next.val时，一定要提前判断其存不存在
