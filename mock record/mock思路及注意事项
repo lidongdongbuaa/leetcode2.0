@@ -19,6 +19,7 @@
     给出space/time complexity
         对于dic等space comp，要具体分析。由于题目条件，可能存在只有有限个(2个等)，故此时sO(2) = sO(1),而不是通常的O(N)
     暴力+优化的层次分析
+    为了保险，用for i in range(len(x)), 而不是 for elem in list
 
 5. code之前，'should I implement it in code? or you want me to continue to optimize it?'
 
