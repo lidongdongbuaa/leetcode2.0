@@ -1,28 +1,46 @@
+class Node:
+    def __init__(self, val=None, next=None):
+        self.val = val
+        self.next = next
+
 class Solution:
-    def countBinarySubstrings(self, s: str) -> int:
-        if len(s) == 1:  # only one elem string
-            return 0
+    def insert(self, head: 'Node', insertVal: int) -> 'Node':
+        if head is None:  # edge case, head is None
+            head = Node(insertVal)
+            head.next = head
+            return head
 
-        numb_list = []
-        temp = s[0]
-        numb = 1
-        for i in range(1, len(s)):  # accumulate elems repeat times
-            if temp is s[i]:
-                numb += 1
-            else:
-                numb_list.append(numb)
-                numb = 1
-                temp = s[i]
-        numb_list.append(numb)
+        prev, curr = head, head.next
+        toInsert = False
 
-        ans = 0
-        for i in range(len(numb_list) - 1):
-            ans = ans + min(numb_list[i], numb_list[i+1])
+        while True:  # iterative node, four case of node
+            if prev.val <= insertVal <= curr.val:  # case 1/4
+                toInsert = True
+            elif prev.val > curr.val:
+                if prev.val <= insertVal or insertVal <= curr.val:  # case 2/3
+                    toInsert = True
 
-        return ans
+            if toInsert:
+                prev.next = Node(insertVal, curr)  # mission accomplished
+                return head
+
+            prev, curr = curr, curr.next
+            if prev == head:
+                break
+
+        prev.next = Node(insertVal, curr)  # case 5, did not insert the node in the loop
+        return head
 
 '''
 test case
 '''
-x = Solution()
-x.countBinarySubstrings("100101")
+A1 = Node(3)
+A2 = Node(4)
+A3 = Node(1)
+
+A1.next = A2
+A2.next = A3
+A3.next = A1
+
+X = Solution()
+print(X.insert(A1, 2))

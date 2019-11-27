@@ -29,7 +29,7 @@ method：
     iterative list, rebuild the linklist; new_head #tO(N), s(N)
 time complex: O(NlgN)
 space complex: s(N)
-易错点：
+易错点：add + sort 也可以替换为二分法插入，tO(lgN)
 '''
 
 '''

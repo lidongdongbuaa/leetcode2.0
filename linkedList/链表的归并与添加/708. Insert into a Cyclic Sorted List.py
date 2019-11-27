@@ -33,10 +33,10 @@ method：
 time complex: O(NlgN)
 space complex: O(N)
 易错点：1.迭代圆环的终止判断：重复数值 [1,3,3] 在 if curr.val == ref.val:中的判断 -> 先加入第一个数，再循环判断
-    2. 迭代圆环的终止判断：重复数值 [1,1,3] 在 if curr.val == ref.val:中的判断 -> 改为 if curr is ref:
+    2. 迭代圆环的终止判断：重复数值 [1,1,3] 在 if curr.val == ref.val:中的判断 -> 改为 while curr is ref:
+    3. add + sort 可以改为 二分法插入，tO(lgN)
 有问题：leetcode accept 但是无法处理[1,3,1]，2的问题，即对于有头节点相同值的链表来说，1-1-2-3，本题默认head指向第一个1
 '''
-
 
 class Node:
     def __init__(self, val=None, next=None):
@@ -86,14 +86,17 @@ method：
     iterative to judge whether all node is repeated in linklist, #tO(N), sO(1)
         if yes, insert node -> merged by following case
         if No, iterative linklist 
-            if insert node val = one node val, insert node (2-3-5 2 -> 2-2-3-5)
-            if node next val < node val < insert node val, insert node (2-3-5 6 -> 2-3-5-6)
-            if insert node val < node next val < node val , insert node (2-3-5 1 -> 2-3-5-1)
-            if node val < insert node val < next node val, insert node (2-3-5 4 -> 2-3-4-5)
-            if head is ref -> all node are same, insert node
+            case 1: insert node val = one node val, insert node (2-3-5 2 -> 2-2-3-5)
+            case 2: node next val < node val < insert node val, insert node (2-3-5 6 -> 2-3-5-6)
+            case 3: insert node val < node next val < node val , insert node (2-3-5 1 -> 2-3-5-1)
+            case 4: node val < insert node val < next node val, insert node (2-3-5 4 -> 2-3-4-5)
+            case 5: head is ref -> all node are same, insert node (2-2-2-2 -> 2-3-2-2-2)
 time complex: O(N)
 space complex: O(1)
-易错点：处理链表中全是重复node的问题，例如[3,3,3];对linklist分类合理；function名用的时候不要搞混
+易错点：
+    处理链表中全是重复node的问题，例如[3,3,3];对linklist分类合理；function名用的时候不要搞混
+    注意Node的定义与listNode不同，Node有两个形参(val，nextNode), ListNode只有一个val，
+        故不需要定义新的插入函数def insertNode(self, head, insertVal)，只需要调用原Node即可
 '''
 class Solution:
     def insertNode(self, head, insertVal):
@@ -171,6 +174,43 @@ class Solution:
                 self.insertNode(head, insertVal)
                 return head
 
+
+'optimzed code 2'
+'''
+method：
+    case 1：pre val <= insertVal <= curr val 
+    case 2: pre val > curr val, insertVal => pre val or insertVal <= curr val 
+    case 3: already traversal all node, find no case 1 or case 2, so every node are same. prev is head
+易错点：
+    if prev.val  <= insertVal or insertVal <= curr.val: 比较顺序要理清楚，pre是已经loop过，curr是正在loop的
+'''
+class Solution:
+    def insert(self, head: 'Node', insertVal: int) -> 'Node':
+        if head is None:  # edge case, head is None
+            head = Node(insertVal)
+            head.next = head
+            return head
+
+        prev, curr = head, head.next
+        toInsert = False
+
+        while head:  # iterative node, four case of node
+            if prev.val <= insertVal <= curr.val:  # case 1
+                toInsert = True
+            elif prev.val > curr.val:
+                if prev.val  <= insertVal or insertVal <= curr.val:  # case 2
+                    toInsert = True
+
+            if toInsert:
+                prev.next = Node(insertVal, curr)  # mission accomplished
+                return head
+
+            prev, curr = curr, curr.next
+            if prev == head:
+                prev.next = Node(insertVal, curr)  # case 3, did not insert the node in the loop
+                return head
+
+
 '''
 test case
 '''
@@ -183,4 +223,4 @@ A2.next = A3
 A3.next = A1
 
 X = Solution()
-print(X.insert(A1, 0))
+print(X.insert(A1, 2))

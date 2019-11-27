@@ -135,7 +135,7 @@ class Solution:
         return ans
 
 '''
-variation problem
+自拟题
 数量多的放前面 -> 数量少的放前面
 idea：r = k - total_len % k, for j in range(l + (0 if r >0 else 1)):
 edge case： 

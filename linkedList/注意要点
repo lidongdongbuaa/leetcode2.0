@@ -4,7 +4,10 @@
     for insertVal, it = linklist node val? value range?
     for return what? None?
 3. 英文简称：
-    prev：先前的head；curr：目前的head；nextTemp：临时保存的下一个；tail：尾巴
+    prev：先前的head；
+    curr：目前的head, 最好不要用head
+    nextTemp：临时保存的下一个；
+    tail：尾巴
     rest: 余数
 4. 通用格式
     while XXX:
@@ -25,8 +28,9 @@
         方案1.在原链表上操作
         方案2. 新建链表
 6. 解题诀窍：
-    建立dummy = prev，并连接head
-    迭代head的过程中，也一直备份prev
-        有利于： case情况的减少（head.next is None）,
-                方便迭代head的判断  eg:708.自拟题1
-    涉及到head.next.val时，一定要提前判断其存不存在
+    two-pointers iteration
+        建立dummy = prev，并连接head
+        迭代head的过程中，也一直备份prev
+            有利于： case情况的减少（head.next is None）,
+                    方便迭代head的判断  eg:708.自拟题1
+        涉及到head.next.val时，一定要提前判断其存不存在

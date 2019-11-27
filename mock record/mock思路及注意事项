@@ -16,6 +16,7 @@
         method：
             定义code中要用的变量
             要简单一些。eg.只要说traverse/scan index即可，不用说from i to j
+            用case1 case2 case3表示各个条件情况
     给出space/time complexity
         对于dic等space comp，要具体分析。由于题目条件，可能存在只有有限个(2个等)，故此时sO(2) = sO(1),而不是通常的O(N)
     暴力+优化的层次分析
@@ -32,7 +33,9 @@
             return res
     开始就要对变量进行定义，不要后补
         temp/ans/res
-    对关键句子后面进行comments，即for的功能，function的功能等，避免细节
+    comments:
+        对关键句子后面进行comments，即for的功能，function的功能等，避免细节；
+        针对‘method’中列出的case，针对性的注释case1/case2/case3即可
     code比method多内容时，进行解释和补充
     技巧：
         遇到特别大的数进行运算时，可以说“当使用python时，可以避免像c++那样的数据溢出问题（overflow）”
