@@ -10,3 +10,6 @@
         for i, n in enumerate(nums):
             print(i,n)
         0,2/1,3/.....
+5. pass与continue
+    pass：if..pass，本if成立后，不做操作，继续运行pass后面的操作
+    continue：if...continue, 本if成立后，跳过continue后面的操作

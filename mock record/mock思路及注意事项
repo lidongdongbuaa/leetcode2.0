@@ -8,7 +8,7 @@
             LinkedList：改变node数值
             二叉树：值是什么类型的
         输出：为空是否可以作为输出，重复的怎么计算
-    本段代码: 注重time complexity or space complexity? class叫什么？
+    本段代码: Class叫什么？ 注重time complexity or space complexity?
 
 3. 思考过程的交流
 
@@ -52,8 +52,10 @@
 7. 跑test case
     用面试官的case先跑
     先针对helper function 进行test，后针对主函数 进行test
-    test case 分为两个部分，总结果表示各个关键变量的值，用table表示；小结果写在code的右边，即写即擦，展现具体的计算过程
-        横行书写 ‘100100’
+    test case：
+        链表：可以画图指示箭头表示
+        array: 分为两个部分，总结果表示各个关键变量的值，用table表示；小结果写在code的右边，即写即擦，展现具体的计算过程
+            横行书写 ‘100100’
               i
              s[i]
 8. 发音和书写
