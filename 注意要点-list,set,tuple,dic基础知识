@@ -9,3 +9,14 @@
 
 3.dic
     循环key与value：for key, value in dic.items() / for key in dic  / for value in dic.values()
+4. sort()与sorted()区别及作用
+    不同点：
+        用法不同：a.sort() / b = sorted(a)
+        返回不同：返回None，在a的原值上修改 / 返回改变后的a
+        适用对象不同：只适用list / 适用于可迭代对象，例如list,dic,tuple等
+        ()内参数：a.sort(*, key=None, reverse=False) / sorted(iterable, *, key=None, reverse=False)
+    相同点：
+         key 指定带有单个参数的函数，用于从 a/iterable 的每个元素中提取用于比较的键 (例如 key=lambda x: x[1])。
+            e.g. a = [[2,1],[1,2]] b = sorted(a,key = lambda x: x[1]) -> b = [[1,2],[2,1]]
+         reverse 为一个布尔值。 如果设为(reverse = True)，则每个列表元素将按反向顺序比较进行排序。
+
