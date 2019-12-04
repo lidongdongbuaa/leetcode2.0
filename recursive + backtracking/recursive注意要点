@@ -275,7 +275,7 @@
         c. 之后，（self.XXX与语句2是同一层def），紧接着运行语句2，并return YYY到上一层self.XXX，继续开始运行语句2，再return ZZZ，
         直到运行m次，在这m次中由于是返回上层，故语句1中的值也在不断复现到刚开始运行语句1时候的值，并且语句2中的值也在受语句1中值的影响，在
         变化。
-        d. 最终返回的是经过语句2处理的ZZZ，也是从AAA到YYY再到ZZZ
+        d. 输出值： 最终返回的是经过语句2处理的ZZZ，也是从AAA到YYY再到ZZZ
     核心：
         如何在回溯中返回AAA，用YYY = self.XXX+回溯部分+return YYY，把AAA用YYY保存一下，再返回，类似于结构上分类-仅递归函数1.1
 
@@ -284,6 +284,7 @@
 
     关键：
         语句2受语句1回滚变化
+
 
     class Solution:
     def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
