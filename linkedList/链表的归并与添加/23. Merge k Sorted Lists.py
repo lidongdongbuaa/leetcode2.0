@@ -121,10 +121,10 @@ class ListNode:
 
 
 class Solution:
-    def mergeLists(self, head1, head2):  # tO(N)，sO(1)
-        if head1 == None:
+    def mergeLists(self, head1, head2): #tO(N)，sO(1)
+        if head1 is None:
             return head2
-        if head2 == None:
+        if head2 is None:
             return head1
 
         dummy = new_head = ListNode(0)
@@ -143,23 +143,22 @@ class Solution:
             new_head.next = head2
         return dummy.next
 
-    def mergeKLists(self, lists): #tO(logK)，sO(N)
-        if lists == []:
+    def mergeKLists(self, lists):
+        if len(lists) == 0:
             return None
+
         if len(lists) == 1:
             return lists[0]
 
-        if len(lists) == 2:
-            return self.mergeLists(lists[0], lists[1])
+        if len(lists) > 1:
+            mid = len(lists) // 2
+            head1 = lists[:mid]
+            head2 = lists[mid:]
 
-        mid = len(lists) // 2
-        sub1_list = lists[:mid]
-        sub2_list = lists[mid:]
+            sub_head1 = self.mergeKLists(head1)
+            sub_head2 = self.mergeKLists(head2)
 
-        l1 = self.mergeKLists(sub1_list)
-        l2 = self.mergeKLists(sub2_list)
-
-        return self.mergeLists(l1, l2)
+            return self.mergeLists(sub_head1, sub_head2)
 
 
 '''
