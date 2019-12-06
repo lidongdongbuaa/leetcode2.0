@@ -13,7 +13,7 @@
     Note: you can assume that no duplicate edges will appear in edges. 
     Since all edges are undirected, [0,1] is the same as [1,0] and thus will not appear together in edges.
 2.理解：图题，检测每个节点是否都被连接，且没有成环
-3.类型：
+3.类型：Union-find 
 4.方法及方法分析：
 time complexity order: 
 space complexity order: 
