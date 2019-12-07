@@ -47,7 +47,7 @@ class Solution:
             return intervals
 
         stack = []
-        for i in range(len(intervals)): #
+        for i in range(len(intervals)):
             if intervals[i][1] <= toBeRemoved[0] or toBeRemoved[1] <= intervals[i][0]:  # case 1
                 stack.append(intervals[i])
             elif intervals[i][0] < toBeRemoved[0] < intervals[i][1] < toBeRemoved[1]:  # case 2.1
