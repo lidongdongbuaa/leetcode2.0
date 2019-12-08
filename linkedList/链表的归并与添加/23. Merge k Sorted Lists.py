@@ -87,7 +87,7 @@ class Solution:
         return dummy.next
 
     def mergeKLists(self, lists: list[ListNode]):
-        if list == []:
+        if lists == []:
             return None
 
         length = len(lists)
