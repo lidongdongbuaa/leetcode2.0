@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2019/11/13 9:14
 # @Author  : LI Dongdong
-# @FileName: 148. Sort List.py
+# @FileName: 148. Sort List (linked list).py
 ''''''
 '''
 题目分析
@@ -15,6 +15,21 @@
 time complexity order:  O(1) storage method O(N) < list storage-rebuild method O(NlogN) 
 space complexity order: O(1) storage method O(1) < list storage-rebuild method O(N) 
 '''
+'''
+O(1) storage method
+idea：
+edge case：
+method：
+time complex: O(N)
+space complex: O(1)
+易错点：
+'''
+
+
+
+
+
+
 '''
 O(1) storage method
 idea：
