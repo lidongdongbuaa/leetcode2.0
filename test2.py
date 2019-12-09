@@ -1,3 +1,3 @@
-i, j = 0, 0
-print(i)
-print(j)
+a = 3
+if a:
+    print('3')
