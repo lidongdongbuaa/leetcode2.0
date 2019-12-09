@@ -16,7 +16,6 @@ time complexity order:  O(1) storage method O(N) < list storage-rebuild method O
 space complexity order: O(1) storage method O(1) < list storage-rebuild method O(N) 
 '''
 
-
 '''
 Bottom-up Merge sort method (iterative)
 idea：use bottom-up merge sort method
@@ -31,6 +30,8 @@ time complex: O(NlogN)
 space complex: O(1)
 易错点：traversal the node, not enough node for group. So need 
 '''
+'leetcode超时'
+
 
 class ListNode:
     def __init__(self, x):
@@ -47,7 +48,7 @@ class Solution:
 
         length = self.find_len(head)  # calcu length of linklist
         interval = 1
-        while interval < length:  #  bottom - up merge sort
+        while interval < length:  # bottom - up merge sort
             for i in range(0, length - interval, interval * 2):
                 head = self.sort_sub(head, i, interval)
             interval = interval * 2
@@ -56,7 +57,7 @@ class Solution:
     def find_len(self, head):
         if not head:  # edge case
             return 0
-        if not head.next:  #edge case
+        if not head.next:  # edge case
             return 1
 
         length = 0
@@ -83,12 +84,11 @@ class Solution:
                 break
         r_end = curr
         l_end.next = None  # cut left
-        if r_end: # enough r node
+        if r_end:  # enough r node
             after = r_end.next
             r_end.next = None
         else:
             after = r_end  # NOT enough r node
-
 
         if i == 0:
             dummy = newh = ListNode(0)
@@ -123,11 +123,14 @@ class Solution:
         else:
             return head
 
+
 'optimized code'
 '''
-Aim: replace for with while to reduce the repeated iteration to find the new head of groups
+特点: replace for with while to reduce the repeated iteration to find the new head of groups
 易错点：新group的head，tail，与前group，后group的连接
 '''
+
+
 class ListNode:
     def __init__(self, x):
         self.val = x
@@ -152,7 +155,8 @@ class Solution:
             fake_tail = dummy
             while head1:
                 head2 = self.split(head1, interval)  # cut group1, return next adjacent group head
-                next_head1 = self.split(head2, interval)  # cut group 1's adjacent group 2, return next adjacent group head
+                next_head1 = self.split(head2,
+                                        interval)  # cut group 1's adjacent group 2, return next adjacent group head
                 merge_start, merge_end = self.merge(head1, head2)  # merge group1 and group2
 
                 fake_tail.next = merge_start  # connect merged two group with former groups
@@ -184,7 +188,6 @@ class Solution:
             if not head.next:  # not enough node for travel
                 break
             head = head.next
-
 
         tail = head.next
         head.next = None
@@ -225,17 +228,6 @@ A4.next = A5
 X = Solution()
 X.sortList(A1)
 
-
-
-
-
-
-
-
-
-
-
-
 '''
 Merge sort method (recursion)
 idea：use merge sort method
@@ -253,6 +245,7 @@ space complex: O(N)
 易错点:L,R划定以后，尾部要及时中止，即L，R变成单独的
 '''
 
+
 class ListNode:
     def __init__(self, x):
         self.val = x
@@ -268,11 +261,11 @@ class Solution:
 
         length = self.len_linklist(head)
         mid = length // 2
-        L = R = head  # L is head of first part, R is head of later part
-        for _ in range(mid):
+        L = R = head  # L is head of first part,  R is head of later part
+        for _ in range(mid):  # cut separated L group and R group
             R = R.next
         L_cur = L
-        for _ in range(mid - 1):
+        for _ in range(mid - 1):  # L_cur is first part's tail
             L_cur = L_cur.next
         L_cur.next = None
 
@@ -318,67 +311,6 @@ class Solution:
 
 
 '''
-O(1) storage method
-idea：
-edge case：
-method：
-time complex: O(N)
-space complex: O(1)
-易错点：
-'''
-
-
-class ListNode:
-    def __init__(self, x):
-        self.val = x
-        self.next = None
-
-
-class Solution:
-    def go(self, head, k):
-        cur = head
-        for _ in range(k - 1):
-            if cur.next is None:
-                break
-            cur = cur.next
-        ret = cur.next
-        cur.next = None
-        return ret
-
-    def merge(self, l1, l2):
-        cur = buf = ListNode(0)
-        while l1 or l2:
-            if (l1 and l2 and l1.val < l2.val) or l2 is None:
-                cur.next = l1
-                l1 = l1.next
-            else:
-                cur.next = l2
-                l2 = l2.next
-            cur = cur.next
-        return buf.next, cur
-
-    def sortList(self, head):
-        buf = ListNode(0)
-        buf.next = head
-        k = 1
-        while True:
-            lastHead = buf
-            l1 = l2 = buf.next
-            while l1:
-                l2 = self.go(l1, k)
-                if not l2:
-                    break
-                tail = self.go(l2, k)
-                lastHead.next, lastHead = self.merge(l1, l2)
-                l1 = tail
-            lastHead.next = l1
-            if l1 == buf.next and l2 is None:
-                break
-            k *= 2
-        return buf.next
-
-
-'''
 不符合题意
 list storage-rebuild method
 idea：save node val in list -> sort list -> rebuild node/change val of linkedlist
@@ -389,7 +321,7 @@ method：
     traverse node_list to rebuild the linkedlist #tO(N), sO(N)/sO(1)
 time complex: O(NlogN)
 space complex: O(N)
-易错点：pre = new_head = ListNode(0)之后，返回的是new_head.next
+易错点：因为pre = new_head = ListNode(0)，故最后需要返回new_head.next，而不是new_head
 '''
 
 
