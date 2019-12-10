@@ -30,7 +30,7 @@ Method：
             if start time < stack[i],remove the i elements of stack - 无法实现
         then add the i-end time, and save the length of stack, compare it with former length, record the max value
     return the max value as the min rooms we need
-time complex: O(NlogK) K is number of stack
+time complex: O(N2) K is number of stack
 space complex: O(N)
 易错点：
 '''
@@ -67,6 +67,7 @@ x.minMeetingRooms([[1, 5], [8, 9], [8, 9]])
 '''
 改进之处：对stack进行筛选，依旧上课的时间放入tmp中，再加入新上课时间，最后赋给stack。减少了stack的元素数量，减少了遍历时间
 易错点：tmp用完以后要清空，重置为[]
+time complex: O(Nlogk)
 '''
 class Solution:
     def minMeetingRooms(self, intervals) -> int:  # input[[]], find min rooms we need
@@ -90,3 +91,11 @@ class Solution:
             output = max(output, len(stack))
             tmp = []
         return output
+
+'''
+idea：Greedy algorithm + heap
+Method：
+time complex: O(NlogN)
+space complex: O(N)
+易错点：
+'''
