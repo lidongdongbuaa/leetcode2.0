@@ -18,8 +18,8 @@
 2.理解：求全局逆置数和局部逆置数
 3.类型：merge sort
 4.方法及方法分析：
-time complexity order: 
-space complexity order: 
+time complexity order:  Remember Minimum R to L O(N) = Linear Scan O(N) < merge sort O(NlogN) < brute force O(N2) = brute force - min value O(N2)
+space complexity order: Remember Minimum R to L O(1) = Linear Scan O(1) = brute force O(1) < merge sort O(N) = rute force - min value O(N)
 5.edge case: 
     input:None？Y only one? Y repeated? N order? N
     output: True / True / True or False
@@ -134,7 +134,7 @@ idea：
     A local inversion is also a global inversion. 
     Thus, we only need to check if our permutation has 
     any non-local inversion (A[i] > A[j], i < j) with j - i > 1.
-    brute force
+    brute force - min value
 Method：
     traversal elements[i] in A
         traversal elements[i+2, i+3...] in A
