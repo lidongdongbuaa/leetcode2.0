@@ -23,14 +23,16 @@ space complexity order:
 '''
 idea：Merge sort method
 Method：
-    divide A in to groups of at most one elements
-    compares, sort, merge every two groups (i, j), if i > j, numb+1
-    compare left two group of two elements, if i > j, i+1...>j, numb + length(left) - i (including i)
-    Then repeat the above process, until only one group left
+    divide A in to groups with at most two elements
+    compares elements of groups and move smallest to left in every group. if right is smaller than left one, numb+1
+    compare elements of leftmost two group, if right[j] < left[i], numb + length(left) - i (including i)
+    Then process is repeated, until only one group left
     return  numb
 time complex: O(NlogN)
 space complex: O(N)
-易错点：inv_count = inv_count + (len(L) - i) <- (mid - (i+1) +1)
+易错点：
+    inv_count = inv_count + (len(L) - i) <- (mid - (i+1) +1)
+    inv_count = inv_count + self.countInversions(L/R)
 '''
 
 
