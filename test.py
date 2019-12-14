@@ -11,27 +11,29 @@ class Solution:
         if not head.next:  # edge case
             return head
 
-        length = self.find_len(head)  # calcu length of linklist
+        length = 10  # calcu length of linklist
 
-        dummy = ListNode(None)
-        head1 = head
-        former_tail = None
-
+        dummy = former_tail = ListNode(None)
+        dummy.next = head
         interval = 1
         # 要求： 保持整体的head可以输出，保证段与段的连接
         while interval < length:  # bottom - up merge sort
+            head1 = dummy.next
+            n = 1
             while head1:
                 head2 = self.split(head1, interval)  # cut group1, return next adjacent group head
                 next_head1 = self.split(head2,
                                         interval)  # cut group 1's adjacent group 2, return next adjacent group head
                 merge_start, merge_end = self.merge(head1, head2)  # merge group1 and group2
 
-                if former_tail is None:
+                if n == 1:
                     dummy.next = merge_start
                     former_tail = merge_end
                 else:
                     former_tail.next = merge_start
-                head1 = merge_end.next
+                    former_tail = merge_end
+                head1 = next_head1
+                n += 1
             interval = 2 * interval
 
         return dummy.next
@@ -84,15 +86,15 @@ class Solution:
         return dummy.next, tail
 
 
-A1 = ListNode(5)
-A2 = ListNode(4)
-A3 = ListNode(3)
-A4 = ListNode(2)
-A5 = ListNode(1)
-A1.next = A2
-A2.next = A3
-A3.next = A4
-A4.next = A5
 
+def makeLinklist(arr):
+    dummy =head = ListNode(None)
+    for elem in arr:
+        newNode = ListNode(elem)
+        dummy.next = newNode
+        dummy = dummy.next
+    return head.next
+
+A1 = makeLinklist([4, 3, 2, 1])
 X = Solution()
-X.sortList(A1)
+print(X.sortList(A1).val)
