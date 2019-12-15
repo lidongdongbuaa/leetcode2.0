@@ -1,3 +1,6 @@
-a = 3
-if a:
-    print('3')
+from heapq import heapify, heappush, nlargest
+heap = [1,3]
+heappush(heap, 2)
+print(heap)
+print(nlargest(2, heap))
+
