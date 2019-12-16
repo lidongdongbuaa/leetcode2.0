@@ -63,6 +63,7 @@ space complex: O(nk)
 易错点：
     注释 merge to left / merge left and right
     想清楚递归是倒数第二步，输入的是大的，返回的是合并好的左右，之后完成最后一步，合并左右
+    return arr[0]：  arr形式是[[]]的，故要用arr[0]表示里面括号里的数，才能去掉括号
 '''
 class Merge:
     def mergeArr(self, arr, k, n):  # input: list[list], k, n, merge all sorted list
@@ -71,15 +72,15 @@ class Merge:
         if n == 0:  # edge case
             return []
         if k == 1:  # edge case
-            return arr
+            return arr[0]
 
         length = len(arr)  # divide into groups
         mid = length // 2
         L = arr[:mid]
         R = arr[mid:]
 
-        sub_l = self.mergeArr(L)  # merge to left
-        sub_r = self.mergeArr(R)  # merge to right
+        sub_l = self.mergeArr(L, len(L), len(L[0]))  # merge to left
+        sub_r = self.mergeArr(R, len(R), len(R[0]))  # merge to right
 
         stack = []
         i = j = 0
@@ -92,9 +93,12 @@ class Merge:
                 j += 1
 
         if i < len(sub_l):
-            stack.extend(sub_l)
+            stack.extend(sub_l[i:])
         if j < len(sub_r):
-            stack.extend(sub_r)
+            stack.extend(sub_r[j:])
+
 
         return stack
 
+x = Merge()
+print(x.mergeArr([[1, 5, 9], [2, 4, 7],[3, 8, 9]], 3, 3))
