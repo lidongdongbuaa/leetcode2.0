@@ -71,4 +71,37 @@ class Sort:
             self.quicksort(arr, i + 1, r)
         return arr
 
-print(quicksort([9,8,7,6,5,4,3,2,1,0], 0, 9))
+# print(quicksort([9,8,7,6,5,4,3,2,1,0], 0, 9))
+
+
+class Solution:
+    def quicksort(self, arr, l, r):
+        if len(arr) == 0 or len(arr) == 1:
+            return arr
+
+        if l < r:
+            i = l
+            j = r
+            pivot = arr[i]
+            while i < j:
+                while i < j and pivot <= arr[j]:
+                    j -= 1
+                arr[i] = arr[j]
+                while i < j and arr[i] <= pivot:
+                    i += 1
+                arr[j] = arr[i]
+            arr[i] = pivot
+            self.quicksort(arr, l, i)
+            self.quicksort(arr, i + 1, r)
+        return arr
+
+    def sortArray(self, nums):
+        if len(nums) == 0 or len(nums) == 1:
+            return nums
+
+        l = 0
+        r = len(nums) - 1
+        return self.quicksort(nums, l, r)
+
+x = Solution()
+print(x.sortArray([5,1,1,2,0,0]))

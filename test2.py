@@ -19,31 +19,29 @@
 
 
 class Sort:
-    def quicksort(self, arr):
-        if len(arr) == 0 or len(arr) == 1:
-            return arr
+    def quicksort(self, nums):
+        if len(nums) == 0 or len(nums) == 1:
+            return nums
 
         l = 0
-        r = len(arr) - 1
+        r = len(nums) - 1
 
         i = l
         j = r
-        pivot = arr[i]
+        pivot = nums[i]
         while i < j:
-            while i < j and pivot < arr[j]:
+            while i < j and pivot < nums[j]:
                 j -= 1
-            if i < j:
-                arr[i] = arr[j]
+            nums[i] = nums[j]
+            while i < j and nums[i] <= pivot:
                 i += 1
-            while i < j and arr[i] < pivot:
-                i += 1
-            if i < j:
-                arr[j] = arr[i]
-                j -= 1
-        arr[i] = pivot
-        self.quicksort(arr[l:i])
-        self.quicksort(arr[i + 1:r + 1])
-        return arr
+            nums[j] = nums[i]
+        nums[i] = pivot
+        L = nums[l:i]
+        R = nums[i + 1: r + 1]
+        nums[l:i] = self.quicksort(L)  # 产生了一部分，就要把这一部分赋值回去，不然不起作用的
+        nums[i + 1: r + 1] = self.quicksort(R)
+        return nums
 
 
 x = Sort()
