@@ -1,22 +1,21 @@
-class Solution:
-    def sortArrayByParity(self, A):  # even first, odd later
-        if len(A) == 0:  # edge case
-            return A
-        if len(A) == 1:  # edge case
-            return A
+class sortArr:
+    def sortPN(self, arr):  # put the negative front fo positive value
+        if len(arr) == 0 or len(arr) == 1:  # edge case
+            return arr
 
         i = 0
-        j= len(A) - 1
-        pivot = A[i]
+        j = len(arr) - 1
+        pivot = arr[i]
         while i < j:
-            while i < j and A[j] % 2 != 0:  # A[j] is even
+            while i < j and arr[j] >= 0:
                 j -= 1
-            A[i] = A[j]
-            while i < j and A[i] % 2 == 0:  # A[i] is odd
+            arr[i] = arr[j]
+            while i < j and arr[i] < 0:
                 i += 1
-            A[j] = A[i]
-        A[i] = pivot
-        return A
+            arr[j] = arr[i]
+        arr[i] = pivot
+        return arr
 
-x = Solution()
-x.sortArrayByParity([3,1,2,4])
+
+x = sortArr()
+print(x.sortPN([9, 8, 7, 4, 5, -1, -2, -3]))
