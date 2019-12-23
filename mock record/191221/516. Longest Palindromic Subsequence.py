@@ -25,7 +25,40 @@ idea：DFS + judge/record
 Method：
     use DFS to get all possible subsequence  # tO(2^N) sO(N)
     judge whether the subseq is the palindromic using hash table # tO(N) sO(N)
-time complex: 
-space complex: 
+time complex: O(2^N)
+space complex: O(N)
 易错点：
 '''
+class Solution:
+    def longestPalindromeSubseq(self, s: str) -> int:  # inp:string, outp:int, find longestSubseq
+        if len(s) == 0:  # edge case
+            return 0
+        if len(s) == 1:  # edge case
+            return 1
+
+        stack = []
+        i = len(s)
+        data = []  # all possible subsequence
+        self.dfs(s, i, stack, data)  # store all possible subsequence
+
+        length = 0
+        for elem in stack:  # judge whether is palindromic and record its longest length
+            if self.judge(elem):
+                length = max(length, len(elem))
+            else:
+                pass
+        return length
+
+    def dfs(self, s, i, tmp, res):  # find all possible candidate
+        if i == len(s):
+            return
+
+        tmp.append(s[i])
+        res.append(tmp)
+        self.dfs(s, i + 1, tmp, res)
+        tmp.pop()
+        self.dfs(s, i + 1, tmp, res)
+
+
+
+
