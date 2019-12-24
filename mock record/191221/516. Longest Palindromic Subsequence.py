@@ -23,12 +23,13 @@ space complexity order:
 '''
 idea：DFS + judge/record
 Method：
-    use DFS to get all possible subsequence  # tO(2^N) sO(N)
+    use DFS to get all possible subsequence  # tO(2^N) sO(2^N)
     judge whether the subseq is the palindromic using hash table # tO(N) sO(N)
 time complex: O(2^N)
-space complex: O(N)
+space complex: O(2^N)
 易错点：
 '''
+from copy import deepcopy
 class Solution:
     def longestPalindromeSubseq(self, s: str) -> int:  # inp:string, outp:int, find longestSubseq
         if len(s) == 0:  # edge case
@@ -36,29 +37,47 @@ class Solution:
         if len(s) == 1:  # edge case
             return 1
 
+        i = 0
         stack = []
-        i = len(s)
         data = []  # all possible subsequence
-        self.dfs(s, i, stack, data)  # store all possible subsequence
+        all_subseq = self.dfs(s, i, stack, data)  # store all possible subsequence
 
         length = 0
-        for elem in stack:  # judge whether is palindromic and record its longest length
-            if self.judge(elem):
+        for elem in all_subseq:  # judge whether is palindromic and record its longest length
+            if self.judge(elem):  # tO(2^N)
                 length = max(length, len(elem))
             else:
                 pass
         return length
 
-    def dfs(self, s, i, tmp, res):  # find all possible candidate
+    def dfs(self, s, i, tmp, res):  # find all possible candidate, 注意回溯法和分治法思路和判断条件上的区别
         if i == len(s):
             return
 
         tmp.append(s[i])
-        res.append(tmp)
+        res.append(deepcopy(tmp))
         self.dfs(s, i + 1, tmp, res)
         tmp.pop()
         self.dfs(s, i + 1, tmp, res)
+        return res
 
+    def judge(self, S):  # judge whether S is palindromic
+        if len(S) == 1:  # edge case
+            return True
 
+        for i in range(len(S)//2):  # judge whether it is palindromic
+            if S[i] != S[-(i + 1)]:
+                return False
+        return True
 
+x = Solution()
+print(x.longestPalindromeSubseq("aaaaaaaaaaaaaaaaaaaaa"))
+
+'''
+idea：DP
+Method：
+time complex: 
+space complex: 
+易错点：
+'''
 
