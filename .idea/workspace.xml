@@ -378,6 +378,16 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
   </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="65" key="CommitChangelistDialog2" timestamp="1577254013881">
+      <screen x="0" y="0" width="1846" height="1080" />
+    </state>
+    <state x="463" y="65" key="CommitChangelistDialog2/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" timestamp="1577254013881" />
+    <state x="414" y="209" key="Vcs.Push.Dialog.v2" timestamp="1577254021854">
+      <screen x="0" y="0" width="1846" height="1080" />
+    </state>
+    <state x="414" y="209" key="Vcs.Push.Dialog.v2/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" timestamp="1577254021854" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
