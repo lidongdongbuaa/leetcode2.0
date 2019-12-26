@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/数据结构与算法基础-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/数据结构与算法基础-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法基础.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法基础.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/漫谈五大常用算法 _ J.e.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/漫谈五大常用算法 _ J.e.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -356,7 +357,7 @@
       <workItem from="1572558264190" duration="5030000" />
       <workItem from="1572741550487" duration="30297000" />
       <workItem from="1577250828164" duration="892000" />
-      <workItem from="1577328341944" duration="1552000" />
+      <workItem from="1577328341944" duration="2775000" />
     </task>
     <task id="LOCAL-00001" summary="1225">
       <created>1577254014620</created>
@@ -372,7 +373,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577254107268</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="1226">
+      <created>1577340746983</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1577340746983</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -392,17 +400,18 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="1225" />
-    <option name="LAST_COMMIT_MESSAGE" value="1225" />
+    <MESSAGE value="1226" />
+    <option name="LAST_COMMIT_MESSAGE" value="1226" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="65" key="CommitChangelistDialog2" timestamp="1577254106730">
+    <state x="463" y="65" key="CommitChangelistDialog2" timestamp="1577340746375">
       <screen x="0" y="0" width="1846" height="1080" />
     </state>
-    <state x="463" y="65" key="CommitChangelistDialog2/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" timestamp="1577254106730" />
-    <state x="414" y="209" key="Vcs.Push.Dialog.v2" timestamp="1577254113233">
+    <state x="463" y="65" key="CommitChangelistDialog2/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" timestamp="1577340746375" />
+    <state x="414" y="209" key="Vcs.Push.Dialog.v2" timestamp="1577340751727">
       <screen x="0" y="0" width="1846" height="1080" />
     </state>
-    <state x="414" y="209" key="Vcs.Push.Dialog.v2/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" timestamp="1577254113233" />
+    <state x="414" y="209" key="Vcs.Push.Dialog.v2/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" timestamp="1577340751727" />
     <state x="686" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1577328525638">
       <screen x="0" y="0" width="1846" height="1080" />
     </state>
