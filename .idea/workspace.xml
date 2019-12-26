@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/复习-面试经验/20个常见的求职面试问题.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/复习-面试经验/64interviewquestions1.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/复习-面试经验/分享BQ的经验～_一亩三分地求职（非面经）版.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/复习-面试经验/狗家BQ类问题考点_一亩三分地求职（非面经）版.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/数据结构与算法基础-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/数据结构与算法基础-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法基础.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法基础.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -357,8 +355,24 @@
       <workItem from="1572481049354" duration="5315000" />
       <workItem from="1572558264190" duration="5030000" />
       <workItem from="1572741550487" duration="30297000" />
-      <workItem from="1577250828164" duration="772000" />
+      <workItem from="1577250828164" duration="892000" />
+      <workItem from="1577328341944" duration="1552000" />
     </task>
+    <task id="LOCAL-00001" summary="1225">
+      <created>1577254014620</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1577254014620</updated>
+    </task>
+    <task id="LOCAL-00002" summary="1225">
+      <created>1577254107268</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1577254107268</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -377,16 +391,23 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+    <MESSAGE value="1225" />
+    <option name="LAST_COMMIT_MESSAGE" value="1225" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="65" key="CommitChangelistDialog2" timestamp="1577254013881">
+    <state x="463" y="65" key="CommitChangelistDialog2" timestamp="1577254106730">
       <screen x="0" y="0" width="1846" height="1080" />
     </state>
-    <state x="463" y="65" key="CommitChangelistDialog2/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" timestamp="1577254013881" />
-    <state x="414" y="209" key="Vcs.Push.Dialog.v2" timestamp="1577254021854">
+    <state x="463" y="65" key="CommitChangelistDialog2/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" timestamp="1577254106730" />
+    <state x="414" y="209" key="Vcs.Push.Dialog.v2" timestamp="1577254113233">
       <screen x="0" y="0" width="1846" height="1080" />
     </state>
-    <state x="414" y="209" key="Vcs.Push.Dialog.v2/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" timestamp="1577254021854" />
+    <state x="414" y="209" key="Vcs.Push.Dialog.v2/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" timestamp="1577254113233" />
+    <state x="686" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1577328525638">
+      <screen x="0" y="0" width="1846" height="1080" />
+    </state>
+    <state x="686" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1846.1080@0.0.1846.1080" timestamp="1577328346161" />
+    <state x="686" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" timestamp="1577328525638" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
