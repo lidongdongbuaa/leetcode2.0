@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigoposter.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/数据结构与算法基础-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/数据结构与算法基础-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法基础.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法基础.ipynb" afterDir="false" />
     </list>
@@ -53,7 +52,9 @@
   </component>
   <component name="JupyterTrust" id="1cf162af-1a38-4968-bae3-353c243ac705" />
   <component name="ProjectId" id="1VSeGJ3Ycozg1TcXq4axoQRzf2e" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -358,7 +359,7 @@
       <workItem from="1572558264190" duration="5030000" />
       <workItem from="1572741550487" duration="30297000" />
       <workItem from="1577250828164" duration="892000" />
-      <workItem from="1577328341944" duration="4057000" />
+      <workItem from="1577328341944" duration="5277000" />
     </task>
     <task id="LOCAL-00001" summary="1225">
       <created>1577254014620</created>
@@ -395,7 +396,21 @@
       <option name="project" value="LOCAL" />
       <updated>1577360683102</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="1226">
+      <created>1577417682357</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1577417682357</updated>
+    </task>
+    <task id="LOCAL-00007" summary="1227">
+      <created>1577417694359</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1577417694359</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -411,22 +426,24 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="1225" />
     <MESSAGE value="1226" />
-    <option name="LAST_COMMIT_MESSAGE" value="1226" />
+    <MESSAGE value="1227" />
+    <option name="LAST_COMMIT_MESSAGE" value="1227" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="65" key="CommitChangelistDialog2" timestamp="1577417681691">
+    <state x="463" y="65" key="CommitChangelistDialog2" timestamp="1577417693861">
       <screen x="0" y="0" width="1846" height="1080" />
     </state>
-    <state x="463" y="65" key="CommitChangelistDialog2/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" timestamp="1577417681691" />
-    <state x="414" y="209" key="Vcs.Push.Dialog.v2" timestamp="1577360702140">
+    <state x="463" y="65" key="CommitChangelistDialog2/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" timestamp="1577417693861" />
+    <state x="414" y="209" key="Vcs.Push.Dialog.v2" timestamp="1577417699597">
       <screen x="0" y="0" width="1846" height="1080" />
     </state>
-    <state x="414" y="209" key="Vcs.Push.Dialog.v2/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" timestamp="1577360702140" />
+    <state x="414" y="209" key="Vcs.Push.Dialog.v2/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" timestamp="1577417699597" />
     <state x="686" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1577414222122">
       <screen x="0" y="0" width="1846" height="1080" />
     </state>
