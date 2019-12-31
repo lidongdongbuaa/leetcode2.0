@@ -72,7 +72,7 @@ Number of iterations=non-cyclic length=N
 Number of iterations=almost cyclic length= K 
 space complex: O(1)
 
-数学证明：
+数学证明： 
 证明1:是否有环
     设非环部分为L1，环部分为L2，假设走s步后相交，可以得出(1)有解
     (s - L1) mod L2 = (2s - L1) mod L2  (1) 
