@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/leetcode周赛/200105/5303. Decrypt String from Alphabet to Integer Mapping.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode周赛/200105/5304. XOR Queries of a Subarray.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mock record/mock思路及注意事项.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mock record/200105/143. Reorder List.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mock record/200105/微信图片_20200106100636.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mock record/200105/微信图片_20200106100656.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mock record/200105/微信图片_20200106100708.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mock record/200105/微信图片_20200106100727.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mock record/200105/微信图片_20200106100734.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linkedList/链表求环/142. Linked List Cycle II.py" beforeDir="false" afterPath="$PROJECT_DIR$/linkedList/链表求环/142. Linked List Cycle II.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock record/.ipynb_checkpoints/mock思路及注意事项-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/mock record/.ipynb_checkpoints/mock思路及注意事项-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/数据结构与算法基础-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/数据结构与算法基础-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法基础.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法基础.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +71,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mock record/200105" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -87,15 +86,16 @@
     </option>
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\working\leetcodeText400AG\mock record\200105" />
+      <recent name="D:\working\leetcode" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\leetcode2.0\复习-面试经验\BQ" />
       <recent name="D:\working\leetcode\mock record" />
       <recent name="D:\working\leetcode" />
       <recent name="D:\working\leetcode\venv" />
       <recent name="D:\working\leetcode\linkedList\链表求环" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\working\leetcode" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -367,7 +367,7 @@
       <workItem from="1577250828164" duration="892000" />
       <workItem from="1577328341944" duration="6990000" />
       <workItem from="1578185962584" duration="1210000" />
-      <workItem from="1578190574841" duration="7714000" />
+      <workItem from="1578190574841" duration="9150000" />
     </task>
     <task id="LOCAL-00001" summary="1225">
       <created>1577254014620</created>
@@ -432,7 +432,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577444883924</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="0106">
+      <created>1578271886813</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1578271886813</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -468,7 +475,8 @@
     <MESSAGE value="1225" />
     <MESSAGE value="1226" />
     <MESSAGE value="1227" />
-    <option name="LAST_COMMIT_MESSAGE" value="1227" />
+    <MESSAGE value="0106" />
+    <option name="LAST_COMMIT_MESSAGE" value="0106" />
   </component>
   <component name="WindowStateProjectService">
     <state x="463" y="65" key="CommitChangelistDialog2" timestamp="1577444883350">
