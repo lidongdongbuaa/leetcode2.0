@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/stack and queue/150. Evaluate Reverse Polish Notation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/复习-面试经验/ML面经/【经验贴】硅谷机器学习工程师带你十分钟了解硅谷机器学习面试考什么。_一亩三分地机器学习版.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock record/.ipynb_checkpoints/mock思路及注意事项-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock record/mock思路及注意事项.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/数据结构与算法基础-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法基础.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkedList/链表删除/203. Remove Linked List Elements.py" beforeDir="false" afterPath="$PROJECT_DIR$/linkedList/链表删除/203. Remove Linked List Elements.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkedList/链表删除/237. Delete Node in a Linked List.py" beforeDir="false" afterPath="$PROJECT_DIR$/linkedList/链表删除/237. Delete Node in a Linked List.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkedList/链表删除/82. Remove Duplicates from Sorted List II.py" beforeDir="false" afterPath="$PROJECT_DIR$/linkedList/链表删除/82. Remove Duplicates from Sorted List II.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkedList/链表删除/83. Remove Duplicates from Sorted List.py" beforeDir="false" afterPath="$PROJECT_DIR$/linkedList/链表删除/83. Remove Duplicates from Sorted List.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkedList/链表排序与划分/61. Rotate List.py" beforeDir="false" afterPath="$PROJECT_DIR$/linkedList/链表排序与划分/61. Rotate List.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/Date Structure And Algorithm-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/Date Structure And Algorithm-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/Date Structure And Algorithm.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/Date Structure And Algorithm.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +113,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.5304. XOR Queries of a Subarray">
+  <component name="RunManager" selected="Python.test">
     <configuration name="5303. Decrypt String from Alphabet to Integer Mapping" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="leetcode" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -275,11 +279,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.5304. XOR Queries of a Subarray" />
         <item itemvalue="Python.5303. Decrypt String from Alphabet to Integer Mapping" />
         <item itemvalue="Python.83. Remove Duplicates from Sorted List" />
         <item itemvalue="Python.test (1)" />
-        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -367,7 +371,7 @@
       <workItem from="1577328341944" duration="6990000" />
       <workItem from="1578185962584" duration="1210000" />
       <workItem from="1578190574841" duration="9150000" />
-      <workItem from="1578311012421" duration="1645000" />
+      <workItem from="1578311012421" duration="11626000" />
     </task>
     <task id="LOCAL-00001" summary="1225">
       <created>1577254014620</created>
@@ -446,7 +450,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578311035501</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="0107">
+      <created>1578364881107</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1578364881107</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -483,22 +494,17 @@
     <MESSAGE value="1226" />
     <MESSAGE value="1227" />
     <MESSAGE value="0106" />
-    <option name="LAST_COMMIT_MESSAGE" value="0106" />
+    <MESSAGE value="0107" />
+    <option name="LAST_COMMIT_MESSAGE" value="0107" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="65" key="CommitChangelistDialog2" timestamp="1577444883350">
-      <screen x="0" y="0" width="1846" height="1080" />
-    </state>
-    <state x="463" y="65" key="CommitChangelistDialog2/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" timestamp="1577444883350" />
-    <state x="414" y="209" key="Vcs.Push.Dialog.v2" timestamp="1577444888971">
-      <screen x="0" y="0" width="1846" height="1080" />
-    </state>
-    <state x="414" y="209" key="Vcs.Push.Dialog.v2/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" timestamp="1577444888971" />
-    <state x="686" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1577414222122">
-      <screen x="0" y="0" width="1846" height="1080" />
-    </state>
-    <state x="686" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1846.1080@0.0.1846.1080" timestamp="1577328346161" />
-    <state x="686" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" timestamp="1577414222122" />
+    <state x="463" y="65" key="CommitChangelistDialog2" />
+    <state x="463" y="65" key="CommitChangelistDialog2/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" />
+    <state x="414" y="209" key="Vcs.Push.Dialog.v2" />
+    <state x="414" y="209" key="Vcs.Push.Dialog.v2/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" />
+    <state x="686" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" />
+    <state x="686" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1846.1080@0.0.1846.1080" />
+    <state x="686" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -652,6 +658,7 @@
     <SUITE FILE_PATH="coverage/leetcode$lc_64.coverage" NAME="lc 64 Coverage Results" MODIFIED="1567299263985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$lc_452.coverage" NAME="lc 452 Coverage Results" MODIFIED="1562379814901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1572310587622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/leetcodeText400AG$test.coverage" NAME="test Coverage Results" MODIFIED="1578444660696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$lc_20.coverage" NAME="lc 20 Coverage Results" MODIFIED="1565579542821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$test3.coverage" NAME="test3 Coverage Results" MODIFIED="1571919469382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$lc_206.coverage" NAME="lc 206 Coverage Results" MODIFIED="1569370765818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

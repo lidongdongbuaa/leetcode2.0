@@ -7,8 +7,8 @@
 '''
 题目分析
 1.要求：Given a linked list, rotate the list to the right by k places, where k is non-negative.
-    Input: 1->2->3->4->5->NULL, k = 2 / 0->1->2->NULL, k = 4
-    Output: 4->5->1->2->3->NULL / 2->0->1->NULL
+    Input: 1->2->3->4->5->NULL, k = 2  Output: 4->5->1->2->3->NULL
+    Input: / 0->1->2->NULL, k = 4  Output: 2->0->1->NULL
 2.理解：把后k(k%N) 位节点挪到前面
 3.类型：链表转置
 4.方法及方法分析：list存储法(链表重建/列表更值)；next改变法
