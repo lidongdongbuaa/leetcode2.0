@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/复习-面试经验/ML面经/【经验贴】硅谷机器学习工程师带你十分钟了解硅谷机器学习面试考什么。_一亩三分地机器学习版.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linkedList/链表删除/203. Remove Linked List Elements.py" beforeDir="false" afterPath="$PROJECT_DIR$/linkedList/链表删除/203. Remove Linked List Elements.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linkedList/链表删除/237. Delete Node in a Linked List.py" beforeDir="false" afterPath="$PROJECT_DIR$/linkedList/链表删除/237. Delete Node in a Linked List.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linkedList/链表删除/82. Remove Duplicates from Sorted List II.py" beforeDir="false" afterPath="$PROJECT_DIR$/linkedList/链表删除/82. Remove Duplicates from Sorted List II.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linkedList/链表删除/83. Remove Duplicates from Sorted List.py" beforeDir="false" afterPath="$PROJECT_DIR$/linkedList/链表删除/83. Remove Duplicates from Sorted List.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linkedList/链表排序与划分/61. Rotate List.py" beforeDir="false" afterPath="$PROJECT_DIR$/linkedList/链表排序与划分/61. Rotate List.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/Date Structure And Algorithm-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/Date Structure And Algorithm-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/数据结构与算法基础/Date Structure And Algorithm.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/Date Structure And Algorithm.ipynb" afterDir="false" />
     </list>
@@ -371,7 +364,7 @@
       <workItem from="1577328341944" duration="6990000" />
       <workItem from="1578185962584" duration="1210000" />
       <workItem from="1578190574841" duration="9150000" />
-      <workItem from="1578311012421" duration="11626000" />
+      <workItem from="1578311012421" duration="13259000" />
     </task>
     <task id="LOCAL-00001" summary="1225">
       <created>1577254014620</created>
@@ -457,7 +450,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578364881107</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="0108">
+      <created>1578450814469</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1578450814469</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -495,7 +495,8 @@
     <MESSAGE value="1227" />
     <MESSAGE value="0106" />
     <MESSAGE value="0107" />
-    <option name="LAST_COMMIT_MESSAGE" value="0107" />
+    <MESSAGE value="0108" />
+    <option name="LAST_COMMIT_MESSAGE" value="0108" />
   </component>
   <component name="WindowStateProjectService">
     <state x="463" y="65" key="CommitChangelistDialog2" />
