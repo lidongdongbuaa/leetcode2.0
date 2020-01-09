@@ -9,6 +9,8 @@
 1.要求：Given a non-negative integer represented as non-empty a singly linked list of digits, plus one to the integer.
         You may assume the integer do not contain any leading zero, except the number 0 itself. [1,2,3] -> [1,2,4]
         The digits are stored such that the most significant digit is at the head of the list.
+        Example :Input: [1,2,3] Output: [1,2,4]
+
 2.理解：给了我们一个链表，用来模拟一个多位数，表头是高位，现在让我们进行加1运算 
 3.类型：链表节点求和
 4.方法及方法分析：转化为数字法,链表转置法
