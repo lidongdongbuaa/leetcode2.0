@@ -29,30 +29,46 @@ space complex:
 '''
 
 
+# class Solution:
+#     def difNum(self, numb1, numb2): #二进制中不一样的个数
+#         dif = numb1^numb2
+#         res = 0
+#         for elem in bin(dif)[2:]:
+#             if elem == '1':
+#                 res += 1
+#         return res
+#
+#     def comNum(self, numb1, numb2): # 二进制中一样的个数
+#         com = numb1^numb2
+#         res = 0
+#         for elem in bin(com)[2:]:
+#             if elem == '0':
+#                 res += 1
+#         return res
+#
+#     def minFlips(self, a: int, b: int, c: int) -> int:
+#         difAC = self.difNum(a, c)
+#         difBC = self.difNum(b, c)
+#         difAB = self.difNum(a & b, c) # a与b的交集，与c的相同个数
+#         return difAC + difBC - difAB
+#
+# x = Solution()
+# print(x.minFlips(2, 6, 5))
+# print(2|6)
+
+
+'O(32)'
+
 class Solution:
-    def difNum(self, numb1, numb2): #二进制中不一样的个数
-        dif = numb1^numb2
-        res = 0
-        for elem in bin(dif)[2:]:
-            if elem == '1':
-                res += 1
-        return res
-
-    def comNum(self, numb1, numb2):
-        com = numb1^numb2
-        res = 0
-        for elem in bin(com)[2:]:
-            if elem == '0':
-                res += 1
-        return res
-
     def minFlips(self, a: int, b: int, c: int) -> int:
-        difAC = self.difNum(a, c)
-        difBC = self.difNum(b, c)
-        comAB = self.comNum(a, b)
-        return difAC + difBC - comAB
+        res = 0
+        for i in range(32):
+            x, y, z = (a >> i) & 3, (b >> i) & 1, (c >> i) & 1
+            if z==0 and (x+y) >= 1:
+                res += (x+y)
+            elif z==1 and (x+y) == 0:
+                res += 1
+        return res
 
 x = Solution()
-print(x.minFlips(1, 2, 3))
-
-
+print(x.minFlips(2, 6, 5))
