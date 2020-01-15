@@ -28,11 +28,11 @@ method：
     Then repeat doing it, until there is only one group
 time complex: O(NlogN)
 space complex: O(1)
-易错点：traversal the node, not enough node for group. So need 
+易错点： 在求第二段的头尾时，第二段的长度可能会小于gap的长度，故需要使用if head: s_end = head, head = head.next避免head.next报错
 '''
-'leetcode超时'
-
-
+'leetcode 超时。' \
+'原因：interval for循环中，重复性寻找每段的头和尾' \
+'解决方案：舍弃掉for循环，用while head和interval'
 class ListNode:
     def __init__(self, x):
         self.val = x
@@ -41,92 +41,100 @@ class ListNode:
 
 class Solution:
     def sortList(self, head: ListNode) -> ListNode:  # sort linklist
-        if not head:  # edge case
+        if not head:  # corner case
             return None
-        if not head.next:  # edge case
+        if not head.next:
             return head
 
-        length = self.find_len(head)  # calcu length of linklist
-        interval = 1
-        while interval < length:  # bottom - up merge sort
-            for i in range(0, length - interval, interval * 2):
-                head = self.sort_sub(head, i, interval)
-            interval = interval * 2
-        return head
+        length = self.findL(head)  # calculate length
+        gap = 1
+        cur = head
+        dummy = ListNode(0)
+        dummy.next = head
 
-    def find_len(self, head):
-        if not head:  # edge case
+        while gap < length:  # do bottom-up merge
+            for i in range(0, length - gap, gap * 2):
+                dummy = self.merge(dummy, i, gap)
+            gap = gap * 2
+        return dummy.next
+
+    def findL(self, head):  # calculate lenght
+        if not head:  # corner case
             return 0
-        if not head.next:  # edge case
-            return 1
 
-        length = 0
-        curr = head
-        while curr:  # accumulate length
-            length += 1
-            curr = curr.next
-        return length
+        numb = 0
+        while head:  # accumlate length
+            head = head.next
+            numb += 1
+        return numb
 
-    def sort_sub(self, head, i, interval):
-        curr = head  # groups' head and end
-        for _ in range(i):
-            before = curr  # reserve left head
-            curr = curr.next
-        l = curr
-        for _ in range(interval - 1):
-            curr = curr.next
-        l_end = curr
-        curr = curr.next
-        r = curr
-        for _ in range(interval - 1):
-            curr = curr.next
-            if not curr:  # not enough r node
-                break
-        r_end = curr
-        l_end.next = None  # cut left
-        if r_end:  # enough r node
-            after = r_end.next
-            r_end.next = None
-        else:
-            after = r_end  # NOT enough r node
+    def merge(self, dummy, i, gap):  # merge sort first gap nodes with second gap nodes
+        head = dummy
+        for _ in range(i + 1):
+            b = head  # before-head of first gap nodes
+            head = head.next
+            f = head  # head of first gap nodes
 
-        if i == 0:
-            dummy = newh = ListNode(0)
-        else:
-            dummy = head
-            for _ in range(i - 1):
-                dummy = dummy.next
-        while l and r:  # compare node value and sort
-            if l.val < r.val:
-                dummy.next = l
-                l = l.next
+        for _ in range(gap):
+            f_end = head  # tail of first gap nodes
+            head = head.next
+            s = head  # head of second gap nodes
+
+        for _ in range(gap):
+            if head:  # 易错点
+                s_end = head  # tail of second gap nodes
+                head = head.next
+            next = head  # head of next part(except sort nodes)
+
+        b.next = None
+        f_end.next = None
+        s_end.next = None
+
+        newH, newT = self.submerge(f, s)
+        b.next = newH
+        newT.next = next
+        return dummy
+
+    def submerge(self, fH, sH):  # merge two sorted linked list fH and sH, output head and tail
+        if not sH:
+            head = fH
+            while head.next:
+                head = head.next
+            return fH, head
+
+        if not fH:
+            head = sH
+            while head.next:
+                head = head.next
+            return sH, head
+
+        dummy = cur = ListNode(0)
+        while fH and sH:  # or 可以吗
+            if fH.val < sH.val:
+                cur.next = fH
+                cur = cur.next
+                fH = fH.next
             else:
-                dummy.next = r
-                r = r.next
-            dummy = dummy.next
+                cur.next = sH
+                cur = cur.next
+                sH = sH.next
 
-        if l:  # un-compared node
-            dummy.next = l
-            while l:
-                before_end = l
-                l = l.next
-            before_end.next = after
-        if r:
-            dummy.next = r
-            while r:
-                before_end = r
-                r = r.next
-            before_end.next = after
+        if fH:
+            cur.next = fH
+        if sH:
+            cur.next = sH
 
-        if i == 0:
-            return newh.next
-        else:
-            return head
+        while cur.next:
+            cur = cur.next
+        return dummy.next, cur
 
 
 'optimized code'
 '''
-特点: replace for with while to reduce the repeated iteration to find the new head of groups
+关键点：
+    1. 用while head 替换 for
+    2. 每轮 merge之前，每次更新fake_tail和head
+    3. 每轮 merge中，先cut，后merge，再链接merged linklist，最后更新fake_tail和head
 易错点：新group的head，tail，与前group，后group的连接
 '''
 
@@ -139,80 +147,83 @@ class ListNode:
 
 class Solution:
     def sortList(self, head: ListNode) -> ListNode:  # sort linklist
-        if not head:  # edge case
+        if not head:  # corner case
             return None
-        if not head.next:  # edge case
+        if not head.next:
             return head
 
-        length = self.find_len(head)  # calcu length of linklist
-
+        length = self.findL(head)  # calculate length
+        interval = 1
         dummy = ListNode(0)
         dummy.next = head
 
-        interval = 1
-        while interval < length:  # bottom - up merge sort
-            head1 = dummy.next  # head of every group to be processed
-            fake_tail = dummy
-            while head1:
-                head2 = self.split(head1, interval)  # cut group1, return next adjacent group head
-                next_head1 = self.split(head2,
-                                        interval)  # cut group 1's adjacent group 2, return next adjacent group head
-                merge_start, merge_end = self.merge(head1, head2)  # merge group1 and group2
-
-                fake_tail.next = merge_start  # connect merged two group with former groups
-                fake_tail = merge_end  # reset fake_tail as the current merged groups
-                fake_tail.next = next_head1  # connect merged two group with later groups
-                head1 = next_head1  # reset head of every group to be processed
+        while interval < length:  # do bottom-up merge
+            fake_tail = dummy  # fake_tail is tail of last part, 初始化
+            head = dummy.next
+            while head:
+                nextH = self.cut(head, interval)
+                leftH = self.cut(nextH, interval)
+                mergeHead, mergeTail = self.merge(head, nextH)
+                fake_tail.next = mergeHead  # connect the merged part to original linklist
+                mergeTail.next = leftH
+                fake_tail = mergeTail  # renew the tail which is before the merge sort part
+                head = leftH  # renew the head
             interval = 2 * interval
 
         return dummy.next
 
-    def find_len(self, head):  # calculate the lenght of linklist
-        if not head:  # edge case
+    def findL(self, head):  # calculate lenght
+        if not head:  # corner case
             return 0
-        if not head.next:  # edge case
-            return 1
 
-        length = 0
-        curr = head
-        while curr:  # accumulate length
-            length += 1
-            curr = curr.next
-        return length
-
-    def split(self, head, interval):  # cut the group from the linklist, return next adjacent group head
-        if not head:
-            return head
-
-        for _ in range(interval - 1):
-            if not head.next:  # not enough node for travel
-                break
+        numb = 0
+        while head:  # accumlate length
             head = head.next
+            numb += 1
+        return numb
 
-        tail = head.next
-        head.next = None
-        return tail
+    def cut(self, head, interval):  # from head to cut interval nodes, return next part head
+        if not head:  # corner case
+            return None
 
-    def merge(self, head1, head2):  # merge group1 and group2, return merged head and tail
-        dummy = tail = ListNode(0)
-        while head1 and head2:  # merge two group
+        for _ in range(interval):
+            if not head:  # corner case: interval > length of linklist
+                break
+            tail = head
+            head = head.next
+        tail.next = None
+        return head
+
+    def merge(self, head1, head2):  # merge sort two sorted linklist. return this part head and tail
+        if not head1:
+            cur = head2
+            while cur.next:
+                cur = cur.next
+            return head2, cur
+        if not head2:
+            cur = head1
+            while cur.next:
+                cur = cur.next
+            return head1, cur
+
+        dummy = cur = ListNode(0)
+        while head1 and head2:
             if head1.val < head2.val:
-                tail.next = head1
+                cur.next = head1
+                cur = cur.next
                 head1 = head1.next
-                tail = tail.next
             else:
-                tail.next = head2
+                cur.next = head2
+                cur = cur.next
                 head2 = head2.next
-                tail = tail.next
 
         if head1:
-            tail.next = head1
+            cur.next = head1
         if head2:
-            tail.next = head2
-
-        while tail.next:  # let tail points to the end of merged linked list
-            tail = tail.next
-        return dummy.next, tail
+            cur.next = head2
+        while cur.next:
+            cur = cur.next
+        return dummy.next, cur
 
 
 A1 = ListNode(-1)
