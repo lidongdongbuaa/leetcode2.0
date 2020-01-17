@@ -4,6 +4,7 @@
     <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bit manipulation 位运算/反转相关题目/190. Reverse Bits.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bit manipulation 位运算/反转相关题目/190. Reverse Bits.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/Date Structure And Algorithm-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/Date Structure And Algorithm-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/数据结构与算法基础/Date Structure And Algorithm.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/Date Structure And Algorithm.ipynb" afterDir="false" />
     </list>
@@ -371,7 +372,7 @@
       <workItem from="1579044885296" duration="14149000" />
       <workItem from="1579095326426" duration="25415000" />
       <workItem from="1579229070464" duration="1212000" />
-      <workItem from="1579239468174" duration="1885000" />
+      <workItem from="1579239468174" duration="3170000" />
     </task>
     <task id="LOCAL-00001" summary="1225">
       <created>1577254014620</created>
@@ -534,7 +535,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579223717606</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="0117">
+      <created>1579241358392</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1579241358392</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -583,14 +591,36 @@
     <option name="LAST_COMMIT_MESSAGE" value="0117" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="65" key="CommitChangelistDialog2" timestamp="1579239466877" />
+    <state x="463" y="65" key="CommitChangelistDialog2" timestamp="1579241357769">
+      <screen x="0" y="0" width="1846" height="1080" />
+    </state>
     <state x="463" y="65" key="CommitChangelistDialog2/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" timestamp="1579239466878" />
+    <state x="463" y="65" key="CommitChangelistDialog2/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579241357769" />
     <state x="1920" y="0" key="FileDocumentManager.FileCacheConflict" timestamp="1579241345280">
       <screen x="1920" y="0" width="1846" height="1080" />
     </state>
     <state x="1920" y="0" key="FileDocumentManager.FileCacheConflict/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579241345280" />
-    <state x="414" y="209" key="Vcs.Push.Dialog.v2" timestamp="1579239466878" />
+    <state width="628" height="160" key="GridCell.Tab.0.bottom" timestamp="1579242629726">
+      <screen x="1920" y="0" width="1846" height="1080" />
+    </state>
+    <state width="628" height="160" key="GridCell.Tab.0.bottom/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579242629726" />
+    <state width="628" height="160" key="GridCell.Tab.0.center" timestamp="1579242629726">
+      <screen x="1920" y="0" width="1846" height="1080" />
+    </state>
+    <state width="628" height="160" key="GridCell.Tab.0.center/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579242629726" />
+    <state width="628" height="160" key="GridCell.Tab.0.left" timestamp="1579242629726">
+      <screen x="1920" y="0" width="1846" height="1080" />
+    </state>
+    <state width="628" height="160" key="GridCell.Tab.0.left/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579242629726" />
+    <state width="628" height="160" key="GridCell.Tab.0.right" timestamp="1579242629726">
+      <screen x="1920" y="0" width="1846" height="1080" />
+    </state>
+    <state width="628" height="160" key="GridCell.Tab.0.right/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579242629726" />
+    <state x="414" y="209" key="Vcs.Push.Dialog.v2" timestamp="1579241364974">
+      <screen x="0" y="0" width="1846" height="1080" />
+    </state>
     <state x="414" y="209" key="Vcs.Push.Dialog.v2/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" timestamp="1579239466878" />
+    <state x="414" y="209" key="Vcs.Push.Dialog.v2/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579241364974" />
     <state x="557" y="324" key="com.intellij.ide.util.TipDialog" timestamp="1579239468948">
       <screen x="0" y="0" width="1846" height="1080" />
     </state>
@@ -785,6 +815,7 @@
     <SUITE FILE_PATH="coverage/leetcode$lc_449__1_.coverage" NAME="lc 449 (1) Coverage Results" MODIFIED="1563859803472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$lc_92.coverage" NAME="lc 92 Coverage Results" MODIFIED="1569453341060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/linkedList" />
     <SUITE FILE_PATH="coverage/leetcode$lc_402.coverage" NAME="lc 55 Coverage Results" MODIFIED="1560909792799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/leetcode2_0$test.coverage" NAME="test Coverage Results" MODIFIED="1579242629715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$83__Remove_Duplicates_from_Sorted_List.coverage" NAME="83. Remove Duplicates from Sorted List Coverage Results" MODIFIED="1572905619501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../leetcode - 教材- 400 -amaGoog/linkedList/链表删除" />
     <SUITE FILE_PATH="coverage/leetcode$lc_307.coverage" NAME="lc 307 Coverage Results" MODIFIED="1568618079026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$lc_120.coverage" NAME="lc 120 Coverage Results" MODIFIED="1566093691731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

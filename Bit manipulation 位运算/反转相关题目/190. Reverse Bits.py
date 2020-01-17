@@ -24,25 +24,21 @@ space complexity order:
 A.
 思路： brute force - bit list and reverse 
 方法：
-    1. transfer as binary bit, save in list
-    2. reverse the list
-    3. use the list to rebuild the numb, output
+    1. transfer as binary string, fill 0 in left
+    2. reverse the string
+    3. recover to decimal
 time complex: O(32) = O(1)
-space complex: O(32) = O(1)
-易错点：
+space complex: O(1)
+易错点：别忘记 bin(n)[2:]
 '''
 class Solution:
     def reverseBits(self, n: int) -> int:
         if n == None:
             return None
 
-        bit = []
-        for i in range(32):  # bit save in list
-            bit.append(n >> i & 1)
-
-        bit.reverse()
-
-        # can't transfer to bit
+        string = bin(n)[2:].zfill(32)
+        reverse_string = string[::-1]
+        return int(reverse_string, 2)
 
 '''
 B.
@@ -65,16 +61,4 @@ class Solution:
         for i in range(32):
             if n >> i & 1 == 1:
                 res  = res | 1 << 31 - i
-        return res
-
-class Solution:
-    def reverseBits(self, n: int) -> int:
-        if n == None:  # corner case
-            return None
-
-        res = 0
-        mask = 1
-        for i in range(32):
-            if n >> i & 1 == 0:
-                res  = res & ~ (1 << 31 - i)
         return res
