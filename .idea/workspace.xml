@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Bit manipulation 位运算/全组合问题/78. Subsets.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bit manipulation 位运算/反转相关题目/476. Number Complement.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bit manipulation 位运算/反转相关题目/190. Reverse Bits.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bit manipulation 位运算/反转相关题目/190. Reverse Bits.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
@@ -140,28 +142,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="461. Hamming Distance" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="leetcode" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Bit manipulation 位运算" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\working\leetcodeText400AG\Bit manipulation 位运算\汉明距离\461. Hamming Distance.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="477. Total Hamming Distance" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="leetcode" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -176,6 +156,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Bit manipulation 位运算/汉明距离/477. Total Hamming Distance.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="78. Subsets" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="leetcode" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Bit manipulation 位运算/全组合问题" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Bit manipulation 位运算/全组合问题/78. Subsets.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -254,18 +256,18 @@
       <item itemvalue="Python.lc 55" />
       <item itemvalue="Python.lc51" />
       <item itemvalue="Python.test" />
-      <item itemvalue="Python.461. Hamming Distance" />
       <item itemvalue="Python.477. Total Hamming Distance" />
       <item itemvalue="Python.136. Single Number" />
       <item itemvalue="Python.260. Single Number III" />
+      <item itemvalue="Python.78. Subsets" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.test" />
+        <item itemvalue="Python.78. Subsets" />
         <item itemvalue="Python.260. Single Number III" />
         <item itemvalue="Python.136. Single Number" />
         <item itemvalue="Python.477. Total Hamming Distance" />
-        <item itemvalue="Python.461. Hamming Distance" />
       </list>
     </recent_temporary>
   </component>
@@ -372,7 +374,8 @@
       <workItem from="1579044885296" duration="14149000" />
       <workItem from="1579095326426" duration="25415000" />
       <workItem from="1579229070464" duration="1212000" />
-      <workItem from="1579239468174" duration="3170000" />
+      <workItem from="1579239468174" duration="8022000" />
+      <workItem from="1579247902037" duration="4167000" />
     </task>
     <task id="LOCAL-00001" summary="1225">
       <created>1577254014620</created>
@@ -542,7 +545,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579241358392</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="0117">
+      <created>1579242708739</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1579242708739</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -591,43 +601,67 @@
     <option name="LAST_COMMIT_MESSAGE" value="0117" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="65" key="CommitChangelistDialog2" timestamp="1579241357769">
+    <state x="463" y="65" key="CommitChangelistDialog2" timestamp="1579242708172">
       <screen x="0" y="0" width="1846" height="1080" />
     </state>
     <state x="463" y="65" key="CommitChangelistDialog2/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" timestamp="1579239466878" />
-    <state x="463" y="65" key="CommitChangelistDialog2/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579241357769" />
+    <state x="463" y="65" key="CommitChangelistDialog2/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579242708172" />
     <state x="1920" y="0" key="FileDocumentManager.FileCacheConflict" timestamp="1579241345280">
       <screen x="1920" y="0" width="1846" height="1080" />
     </state>
     <state x="1920" y="0" key="FileDocumentManager.FileCacheConflict/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579241345280" />
-    <state width="628" height="160" key="GridCell.Tab.0.bottom" timestamp="1579242629726">
+    <state width="804" height="352" key="GridCell.Tab.0.bottom" timestamp="1579251642467">
       <screen x="1920" y="0" width="1846" height="1080" />
     </state>
-    <state width="628" height="160" key="GridCell.Tab.0.bottom/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579242629726" />
-    <state width="628" height="160" key="GridCell.Tab.0.center" timestamp="1579242629726">
+    <state width="804" height="352" key="GridCell.Tab.0.bottom/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579251642467" />
+    <state width="804" height="352" key="GridCell.Tab.0.center" timestamp="1579251642467">
       <screen x="1920" y="0" width="1846" height="1080" />
     </state>
-    <state width="628" height="160" key="GridCell.Tab.0.center/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579242629726" />
-    <state width="628" height="160" key="GridCell.Tab.0.left" timestamp="1579242629726">
+    <state width="804" height="352" key="GridCell.Tab.0.center/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579251642467" />
+    <state width="804" height="352" key="GridCell.Tab.0.left" timestamp="1579251642467">
       <screen x="1920" y="0" width="1846" height="1080" />
     </state>
-    <state width="628" height="160" key="GridCell.Tab.0.left/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579242629726" />
-    <state width="628" height="160" key="GridCell.Tab.0.right" timestamp="1579242629726">
+    <state width="804" height="352" key="GridCell.Tab.0.left/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579251642467" />
+    <state width="804" height="352" key="GridCell.Tab.0.right" timestamp="1579251642467">
       <screen x="1920" y="0" width="1846" height="1080" />
     </state>
-    <state width="628" height="160" key="GridCell.Tab.0.right/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579242629726" />
-    <state x="414" y="209" key="Vcs.Push.Dialog.v2" timestamp="1579241364974">
+    <state width="804" height="352" key="GridCell.Tab.0.right/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579251642467" />
+    <state width="804" height="352" key="GridCell.Tab.1.bottom" timestamp="1579251643220">
+      <screen x="1920" y="0" width="1846" height="1080" />
+    </state>
+    <state width="804" height="352" key="GridCell.Tab.1.bottom/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579251643220" />
+    <state width="804" height="352" key="GridCell.Tab.1.center" timestamp="1579251643220">
+      <screen x="1920" y="0" width="1846" height="1080" />
+    </state>
+    <state width="804" height="352" key="GridCell.Tab.1.center/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579251643220" />
+    <state width="804" height="352" key="GridCell.Tab.1.left" timestamp="1579251643220">
+      <screen x="1920" y="0" width="1846" height="1080" />
+    </state>
+    <state width="804" height="352" key="GridCell.Tab.1.left/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579251643220" />
+    <state width="804" height="352" key="GridCell.Tab.1.right" timestamp="1579251643220">
+      <screen x="1920" y="0" width="1846" height="1080" />
+    </state>
+    <state width="804" height="352" key="GridCell.Tab.1.right/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579251643220" />
+    <state x="1920" y="85" key="SettingsEditor" timestamp="1579243677128">
+      <screen x="1920" y="0" width="1846" height="1080" />
+    </state>
+    <state x="1920" y="85" key="SettingsEditor/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579243677128" />
+    <state x="414" y="209" key="Vcs.Push.Dialog.v2" timestamp="1579242714583">
       <screen x="0" y="0" width="1846" height="1080" />
     </state>
     <state x="414" y="209" key="Vcs.Push.Dialog.v2/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" timestamp="1579239466878" />
-    <state x="414" y="209" key="Vcs.Push.Dialog.v2/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579241364974" />
-    <state x="557" y="324" key="com.intellij.ide.util.TipDialog" timestamp="1579239468948">
+    <state x="414" y="209" key="Vcs.Push.Dialog.v2/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579242714583" />
+    <state x="557" y="324" key="com.intellij.ide.util.TipDialog" timestamp="1579248667888">
       <screen x="0" y="0" width="1846" height="1080" />
     </state>
-    <state x="557" y="324" key="com.intellij.ide.util.TipDialog/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" timestamp="1579239468948" />
+    <state x="557" y="324" key="com.intellij.ide.util.TipDialog/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" timestamp="1579248667888" />
     <state x="686" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579239466878" />
     <state x="686" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1846.1080@0.0.1846.1080" timestamp="1579239466878" />
     <state x="686" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" timestamp="1579239466878" />
+    <state x="1963" y="45" width="840" height="1034" key="search.everywhere.popup" timestamp="1579244863249">
+      <screen x="1920" y="0" width="1846" height="1080" />
+    </state>
+    <state x="1963" y="45" width="840" height="1034" key="search.everywhere.popup/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579244863249" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -788,14 +822,9 @@
           <option name="timeStamp" value="179" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Bit manipulation 位运算/汉明距离/477. Total Hamming Distance.py</url>
-          <line>38</line>
-          <option name="timeStamp" value="184" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Bit manipulation 位运算/汉明距离/477. Total Hamming Distance.py</url>
-          <line>39</line>
-          <option name="timeStamp" value="185" />
+          <url>file://$PROJECT_DIR$/test.py</url>
+          <line>2</line>
+          <option name="timeStamp" value="186" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -806,6 +835,12 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="bin(i)" language="Python" />
+        <watch expression="i &gt;&gt; j" language="Python" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/leetcode$lc_141.coverage" NAME="lc 141 Coverage Results" MODIFIED="1570247409744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/linkedList" />
@@ -815,7 +850,7 @@
     <SUITE FILE_PATH="coverage/leetcode$lc_449__1_.coverage" NAME="lc 449 (1) Coverage Results" MODIFIED="1563859803472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$lc_92.coverage" NAME="lc 92 Coverage Results" MODIFIED="1569453341060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/linkedList" />
     <SUITE FILE_PATH="coverage/leetcode$lc_402.coverage" NAME="lc 55 Coverage Results" MODIFIED="1560909792799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcode2_0$test.coverage" NAME="test Coverage Results" MODIFIED="1579242629715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/leetcode2_0$test.coverage" NAME="test Coverage Results" MODIFIED="1579251642361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$83__Remove_Duplicates_from_Sorted_List.coverage" NAME="83. Remove Duplicates from Sorted List Coverage Results" MODIFIED="1572905619501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../leetcode - 教材- 400 -amaGoog/linkedList/链表删除" />
     <SUITE FILE_PATH="coverage/leetcode$lc_307.coverage" NAME="lc 307 Coverage Results" MODIFIED="1568618079026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$lc_120.coverage" NAME="lc 120 Coverage Results" MODIFIED="1566093691731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -842,6 +877,7 @@
     <SUITE FILE_PATH="coverage/leetcode$lc_547.coverage" NAME="lc 547 Coverage Results" MODIFIED="1568543535127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$lc_78.coverage" NAME="lc 78 Coverage Results" MODIFIED="1570880723840" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/recursive + backtracking" />
     <SUITE FILE_PATH="coverage/leetcode$lc_473.coverage" NAME="lc 473 Coverage Results" MODIFIED="1565871303273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/leetcode2_0$78__Subsets.coverage" NAME="78. Subsets Coverage Results" MODIFIED="1579251634962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bit manipulation 位运算/全组合问题" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$260__Single_Number_III.coverage" NAME="260. Single Number III Coverage Results" MODIFIED="1579227759478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bit manipulation 位运算/只出现一次的数字" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$191__Number_of_1_Bits.coverage" NAME="191. Number of 1 Bits Coverage Results" MODIFIED="1579163058823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bit manipulation 位运算" />
     <SUITE FILE_PATH="coverage/leetcode$523__Continuous_Subarray_Sum.coverage" NAME="523. Continuous Subarray Sum Coverage Results" MODIFIED="1572301976381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/recursive + backtracking" />

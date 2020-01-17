@@ -1,11 +1,15 @@
 class Solution:
-    def reverseBits(self, n: int) -> int:
-        if n == None:
-            return None
-
-        string = bin(n)[2:].zfill(32)
-        reverse_string = string[::-1]
-        return int(reverse_string, 2)
+    def subsets(self, nums):
+        size = len(nums)
+        n = 1 << size  # 位掩码个数, 即总结果的元素个数
+        res = []
+        for i in range(n):
+            temp = []
+            for j in range(size):
+                if i >> j & 1:  # 根据当前位掩码是否为1决定是否加入数组该位
+                    temp.append(nums[j])
+            res.append(temp)
+        return res
 
 x = Solution()
-print(x.reverseBits(5))
+x.subsets([1,2,3])

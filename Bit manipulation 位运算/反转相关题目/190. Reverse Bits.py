@@ -16,9 +16,9 @@
     input: int < 2**31 - 1
     output: int
     corner case: None？ Y - output None
-4.方法及方法分析：
-time complexity order: 
-space complexity order: 
+4.方法及方法分析：brute force - bit list and reverse, change 0 bit based on n
+time complexity order: O(1)
+space complexity order: O(1)
 '''
 '''
 A.
