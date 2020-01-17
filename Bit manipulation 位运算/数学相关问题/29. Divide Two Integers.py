@@ -56,32 +56,21 @@ class Solution:
         dividend = abs(dividend)
         divisor = abs(divisor)
 
+        # 被除数减去除数
         quotient = 0
+        # 除数加倍直到超过剩余的被除数
         count = 0
-        left = 0
-        while left >= 0:  # calculate range of quotient
-            # 除数加倍直到超过剩余的被除数
-            quotient += (1 << count)
-            left = dividend - (divisor << count)
-            count += 1
-        count -= 1
 
-        # while dividend - (divisor << count) >= 0:
-        #     quotient += (1 << count)
-        #     dividend -= (divisor << count)
-        #     count += 1
+        while dividend - (divisor << count) >= 0:
+            quotient += (1 << count)
+            dividend -= (divisor << count)
+            count += 1
 
         while count > 0:  # 除数减半直到count=0
+            count -= 1
             if dividend - (divisor << count) >= 0:
                 quotient += (1 << count)
                 dividend -= (divisor << count)
-            count -= 1
-
-        # while count > 0:  # 除数减半直到count=0
-        #     count -= 1
-        #     if dividend - (divisor << count) >= 0:
-        #         quotient += (1 << count)
-        #         dividend -= (divisor << count)
 
         if negative_sign:
             quotient = - quotient
