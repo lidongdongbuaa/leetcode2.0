@@ -77,18 +77,16 @@ B.
     1. get length of nums, and total numb of all subset
     2. scan from total numb to 0 the in which in or not present as binary
         scan numb in binary, if 1, add nums[i]
-    
-
-time complex: 
-space complex: 
+time complex: O(N*2**N)
+space complex: O(2**N)
 易错点：
 '''
 class Solution:
     def subsets(self, nums):
         size = len(nums)
-        n = 1 << size  # 位掩码个数, 即总结果的元素个数
+        n = 1 << size  # 位掩码个数, 即总结果的元素个数,
         res = []
-        for i in range(n):  # 把每个数从0到n-1，分开逐个分析。分析其有几个1
+        for i in range(n):  # 把每个数从0到n-1，每个数的binary代表一种分配方案，故分开逐个分析。分析其有几个1.
             temp = []
             for j in range(size): # 根据nums的长度限定分析size位的0/1
                 if i >> j & 1:  # 根据当前位掩码是否为1决定是否加入数组该位
