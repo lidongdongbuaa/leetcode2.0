@@ -72,6 +72,7 @@ print(x.subsets([1,2,3]))
 
 '''
 B.
+核心：二进制数的01分布跟subset的分布相同
 思路：mask present in or not
 方法：
     1. get length of nums, and total numb of all subset

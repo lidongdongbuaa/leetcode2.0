@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Bit manipulation 位运算/数学相关问题/29. Divide Two Integers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bit manipulation 位运算/全组合问题/78. Subsets.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bit manipulation 位运算/全组合问题/78. Subsets.py" afterDir="false" />
     </list>
@@ -92,7 +93,7 @@
       <recent name="D:\working\leetcode" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.29. Divide Two Integers">
     <configuration name="136. Single Number" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="leetcode" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -137,7 +138,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="477. Total Hamming Distance" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="29. Divide Two Integers" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="leetcode" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -145,12 +146,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Bit manipulation 位运算/汉明距离" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Bit manipulation 位运算/数学相关问题" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Bit manipulation 位运算/汉明距离/477. Total Hamming Distance.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Bit manipulation 位运算/数学相关问题/29. Divide Two Integers.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -251,18 +252,18 @@
       <item itemvalue="Python.lc 55" />
       <item itemvalue="Python.lc51" />
       <item itemvalue="Python.test" />
-      <item itemvalue="Python.477. Total Hamming Distance" />
       <item itemvalue="Python.136. Single Number" />
       <item itemvalue="Python.260. Single Number III" />
       <item itemvalue="Python.78. Subsets" />
+      <item itemvalue="Python.29. Divide Two Integers" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.29. Divide Two Integers" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.78. Subsets" />
         <item itemvalue="Python.260. Single Number III" />
         <item itemvalue="Python.136. Single Number" />
-        <item itemvalue="Python.477. Total Hamming Distance" />
       </list>
     </recent_temporary>
   </component>
@@ -370,7 +371,7 @@
       <workItem from="1579095326426" duration="25415000" />
       <workItem from="1579229070464" duration="1212000" />
       <workItem from="1579239468174" duration="8022000" />
-      <workItem from="1579247902037" duration="5061000" />
+      <workItem from="1579247902037" duration="10474000" />
     </task>
     <task id="LOCAL-00001" summary="1225">
       <created>1577254014620</created>
@@ -554,7 +555,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579252473209</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="0117">
+      <created>1579253128515</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1579253128515</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -603,56 +611,56 @@
     <option name="LAST_COMMIT_MESSAGE" value="0117" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="65" key="CommitChangelistDialog2" timestamp="1579252472554">
+    <state x="463" y="65" key="CommitChangelistDialog2" timestamp="1579253127933">
       <screen x="0" y="0" width="1846" height="1080" />
     </state>
     <state x="463" y="65" key="CommitChangelistDialog2/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" timestamp="1579239466878" />
-    <state x="463" y="65" key="CommitChangelistDialog2/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579252472554" />
+    <state x="463" y="65" key="CommitChangelistDialog2/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579253127933" />
     <state x="1920" y="0" key="FileDocumentManager.FileCacheConflict" timestamp="1579241345280">
       <screen x="1920" y="0" width="1846" height="1080" />
     </state>
     <state x="1920" y="0" key="FileDocumentManager.FileCacheConflict/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579241345280" />
-    <state width="804" height="352" key="GridCell.Tab.0.bottom" timestamp="1579253058527">
+    <state width="821" height="352" key="GridCell.Tab.0.bottom" timestamp="1579261489068">
       <screen x="1920" y="0" width="1846" height="1080" />
     </state>
-    <state width="804" height="352" key="GridCell.Tab.0.bottom/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579253058527" />
-    <state width="804" height="352" key="GridCell.Tab.0.center" timestamp="1579253058527">
+    <state width="821" height="352" key="GridCell.Tab.0.bottom/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579261489068" />
+    <state width="821" height="352" key="GridCell.Tab.0.center" timestamp="1579261489067">
       <screen x="1920" y="0" width="1846" height="1080" />
     </state>
-    <state width="804" height="352" key="GridCell.Tab.0.center/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579253058527" />
-    <state width="804" height="352" key="GridCell.Tab.0.left" timestamp="1579253058527">
+    <state width="821" height="352" key="GridCell.Tab.0.center/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579261489067" />
+    <state width="821" height="352" key="GridCell.Tab.0.left" timestamp="1579261489067">
       <screen x="1920" y="0" width="1846" height="1080" />
     </state>
-    <state width="804" height="352" key="GridCell.Tab.0.left/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579253058527" />
-    <state width="804" height="352" key="GridCell.Tab.0.right" timestamp="1579253058527">
+    <state width="821" height="352" key="GridCell.Tab.0.left/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579261489067" />
+    <state width="821" height="352" key="GridCell.Tab.0.right" timestamp="1579261489067">
       <screen x="1920" y="0" width="1846" height="1080" />
     </state>
-    <state width="804" height="352" key="GridCell.Tab.0.right/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579253058527" />
-    <state width="804" height="352" key="GridCell.Tab.1.bottom" timestamp="1579253059291">
+    <state width="821" height="352" key="GridCell.Tab.0.right/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579261489067" />
+    <state width="821" height="352" key="GridCell.Tab.1.bottom" timestamp="1579261489864">
       <screen x="1920" y="0" width="1846" height="1080" />
     </state>
-    <state width="804" height="352" key="GridCell.Tab.1.bottom/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579253059291" />
-    <state width="804" height="352" key="GridCell.Tab.1.center" timestamp="1579253059291">
+    <state width="821" height="352" key="GridCell.Tab.1.bottom/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579261489864" />
+    <state width="821" height="352" key="GridCell.Tab.1.center" timestamp="1579261489864">
       <screen x="1920" y="0" width="1846" height="1080" />
     </state>
-    <state width="804" height="352" key="GridCell.Tab.1.center/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579253059291" />
-    <state width="804" height="352" key="GridCell.Tab.1.left" timestamp="1579253059291">
+    <state width="821" height="352" key="GridCell.Tab.1.center/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579261489864" />
+    <state width="821" height="352" key="GridCell.Tab.1.left" timestamp="1579261489864">
       <screen x="1920" y="0" width="1846" height="1080" />
     </state>
-    <state width="804" height="352" key="GridCell.Tab.1.left/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579253059291" />
-    <state width="804" height="352" key="GridCell.Tab.1.right" timestamp="1579253059291">
+    <state width="821" height="352" key="GridCell.Tab.1.left/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579261489864" />
+    <state width="821" height="352" key="GridCell.Tab.1.right" timestamp="1579261489864">
       <screen x="1920" y="0" width="1846" height="1080" />
     </state>
-    <state width="804" height="352" key="GridCell.Tab.1.right/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579253059291" />
+    <state width="821" height="352" key="GridCell.Tab.1.right/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579261489864" />
     <state x="1920" y="85" key="SettingsEditor" timestamp="1579243677128">
       <screen x="1920" y="0" width="1846" height="1080" />
     </state>
     <state x="1920" y="85" key="SettingsEditor/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579243677128" />
-    <state x="414" y="209" key="Vcs.Push.Dialog.v2" timestamp="1579242714583">
+    <state x="414" y="209" key="Vcs.Push.Dialog.v2" timestamp="1579253133752">
       <screen x="0" y="0" width="1846" height="1080" />
     </state>
     <state x="414" y="209" key="Vcs.Push.Dialog.v2/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" timestamp="1579239466878" />
-    <state x="414" y="209" key="Vcs.Push.Dialog.v2/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579242714583" />
+    <state x="414" y="209" key="Vcs.Push.Dialog.v2/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579253133752" />
     <state x="557" y="324" key="com.intellij.ide.util.TipDialog" timestamp="1579248667888">
       <screen x="0" y="0" width="1846" height="1080" />
     </state>
@@ -828,6 +836,16 @@
           <line>2</line>
           <option name="timeStamp" value="186" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Bit manipulation 位运算/数学相关问题/29. Divide Two Integers.py</url>
+          <line>61</line>
+          <option name="timeStamp" value="188" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Bit manipulation 位运算/数学相关问题/29. Divide Two Integers.py</url>
+          <line>68</line>
+          <option name="timeStamp" value="189" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -837,12 +855,6 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="PythonConfigurationType">
-        <watch expression="bin(i)" language="Python" />
-        <watch expression="i &gt;&gt; j" language="Python" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/leetcode$lc_141.coverage" NAME="lc 141 Coverage Results" MODIFIED="1570247409744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/linkedList" />
@@ -852,7 +864,7 @@
     <SUITE FILE_PATH="coverage/leetcode$lc_449__1_.coverage" NAME="lc 449 (1) Coverage Results" MODIFIED="1563859803472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$lc_92.coverage" NAME="lc 92 Coverage Results" MODIFIED="1569453341060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/linkedList" />
     <SUITE FILE_PATH="coverage/leetcode$lc_402.coverage" NAME="lc 55 Coverage Results" MODIFIED="1560909792799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcode2_0$test.coverage" NAME="test Coverage Results" MODIFIED="1579253058420" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/leetcode2_0$test.coverage" NAME="test Coverage Results" MODIFIED="1579260078842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$83__Remove_Duplicates_from_Sorted_List.coverage" NAME="83. Remove Duplicates from Sorted List Coverage Results" MODIFIED="1572905619501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../leetcode - 教材- 400 -amaGoog/linkedList/链表删除" />
     <SUITE FILE_PATH="coverage/leetcode$lc_307.coverage" NAME="lc 307 Coverage Results" MODIFIED="1568618079026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$lc_120.coverage" NAME="lc 120 Coverage Results" MODIFIED="1566093691731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -882,6 +894,7 @@
     <SUITE FILE_PATH="coverage/leetcode2_0$78__Subsets.coverage" NAME="78. Subsets Coverage Results" MODIFIED="1579251634962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bit manipulation 位运算/全组合问题" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$260__Single_Number_III.coverage" NAME="260. Single Number III Coverage Results" MODIFIED="1579227759478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bit manipulation 位运算/只出现一次的数字" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$191__Number_of_1_Bits.coverage" NAME="191. Number of 1 Bits Coverage Results" MODIFIED="1579163058823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bit manipulation 位运算" />
+    <SUITE FILE_PATH="coverage/leetcode2_0$29__Divide_Two_Integers.coverage" NAME="29. Divide Two Integers Coverage Results" MODIFIED="1579261488986" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bit manipulation 位运算/数学相关问题" />
     <SUITE FILE_PATH="coverage/leetcode$523__Continuous_Subarray_Sum.coverage" NAME="523. Continuous Subarray Sum Coverage Results" MODIFIED="1572301976381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/recursive + backtracking" />
     <SUITE FILE_PATH="coverage/leetcode$lc_315.coverage" NAME="lc 315 Coverage Results" MODIFIED="1564014673220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$lc_3.coverage" NAME="lc 3 Coverage Results" MODIFIED="1565048468786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
