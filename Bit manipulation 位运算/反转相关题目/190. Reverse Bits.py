@@ -49,8 +49,8 @@ B.
 优点：技巧性太强
 思路：change 0 bit based on n
 方法：
-    1. scan n 
-        if ith == 1, change (31-i)th to 1 of res (res = 0)
+    1. scan n， res = 0
+        if ith == 1, change (31-i)th to 1 of res (res 原本全为0)
 time complex: O(32) = O(1)
 space complex: O(1)
 易错点：原来可以通过方法，改变一个数(e.g. 0)的bit位的
@@ -61,6 +61,20 @@ class Solution:
             return None
 
         res = 0
+        mask = 1
         for i in range(32):
             if n >> i & 1 == 1:
-                res >> (32 - i)
+                res  = res | 1 << 31 - i
+        return res
+
+class Solution:
+    def reverseBits(self, n: int) -> int:
+        if n == None:  # corner case
+            return None
+
+        res = 0
+        mask = 1
+        for i in range(32):
+            if n >> i & 1 == 0:
+                res  = res & ~ (1 << 31 - i)
+        return res
