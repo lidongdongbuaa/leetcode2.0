@@ -60,7 +60,6 @@ class Solution:
         quotient = 0
         # 除数加倍直到超过剩余的被除数
         count = 0
-
         while dividend - (divisor << count) >= 0:
             quotient += (1 << count)
             dividend -= (divisor << count)
@@ -84,5 +83,44 @@ class Solution:
 
 x = Solution()
 print(x.divide(7, -3))
+
+'自己的方法有问题，需要以后再看'
+class Solution:
+    def divide(self, dividend: int, divisor: int) -> int:
+        if dividend == 0:  # corner case
+            return 0
+
+        negative_sign = (dividend > 0) ^ (divisor > 0)  # res sign
+        dividend = abs(dividend)
+        divisor = abs(divisor)
+
+        # 被除数减去除数
+        quotient = 0
+        # 除数加倍直到超过剩余的被除数
+        count = 0
+        reduction = dividend
+        while reduction >= 0:
+            quotient = 1 << count
+            reduction = dividend - (divisor << count)
+            count += 1
+
+        # range quotient >> 0 quotient >> 1
+        left = dividend - (divisor << (count - 2))
+        numb = 1 << (count - 2)
+        while left >= 0:
+            left = left - divisor
+            numb += 1
+
+        quotient = numb - 1
+
+        if negative_sign:
+            quotient = - quotient
+
+        if quotient > 2 ** 31 - 1:
+            return 2 ** 31 - 1
+        if quotient < - 2 ** 31:
+            return 2 ** 31 - 1
+
+        return quotient
 
 
