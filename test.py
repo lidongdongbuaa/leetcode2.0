@@ -1,2 +1,3 @@
-print(2**31)
-print(1 << 31 )
+s = '   '
+if s:
+    print( ['' for _ in range(len(s))])
