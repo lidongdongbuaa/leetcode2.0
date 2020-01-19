@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/leetcode周赛/200119/Maximum 69 Number.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode周赛/200119/Print Words Vertically.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bit manipulation 位运算/混合问题/1318. Minimum Flips to Make a OR b Equal to c.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode周赛/200112/Minimum Flips to Make a OR b Equal to c.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode周赛/200112/5308. Minimum Flips to Make a OR b Equal to c.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/Date Structure And Algorithm-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/Date Structure And Algorithm-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/数据结构与算法基础/Date Structure And Algorithm.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/Date Structure And Algorithm.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,8 +91,8 @@
       <recent name="D:\working\leetcode" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Print Words Vertically">
-    <configuration name="371. Sum of Two Integers" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.test">
+    <configuration name="5308. Minimum Flips to Make a OR b Equal to c" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="leetcode" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -98,12 +100,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Bit manipulation 位运算/数学相关问题" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode周赛/200112" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Bit manipulation 位运算/数学相关问题/371. Sum of Two Integers.py" />
+      <option name="SCRIPT_NAME" value="D:\leetcode2.0\leetcode周赛\200112\Minimum Flips to Make a OR b Equal to c.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -248,18 +250,18 @@
       <item itemvalue="Python.lc 55" />
       <item itemvalue="Python.lc51" />
       <item itemvalue="Python.test" />
-      <item itemvalue="Python.371. Sum of Two Integers" />
       <item itemvalue="Python.temple" />
       <item itemvalue="Python.Maximum 69 Number" />
       <item itemvalue="Python.Print Words Vertically" />
+      <item itemvalue="Python.5308. Minimum Flips to Make a OR b Equal to c" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Print Words Vertically" />
         <item itemvalue="Python.test" />
+        <item itemvalue="Python.5308. Minimum Flips to Make a OR b Equal to c" />
+        <item itemvalue="Python.Print Words Vertically" />
         <item itemvalue="Python.Maximum 69 Number" />
         <item itemvalue="Python.temple" />
-        <item itemvalue="Python.371. Sum of Two Integers" />
       </list>
     </recent_temporary>
   </component>
@@ -369,7 +371,7 @@
       <workItem from="1579239468174" duration="8022000" />
       <workItem from="1579247902037" duration="10474000" />
       <workItem from="1579305023387" duration="15805000" />
-      <workItem from="1579396841748" duration="6621000" />
+      <workItem from="1579396841748" duration="17201000" />
     </task>
     <task id="LOCAL-00001" summary="1225">
       <created>1577254014620</created>
@@ -567,7 +569,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579321460560</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="0118">
+      <created>1579412048754</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1579412048754</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -617,47 +626,51 @@
     <option name="LAST_COMMIT_MESSAGE" value="0118" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="65" key="CommitChangelistDialog2" timestamp="1579261588109">
+    <state x="2740" y="176" key="#xdebugger.evaluate" timestamp="1579417161456">
+      <screen x="1920" y="0" width="1846" height="1080" />
+    </state>
+    <state x="2740" y="176" key="#xdebugger.evaluate/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579417161456" />
+    <state x="463" y="65" key="CommitChangelistDialog2" timestamp="1579412048092">
       <screen x="0" y="0" width="1846" height="1080" />
     </state>
     <state x="463" y="65" key="CommitChangelistDialog2/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" timestamp="1579239466878" />
-    <state x="463" y="65" key="CommitChangelistDialog2/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579261588109" />
+    <state x="463" y="65" key="CommitChangelistDialog2/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579412048092" />
     <state x="1920" y="0" key="FileDocumentManager.FileCacheConflict" timestamp="1579241345280">
       <screen x="1920" y="0" width="1846" height="1080" />
     </state>
     <state x="1920" y="0" key="FileDocumentManager.FileCacheConflict/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579241345280" />
-    <state width="1864" height="165" key="GridCell.Tab.0.bottom" timestamp="1579404246137">
+    <state width="1864" height="165" key="GridCell.Tab.0.bottom" timestamp="1579417786646">
       <screen x="1920" y="0" width="1846" height="1080" />
     </state>
-    <state width="1864" height="165" key="GridCell.Tab.0.bottom/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579404246137" />
-    <state width="1864" height="165" key="GridCell.Tab.0.center" timestamp="1579404246136">
+    <state width="1864" height="165" key="GridCell.Tab.0.bottom/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579417786646" />
+    <state width="1864" height="165" key="GridCell.Tab.0.center" timestamp="1579417786646">
       <screen x="1920" y="0" width="1846" height="1080" />
     </state>
-    <state width="1864" height="165" key="GridCell.Tab.0.center/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579404246136" />
-    <state width="1864" height="165" key="GridCell.Tab.0.left" timestamp="1579404246136">
+    <state width="1864" height="165" key="GridCell.Tab.0.center/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579417786646" />
+    <state width="1864" height="165" key="GridCell.Tab.0.left" timestamp="1579417786646">
       <screen x="1920" y="0" width="1846" height="1080" />
     </state>
-    <state width="1864" height="165" key="GridCell.Tab.0.left/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579404246136" />
-    <state width="1864" height="165" key="GridCell.Tab.0.right" timestamp="1579404246137">
+    <state width="1864" height="165" key="GridCell.Tab.0.left/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579417786646" />
+    <state width="1864" height="165" key="GridCell.Tab.0.right" timestamp="1579417786646">
       <screen x="1920" y="0" width="1846" height="1080" />
     </state>
-    <state width="1864" height="165" key="GridCell.Tab.0.right/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579404246137" />
-    <state width="821" height="352" key="GridCell.Tab.1.bottom" timestamp="1579261627344">
+    <state width="1864" height="165" key="GridCell.Tab.0.right/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579417786646" />
+    <state width="1864" height="362" key="GridCell.Tab.1.bottom" timestamp="1579417414565">
       <screen x="1920" y="0" width="1846" height="1080" />
     </state>
-    <state width="821" height="352" key="GridCell.Tab.1.bottom/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579261627344" />
-    <state width="821" height="352" key="GridCell.Tab.1.center" timestamp="1579261627344">
+    <state width="1864" height="362" key="GridCell.Tab.1.bottom/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579417414565" />
+    <state width="1864" height="362" key="GridCell.Tab.1.center" timestamp="1579417414565">
       <screen x="1920" y="0" width="1846" height="1080" />
     </state>
-    <state width="821" height="352" key="GridCell.Tab.1.center/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579261627344" />
-    <state width="821" height="352" key="GridCell.Tab.1.left" timestamp="1579261627344">
+    <state width="1864" height="362" key="GridCell.Tab.1.center/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579417414565" />
+    <state width="1864" height="362" key="GridCell.Tab.1.left" timestamp="1579417414565">
       <screen x="1920" y="0" width="1846" height="1080" />
     </state>
-    <state width="821" height="352" key="GridCell.Tab.1.left/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579261627344" />
-    <state width="821" height="352" key="GridCell.Tab.1.right" timestamp="1579261627344">
+    <state width="1864" height="362" key="GridCell.Tab.1.left/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579417414565" />
+    <state width="1864" height="362" key="GridCell.Tab.1.right" timestamp="1579417414565">
       <screen x="1920" y="0" width="1846" height="1080" />
     </state>
-    <state width="821" height="352" key="GridCell.Tab.1.right/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579261627344" />
+    <state width="1864" height="362" key="GridCell.Tab.1.right/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579417414565" />
     <state x="1920" y="85" key="SettingsEditor" timestamp="1579243677128">
       <screen x="1920" y="0" width="1846" height="1080" />
     </state>
@@ -827,16 +840,6 @@
           <option name="timeStamp" value="166" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/leetcode周赛/200112/5308. Minimum Flips to Make a OR b Equal to c.py</url>
-          <line>52</line>
-          <option name="timeStamp" value="168" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/leetcode周赛/200112/5308. Minimum Flips to Make a OR b Equal to c.py</url>
-          <line>63</line>
-          <option name="timeStamp" value="170" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Bit manipulation 位运算/汉明距离/461. Hamming Distance.py</url>
           <line>35</line>
           <option name="timeStamp" value="179" />
@@ -860,6 +863,10 @@
           <url>file://$PROJECT_DIR$/Bit manipulation 位运算/数学相关问题/371. Sum of Two Integers.py</url>
           <line>47</line>
           <option name="timeStamp" value="195" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test.py</url>
+          <option name="timeStamp" value="196" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -887,7 +894,7 @@
     <SUITE FILE_PATH="coverage/leetcode$lc_449__1_.coverage" NAME="lc 449 (1) Coverage Results" MODIFIED="1563859803472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$lc_92.coverage" NAME="lc 92 Coverage Results" MODIFIED="1569453341060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/linkedList" />
     <SUITE FILE_PATH="coverage/leetcode$lc_402.coverage" NAME="lc 55 Coverage Results" MODIFIED="1560909792799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcode2_0$test.coverage" NAME="test Coverage Results" MODIFIED="1579403504120" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/leetcode2_0$test.coverage" NAME="test Coverage Results" MODIFIED="1579417786632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$83__Remove_Duplicates_from_Sorted_List.coverage" NAME="83. Remove Duplicates from Sorted List Coverage Results" MODIFIED="1572905619501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../leetcode - 教材- 400 -amaGoog/linkedList/链表删除" />
     <SUITE FILE_PATH="coverage/leetcode$lc_307.coverage" NAME="lc 307 Coverage Results" MODIFIED="1568618079026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$lc_120.coverage" NAME="lc 120 Coverage Results" MODIFIED="1566093691731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -937,6 +944,7 @@
     <SUITE FILE_PATH="coverage/leetcode$lc_290.coverage" NAME="lc 290 Coverage Results" MODIFIED="1564580182876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$lc_53.coverage" NAME="lc 53 Coverage Results" MODIFIED="1565941361242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$lc_409.coverage" NAME="lc 409 Coverage Results" MODIFIED="1564579455562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/leetcode2_0$5308__Minimum_Flips_to_Make_a_OR_b_Equal_to_c.coverage" NAME="5308. Minimum Flips to Make a OR b Equal to c Coverage Results" MODIFIED="1579414927974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/200112" />
     <SUITE FILE_PATH="coverage/leetcode$lc_76.coverage" NAME="lc 76 Coverage Results" MODIFIED="1565229382096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$5309__Number_of_Operations_to_Make_Network_Connected.coverage" NAME="5309. Number of Operations to Make Network Connected Coverage Results" MODIFIED="1578800350248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/200112" />
   </component>

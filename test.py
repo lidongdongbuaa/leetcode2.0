@@ -1,3 +1,2 @@
-s = '   '
-if s:
-    print( ['' for _ in range(len(s))])
+# a >> i & 1 谁的优先级高
+print((31 >> 2) & 1)
