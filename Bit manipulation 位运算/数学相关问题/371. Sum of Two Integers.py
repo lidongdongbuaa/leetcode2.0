@@ -5,7 +5,7 @@
 # @FileName: 371. Sum of Two Integers.py
 ''''''
 '''
-题目分析
+题目分析 -- 背下来
 1.要求：Calculate the sum of two integers a and b, but you are not allowed to use the operator + and -.
     Example 1:Input: a = 1, b = 2 Output: 3
     Example 2:Input: a = -2, b = 3 Output: 1
@@ -46,9 +46,11 @@ class Solution(object):
         """
         # 2^32
         MASK = 0x100000000
+        mask1 = 1 << 32
         # 整型最大值
         MAX_INT = 0x7FFFFFFF
         MIN_INT = 0x80000000
+        maxNum = (2 ** 31) - 1
 
         while b != 0:
             # 不考虑进位加法
@@ -56,7 +58,7 @@ class Solution(object):
             # 进位
             carry = (a & b) << 1
 
-            # 取余范围限制在 [0, 2^32-1] 范围内
+            # 取余, 范围限制在 [0, 2^32-1] 范围内
             a = sums % MASK
             b = carry % MASK
 
@@ -67,4 +69,4 @@ class Solution(object):
             return ~((a % MIN_INT) ^ MAX_INT)
 
 x = Solution()
-x.getSum(1, 2)
+x.getSum(1, 3)
