@@ -9,7 +9,7 @@
 1.要求：Calculate the sum of two integers a and b, but you are not allowed to use the operator + and -.
     Example 1:Input: a = 1, b = 2 Output: 3
     Example 2:Input: a = -2, b = 3 Output: 1
-2.理解：不用+-进行加减运算
+2.理解：不用+-进行加运算
 3.类型：bit manipulation
 4.确认输入输出及边界条件：
     input: int range

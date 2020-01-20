@@ -90,7 +90,7 @@ class Solution:
         for i in range(n):  # 把每个数从0到n-1，每个数的binary代表一种分配方案，故分开逐个分析。分析其有几个1.
             temp = []
             for j in range(size): # 根据nums的长度限定分析size位的0/1
-                if i >> j & 1:  # 根据当前位掩码是否为1决定是否加入数组该位
+                if i >> j & 1 == 1:  # 根据当前位掩码是否为1决定是否加入数组该位
                     temp.append(nums[j])
             res.append(temp)
         return res
