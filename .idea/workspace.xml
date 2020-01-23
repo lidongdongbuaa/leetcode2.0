@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/leetcode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +61,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/mock record/200105" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -241,13 +244,13 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.lc 55" />
-      <item itemvalue="Python.lc51" />
-      <item itemvalue="Python.test" />
-      <item itemvalue="Python.temple" />
+      <item itemvalue="Python.5308. Minimum Flips to Make a OR b Equal to c" />
       <item itemvalue="Python.Maximum 69 Number" />
       <item itemvalue="Python.Print Words Vertically" />
-      <item itemvalue="Python.5308. Minimum Flips to Make a OR b Equal to c" />
+      <item itemvalue="Python.lc 55" />
+      <item itemvalue="Python.lc51" />
+      <item itemvalue="Python.temple" />
+      <item itemvalue="Python.test" />
     </list>
     <recent_temporary>
       <list>
@@ -369,6 +372,8 @@
       <workItem from="1579474475065" duration="5271000" />
       <workItem from="1579520154646" duration="613000" />
       <workItem from="1579574379558" duration="1203000" />
+      <workItem from="1579647614429" duration="46000" />
+      <workItem from="1579777200907" duration="28000" />
     </task>
     <task id="LOCAL-00001" summary="1225">
       <created>1577254014620</created>
@@ -573,7 +578,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579412048754</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="0118">
+      <created>1579647619703</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1579647619703</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -627,10 +639,10 @@
       <screen x="1920" y="0" width="1846" height="1080" />
     </state>
     <state x="2740" y="176" key="#xdebugger.evaluate/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579417161456" />
-    <state x="463" y="65" key="CommitChangelistDialog2" timestamp="1579423583343">
+    <state x="463" y="65" key="CommitChangelistDialog2" timestamp="1579647619003">
       <screen x="0" y="0" width="1846" height="1080" />
     </state>
-    <state x="463" y="65" key="CommitChangelistDialog2/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" timestamp="1579423583343" />
+    <state x="463" y="65" key="CommitChangelistDialog2/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" timestamp="1579647619003" />
     <state x="463" y="65" key="CommitChangelistDialog2/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579412048092" />
     <state x="1920" y="0" key="FileDocumentManager.FileCacheConflict" timestamp="1579241345280">
       <screen x="1920" y="0" width="1846" height="1080" />
@@ -672,19 +684,20 @@
       <screen x="1920" y="0" width="1846" height="1080" />
     </state>
     <state x="1920" y="85" key="SettingsEditor/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579243677128" />
-    <state x="414" y="209" key="Vcs.Push.Dialog.v2" timestamp="1579261574061">
+    <state x="414" y="209" key="Vcs.Push.Dialog.v2" timestamp="1579647635739">
       <screen x="0" y="0" width="1846" height="1080" />
     </state>
-    <state x="414" y="209" key="Vcs.Push.Dialog.v2/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" timestamp="1579239466878" />
+    <state x="414" y="209" key="Vcs.Push.Dialog.v2/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" timestamp="1579647635739" />
     <state x="414" y="209" key="Vcs.Push.Dialog.v2/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579261574061" />
-    <state x="557" y="324" key="com.intellij.ide.util.TipDialog" timestamp="1579578591218">
+    <state x="557" y="324" key="com.intellij.ide.util.TipDialog" timestamp="1579647637819">
       <screen x="0" y="0" width="1846" height="1080" />
     </state>
-    <state x="557" y="324" key="com.intellij.ide.util.TipDialog/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" timestamp="1579578591218" />
-    <state x="686" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579562411287">
-      <screen x="0" y="0" width="1846" height="1080" />
+    <state x="557" y="324" key="com.intellij.ide.util.TipDialog/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" timestamp="1579647637819" />
+    <state x="548" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579777221655">
+      <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="686" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1846.1080@0.0.1846.1080" timestamp="1579562411287" />
+    <state x="548" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1474.864/0.0.1474.864@0.0.1474.864" timestamp="1579777221655" />
     <state x="686" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" timestamp="1579239466878" />
     <state x="2508" y="84" width="743" height="912" key="find.popup" timestamp="1579401455123">
       <screen x="1920" y="0" width="1846" height="1080" />
