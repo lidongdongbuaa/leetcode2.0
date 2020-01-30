@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/leetcode周赛/200126/Filter Restaurants by Vegan-Friendly, Price and Distance.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode周赛/200126/Remove Palindromic Subsequences.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/复习-面试经验/ML面经/ML design 面试的答题模板，step by step_一亩三分地美国面经版.pdf" afterDir="false" />
+    <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="0126">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/Date Structure And Algorithm-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/Date Structure And Algorithm-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/数据结构与算法基础/Date Structure And Algorithm.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/Date Structure And Algorithm.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -262,11 +257,11 @@
     <list>
       <item itemvalue="Python.lc 55" />
       <item itemvalue="Python.lc51" />
-      <item itemvalue="Python.test" />
-      <item itemvalue="Python.Print Words Vertically" />
       <item itemvalue="Python.5308. Minimum Flips to Make a OR b Equal to c" />
-      <item itemvalue="Python.Remove Palindromic Subsequences" />
       <item itemvalue="Python.Filter Restaurants by Vegan-Friendly, Price and Distance" />
+      <item itemvalue="Python.Print Words Vertically" />
+      <item itemvalue="Python.Remove Palindromic Subsequences" />
+      <item itemvalue="Python.test" />
     </list>
     <recent_temporary>
       <list>
@@ -376,7 +371,10 @@
       <workItem from="1579474475065" duration="5887000" />
       <workItem from="1579560295518" duration="598000" />
       <workItem from="1579647472740" duration="1346000" />
-      <workItem from="1580006748626" duration="7958000" />
+      <workItem from="1580006748626" duration="8117000" />
+      <workItem from="1580082474948" duration="1324000" />
+      <workItem from="1580258475547" duration="13000" />
+      <workItem from="1580340186906" duration="599000" />
     </task>
     <task id="LOCAL-00001" summary="1225">
       <created>1577254014620</created>
@@ -588,7 +586,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579481767245</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="0126">
+      <created>1580022139273</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1580022139273</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -636,7 +641,8 @@
     <MESSAGE value="0117" />
     <MESSAGE value="0118" />
     <MESSAGE value="0120" />
-    <option name="LAST_COMMIT_MESSAGE" value="0120" />
+    <MESSAGE value="0126" />
+    <option name="LAST_COMMIT_MESSAGE" value="0126" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2740" y="176" key="#xdebugger.evaluate" timestamp="1579417161456">
