@@ -1,7 +1,5 @@
-def enroll(name, gender, age=6, city='Beijing'):
-    print('name:', name)
-    print('gender:', gender)
-    print('age:', age)
-    print('city:', city)
-
-enroll('li', 'male', 6)
+a = [1, 3, 4, 5, 6, 6, [3,6]]
+b = a.copy()
+c = a[:]
+a[6][1] = 5
+print(tuple(range(5)))
