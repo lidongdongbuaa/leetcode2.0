@@ -34,6 +34,8 @@ time complex: tO(NlogN)
 space complex: sO(N)
 易错点：sort dic的方法
 '''
+
+
 class Solution:
     def minSetSize(self, arr) -> int:
         if len(arr) == 1:  # corner case
@@ -52,7 +54,7 @@ class Solution:
         half = length // 2
         cur = 0
 
-        new_list = sorted(dic, key = lambda x: dic[x], reverse = True)  # get key list by times
+        new_list = sorted(dic, key=lambda x: dic[x], reverse=True)  # get key list by times
 
         for elem in new_list:  # get times
             res += 1
@@ -60,8 +62,6 @@ class Solution:
             if cur >= half:
                 return res
 
+
 x = Solution()
-print(x.minSetSize([1000,1000,3,7]))
-
-
-
+print(x.minSetSize([1000, 1000, 3, 7]))

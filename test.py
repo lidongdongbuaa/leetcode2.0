@@ -1,4 +1,12 @@
-dic = {1:3,2:5,3:6,4:2,5:1,6:10}
+class Student:
+    def __init__(self, name, grade):
+        self.nameS = name
+        self.gradeS = grade
+
+x = Student('lidngdong', 6)
+x.nameS = 'dddd'
+x.pp = '555'
+print(x.pp)
 
 
 
