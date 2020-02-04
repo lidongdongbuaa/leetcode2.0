@@ -65,3 +65,44 @@ class Solution:
 
 x = Solution()
 print(x.minSetSize([1000, 1000, 3, 7]))
+
+'''
+思路：sort dic
+方法：
+    1. get length tO(N) sO(1)
+    2. use dic to record value and its times tO(N) sO(N)
+    3. sort dic by times tO(NlogN) sO(N)
+    3. calculate to reduce values whose total times can reach to half length tO(N) sO(1)
+time complex: tO(NlogN) 
+space complex: sO(N)
+易错点：sort dic的方法
+'''
+
+class Solution:
+    def minSetSize(self, arr) -> int:
+        if len(arr) == 1:  # corner case
+            return 1
+
+        length = len(arr)  # get length
+
+        dic = {}  # record value and its times
+        for elem in arr:
+            if elem not in dic:
+                dic[elem] = 1
+            else:
+                dic[elem] += 1
+
+        newDic = sorted(dic.items(), key=lambda item: item[1], reverse=True)  # sort list by times
+
+        res = 0
+        half = length // 2
+        cur = 0
+        for key, value in newDic.items():
+            res += 1
+            cur += value
+            if cur >= half:
+                return res
+
+
+x = Solution()
+print(x.minSetSize([1000, 1000, 3, 7]))
