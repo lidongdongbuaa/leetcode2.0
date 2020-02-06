@@ -1,12 +1,32 @@
-# 按照出现次数的多少进行排序
-# value, times as key and val of dic
-# make list of [value, times]
-# sort list with list[1]
-from jedi.evaluate.context import iterable
 
-a = [1, 1, 2, 4, 5, 3, 5, 6, 7, 2, 1, 2, 3, 4, 5]
+# Function to do insertion sort
+# def insertionSort(arr):
+#     if len(arr) == 1:
+#         return arr
+#
+#     for i in range(len(arr) - 1):
+#         basic = arr[:i + 1]
+#         compare = arr[i + 1]
+#         for j in range(len(basic) - 1, -1, -1):
+#             if j != 0 and basic[j - 1] <= compare < basic[j]:  # or arr[j]
+#                 arr[j:i + 2] = [compare] + basic[j:]
+#                 break
+#             elif j == 0 and compare < basic[j]:
+#                 arr[:i + 2] = [compare] + basic
+#                 break
+#     return arr
 
+def insertionSort(arr):
+    if len(arr) == 1:
+        return arr
 
-dic = {'a':15, 'e':13, 'd':45, 'b':10}
-dic1 = sorted(dic.items(), key = lambda item: item[1])
-print(dic1)
+    for i in range(1, len(arr)):
+        key = arr[i]
+        j = i-1
+        while j >= 0 and key < arr[j] :  # 此时key = arr[j + 1]
+            arr[j], arr[j + 1]= key, arr[j]
+            j -= 1
+    return arr
+
+a = [5,11,3,2,1]
+print(insertionSort(a))
