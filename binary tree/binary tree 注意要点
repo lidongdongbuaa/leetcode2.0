@@ -25,5 +25,4 @@
             traversal（self, root.right）
             后序遍历
 
-2. 层次遍历/宽度优先遍历 level order tree traversal/ breath first traversal
-    从上层到下层，每层从左到右
+2.

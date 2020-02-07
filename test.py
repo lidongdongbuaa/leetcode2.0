@@ -1,32 +1,39 @@
+# 问题？k的作用，k每次都更新为0，不久让arr又重头开始了吗
+class SortList:
+    # Merge sort
+    def mergeSort(self, arr):
+        if len(arr) == 0 or len(arr) == 1:
+            return arr
 
-# Function to do insertion sort
-# def insertionSort(arr):
-#     if len(arr) == 1:
-#         return arr
-#
-#     for i in range(len(arr) - 1):
-#         basic = arr[:i + 1]
-#         compare = arr[i + 1]
-#         for j in range(len(basic) - 1, -1, -1):
-#             if j != 0 and basic[j - 1] <= compare < basic[j]:  # or arr[j]
-#                 arr[j:i + 2] = [compare] + basic[j:]
-#                 break
-#             elif j == 0 and compare < basic[j]:
-#                 arr[:i + 2] = [compare] + basic
-#                 break
-#     return arr
+        if len(arr) >= 2:
+            # 普通划分
+            mid = len(arr) // 2  # find the mid of the array
+            L = arr[:mid]  # divide the array elements
+            R = arr[mid:]  # into 2 haves
 
-def insertionSort(arr):
-    if len(arr) == 1:
+            # 递归划分
+            self.mergeSort(L)  # Sorting the first half
+            self.mergeSort(R)  # Sorting the second half
+
+            # 合并， input: 两个已排序的list，L，R.过程：对L，R进行合并排序。output：合并完成后的一个list
+            i = j = k = 0
+            while i < len(L) and j < len(R):  # copy data to temp arrays L and R
+                if L[i] < R[j]:
+                    arr[k] = L[i]
+                    i += 1
+                else:
+                    arr[k] = R[j]
+                    j += 1
+                k += 1
+
+            if i < len(L):
+                arr[k:] = L[i:]
+
+            if j < len(R):
+                arr[k:] = R[j:]
+
         return arr
 
-    for i in range(1, len(arr)):
-        key = arr[i]
-        j = i-1
-        while j >= 0 and key < arr[j] :  # 此时key = arr[j + 1]
-            arr[j], arr[j + 1]= key, arr[j]
-            j -= 1
-    return arr
 
-a = [5,11,3,2,1]
-print(insertionSort(a))
+x = SortList()
+print(x.mergeSort([4, 3, 2, 1]))
