@@ -4,7 +4,7 @@
 #@Author: LI Dongdong
 #@File  : lc 236.py
 
-# Definition for a binary tree node.
+# Definition for a Binary tree node.
 class TreeNode:
     def __init__(self, x):
         self.val = x

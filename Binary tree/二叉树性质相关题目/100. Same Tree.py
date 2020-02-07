@@ -36,19 +36,41 @@ class TreeNode:
 
 class Solution:
     def isSameTree(self, p: TreeNode, q: TreeNode) -> bool:
-        listP = self.transfer(p)  # transfer as list
-        listQ = self.transfer(q)
+        data = []
+        listP = self.transfer(p, data)  # transfer as list
+        data = []
+        listQ = self.transfer(q, data)
 
         if listP == listQ:  # compare
             return True
         else:
             return False
 
-    def transfer(self, treeNode):  # transfer tree as list
+    def transfer(self, treeNode, data):  # transfer tree as list
         if not treeNode:  # corner case
-            return None
+            return data.append(None)
 
-        self.transfer(treeNode.left)
+        data.append(treeNode.val)
+        self.transfer(treeNode.left, data)
+        self.transfer(treeNode.right, data)
+        return data
+
+a = TreeNode(1)
+b = TreeNode(2)
+c = TreeNode(2)
+a.left = b
+# a.right = c
+
+a1 = TreeNode(1)
+b1 = TreeNode(2)
+c1 = TreeNode(2)
+# a.left = b
+a1.right = c1
+
+
+X = Solution()
+data = []
+print(X.isSameTree(a, a1))
 
 
 
