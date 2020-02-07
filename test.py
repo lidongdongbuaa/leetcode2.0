@@ -1,39 +1,52 @@
-# 问题？k的作用，k每次都更新为0，不久让arr又重头开始了吗
-class SortList:
-    # Merge sort
-    def mergeSort(self, arr):
-        if len(arr) == 0 or len(arr) == 1:
-            return arr
+class TreeNode:
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
 
-        if len(arr) >= 2:
-            # 普通划分
-            mid = len(arr) // 2  # find the mid of the array
-            L = arr[:mid]  # divide the array elements
-            R = arr[mid:]  # into 2 haves
+class Solution:
+    def isSameTree(self, p: TreeNode, q: TreeNode) -> bool:
+        if not p and q:
+            return False
+        if p and not q:
+            return False
+        if not p and not q:
+            return True
 
-            # 递归划分
-            self.mergeSort(L)  # Sorting the first half
-            self.mergeSort(R)  # Sorting the second half
+        if p.val != q.val:
+            return False
+        if not self.isSameTree(p.left, q.left):
+            return False
+        if not self.isSameTree(p.right, q.right):
+            return False
+        return True
 
-            # 合并， input: 两个已排序的list，L，R.过程：对L，R进行合并排序。output：合并完成后的一个list
-            i = j = k = 0
-            while i < len(L) and j < len(R):  # copy data to temp arrays L and R
-                if L[i] < R[j]:
-                    arr[k] = L[i]
-                    i += 1
-                else:
-                    arr[k] = R[j]
-                    j += 1
-                k += 1
+class Solution:
+    def isSameTree(self, p: TreeNode, q: TreeNode) -> bool:
+        if not p and q:
+            return False
+        if p and not q:
+            return False
+        if not p and not q:
+            return True
+        if p.val != q.val:
+            return False
 
-            if i < len(L):
-                arr[k:] = L[i:]
+        return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
 
-            if j < len(R):
-                arr[k:] = R[j:]
+a = TreeNode(1)
+b = TreeNode(2)
+c = TreeNode(2)
+a.left = b
+# a.right = c
 
-        return arr
+a1 = TreeNode(1)
+b1 = TreeNode(2)
+c1 = TreeNode(2)
+# a.left = b
+a1.right = c1
 
 
-x = SortList()
-print(x.mergeSort([4, 3, 2, 1]))
+X = Solution()
+data = []
+print(X.isSameTree(a, a1))

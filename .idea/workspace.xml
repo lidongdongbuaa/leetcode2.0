@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/binary tree/113. Path Sum II.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary tree/113. Path Sum II.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/binary tree/binary tree 注意要点" beforeDir="false" afterPath="$PROJECT_DIR$/Binary tree/binary tree 注意要点" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/binary tree/二叉树性质相关题目/100. Same Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary tree/二叉树性质相关题目/100. Same Tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock record/191117/112. Path Sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/mock record/191117/112. Path Sum.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binary tree/二叉树性质相关题目/100. Same Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary tree/二叉树性质相关题目/100. Same Tree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/数据结构与算法基础/Date Structure And Algorithm.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/Date Structure And Algorithm.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/未分类题目/lc 236.py" beforeDir="false" afterPath="$PROJECT_DIR$/未分类题目/lc 236.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +88,7 @@
       <recent name="D:\working\leetcode" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.100. Same Tree">
+  <component name="RunManager" selected="Python.test">
     <configuration name="100. Same Tree" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -257,8 +254,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.100. Same Tree" />
         <item itemvalue="Python.test" />
+        <item itemvalue="Python.100. Same Tree" />
         <item itemvalue="Python.Reduce Array Size to The Half" />
         <item itemvalue="Python.The K Weakest Rows in a Matrix" />
         <item itemvalue="Python.Filter Restaurants by Vegan-Friendly, Price and Distance" />
@@ -380,7 +377,7 @@
       <workItem from="1580941822558" duration="65000" />
       <workItem from="1580943398146" duration="8107000" />
       <workItem from="1581029947167" duration="4713000" />
-      <workItem from="1581043942362" duration="2416000" />
+      <workItem from="1581043942362" duration="5684000" />
     </task>
     <task id="LOCAL-00001" summary="1225">
       <created>1577254014620</created>
@@ -662,7 +659,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580957669364</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="0207">
+      <created>1581050306479</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1581050306479</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -717,79 +721,82 @@
     <MESSAGE value="0204" />
     <MESSAGE value="0205" />
     <MESSAGE value="0206" />
-    <option name="LAST_COMMIT_MESSAGE" value="0206" />
+    <MESSAGE value="0207" />
+    <option name="LAST_COMMIT_MESSAGE" value="0207" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2740" y="176" key="#xdebugger.evaluate" timestamp="1579417161456">
       <screen x="1920" y="0" width="1846" height="1080" />
     </state>
     <state x="2740" y="176" key="#xdebugger.evaluate/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579417161456" />
-    <state x="370" y="52" key="CommitChangelistDialog2" timestamp="1580370823284">
-      <screen x="0" y="0" width="1474" height="864" />
+    <state x="2290" y="52" key="CommitChangelistDialog2" timestamp="1581050305651">
+      <screen x="1920" y="0" width="1474" height="864" />
     </state>
     <state x="370" y="52" key="CommitChangelistDialog2/1920.0.1474.864/0.0.1474.864@0.0.1474.864" timestamp="1580370823284" />
+    <state x="2290" y="52" key="CommitChangelistDialog2/1920.0.1474.864/0.0.1474.864@1920.0.1474.864" timestamp="1581050305651" />
     <state x="463" y="65" key="CommitChangelistDialog2/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" timestamp="1579423583343" />
     <state x="463" y="65" key="CommitChangelistDialog2/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579412048092" />
     <state x="1920" y="0" key="FileDocumentManager.FileCacheConflict" timestamp="1579241345280">
       <screen x="1920" y="0" width="1846" height="1080" />
     </state>
     <state x="1920" y="0" key="FileDocumentManager.FileCacheConflict/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579241345280" />
-    <state width="1493" height="196" key="GridCell.Tab.0.bottom" timestamp="1581050285394">
-      <screen x="1920" y="0" width="1474" height="864" />
+    <state width="816" height="204" key="GridCell.Tab.0.bottom" timestamp="1581064168212">
+      <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state width="962" height="125" key="GridCell.Tab.0.bottom/1920.0.1474.864/0.0.1474.864@0.0.1474.864" timestamp="1580381929415" />
+    <state width="816" height="204" key="GridCell.Tab.0.bottom/1920.0.1474.864/0.0.1474.864@0.0.1474.864" timestamp="1581064168212" />
     <state width="1493" height="196" key="GridCell.Tab.0.bottom/1920.0.1474.864/0.0.1474.864@1920.0.1474.864" timestamp="1581050285394" />
     <state width="1864" height="165" key="GridCell.Tab.0.bottom/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579417786646" />
-    <state width="1493" height="196" key="GridCell.Tab.0.center" timestamp="1581050285394">
-      <screen x="1920" y="0" width="1474" height="864" />
+    <state width="816" height="204" key="GridCell.Tab.0.center" timestamp="1581064168212">
+      <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state width="962" height="125" key="GridCell.Tab.0.center/1920.0.1474.864/0.0.1474.864@0.0.1474.864" timestamp="1580381929415" />
+    <state width="816" height="204" key="GridCell.Tab.0.center/1920.0.1474.864/0.0.1474.864@0.0.1474.864" timestamp="1581064168212" />
     <state width="1493" height="196" key="GridCell.Tab.0.center/1920.0.1474.864/0.0.1474.864@1920.0.1474.864" timestamp="1581050285394" />
     <state width="1864" height="165" key="GridCell.Tab.0.center/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579417786646" />
-    <state width="1493" height="196" key="GridCell.Tab.0.left" timestamp="1581050285394">
-      <screen x="1920" y="0" width="1474" height="864" />
+    <state width="816" height="204" key="GridCell.Tab.0.left" timestamp="1581064168212">
+      <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state width="962" height="125" key="GridCell.Tab.0.left/1920.0.1474.864/0.0.1474.864@0.0.1474.864" timestamp="1580381929415" />
+    <state width="816" height="204" key="GridCell.Tab.0.left/1920.0.1474.864/0.0.1474.864@0.0.1474.864" timestamp="1581064168212" />
     <state width="1493" height="196" key="GridCell.Tab.0.left/1920.0.1474.864/0.0.1474.864@1920.0.1474.864" timestamp="1581050285394" />
     <state width="1864" height="165" key="GridCell.Tab.0.left/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579417786646" />
-    <state width="1493" height="196" key="GridCell.Tab.0.right" timestamp="1581050285394">
-      <screen x="1920" y="0" width="1474" height="864" />
+    <state width="816" height="204" key="GridCell.Tab.0.right" timestamp="1581064168212">
+      <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state width="962" height="125" key="GridCell.Tab.0.right/1920.0.1474.864/0.0.1474.864@0.0.1474.864" timestamp="1580381929415" />
+    <state width="816" height="204" key="GridCell.Tab.0.right/1920.0.1474.864/0.0.1474.864@0.0.1474.864" timestamp="1581064168212" />
     <state width="1493" height="196" key="GridCell.Tab.0.right/1920.0.1474.864/0.0.1474.864@1920.0.1474.864" timestamp="1581050285394" />
     <state width="1864" height="165" key="GridCell.Tab.0.right/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579417786646" />
-    <state width="1493" height="196" key="GridCell.Tab.1.bottom" timestamp="1581050286306">
-      <screen x="1920" y="0" width="1474" height="864" />
+    <state width="816" height="204" key="GridCell.Tab.1.bottom" timestamp="1581064168213">
+      <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="294" key="GridCell.Tab.1.bottom/1920.0.1474.864/0.0.1474.864@0.0.1474.864" timestamp="1580377660928" />
+    <state width="816" height="204" key="GridCell.Tab.1.bottom/1920.0.1474.864/0.0.1474.864@0.0.1474.864" timestamp="1581064168213" />
     <state width="1493" height="196" key="GridCell.Tab.1.bottom/1920.0.1474.864/0.0.1474.864@1920.0.1474.864" timestamp="1581050286306" />
     <state width="1864" height="362" key="GridCell.Tab.1.bottom/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579417414565" />
-    <state width="1493" height="196" key="GridCell.Tab.1.center" timestamp="1581050286306">
-      <screen x="1920" y="0" width="1474" height="864" />
+    <state width="816" height="204" key="GridCell.Tab.1.center" timestamp="1581064168212">
+      <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="294" key="GridCell.Tab.1.center/1920.0.1474.864/0.0.1474.864@0.0.1474.864" timestamp="1580377660927" />
+    <state width="816" height="204" key="GridCell.Tab.1.center/1920.0.1474.864/0.0.1474.864@0.0.1474.864" timestamp="1581064168212" />
     <state width="1493" height="196" key="GridCell.Tab.1.center/1920.0.1474.864/0.0.1474.864@1920.0.1474.864" timestamp="1581050286306" />
     <state width="1864" height="362" key="GridCell.Tab.1.center/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579417414565" />
-    <state width="1493" height="196" key="GridCell.Tab.1.left" timestamp="1581050286306">
-      <screen x="1920" y="0" width="1474" height="864" />
+    <state width="816" height="204" key="GridCell.Tab.1.left" timestamp="1581064168212">
+      <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="294" key="GridCell.Tab.1.left/1920.0.1474.864/0.0.1474.864@0.0.1474.864" timestamp="1580377660927" />
+    <state width="816" height="204" key="GridCell.Tab.1.left/1920.0.1474.864/0.0.1474.864@0.0.1474.864" timestamp="1581064168212" />
     <state width="1493" height="196" key="GridCell.Tab.1.left/1920.0.1474.864/0.0.1474.864@1920.0.1474.864" timestamp="1581050286306" />
     <state width="1864" height="362" key="GridCell.Tab.1.left/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579417414565" />
-    <state width="1493" height="196" key="GridCell.Tab.1.right" timestamp="1581050286306">
-      <screen x="1920" y="0" width="1474" height="864" />
+    <state width="816" height="204" key="GridCell.Tab.1.right" timestamp="1581064168213">
+      <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="294" key="GridCell.Tab.1.right/1920.0.1474.864/0.0.1474.864@0.0.1474.864" timestamp="1580377660928" />
+    <state width="816" height="204" key="GridCell.Tab.1.right/1920.0.1474.864/0.0.1474.864@0.0.1474.864" timestamp="1581064168213" />
     <state width="1493" height="196" key="GridCell.Tab.1.right/1920.0.1474.864/0.0.1474.864@1920.0.1474.864" timestamp="1581050286306" />
     <state width="1864" height="362" key="GridCell.Tab.1.right/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579417414565" />
     <state x="1920" y="85" key="SettingsEditor" timestamp="1579243677128">
       <screen x="1920" y="0" width="1846" height="1080" />
     </state>
     <state x="1920" y="85" key="SettingsEditor/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579243677128" />
-    <state x="331" y="167" key="Vcs.Push.Dialog.v2" timestamp="1580370840253">
-      <screen x="0" y="0" width="1474" height="864" />
+    <state x="2251" y="167" key="Vcs.Push.Dialog.v2" timestamp="1581050312233">
+      <screen x="1920" y="0" width="1474" height="864" />
     </state>
     <state x="331" y="167" key="Vcs.Push.Dialog.v2/1920.0.1474.864/0.0.1474.864@0.0.1474.864" timestamp="1580370840253" />
+    <state x="2251" y="167" key="Vcs.Push.Dialog.v2/1920.0.1474.864/0.0.1474.864@1920.0.1474.864" timestamp="1581050312233" />
     <state x="414" y="209" key="Vcs.Push.Dialog.v2/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" timestamp="1579239466878" />
     <state x="414" y="209" key="Vcs.Push.Dialog.v2/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579261574061" />
     <state width="744" height="439" key="XDebugger.FullValuePopup" timestamp="1580377655351">
@@ -992,23 +999,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/test.py</url>
-          <line>4</line>
-          <option name="timeStamp" value="200" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Binary tree/二叉树性质相关题目/100. Same Tree.py</url>
-          <line>39</line>
-          <option name="timeStamp" value="203" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Binary tree/二叉树性质相关题目/100. Same Tree.py</url>
-          <line>41</line>
-          <option name="timeStamp" value="204" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Binary tree/二叉树性质相关题目/100. Same Tree.py</url>
-          <line>43</line>
-          <option name="timeStamp" value="205" />
+          <line>8</line>
+          <option name="timeStamp" value="210" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -1056,7 +1048,7 @@
     <SUITE FILE_PATH="coverage/leetcode$.coverage" NAME="单链表的复制 Coverage Results" MODIFIED="1571272578722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/linkedList/复杂链表的复制" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$136__Single_Number.coverage" NAME="136. Single Number Coverage Results" MODIFIED="1579213841885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bit manipulation 位运算/只出现一次的数字" />
     <SUITE FILE_PATH="coverage/leetcode$lc_452.coverage" NAME="lc 452 Coverage Results" MODIFIED="1562379814901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/code$test.coverage" NAME="test Coverage Results" MODIFIED="1580381929408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/code$test.coverage" NAME="test Coverage Results" MODIFIED="1581063110750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$lc_449.coverage" NAME="lc 449 Coverage Results" MODIFIED="1563277786455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$5304__XOR_Queries_of_a_Subarray.coverage" NAME="5304. XOR Queries of a Subarray Coverage Results" MODIFIED="1578196768815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/200105" />
     <SUITE FILE_PATH="coverage/leetcode$lc_547.coverage" NAME="lc 547 Coverage Results" MODIFIED="1568543535127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
