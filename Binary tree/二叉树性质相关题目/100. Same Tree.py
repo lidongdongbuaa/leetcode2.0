@@ -77,12 +77,13 @@ print(X.isSameTree(a, a1))
 '''
 思路：compare node directly
 方法：
-    recursive the tree, compare every node
+    recurse the tree, compare every node
 time complex: tO(N)
-space complex: sO(1)
+space complex: 
+        best case: O(log(N)), completely balanced tree 
+        worst case :O(N), completely unbalanced tree, to keep a recursion stack.
 易错点：
 '''
-
 
 class TreeNode:
     def __init__(self, x):
@@ -108,8 +109,11 @@ class Solution:
             return False
         return True
 
-
-'Optimized code'
+'''
+Optimized code
+未变之处：多种情况下的条件判断没变
+优化之处：最后递归的合并
+'''
 class Solution:
     def isSameTree(self, p: TreeNode, q: TreeNode) -> bool:
         if not p and q:
@@ -122,3 +126,88 @@ class Solution:
             return False
 
         return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
+
+'''
+思路：compare node directly
+方法：
+    iterate the tree, compare every node
+time complex: tO(N)
+space complex: 
+        best case: O(log(N)), completely balanced tree 
+        worst case :O(N), completely unbalanced tree, to keep a deque
+易错点：1.初始的q和p的情况判断
+    2. 后面的情况判断
+'''
+from collections import deque
+class Solution:
+    def isSameTree(self, p: TreeNode, q: TreeNode) -> bool:
+        if not p and q:
+            return False
+        if not q and p:
+            return False
+        if not p and not q:  # corner case
+            return True
+
+        pdq = deque()
+        qdq = deque()
+        pdq.append(p)
+        qdq.append(q)
+
+        while pdq and qdq:  # bfs two tree
+            nodep = pdq.popleft()
+            nodeq = qdq.popleft()
+            if nodep.val != nodeq.val:  # compare two node
+                return False
+
+            if not nodep.left and nodeq.left:
+                return False
+            elif nodep.left and not nodeq.left:
+                return False
+            elif nodep.left and nodeq.left:
+                pdq.append(nodep.left)
+                qdq.append(nodeq.left)
+
+            if not nodep.right and nodeq.right:
+                return False
+            elif nodep.right and not nodeq.right:
+                return False
+            elif nodep.right and nodeq.right:
+                pdq.append(nodep.right)
+                qdq.append(nodeq.right)
+
+        if not pdq and qdq:
+            return False
+        elif pdq and not qdq:
+            return False
+        elif not pdq and not qdq:
+            return True
+
+'''
+Optimized code
+未变之处：判断条件
+优化之处：
+    1. 开头和while中的判断重复，故只保留了while的
+    2. 把p和q合并到一个list里，再放入deque
+'''
+from collections import deque
+class Solution:
+    def isSameTree(self, p: TreeNode, q: TreeNode) -> bool:
+        stack = deque()
+        stack.append([p, q])
+
+        while stack:
+            node1, node2 = stack.popleft()
+            if not node1 and not node2:
+                continue
+            elif not node1 and node2:
+                return False
+            elif node1 and not node2:
+                return False
+            elif node1.val != node2.val:
+                return False
+            elif node1.val == node2.val:
+                stack.append((node1.left, node2.left))
+                stack.append((node1.right, node2.right))
+        return True
+
+

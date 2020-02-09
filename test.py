@@ -4,49 +4,68 @@ class TreeNode:
         self.left = None
         self.right = None
 
+
+from collections import deque
 class Solution:
     def isSameTree(self, p: TreeNode, q: TreeNode) -> bool:
         if not p and q:
             return False
-        if p and not q:
+        if not q and p:
             return False
-        if not p and not q:
+        if not p and not q:  # corner case
             return True
 
-        if p.val != q.val:
-            return False
-        if not self.isSameTree(p.left, q.left):
-            return False
-        if not self.isSameTree(p.right, q.right):
-            return False
-        return True
+        pdq = deque()
+        qdq = deque()
+        pdq.append(p)
+        qdq.append(q)
 
-class Solution:
-    def isSameTree(self, p: TreeNode, q: TreeNode) -> bool:
-        if not p and q:
+        while pdq and qdq:  # bfs two tree
+            nodep = pdq.popleft()
+            nodeq = qdq.popleft()
+            if nodep.val != nodeq.val:  # compare two node
+                return False
+
+            if not nodep.left and nodeq.left:
+                return False
+            elif nodep.left and not nodeq.left:
+                return False
+            elif nodep.left and nodeq.left:
+                pdq.append(nodep.left)
+                qdq.append(nodeq.left)
+
+            if not nodep.right and nodeq.right:
+                return False
+            elif nodep.right and not nodeq.right:
+                return False
+            elif nodep.right and nodeq.right:
+                pdq.append(nodep.right)
+                qdq.append(nodeq.right)
+
+        if not pdq and qdq:
             return False
-        if p and not q:
+        elif pdq and not qdq:
             return False
-        if not p and not q:
+        elif not pdq and not qdq:
             return True
-        if p.val != q.val:
-            return False
 
-        return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
+
+
 
 a = TreeNode(1)
 b = TreeNode(2)
-c = TreeNode(2)
+c = TreeNode(3)
 a.left = b
-# a.right = c
+a.right = c
+# a = []
 
 a1 = TreeNode(1)
 b1 = TreeNode(2)
-c1 = TreeNode(2)
-# a.left = b
+c1 = TreeNode(3)
+a1.left = b1
 a1.right = c1
 
 
-X = Solution()
-data = []
-print(X.isSameTree(a, a1))
+
+x = Solution()
+print(x.isSameTree(a, a1))

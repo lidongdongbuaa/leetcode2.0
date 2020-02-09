@@ -1,48 +1,31 @@
-# def AdjustArr(arr, l, r):  # return pivot position
-#     i = l
-#     j = r
-#     x = arr[i]  # 第一个坑
-#     while i < j:
-#         while i < j and x < arr[j]:  # find smaller val than x
-#             j -= 1
-#         if i < j:  # 区别1
-#             arr[i] = arr[j]
-#             # i += 1  #区别2
-#         while i < j and arr[i] < x:
-#             i += 1
-#         if i < j:
-#             arr[j] = arr[i]
-#             j -= 1
-#     arr[i] = x
-#     return arr
+'''
+易错点：
+    1. arr[i + 1:r + 1]：右端点到r+1，而不是r，也不是到j
+    2. pivot 与 arr[i/j]的判断，用的是while，因为需要扫描搜索一段
+    3.while i <j and pivot < arr[j], i < j 时刻不要忘记，pivot < arr[j]是符合大小排序的比较关系，若不成立，则跳出，变换值
+'''
+class Solution:
+    def quickSort(self, arr):
+        if len(arr) == 0 or len(arr) == 1:  # corner case
+            return arr
 
+        i = l = 0
+        j = r = len(arr) - 1
+        pivot = arr[i]
 
-
-class Sort:
-    def quicksort(self, nums):
-        if len(nums) == 0 or len(nums) == 1:
-            return nums
-
-        l = 0
-        r = len(nums) - 1
-
-        i = l
-        j = r
-        pivot = nums[i]
         while i < j:
-            while i < j and pivot < nums[j]:
+            while i < j and pivot < arr[j]:  # 扫描一段去寻找合适的值, 循环条件是正常的顺序（pivot < arr[j]），若发现异常，则跳出更换i和j
                 j -= 1
-            nums[i] = nums[j]
-            while i < j and nums[i] <= pivot:
+            arr[i] = arr[j]  # 搜寻一段之后，找到值，再替换
+            while i < j and arr[i] <= pivot:
                 i += 1
-            nums[j] = nums[i]
-        nums[i] = pivot
-        L = nums[l:i]
-        R = nums[i + 1: r + 1]
-        nums[l:i] = self.quicksort(L)  # 产生了一部分，就要把这一部分赋值回去，不然不起作用的
-        nums[i + 1: r + 1] = self.quicksort(R)
-        return nums
+            arr[j] = arr[i]
+        arr[i] = pivot  # i in center, give it pivot
+        arr[0:i] = self.quickSort(arr[0:i])  # L part = arr[0:i] < pivot
+        arr[i + 1:r + 1] = self.quickSort(arr[i + 1:r + 1])  # R part = arr[i + 1, j] > pivot
+        return arr
 
 
-x = Sort()
-print(x.quicksort([5,1,1,2,0,0]))
+X = Solution()
+
+print(X.quickSort([9, 8, 7, 6, 5, 4, 4, 3, 2, 1]))
