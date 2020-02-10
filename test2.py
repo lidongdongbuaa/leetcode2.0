@@ -1,9 +1,3 @@
-'''
-易错点：
-    1. arr[i + 1:r + 1]：右端点到r+1，而不是r，也不是到j
-    2. pivot 与 arr[i/j]的判断，用的是while，因为需要扫描搜索一段
-    3.while i <j and pivot < arr[j], i < j 时刻不要忘记，pivot < arr[j]是符合大小排序的比较关系，若不成立，则跳出，变换值
-'''
 class Solution:
     def quickSort(self, arr):
         if len(arr) == 0 or len(arr) == 1:  # corner case
@@ -21,11 +15,58 @@ class Solution:
                 i += 1
             arr[j] = arr[i]
         arr[i] = pivot  # i in center, give it pivot
-        arr[0:i] = self.quickSort(arr[0:i])  # L part = arr[0:i] < pivot
-        arr[i + 1:r + 1] = self.quickSort(arr[i + 1:r + 1])  # R part = arr[i + 1, j] > pivot
+        arr[:i] = self.quickSort(arr[:i])  # L part = arr[0:i] < pivot
+        arr[i + 1:] = self.quickSort(arr[i + 1:])  # R part = arr[i + 1, j] > pivot
         return arr
 
 
-X = Solution()
+class SortList:
+	# Merge sort
+	def mergeSort(self, arr):
+		if len(arr) == 0 or len(arr) == 1:
+			return
 
-print(X.quickSort([9, 8, 7, 6, 5, 4, 4, 3, 2, 1]))
+		if len(arr) >= 2:
+			# 普通划分
+			mid = len(arr) // 2  # find the mid of the array
+			L = arr[:mid]  # divide the array elements
+			R = arr[mid:]  # into 2 haves
+
+			# 递归划分
+			self.mergeSort(L)  # Sorting the first half
+			self.mergeSort(R)  # Sorting the second half
+
+			# 合并， input: 两个已排序的list，L，R.过程：对L，R进行合并排序。output：合并完成后的一个list
+			i = j = k = 0
+			while i < len(L) and j < len(R):  # copy data to temp arrays L and R
+				if L[i] < R[j]:
+					arr[k] = L[i]
+					i += 1
+				else:
+					arr[k] = R[j]
+					j += 1
+				k += 1
+
+			#             while i < len(L):  # process left data in L part
+			#                 arr[k] = L[i]
+			#                 k += 1
+			#                 i += 1
+			if i < len(L):
+				arr[k:] = L[i:]
+
+			#             while j < len(R):  # process right data in R part
+			#                 arr[k] = R[j]
+			#                 k += 1
+			#                 j += 1
+			if j < len(R):
+				arr[k:] = R[j:]
+
+		return arr
+
+
+x = SortList()
+print(x.mergeSort([9, 8, 7, 4, 5, 6, 3, 2, 1]))
+
+
+y = Solution()
+print(y.quickSort([5,1,1,2,0,0]))

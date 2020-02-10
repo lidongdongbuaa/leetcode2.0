@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Binary tree/二叉树性质相关题目/101. Symmetric Tree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode周赛/200209/Check If N and Its Double Exist.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode周赛/200209/Minimum Number of Steps to Make Two Strings Anagram.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mock record/200210/Maximum sum such that no two elements are adjacent.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mock record/200210/微信图片_20200210072440.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mock record/200210/微信图片_20200210072641.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mock record/Technical Interview Guidance - Jupyter Notebook.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary tree/二叉树性质相关题目/100. Same Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary tree/二叉树性质相关题目/100. Same Tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock record/.ipynb_checkpoints/Technical Interview Guidance-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/mock record/.ipynb_checkpoints/Technical Interview Guidance-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock record/Technical Interview Guidance.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/mock record/Technical Interview Guidance.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock record/mock思路及注意事项.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test2.py" beforeDir="false" afterPath="$PROJECT_DIR$/test2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/Date Structure And Algorithm-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/Date Structure And Algorithm-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/数据结构与算法基础/Date Structure And Algorithm.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/Date Structure And Algorithm.ipynb" afterDir="false" />
@@ -127,7 +134,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Reduce Array Size to The Half" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Check If N and Its Double Exist" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="leetcode" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -135,12 +142,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode周赛/20200202" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode周赛/200209" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode周赛/20200202/Reduce Array Size to The Half.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode周赛/200209/Check If N and Its Double Exist.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -149,7 +156,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="The K Weakest Rows in a Matrix" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Minimum Number of Steps to Make Two Strings Anagram" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="leetcode" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -157,12 +164,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode周赛/20200202" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode周赛/200209" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode周赛/20200202/The K Weakest Rows in a Matrix.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode周赛/200209/Minimum Number of Steps to Make Two Strings Anagram.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -263,18 +270,18 @@
       <item itemvalue="Python.lc 55" />
       <item itemvalue="Python.lc51" />
       <item itemvalue="Python.test" />
-      <item itemvalue="Python.The K Weakest Rows in a Matrix" />
-      <item itemvalue="Python.Reduce Array Size to The Half" />
       <item itemvalue="Python.100. Same Tree" />
       <item itemvalue="Python.test2" />
+      <item itemvalue="Python.Check If N and Its Double Exist" />
+      <item itemvalue="Python.Minimum Number of Steps to Make Two Strings Anagram" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.test2" />
+        <item itemvalue="Python.Check If N and Its Double Exist" />
+        <item itemvalue="Python.Minimum Number of Steps to Make Two Strings Anagram" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.100. Same Tree" />
-        <item itemvalue="Python.Reduce Array Size to The Half" />
-        <item itemvalue="Python.The K Weakest Rows in a Matrix" />
       </list>
     </recent_temporary>
   </component>
@@ -394,7 +401,7 @@
       <workItem from="1580943398146" duration="8107000" />
       <workItem from="1581029947167" duration="4713000" />
       <workItem from="1581043942362" duration="5684000" />
-      <workItem from="1581119621671" duration="14792000" />
+      <workItem from="1581119621671" duration="23928000" />
     </task>
     <task id="LOCAL-00001" summary="1225">
       <created>1577254014620</created>
@@ -683,7 +690,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581050306479</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="0209">
+      <created>1581215592373</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1581215592373</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -739,7 +753,8 @@
     <MESSAGE value="0205" />
     <MESSAGE value="0206" />
     <MESSAGE value="0207" />
-    <option name="LAST_COMMIT_MESSAGE" value="0207" />
+    <MESSAGE value="0209" />
+    <option name="LAST_COMMIT_MESSAGE" value="0209" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2740" y="176" key="#xdebugger.evaluate" timestamp="1579417161456">
@@ -1020,9 +1035,14 @@
           <option name="timeStamp" value="211" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test2.py</url>
-          <line>25</line>
-          <option name="timeStamp" value="214" />
+          <url>file://$PROJECT_DIR$/leetcode周赛/200209/Check If N and Its Double Exist.py</url>
+          <line>71</line>
+          <option name="timeStamp" value="217" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/leetcode周赛/200209/Check If N and Its Double Exist.py</url>
+          <line>76</line>
+          <option name="timeStamp" value="218" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -1045,8 +1065,10 @@
     <SUITE FILE_PATH="coverage/leetcode$lc_53.coverage" NAME="lc 53 Coverage Results" MODIFIED="1565941361242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$.coverage" NAME="单链表的复制 Coverage Results" MODIFIED="1571272578722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/linkedList/复杂链表的复制" />
     <SUITE FILE_PATH="coverage/leetcode$lc_174.coverage" NAME="lc 174 Coverage Results" MODIFIED="1566340139557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/leetcodeText400AG$Minimum_Number_of_Steps_to_Make_Two_Strings_Anagram.coverage" NAME="Minimum Number of Steps to Make Two Strings Anagram Coverage Results" MODIFIED="1581220438736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/200209" />
     <SUITE FILE_PATH="coverage/leetcode$83__Remove_Duplicates_from_Sorted_List.coverage" NAME="83. Remove Duplicates from Sorted List Coverage Results" MODIFIED="1572905619501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../leetcode - 教材- 400 -amaGoog/linkedList/链表删除" />
     <SUITE FILE_PATH="coverage/leetcode$523__Continuous_Subarray_Sum.coverage" NAME="523. Continuous Subarray Sum Coverage Results" MODIFIED="1572301976381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/recursive + backtracking" />
+    <SUITE FILE_PATH="coverage/leetcodeText400AG$Check_If_N_and_Its_Double_Exist.coverage" NAME="Check If N and Its Double Exist Coverage Results" MODIFIED="1581221291916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/200209" />
     <SUITE FILE_PATH="coverage/leetcode$lc_300.coverage" NAME="lc 300 Coverage Results" MODIFIED="1567081413611" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$lc_211.coverage" NAME="lc 211 Coverage Results" MODIFIED="1568030071759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1572905591905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../leetcode - 教材- 400 -amaGoog" />
@@ -1084,7 +1106,7 @@
     <SUITE FILE_PATH="coverage/leetcode$lc_120.coverage" NAME="lc 120 Coverage Results" MODIFIED="1566093691731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$lc_187.coverage" NAME="lc 187 Coverage Results" MODIFIED="1565093029960" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode2_0$5308__Minimum_Flips_to_Make_a_OR_b_Equal_to_c.coverage" NAME="5308. Minimum Flips to Make a OR b Equal to c Coverage Results" MODIFIED="1579414927974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/200112" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1581210039588" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/leetcodeText400AG$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1581303008666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$29__Divide_Two_Integers.coverage" NAME="29. Divide Two Integers Coverage Results" MODIFIED="1579305572889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bit manipulation 位运算/数学相关问题" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$5308__Minimum_Flips_to_Make_a_OR_b_Equal_to_c.coverage" NAME="5308. Minimum Flips to Make a OR b Equal to c Coverage Results" MODIFIED="1578896596869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/200112" />
     <SUITE FILE_PATH="coverage/leetcode$lc_3.coverage" NAME="lc 3 Coverage Results" MODIFIED="1565048468786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
