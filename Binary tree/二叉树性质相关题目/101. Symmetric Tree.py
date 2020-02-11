@@ -23,16 +23,19 @@
 2.理解： judge whether it is symmetric 
 3.类型： binary features
 4.确认输入输出及边界条件：
-    input: tree root Node with definition
+    input: root with definition, repeated? N order? N node numb range? N node value range? N
     output: True or false
-    corner case: 
+    corner case: None? Y - False Only one? Y- True
 4.方法及方法分析：
 time complexity order: 
 space complexity order: 
 '''
 '''
-思路：
+思路：brute force - in-order scan
 方法：
+    1. in-order scan the tree, save node in list
+    2. check the list
+    
 time complex: 
 space complex: 
 易错点：

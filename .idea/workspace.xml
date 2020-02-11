@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/leetcode周赛/200209/Check If N and Its Double Exist.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode周赛/200209/Minimum Number of Steps to Make Two Strings Anagram.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mock record/200210/Maximum sum such that no two elements are adjacent.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mock record/200210/微信图片_20200210072440.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mock record/200210/微信图片_20200210072641.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mock record/Technical Interview Guidance - Jupyter Notebook.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock record/.ipynb_checkpoints/Technical Interview Guidance-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/mock record/.ipynb_checkpoints/Technical Interview Guidance-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock record/Technical Interview Guidance.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/mock record/Technical Interview Guidance.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock record/mock思路及注意事项.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test2.py" beforeDir="false" afterPath="$PROJECT_DIR$/test2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/Date Structure And Algorithm-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/Date Structure And Algorithm-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binary tree/二叉树性质相关题目/101. Symmetric Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary tree/二叉树性质相关题目/101. Symmetric Tree.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/数据结构与算法基础/Date Structure And Algorithm.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/Date Structure And Algorithm.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -401,7 +390,8 @@
       <workItem from="1580943398146" duration="8107000" />
       <workItem from="1581029947167" duration="4713000" />
       <workItem from="1581043942362" duration="5684000" />
-      <workItem from="1581119621671" duration="23928000" />
+      <workItem from="1581119621671" duration="23958000" />
+      <workItem from="1581379239899" duration="350000" />
     </task>
     <task id="LOCAL-00001" summary="1225">
       <created>1577254014620</created>
@@ -697,7 +687,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581215592373</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="0210">
+      <created>1581306246757</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1581306246757</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -754,7 +751,8 @@
     <MESSAGE value="0206" />
     <MESSAGE value="0207" />
     <MESSAGE value="0209" />
-    <option name="LAST_COMMIT_MESSAGE" value="0209" />
+    <MESSAGE value="0210" />
+    <option name="LAST_COMMIT_MESSAGE" value="0210" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2740" y="176" key="#xdebugger.evaluate" timestamp="1579417161456">
