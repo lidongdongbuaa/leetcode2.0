@@ -1,3 +1,26 @@
+# -*- coding: utf-8 -*-
+# @Time    : 2/11/2020 11:44 AM
+# @Author  : LI Dongdong
+# @FileName: 构造Binary Tree.py
+''''''
+'''
+题目分析
+1.要求：
+2.理解：
+3.类型：
+4.确认输入输出及边界条件：
+4.方法及方法分析：
+time complexity order: 
+space complexity order: 
+'''
+'''
+A.
+思路：bfs
+方法：
+time complex: 
+space complex:
+易错点：while i的判断
+'''
 class TreeNode:
     def __init__(self, x):
         self.val = x
@@ -31,26 +54,4 @@ def constructTree(nodeList):  # input: list using bfs, output: root
     return resHead
 
 
-root = constructTree([1,2,2,2,None,2])
-
-
-from collections import deque
-class Solution:
-    def isSymmetric(self, root: TreeNode) -> bool:
-        if not root:  # corner case
-            return True
-
-        data = []
-        queue = deque()
-        queue.append(root)
-
-        while queue:
-            node = queue.popleft()
-            if node.left:
-                queue.append(node.left)
-            if node.right:
-                queue.append(node.right)
-        print(data)
-
-x = Solution()
-x.isSymmetric(root)
+root = constructTree([1,2,3,4,None,5])

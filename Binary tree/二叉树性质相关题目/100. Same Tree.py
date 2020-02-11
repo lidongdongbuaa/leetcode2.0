@@ -14,9 +14,9 @@
     input: repeated value? Y ordered? N node val range? None
     output: True or False
     corner case: None? N one only node? N
-4.方法及方法分析：
-time complexity order: 
-space complexity order: 
+4.方法及方法分析：brute force, compare directly - dfs, compare- bfs
+time complexity order: brute force O(N) = compare directly - dfs O(N) = compare- bfs O(N)
+space complexity order: brute force O(N) = compare directly - dfs O(N) = compare- bfs O(N)
 '''
 '''
 思路：brute force
@@ -27,7 +27,6 @@ time complex: tO(N)
 space complex: sO(N)
 易错点：
 '''
-
 
 class TreeNode:
     def __init__(self, x):
@@ -75,7 +74,7 @@ data = []
 print(X.isSameTree(a, a1))
 
 '''
-思路：compare node directly
+思路：compare node directly - dfs
 方法：
     recurse the tree, compare every node
 time complex: tO(N)
@@ -128,7 +127,7 @@ class Solution:
         return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
 
 '''
-思路：compare node directly
+思路：compare node directly - bfs
 方法：
     iterate the tree, compare every node
 time complex: tO(N)
@@ -199,15 +198,14 @@ class Solution:
             node1, node2 = stack.popleft()
             if not node1 and not node2:
                 continue
-            elif not node1 and node2:
+            elif not node1 or not node2:
                 return False
-            elif node1 and not node2:
-                return False
-            elif node1.val != node2.val:
-                return False
-            elif node1.val == node2.val:
-                stack.append((node1.left, node2.left))
-                stack.append((node1.right, node2.right))
+            elif node1 and node2:
+                if node1.val != node2.val:
+                    return False
+                else :
+                    stack.append([node1.left, node2.left])
+                    stack.append([node1.right, node2.right])
         return True
 
 
