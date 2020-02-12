@@ -38,15 +38,152 @@
     input: root with definition, no range, repeated? Y order? N
     output: True/False
     corner case: None -> True Only one-> True
-4.方法及方法分析：
-time complexity order: 
-space complexity order: 
+4.方法及方法分析：top-down-dfs  bottom-up-dfs
+time complexity order: top-down-dfs O(N) < brute force-dfs O(NlogN)
+space complexity order: top-down-dfs O(N) = brute force-dfs O(N)
 '''
+from collections import deque
+def constructTree(nodeList):  # input: list using bfs, output: root
+    new_node = []
+    for elem in nodeList:  # transfer list val to tree node
+        if elem:
+            new_node.append(TreeNode(elem))
+        else:
+            new_node.append(None)
+
+    queue = deque()
+    queue.append(new_node[0])
+
+    resHead = queue[0]
+    i = 1
+
+    while i <= len(new_node) - 1:  # bfs method building
+        head = queue.popleft()
+        head.left = new_node[i]  # build left and push
+        queue.append(head.left)
+        if i + 1 == len(new_node):  # if no i + 1 in new_node
+            break
+        head.right = new_node[i + 1]  # build right and push
+        queue.append(head.right)
+        i = i + 2
+    return resHead
+
+
 '''
 A.
-思路：
+思路：top-down-dfs
 方法：
+    先比较高度，再检查子树
+    compare the height of node by helper function
+    then check the node's subtree's height by dfs
 time complex: 
-space complex:
-易错点：
+    skewed tree: O(N*N)，but after check the height of the first 2 subtrees, function stop, 
+        so it is actually O(N**2) = O(N) 
+    average: for height function, O(logN). So it was O(NlogN) for N nodes.
+space complex: O(N) The recursion stack may contain all nodes if the tree is skewed.
+易错点：测量高度的函数
 '''
+class TreeNode:
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
+
+class Solution:
+    def isBalanced(self, root: TreeNode) -> bool:
+        if not root:  # corner case
+            return True
+
+        if abs(self.depth(root.left) - self.depth(root.right)) > 1:  # check root
+            return False
+
+        return self.isBalanced(root.left) and self.isBalanced(root.right)  # check subtree
+
+    def depth(self, root):  # calculate the height of tree, input:root, output:int
+        if not root:  # corner case
+            return 0
+
+        if not root.left and not root.right: # corner case
+            return 1
+
+        return 1 + max(self.depth(root.left), self.depth(root.right)) # dfs to accumulate depth
+
+
+root = constructTree([3,9,20,None, None, 15,7])
+X = Solution()
+print(X.isBalanced(root))
+
+'''
+test code
+input None - True, only one - True
+input 
+        3
+       / \
+      9  20
+        /  \
+       15   7
+    root        3   9    20  15   7
+    root.left  9   None  15  None None
+    root.right  20 NOne   7  None None
+    abs(L-R)    1  0      9  0    0
+'''
+'''
+B.
+思路：bottom-up- dfs
+方法：
+    先检查子树, 再比较高度
+    first check node's subtree's height by helper function
+    then scan node and check their height by dfs
+time complex: worst O(N) compute its height in constant time as well as compare the height of its children.
+space complex: worst O(N) 
+易错点：return 1 + max(depth_left, depth_right)
+'''
+class Solution:
+    def isBalanced(self, root: TreeNode) -> bool:
+        if not root:  # corner case
+            return True
+
+        if self.depth(root) == -1:  # -1: no balance  0: balance
+            return False
+        else:
+            return True
+
+    def depth(self, root):
+        if not root:
+            return 0
+
+        depth_left = self.depth(root.left)  #  check left
+        if depth_left == -1:
+            return -1
+
+        depth_right = self.depth(root.right)  # check right
+        if depth_right == -1:
+            return -1
+
+        if abs(depth_left - depth_right) <= 1:  # check root
+            return 1 + max(depth_left, depth_right)  # scan other node
+        else:
+            return -1
+
+'''
+test code
+input None - True, only one - True
+input 
+        3
+       / \
+      9  20
+        /  \
+       15   7
+    root        3   9    20  15   7
+    root.left  9         15  
+    root.right           
+    depth left     0          0    0
+    depth right    0          0     0
+    abs         1   0          0     0
+    return      3    1     2     1    1
+     
+'''
+
+
+
+
