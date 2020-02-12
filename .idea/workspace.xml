@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary tree/二叉树性质相关题目/111. Minimum Depth of Binary Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary tree/二叉树性质相关题目/111. Minimum Depth of Binary Tree.py" afterDir="false" />
-    </list>
+    <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -395,7 +392,7 @@
       <workItem from="1581427547665" duration="11352000" />
       <workItem from="1581474245423" duration="4128000" />
       <workItem from="1581481000600" duration="6735000" />
-      <workItem from="1581512607545" duration="2730000" />
+      <workItem from="1581512607545" duration="3100000" />
     </task>
     <task id="LOCAL-00001" summary="1225">
       <created>1577254014620</created>
@@ -712,7 +709,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581487739206</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="0212">
+      <created>1581515351418</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1581515351418</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">

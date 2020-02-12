@@ -29,9 +29,9 @@
     corner case：
         None： 0
         Only one: 1
-4.方法及方法分析：
-time complexity order: 
-space complexity order: 
+4.方法及方法分析：dfs, bfs
+time complexity order: dfs O(N) = bfs O(N)
+space complexity order: dfs O(logN) < bfs O(N)
 '''
 '''
 A.
@@ -96,8 +96,8 @@ class Solution:
 B.
 思路：bfs
 方法：
-    use deque to save [node, minheight]
-    deal with leaf, skewed node
+    use deque to save [node, height]
+    when meet leaf, return height
     push the node's l/r, add height
 time complex: O(N)
 space complex: O(N)
