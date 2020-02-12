@@ -28,16 +28,16 @@
     corner case：
         None? -> 0
         only one? -> 0
-4.方法及方法分析：
-time complexity order: 
-space complexity order: 
+4.方法及方法分析： DFS + 积累height, BFS+ 积累height
+time complexity order: DFS + 积累height O(N) = BFS+ 积累height O(N)
+space complexity order: DFS + 积累height O(logN) < BFS+ 积累height O(N)
 '''
 '''
 A.
-思路：DFS
+思路：DFS + 积累height
 方法：
-    dfs to scan node, meet leaf to record height
-    compare the height to find the biggest one
+    dfs to get left and right node height by dfs
+    get the max height
 time complex: O(N)
 space complex: worst O(N), average O(logN)
 易错点： 辅助函数用不到
@@ -82,16 +82,19 @@ class Solution:
         if not root.left and not root.right: # corner case
             return 1
 
-        return 1 + max(self.maxDepth(root.left), self.maxDepth(root.right)) # get the longest one by dfs
+        left_height = self.maxDepth(root.left)
+        right_height = self.maxDepth(root.right)
+        return 1 + max(left_height, right_height) # get the longest one by dfs
 
 '''
 B.
-思路：BFS
+思路：BFS + 积累height
 方法：
-    
+    1. bfs to scan every node, save the [node, height] in deque
+    2. when meet leaf, renew the max height
 time complex: O(N)
-space complex: 
-易错点： 基本上都是在 queue.append([root, 1]) 做工作
+space complex: best O(1) average O(N)
+易错点：height += 1每次pop后都要进行，因为height的前值已经固定在弹出值里了
 '''
 class TreeNode:
     def __init__(self, x):
@@ -113,14 +116,54 @@ class Solution:
 
         while queue:  # bfs scan and record
             node, height = queue.popleft()
+            height += 1
             if not node.left and not node.right:  # must have subtree, it can add one
-                height += 1
                 max_depth = max(height, max_depth)
             if node.left:
                 queue.append([node.left, height])
             if node.right:
                 queue.append([node.right, height])
-        return height
+        return max_depth
 
+'''
+test code:
+corner case: 
+None : 0 ; only one: 1
+case: [1,2,3, None, None, 4, 5]
+queue ([1, 0]) max = 0
+node = 1 h = 0, h+1= 1
+queue [2,1], [3,1]
+node = 2, h = 1, h + 1 = 2
+max = (0, 2) = 2
+node = 3, h = 1, h+ 1 = 2
+queue [4, 2], [5, 2]
+node = 4, h = 2, h+1 = 3
+max = (2, 3) =3
+node = 5, h= 2, h+ 1= 3
+max = (2, 3) = 3
+res = 3
+'''
+'''
+optimized code
+设初始height为1
+原因：利于在加一层操作：queue.append([node.left, height ])时，对增加node.l/r就增加层的理解
+'''
+from collections import deque
+class Solution:
+    def maxDepth(self, root: TreeNode) -> int:
+        if not root:  # corner case
+            return 0
 
+        queue = deque()
+        queue.append([root, 1])
+        max_depth = 0
 
+        while queue:  # bfs scan and record
+            node, height = queue.popleft()
+            if not node.left and not node.right:  # must have subtree, it can add one
+                max_depth = max(height, max_depth)
+            if node.left:
+                queue.append([node.left, height + 1])
+            if node.right:
+                queue.append([node.right, height + 1])
+        return max_depth
