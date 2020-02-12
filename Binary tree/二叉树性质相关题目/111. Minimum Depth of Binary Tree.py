@@ -101,7 +101,7 @@ B.
     push the node's l/r, add height
 time complex: O(N)
 space complex: O(N)
-易错点：
+易错点：在第一次到达leaf时，立马return height
 '''
 from collections import deque
 class Solution:
@@ -111,13 +111,24 @@ class Solution:
 
         queue = deque()
         queue.append([root, 1])
-        minH = 0
 
         while queue:
             node, height = queue.popleft()
             if not node.left and not node.right:
-                minH = min(minH, height)
-            if not node.left and node.right:
-                minH =
+                return height
+            if node.left:
+                queue.append([node.left, height + 1])
+            if node.right:
+                queue.append([node.right, height + 1])
+
+'''
+test code
+root = [1, 2, 3, None, None, 4]
+queue [1,1]
+node = 1, h = 1
+queue [2,2] [3, 2]
+node = 2, h = 2
+return 2
+'''
 
 

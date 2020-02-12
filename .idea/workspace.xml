@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="0212">
-      <change afterPath="$PROJECT_DIR$/Binary tree/二叉树性质相关题目/111. Minimum Depth of Binary Tree.py" afterDir="false" />
+    <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary tree/二叉树性质相关题目/104. Maximum Depth of Binary Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary tree/二叉树性质相关题目/104. Maximum Depth of Binary Tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock record/Technical Interview Guidance.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/mock record/Technical Interview Guidance.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/Date Structure And Algorithm-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/Date Structure And Algorithm-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binary tree/二叉树性质相关题目/111. Minimum Depth of Binary Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary tree/二叉树性质相关题目/111. Minimum Depth of Binary Tree.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -397,7 +394,8 @@
       <workItem from="1581381898583" duration="20971000" />
       <workItem from="1581427547665" duration="11352000" />
       <workItem from="1581474245423" duration="4128000" />
-      <workItem from="1581481000600" duration="6694000" />
+      <workItem from="1581481000600" duration="6735000" />
+      <workItem from="1581512607545" duration="2730000" />
     </task>
     <task id="LOCAL-00001" summary="1225">
       <created>1577254014620</created>
@@ -707,7 +705,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581472467800</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="0212">
+      <created>1581487739206</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1581487739206</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
