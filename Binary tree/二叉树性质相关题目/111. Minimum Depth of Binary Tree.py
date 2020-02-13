@@ -46,7 +46,7 @@ A.
     get the minimal height
 time complex: O(N)
 space complex: O(logN)
-易错点：搞清楚递归结束条件
+易错点：搞清楚递归结束条件, 递归就是多种情况下的分类
     return self.minDepth(root.right) + 1 # 1 代表目前的node的层，要加1
 '''
 class TreeNode:
@@ -87,9 +87,9 @@ class Solution:
         if not root.left or not root.right: # root is skewed
             return max(self.minDepth(root.right), self.minDepth(root.left)) + 1
 
-        height_left = self.minDepth(root.left)
-        height_right = self.minDepth(root.right)
         if root.left and root.right:
+            height_left = self.minDepth(root.left)
+            height_right = self.minDepth(root.right)
             return min(height_left, height_right) + 1
 
 '''
