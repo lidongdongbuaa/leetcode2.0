@@ -113,6 +113,31 @@ root = constructTree([3,9,20,None, None, 15,7])
 X = Solution()
 print(X.isBalanced(root))
 
+
+'''
+自己的写法
+'''
+class Solution:
+    def isBalanced(self, root: TreeNode) -> bool:
+        if not root:
+            return True
+
+        if abs(self.depth(root.left, 0) - self.depth(root.right, 0)) > 1:
+            return False
+
+        return self.isBalanced(root.left) and self.isBalanced(root.right)
+
+    def depth(self, root, numb):  # input: root, output: depth
+        if not root:
+            return numb
+
+        if not root.left and root.right:
+            return self.depth(root.right, numb + 1)
+
+        if root.left and not root.right:
+            return self.depth(root.left, numb + 1)
+
+        return max(self.depth(root.left, numb + 1), self.depth(root.right, numb + 1))
 '''
 test code
 input None - True, only one - True

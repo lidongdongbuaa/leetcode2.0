@@ -31,106 +31,6 @@ time complexity order: recursion O(N) iteration O(N)
 space complexity order: recursion O(N) iteration O(N)
 '''
 '''
-失败 - 无法完整的生成list
-思路：brute force - in-order scan
-方法：
-    1. in-order scan the tree, save node in list tO(N) sO(N) 
-    2. check the list tO(N) sO(1)
-time complex:  O(N)
-space complex: O(1)
-易错点：
-'''
-
-class TreeNode:
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
-
-from collections import deque
-def constructTree(nodeList):  # input: list using bfs, output: root
-    new_node = []
-    for elem in nodeList:  # transfer list val to tree node
-        if elem:
-            new_node.append(TreeNode(elem))
-        else:
-            new_node.append(None)
-
-    queue = deque()
-    queue.append(new_node[0])
-
-    resHead = queue[0]
-    i = 1
-
-    while i <= len(new_node) - 1:  # bfs method building
-        head = queue.popleft()
-        head.left = new_node[i]  # build left and push
-        queue.append(head.left)
-        if i + 1 == len(new_node):  # if no i + 1 in new_node
-            break
-        head.right = new_node[i + 1]  # build right and push
-        queue.append(head.right)
-        i = i + 2
-    return resHead
-
-class Solution:
-    def isSymmetric(self, root: TreeNode) -> bool:
-        if not root:  # corner case
-            return True
-
-        treeList = self.record(root, [])  # transfer as list
-
-        for i in range(len(treeList) // 2):  # check symmetric
-            if treeList[i] != treeList[-(i + 1)]:
-                return False
-        return True
-
-    def record(self, root: TreeNode, res) -> bool:  # transfer tree node as list
-        if not root:  # corner case
-            return res
-
-        self.record(root.left, res)
-        res.append(root.val)  # in-order traversal
-        self.record(root.right, res)
-        return res
-
-
-
-root = constructTree([1,2,2,3,4,4,3])
-x = Solution()
-print(x.record(root, []))
-
-'''
-失败 - 没做出来
-思路：bfs
-方法：
-    1. save every level's node in list
-    2. check the list's symmetric
-time complex:  O(N)
-space complex: best O(1) worst O(N)
-易错点：
-'''
-class Solution:
-    def isSymmetric(self, root: TreeNode) -> bool:
-        if not root:  # corner case
-            return True
-
-        data = []
-        queue = deque()
-        queue.append(root)
-
-        while queue:
-            node = queue.popleft()
-            if node.left:
-                queue.append(node.left)
-            if node.right:
-                queue.append(node.right)
-        print(data)
-
-x = Solution()
-x.isSymmetric(root)
-
-'''
 思路：recursion based on pre-order dfs
 方法：
     1. judge two root have same value
@@ -190,6 +90,26 @@ class Solution:
                     queue.append([l.right, r.left])
         return True
 
+'''
+失败 - 无法完整的生成list
+思路：brute force - in-order scan
+方法：
+    1. in-order scan the tree, save node in list tO(N) sO(N) 
+    2. check the list tO(N) sO(1)
+time complex:  O(N)
+space complex: O(1)
+易错点：
+'''
+'''
+失败 - 没做出来
+思路：bfs
+方法：
+    1. save every level's node in list
+    2. check the list's symmetric
+time complex:  O(N)
+space complex: best O(1) worst O(N)
+易错点：
+'''
 
 
 
