@@ -35,19 +35,13 @@ space complexity order: dfs O(logN) < bfs O(N)
 '''
 '''
 A.
-思路：dfs
+思路：brute force - All node and min one
 方法：
-    dfs to get left and right node height by dfs
-        ending condition： 
-            1. root == None
-            2. root is leaf
-            3. root is skewed
-            4. root is balanced
-    get the minimal height
+    DFS to scan all node, get all path height
+    find min path
 time complex: O(N)
 space complex: O(logN)
-易错点：搞清楚递归结束条件, 递归就是多种情况下的分类
-    return self.minDepth(root.right) + 1 # 1 代表目前的node的层，要加1
+易错点
 '''
 class TreeNode:
     def __init__(self, x):
@@ -57,43 +51,85 @@ class TreeNode:
 
 class Solution:
     def minDepth(self, root: TreeNode) -> int:
-        if not root:  # corner case
+        if not root:
             return 0
-        if not root.left and not root.right:  # corner case
-            return 1
 
-        if not root.left and root.right:
-            return self.minDepth(root.right) + 1
-        if root.left and not root.right:
-            return self.minDepth(root.left) + 1
+        height = 0
+        res = []
+        self.depth(root, height, res)
 
-        height_left = self.minDepth(root.left)
-        height_right = self.minDepth(root.right)
-        if root.left and root.right:
-            return min(height_left, height_right) + 1
+        return min(res)
 
-'''
-optimized code
-把skewed root的两种情况进行合并
-原因：简化code
-'''
-class Solution:
-    def minDepth(self, root: TreeNode) -> int:
-        if not root:  # corner case
-            return 0
-        if not root.left and not root.right:  # corner case
-            return 1
+    def depth(self, root, height, res):  # root, res:List
+        if not root:
+            return
 
-        if not root.left or not root.right: # root is skewed
-            return max(self.minDepth(root.right), self.minDepth(root.left)) + 1
+        if not root.left and not root.right:
+            height += 1
+            res.append(height)
 
-        if root.left and root.right:
-            height_left = self.minDepth(root.left)
-            height_right = self.minDepth(root.right)
-            return min(height_left, height_right) + 1
+        self.depth(root.left, height + 1, res)
+        self.depth(root.right, height + 1,  res)
 
 '''
 B.
+思路：DFS
+方法：
+    replace the res-list with res - int
+time complex: O(N)
+space complex: O(logN)
+易错点：
+'''
+class Solution:
+    def minDepth(self, root: TreeNode) -> int:
+        if not root:
+            return 0
+
+        height = 0
+        res = float('inf')
+        res = self.depth(root, height, res)
+
+        return res
+
+    def depth(self, root, height, res):  # root, res:List
+        if not root:
+            return res
+
+        if not root.left and not root.right:
+            height += 1
+            res = min(height, res)
+
+
+        res = self.depth(root.left, height + 1, res)
+        res = self.depth(root.right, height + 1, res)
+        return res
+'''
+C.
+思路：DFS directly
+方法：
+    use DFS to scan the every node, and accumulate the min height
+        case 1: not root
+        case 2: root is leaf
+        case 3 : root has only one branch
+        case 4: case has two branch
+
+'''
+class Solution:
+    def minDepth(self, root: TreeNode) -> int:
+        if not root:
+            return 0
+
+        if not root.left and not root.right:  # root is leaf
+            return 1
+
+        if not root.left or not root.right: # root is single branch node
+            return 1 + max(self.minDepth(root.left), self.minDepth(root.right))
+
+        if root.left and root.right:  # root is node having two branch
+            return 1 + min(self.minDepth(root.left), self.minDepth(root.right))
+
+'''
+D.
 思路：bfs
 方法：
     use deque to save [node, height]

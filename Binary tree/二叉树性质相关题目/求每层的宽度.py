@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2020/2/13 13:06
 # @Author  : LI Dongdong
-# @FileName: 求每层的节点数.py
+# @FileName: 求每层的宽度.py
 ''''''
 '''
 题目分析
@@ -89,6 +89,8 @@ class Solution:
             dic[level] += index
         self.dfs(root.left, level + 1, index * 2, dic)
         self.dfs(root.right, level + 1, index * 2 + 1, dic)
+
+
 
 from collections import deque
 def constructTree(nodeList):  # input: list using bfs, output: root

@@ -79,12 +79,7 @@ class Solution:
         if not root:  # corner case
             return 0
 
-        if not root.left and not root.right: # corner case
-            return 1
-
-        left_height = self.maxDepth(root.left)
-        right_height = self.maxDepth(root.right)
-        return 1 + max(left_height, right_height) # get the longest one by dfs
+        return 1 + max(self.maxDepth(root.left), self.maxDepth(root.right)) # get the longest one by dfs
 
 '''
 B.
@@ -151,19 +146,18 @@ optimized code
 from collections import deque
 class Solution:
     def maxDepth(self, root: TreeNode) -> int:
-        if not root:  # corner case
+        if not root:
             return 0
 
         queue = deque()
         queue.append([root, 1])
-        max_depth = 0
 
-        while queue:  # bfs scan and record
+        res = 0
+        while queue:
             node, height = queue.popleft()
-            if not node.left and not node.right:  # must have subtree, it can add one
-                max_depth = max(height, max_depth)
+            res = max(height, res)  # renew res
             if node.left:
                 queue.append([node.left, height + 1])
             if node.right:
                 queue.append([node.right, height + 1])
-        return max_depth
+        return res
