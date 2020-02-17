@@ -73,12 +73,12 @@ def constructTree(nodeList):  # input: list using bfs, output: root
 A.
 思路：top-down-dfs
 方法：
-    先比较高度，再检查子树
-    compare the height of node by helper function
-    then check the node's subtree's height by dfs
+    比较每个节点的子树的最大高度
+    main function: scan every node, while compare max height of every node's subtree by DFS or BFS
+    helper function: calculate the max height of a root by DFS or BFS
 time complex: 
     skewed tree: O(N*N)，but after check the height of the first 2 subtrees, function stop, 
-        so it is actually O(N**2) = O(N) 
+        so it is actually O(N*2) = O(N) 
     average: for height function, O(logN). So it was O(NlogN) for N nodes.
 space complex: O(N) The recursion stack may contain all nodes if the tree is skewed.
 易错点：测量高度的函数
@@ -156,9 +156,8 @@ input
 B.
 思路：bottom-up- dfs
 方法：
-    先检查子树, 再比较高度
-    first check node's subtree's height by helper function
-    then scan node and check their height by dfs
+    helper function: scan every node adn calculate two subtree's max height, if find dif > 1, break, return -1 by DFS or BFS
+    main function: if helper function == -1, return False, else return True 
 time complex: worst O(N) compute its height in constant time as well as compare the height of its children.
 space complex: worst O(N) 
 易错点：return 1 + max(depth_left, depth_right)
