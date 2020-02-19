@@ -101,22 +101,20 @@ class Solution:
 
         queue = deque()
         queue.append([root, 0])  # index from 0 to i in every level
-        width = 0
+        maxWidth = 0
 
         while queue:
             length = len(queue)  # use length to control the scan range, not scan lower level node
+            l = queue[0][1]
+            r = queue[-1][1]
+            maxWidth = max(maxWidth, r - l + 1)
             for i in range(length):  # length 是实际宽度
                 node, index = queue.popleft()
-                if i == 0:
-                    first_num = index
-                if i == length - 1:
-                    end_num = index
-                    width = max(width, end_num - first_num + 1)
                 if node.left:
                     queue.append([node.left, 2 * index])
                 if node.right:
                     queue.append([node.right, 2 * index + 1])
-        return width
+        return maxWidth
 
 '''
 test code
@@ -162,7 +160,7 @@ return 2
 
 time complex: O(N)
 space complex: O(logN)
-易错点：使用dic的key存储每层的层数值，用value存储该层的第一个index
+易错点：使用dic的key指向每层，用value存储该层的第一个index
 '''
 
 class TreeNode:
@@ -188,7 +186,7 @@ class Solution:
         if not root:  # corner case
             return
 
-        if level not in dic.keys():  # this level's first node show up firstly in dic, so store its level and index
+        if level not in dic:  # this level's first node show up firstly in dic, so store its level and index
             dic[level] = index
         else:
             self.res = max(self.res, index - dic[level]+ 1)  # not first show, calculate the distance of index of same level

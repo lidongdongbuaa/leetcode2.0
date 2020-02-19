@@ -6,7 +6,7 @@
 ''''''
 '''
 题目分析
-1.要求：
+1.要求：求每层中，左边第一个到右边第一个的宽度
 2.理解：
 3.类型：
 4.确认输入输出及边界条件：
@@ -17,10 +17,11 @@ space complexity order:
 '''
 思路：bfs + [node, index]
 方法：
+    deque record node and index (2* index (+1))
+    traversal all nodes, calculate index dif of every level node by for loop
 time complex: 
 space complex: 
-易错点：1. 修改deque为list
-    2. 采用deepcopy(queue)
+易错点：
 '''
 class TreeNode:
     def __init__(self, x):
@@ -28,34 +29,39 @@ class TreeNode:
         self.left = None
         self.right = None
 
-from copy import deepcopy
+from collections import deque
 class Solution:
     def widthOfBinaryTree(self, root: TreeNode) -> int:
         if not root:  # corner case
             return 0
-        if not root.left and not root.right:  # corner case
-            return 1
 
-        queue = []
-        queue.append([root, 0])  # index from 0 to i in every level
+        width = 0
         res = []
+        queue = deque()
+        queue.append([root, 0])
 
         while queue:
-            length = len(queue)  # use length to control the scan range, not scan lower level node
-            res.append(deepcopy(queue))
-            for i in range(length):  # length 是实际宽度
-                node, index = queue.pop(0)
+            width = len(queue)
+            left = queue[0][1]
+            right = queue[-1][1]
+            res.append(right - left + 1)
+            for _ in range(width):  # traversal all same level node
+                node, index = queue.popleft()  # 易错点
                 if node.left:
-                    queue.append([node.left, 2 * index])
+                    queue.append([node.left, index * 2])
                 if node.right:
-                    queue.append([node.right, 2 * index + 1])
+                    queue.append([node.right, index * 2 + 1])
         return res
 '''
 思路：dfs + dic[level:index]
 方法：
+    main: set level, index, dic
+    helper: 
+        DFS scan every node, renew level and index  = index * 2 （+ 1）
+        save dic[level] = [first node index, other node index]
 time complex: 
 space complex: 
-易错点：
+易错点：dic[level] = max(index + 1, dic[level])
 '''
 # 求tree的每层的节点数，求哪一层具有最多节点数，节点数是多少
 # input: root
@@ -74,19 +80,20 @@ class Solution:
         level = 0
         index = 0
         dic ={}  # store level and index
-        self.res = []
+        self.res = 0
 
         self.dfs(root, level, index, dic)
-        print(dic)
+        return dic
 
     def dfs(self, root, level, index, dic):
         if not root:  # corner case
             return
 
-        if level not in dic.keys():  # this level's first node show up firstly in dic, so store its level and index
-            dic[level] = index
+        if level in dic:
+            dic[level][1] = index
         else:
-            dic[level] += index
+            dic[level] = [index, index]
+
         self.dfs(root.left, level + 1, index * 2, dic)
         self.dfs(root.right, level + 1, index * 2 + 1, dic)
 
@@ -119,6 +126,6 @@ def constructTree(nodeList):  # input: list using bfs, output: root
     return resHead
 
 
-root = constructTree([1,2,3,4,None,5])
+root = constructTree([1,2,3,None,5,6])
 x = Solution()
 x.widthOfBinaryTree(root)

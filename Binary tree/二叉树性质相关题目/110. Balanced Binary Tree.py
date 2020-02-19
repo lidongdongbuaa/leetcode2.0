@@ -190,6 +190,27 @@ class Solution:
             return -1
 
 '''
+思路：bottom-up- BFS 
+'''
+class Solution:
+    def isBalanced(self, root: TreeNode) -> bool:
+        depth, stack = {None: 0}, [(root, False)]
+        while stack:
+            node, visited = stack.pop()
+            if not node:
+                continue
+            if not visited:
+                stack.append((node, True))
+                stack.append((node.right, False))
+                stack.append((node.left, False))
+            else:
+                left, right = depth[node.left], depth[node.right]
+                if left == -1 or right == -1 or abs(left-right) > 1:
+                    depth[node] = -1
+                else:
+                    depth[node] = max(left, right) + 1
+        return depth[root] != -1
+'''
 test code
 input None - True, only one - True
 input 

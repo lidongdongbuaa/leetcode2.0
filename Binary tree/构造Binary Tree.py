@@ -44,12 +44,15 @@ def constructTree(nodeList):  # input: list using bfs, output: root
 
     while i <= len(new_node) - 1:  # bfs method building
         head = queue.popleft()
+
         head.left = new_node[i]  # build left and push
-        queue.append(head.left)
+        if head.left:
+            queue.append(head.left)
         if i + 1 == len(new_node):  # if no i + 1 in new_node
             break
         head.right = new_node[i + 1]  # build right and push
-        queue.append(head.right)
+        if head.right:
+            queue.append(head.right)
         i = i + 2
     return resHead
 
