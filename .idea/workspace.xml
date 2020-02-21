@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Binary tree/二叉树的遍历/BFS/102. Binary Tree Level Order Traversal.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Binary tree/二叉树的遍历/BFS/116. Populating Next Right Pointers in Each Node.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Binary tree/二叉树的遍历/BFS/103. Binary Tree Zigzag Level Order Traversal.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Binary tree/二叉树的遍历/BFS/107. Binary Tree Level Order Traversal II.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Binary tree/二叉树的遍历/BFS/117. Populating Next Right Pointers in Each Node II.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary tree/binary tree 注意要点" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/Date Structure And Algorithm-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/Date Structure And Algorithm-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binary tree/二叉树的遍历/BFS/102. Binary Tree Level Order Traversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary tree/二叉树的遍历/BFS/102. Binary Tree Level Order Traversal.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/数据结构与算法基础/Date Structure And Algorithm.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/Date Structure And Algorithm.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -68,7 +68,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -404,14 +404,8 @@
       <workItem from="1581981085351" duration="143000" />
       <workItem from="1582070034072" duration="29003000" />
       <workItem from="1582150638380" duration="747000" />
-      <workItem from="1582193212299" duration="6515000" />
-    </task>
-    <task id="LOCAL-00006" summary="1226">
-      <created>1577417682357</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1577417682357</updated>
+      <workItem from="1582193212299" duration="25453000" />
+      <workItem from="1582276807420" duration="3870000" />
     </task>
     <task id="LOCAL-00007" summary="1227">
       <created>1577417694359</created>
@@ -749,7 +743,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582153598325</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="0220">
+      <created>1582206233978</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1582206233979</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
