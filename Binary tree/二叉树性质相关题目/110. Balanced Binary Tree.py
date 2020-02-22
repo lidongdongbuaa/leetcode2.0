@@ -160,7 +160,7 @@ B.
     main function: if helper function == -1, return False, else return True 
 time complex: worst O(N) compute its height in constant time as well as compare the height of its children.
 space complex: worst O(N) 
-易错点：return 1 + max(depth_left, depth_right)
+易错点：depth() 正常情况下，输出max height，遇到unbalanced情况， 输出不平衡标志，可以为-1，也可以为'a'等其他符号
 '''
 class Solution:
     def isBalanced(self, root: TreeNode) -> bool:
@@ -176,11 +176,11 @@ class Solution:
         if not root:
             return 0
 
-        depth_left = self.depth(root.left)  #  check left
+        depth_left = self.depth(root.left)  #  check root left
         if depth_left == -1:
             return -1
 
-        depth_right = self.depth(root.right)  # check right
+        depth_right = self.depth(root.right)  # check root right
         if depth_right == -1:
             return -1
 
@@ -206,7 +206,7 @@ class Solution:
             else:
                 left, right = depth[node.left], depth[node.right]
                 if left == -1 or right == -1 or abs(left-right) > 1:
-                    depth[node] = -1
+                    depth[node] = -1  # or return False
                 else:
                     depth[node] = max(left, right) + 1
         return depth[root] != -1

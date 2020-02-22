@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Binary tree/二叉树的遍历/BFS/103. Binary Tree Zigzag Level Order Traversal.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Binary tree/二叉树的遍历/BFS/107. Binary Tree Level Order Traversal II.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Binary tree/二叉树的遍历/BFS/117. Populating Next Right Pointers in Each Node II.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary tree/二叉树的遍历/BFS/102. Binary Tree Level Order Traversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary tree/二叉树的遍历/BFS/102. Binary Tree Level Order Traversal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binary tree/二叉树性质相关题目/110. Balanced Binary Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary tree/二叉树性质相关题目/110. Balanced Binary Tree.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/数据结构与算法基础/Date Structure And Algorithm.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/Date Structure And Algorithm.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -405,14 +402,8 @@
       <workItem from="1582070034072" duration="29003000" />
       <workItem from="1582150638380" duration="747000" />
       <workItem from="1582193212299" duration="25453000" />
-      <workItem from="1582276807420" duration="3870000" />
-    </task>
-    <task id="LOCAL-00007" summary="1227">
-      <created>1577417694359</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1577417694359</updated>
+      <workItem from="1582276807420" duration="4058000" />
+      <workItem from="1582326469669" duration="4621000" />
     </task>
     <task id="LOCAL-00008" summary="1227">
       <created>1577421725777</created>
@@ -750,7 +741,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582206233979</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="0221">
+      <created>1582283706550</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1582283706551</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -793,7 +791,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="0109" />
     <MESSAGE value="0110" />
     <MESSAGE value="0112" />
     <MESSAGE value="0114 位运算" />
@@ -818,7 +815,8 @@
     <MESSAGE value="0217" />
     <MESSAGE value="0219" />
     <MESSAGE value="0220" />
-    <option name="LAST_COMMIT_MESSAGE" value="0220" />
+    <MESSAGE value="0221" />
+    <option name="LAST_COMMIT_MESSAGE" value="0221" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2740" y="176" key="#xdebugger.evaluate" timestamp="1579417161456">
