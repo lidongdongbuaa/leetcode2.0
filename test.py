@@ -1,33 +1,32 @@
+
+
 class TreeNode:
     def __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
 
-'''
-易错点： 
-    左子树为空，也算是子树
-    不能以leaf间距层数作为判定标准
-'''
-
-
 class Solution:
-    def preorderTraversal(self, root: TreeNode):
-        if not root:  # corner case
-            return []  #
+    def allDepth(self, root: TreeNode) -> int:
+        if not root:
+            return 0
 
-        stack = [root]
+        height = 0
         res = []
-
-        while stack:
-            node = stack.pop()
-            res.append(node.val)
-            if node.right:
-                stack.append(node.right)
-            if node.left:
-                stack.append(node.left)
+        # self.depth(root, height, res)
         return res
 
+    def depth(self, root):  # root, res:List
+        if not root:
+            return 0
+
+        height = 0
+        if not root.left and not root.right:
+            return 1
+
+        height = self.depth(root.left) + 1
+        height = self.depth(root.right) + 1
+        return height
 
 from collections import deque
 def constructTree(nodeList):  # input: list using bfs, output: root
@@ -58,6 +57,7 @@ def constructTree(nodeList):  # input: list using bfs, output: root
         i = i + 2
     return resHead
 
-root = constructTree([1,2, 3, 4, 5, 6,7])
+
+root = constructTree([1,2,3,4,None,5])
 x = Solution()
-print(x.preorderTraversal(root))
+print(x.depth(root))

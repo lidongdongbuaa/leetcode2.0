@@ -18,7 +18,7 @@
         /
        3
     
-    Output: [3,2,1]
+    Output: 
     Follow up: Recursive solution is trivial, could you do it iteratively?
 2.理解： post order the tree, output the node val in list
 3.类型： binary tree
