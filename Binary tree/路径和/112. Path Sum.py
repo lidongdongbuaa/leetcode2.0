@@ -82,7 +82,7 @@ Method:
             else: reduce current node value
 time complex: O(N)
 space complex: O(logN)
-易错点：
+易错点：类似BFS中的queue.append([root, 0])
 '''
 class TreeNode:
     def __init__(self, x):
@@ -95,17 +95,14 @@ class Solution:
         if not root:  # corner case
             return False
 
-        tmp = 0
-        stack = [root]
+        stack = [[root, root.val]]
         while stack:
-            root = stack.pop()
+            root, tmp = stack.pop()
             if root.right:
-                stack.append(root.right)
+                stack.append([root.right, tmp + root.right.val])
             if root.left:
-                stack.append(root.left)
-            tmp += root.val
-            if tmp == sum:
+                stack.append([root.left, tmp + root.left.val])
+
+            if not root.left and not root.right and tmp == sum:
                 return True
-            else:
-                tmp -= root.val
         return False

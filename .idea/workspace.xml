@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="0223">
-      <change afterPath="$PROJECT_DIR$/mock record/200223/200223li.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mock record/200223/200223su.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mock record/200223/微信图片_20200223231129.jpg" afterDir="false" />
+    <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary tree/二叉树性质相关题目/110. Balanced Binary Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary tree/二叉树性质相关题目/110. Balanced Binary Tree.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Binary tree/路径和/112. Path Sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary tree/路径和/112. Path Sum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock record/.ipynb_checkpoints/Technical Interview Guidance-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/mock record/.ipynb_checkpoints/Technical Interview Guidance-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock record/Technical Interview Guidance.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/mock record/Technical Interview Guidance.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/Date Structure And Algorithm.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/Date Structure And Algorithm.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -110,6 +102,28 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.test">
+    <configuration name="求每层的宽度" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="leetcode" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Binary tree/二叉树性质相关题目" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Binary tree/二叉树性质相关题目/求每层的宽度.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="1360. Number of Days Between Two Dates" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="leetcode" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -198,28 +212,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="求每层的宽度" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="leetcode" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Binary tree/二叉树性质相关题目" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Binary tree/二叉树性质相关题目/求每层的宽度.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="lc 55" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="leetcode" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -289,6 +281,7 @@
     <list>
       <item itemvalue="Python.lc 55" />
       <item itemvalue="Python.lc51" />
+      <item itemvalue="Python.求每层的宽度" />
       <item itemvalue="Python.test" />
       <item itemvalue="Python.Number of Days Between Two Dates" />
       <item itemvalue="Python.Validate Binary Tree Nodes" />
@@ -437,14 +430,7 @@
       <workItem from="1582193212299" duration="25453000" />
       <workItem from="1582276807420" duration="4058000" />
       <workItem from="1582326469669" duration="4849000" />
-      <workItem from="1582375183839" duration="33318000" />
-    </task>
-    <task id="LOCAL-00010" summary="0106">
-      <created>1578271886813</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1578271886813</updated>
+      <workItem from="1582375183839" duration="34600000" />
     </task>
     <task id="LOCAL-00011" summary="0106">
       <created>1578311035501</created>
@@ -782,7 +768,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582465472395</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="0224">
+      <created>1582517873582</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1582517873582</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -825,7 +818,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="0114 位运算" />
     <MESSAGE value="0115" />
     <MESSAGE value="0116" />
     <MESSAGE value="0117" />
@@ -850,7 +842,8 @@
     <MESSAGE value="0221" />
     <MESSAGE value="0222" />
     <MESSAGE value="0223" />
-    <option name="LAST_COMMIT_MESSAGE" value="0223" />
+    <MESSAGE value="0224" />
+    <option name="LAST_COMMIT_MESSAGE" value="0224" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2740" y="176" key="#xdebugger.evaluate" timestamp="1579417161456">
