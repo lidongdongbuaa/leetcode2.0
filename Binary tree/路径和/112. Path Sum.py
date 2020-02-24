@@ -36,39 +36,76 @@ space complexity order:
 A. pre-order traversal 
 Method: 
     main() corner case,  + return help()
-    help(root, sum, tmp) use pre-order traversal to scan every path node, save them in list
-        if sum of list = sum, return True
-    after traversal, pop the last node in list by backtracking
-time complex: O(N)
-space complex: O(N)
+    help(root, sum, tmp) use pre-order traversal to scan every path node, add the node value
+        if add result = sum, return True
+    after traversal, reduce the last node value
+time complex: O(N) visit every node
+space complex: O(logN) average case
 易错点：
 '''
+
+class TreeNode:
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
+
 class Solution:
-    def findSum(self, root, sum):  # output: T/F
+    def hasPathSum(self, root: TreeNode, sum: int) -> bool:
         if not root:  # corner case
             return False
 
-        tmp = []
-        if self.dfs(root, sum, tmp):
-            return True
-        else:
-            return False
+        tmp = 0
+        return self.dfs(root, sum, tmp)
 
-    def dfs(self, root, x, tmp):  # output: T/F
+    def dfs(self, root, target, tmp):  # output: T/F
         if not root:  # corner case
             return False
 
-        tmp.append(root.val)
+        tmp += root.val
         if not root.left and not root.right:  # root is leaf
-            if sum(tmp) == x:
+            if tmp == target:
                 return True
 
 
-        res = self.dfs(root.left, x, tmp)
-        if res == True:
-            return True
-        res = self.dfs(root.right, x, tmp)
-        if res == True:
-            return True
-        tmp.pop()
-# 没做完
+        l = self.dfs(root.left, target, tmp)
+        r = self.dfs(root.right, target, tmp)
+        return l or r
+        tmp -= root.val
+
+'''
+B. iterative method using stack
+Method: 
+    traversal the nodes by stack to simulate the recursion
+        accumulate the node value
+            if == sum, return True
+            else: reduce current node value
+time complex: O(N)
+space complex: O(logN)
+易错点：
+'''
+class TreeNode:
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
+
+class Solution:
+    def hasPathSum(self, root: TreeNode, sum: int) -> bool:
+        if not root:  # corner case
+            return False
+
+        tmp = 0
+        stack = [root]
+        while stack:
+            root = stack.pop()
+            if root.right:
+                stack.append(root.right)
+            if root.left:
+                stack.append(root.left)
+            tmp += root.val
+            if tmp == sum:
+                return True
+            else:
+                tmp -= root.val
+        return False

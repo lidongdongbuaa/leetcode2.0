@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Binary tree/综合题目/1361. Validate Binary Tree Nodes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Binary tree/路径和/112. Path Sum.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode周赛/200223/Closest Divisors.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode周赛/200223/Number of Days Between Two Dates.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode周赛/200223/Validate Binary Tree Nodes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/内建模块/1360. Number of Days Between Two Dates.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/复习-面试经验/Google Intern Questionnaire的一些小tips_一亩三分地求职（非面经）版.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/复习-面试经验/Technical Interview Guidance - Jupyter Notebook.pdf" afterDir="false" />
+    <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="0223">
+      <change afterPath="$PROJECT_DIR$/mock record/200223/200223li.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mock record/200223/200223su.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mock record/200223/微信图片_20200223231129.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary tree/二叉树的遍历/DFS/145. Binary Tree Postorder Traversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary tree/二叉树的遍历/DFS/145. Binary Tree Postorder Traversal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock record/Technical Interview Guidance - Jupyter Notebook.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/mock record/Technical Interview Guidance - Jupyter Notebook.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binary tree/二叉树性质相关题目/110. Balanced Binary Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary tree/二叉树性质相关题目/110. Balanced Binary Tree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binary tree/路径和/112. Path Sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary tree/路径和/112. Path Sum.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock record/.ipynb_checkpoints/Technical Interview Guidance-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/mock record/.ipynb_checkpoints/Technical Interview Guidance-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mock record/Technical Interview Guidance.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/mock record/Technical Interview Guidance.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/Date Structure And Algorithm-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/Date Structure And Algorithm-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/数据结构与算法基础/Date Structure And Algorithm.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/Date Structure And Algorithm.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -77,7 +72,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -114,7 +109,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.1360. Number of Days Between Two Dates">
+  <component name="RunManager" selected="Python.test">
     <configuration name="1360. Number of Days Between Two Dates" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="leetcode" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -302,11 +297,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.1360. Number of Days Between Two Dates" />
         <item itemvalue="Python.Closest Divisors" />
         <item itemvalue="Python.Validate Binary Tree Nodes" />
         <item itemvalue="Python.Number of Days Between Two Dates" />
-        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -442,14 +437,7 @@
       <workItem from="1582193212299" duration="25453000" />
       <workItem from="1582276807420" duration="4058000" />
       <workItem from="1582326469669" duration="4849000" />
-      <workItem from="1582375183839" duration="24670000" />
-    </task>
-    <task id="LOCAL-00009" summary="1227">
-      <created>1577444883924</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1577444883924</updated>
+      <workItem from="1582375183839" duration="33318000" />
     </task>
     <task id="LOCAL-00010" summary="0106">
       <created>1578271886813</created>
@@ -787,7 +775,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582339056404</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="0223">
+      <created>1582465472395</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1582465472395</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -830,7 +825,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="0112" />
     <MESSAGE value="0114 位运算" />
     <MESSAGE value="0115" />
     <MESSAGE value="0116" />
@@ -855,7 +849,8 @@
     <MESSAGE value="0220" />
     <MESSAGE value="0221" />
     <MESSAGE value="0222" />
-    <option name="LAST_COMMIT_MESSAGE" value="0222" />
+    <MESSAGE value="0223" />
+    <option name="LAST_COMMIT_MESSAGE" value="0223" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2740" y="176" key="#xdebugger.evaluate" timestamp="1579417161456">
@@ -1171,7 +1166,7 @@
     <SUITE FILE_PATH="coverage/leetcode$lc_452.coverage" NAME="lc 452 Coverage Results" MODIFIED="1562379814901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/code$Binary_Tree.coverage" NAME="构造Binary Tree Coverage Results" MODIFIED="1581415426515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary tree" />
     <SUITE FILE_PATH="coverage/leetcode$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1572310587622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$test.coverage" NAME="test Coverage Results" MODIFIED="1582425195267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/leetcodeText400AG$test.coverage" NAME="test Coverage Results" MODIFIED="1582467016265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$201__Bitwise_AND_of_Numbers_Range.coverage" NAME="201. Bitwise AND of Numbers Range Coverage Results" MODIFIED="1579310223730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bit manipulation 位运算/数学相关问题" />
     <SUITE FILE_PATH="coverage/leetcode$lc_20.coverage" NAME="lc 20 Coverage Results" MODIFIED="1565579542821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$lc_53.coverage" NAME="lc 53 Coverage Results" MODIFIED="1565941361242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

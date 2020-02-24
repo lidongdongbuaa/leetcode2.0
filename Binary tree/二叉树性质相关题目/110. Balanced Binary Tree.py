@@ -156,6 +156,7 @@ input
 B.
 思路：bottom-up- dfs
 方法：
+    先判断子树的，再判断子树的parent的
     helper function: scan every node adn calculate two subtree's max height, if find dif > 1, break, return -1 by DFS or BFS
     main function: if helper function == -1, return False, else return True 
 time complex: worst O(N) compute its height in constant time as well as compare the height of its children.
@@ -206,7 +207,7 @@ class Solution:
             else:
                 left, right = depth[node.left], depth[node.right]
                 if left == -1 or right == -1 or abs(left-right) > 1:
-                    depth[node] = -1  # or return False
+                    depth[node] = -1  # or return False`
                 else:
                     depth[node] = max(left, right) + 1
         return depth[root] != -1

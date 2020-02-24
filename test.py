@@ -1,32 +1,8 @@
-
-
 class TreeNode:
     def __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
-
-class Solution:
-    def allDepth(self, root: TreeNode) -> int:
-        if not root:
-            return 0
-
-        height = 0
-        res = []
-        # self.depth(root, height, res)
-        return res
-
-    def depth(self, root):  # root, res:List
-        if not root:
-            return 0
-
-        height = 0
-        if not root.left and not root.right:
-            return 1
-
-        height = self.depth(root.left) + 1
-        height = self.depth(root.right) + 1
-        return height
 
 from collections import deque
 def constructTree(nodeList):  # input: list using bfs, output: root
@@ -58,6 +34,19 @@ def constructTree(nodeList):  # input: list using bfs, output: root
     return resHead
 
 
-root = constructTree([1,2,3,4,None,5])
-x = Solution()
-print(x.depth(root))
+root = constructTree([1,2,3,4,5])
+
+class mySolution:
+    def dfs(self, root):
+        res = []
+        if not root:
+            return res
+
+        if not root.left and not root.right:
+            res.append(root.val)
+
+        res += self.dfs(root.left)
+        res += self.dfs(root.right)
+        return res
+X = mySolution()
+print(X.dfs(root))
