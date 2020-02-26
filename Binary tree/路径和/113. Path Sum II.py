@@ -33,7 +33,7 @@
     output: list[[]]
     corner case: None?-> [], Only one? ->[[node.val]]
 
-5.方法及方法分析：
+5.方法及方法分析：preoder traveral and store, iterative method by stack simulating recursion
 time complexity order: 
 space complexity order: 
 6.如何考？

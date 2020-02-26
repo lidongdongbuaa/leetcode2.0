@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Binary tree/路径和/113. Path Sum II.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Binary tree/路径和/129. Sum Root to Leaf Numbers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mock record/200223/~$0223su.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binary tree/路径和/113. Path Sum II.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary tree/路径和/113. Path Sum II.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock record/Technical Interview Guidance.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/mock record/Technical Interview Guidance.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/数据结构与算法基础/Date Structure And Algorithm.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/Date Structure And Algorithm.ipynb" afterDir="false" />
     </list>
@@ -62,7 +65,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/内建模块" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../面经题目/google/OA/2019(1-3月)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -77,18 +80,19 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\working\leetcodeText400AG\内建模块" />
-      <recent name="D:\working\leetcodeText400AG\Binary tree\综合题目" />
-      <recent name="D:\working\leetcodeText400AG\mock record\200105" />
-      <recent name="D:\working\leetcode" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\working\leetcodeText400AG\Bit manipulation 位运算\汉明距离" />
       <recent name="D:\leetcode2.0\复习-面试经验\BQ" />
       <recent name="D:\working\leetcode\mock record" />
       <recent name="D:\working\leetcode" />
       <recent name="D:\working\leetcode\venv" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\working\面经题目\google\OA\2019(1-3月)" />
+      <recent name="D:\working\leetcodeText400AG\内建模块" />
+      <recent name="D:\working\leetcodeText400AG\Binary tree\综合题目" />
+      <recent name="D:\working\leetcodeText400AG\mock record\200105" />
+      <recent name="D:\working\leetcode" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -411,14 +415,9 @@
       <workItem from="1582326469669" duration="4849000" />
       <workItem from="1582375183839" duration="34600000" />
       <workItem from="1582521320056" duration="50000" />
-      <workItem from="1582538632339" duration="12891000" />
-    </task>
-    <task id="LOCAL-00012" summary="0107">
-      <created>1578364881107</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1578364881107</updated>
+      <workItem from="1582538632339" duration="12915000" />
+      <workItem from="1582585526593" duration="3323000" />
+      <workItem from="1582636931590" duration="10558000" />
     </task>
     <task id="LOCAL-00013" summary="0108">
       <created>1578450814469</created>
@@ -756,7 +755,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582521358886</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="0225">
+      <created>1582583462431</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1582583462432</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -799,7 +805,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="0115" />
     <MESSAGE value="0116" />
     <MESSAGE value="0117" />
     <MESSAGE value="0118" />
@@ -824,7 +829,8 @@
     <MESSAGE value="0222" />
     <MESSAGE value="0223" />
     <MESSAGE value="0224" />
-    <option name="LAST_COMMIT_MESSAGE" value="0224" />
+    <MESSAGE value="0225" />
+    <option name="LAST_COMMIT_MESSAGE" value="0225" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2740" y="176" key="#xdebugger.evaluate" timestamp="1579417161456">
@@ -1124,6 +1130,11 @@
           <line>90</line>
           <option name="timeStamp" value="239" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="244" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -1140,7 +1151,7 @@
     <SUITE FILE_PATH="coverage/leetcode$lc_452.coverage" NAME="lc 452 Coverage Results" MODIFIED="1562379814901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/code$Binary_Tree.coverage" NAME="构造Binary Tree Coverage Results" MODIFIED="1581415426515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary tree" />
     <SUITE FILE_PATH="coverage/leetcode$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1572310587622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$test.coverage" NAME="test Coverage Results" MODIFIED="1582582527491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/leetcodeText400AG$test.coverage" NAME="test Coverage Results" MODIFIED="1582675002310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$201__Bitwise_AND_of_Numbers_Range.coverage" NAME="201. Bitwise AND of Numbers Range Coverage Results" MODIFIED="1579310223730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bit manipulation 位运算/数学相关问题" />
     <SUITE FILE_PATH="coverage/leetcode$lc_20.coverage" NAME="lc 20 Coverage Results" MODIFIED="1565579542821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$lc_53.coverage" NAME="lc 53 Coverage Results" MODIFIED="1565941361242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
