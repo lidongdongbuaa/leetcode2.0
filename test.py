@@ -1,3 +1,4 @@
+
 class TreeNode:
     def __init__(self, x):
         self.val = x
@@ -5,87 +6,24 @@ class TreeNode:
         self.right = None
 
 class Solution:
-    def sumNumbers(self, root: TreeNode) -> int:
-        if not root:  # corner case
-            return 0
-        if not root.left and not root.right:  # corner casse
-            return root.val
+    def buildTree(self, preorder, inorder) -> TreeNode:
+        if len(preorder) == 0:  # corner case
+            return None
+        dic = {value : i for i, value in enumerate(inorder)}
+        return self.dfs(preorder, inorder, dic, 0, len(preorder), 0, len(inorder))
 
-        res = self.bfs(root)
-        return sum(res)   # 不是sum[res]
+    def dfs(self, preorder, inorder, dic, pre_l, pre_r, in_l, in_r):  # return root
+        if pre_l == pre_r:
+            return None
 
-    def bfs(self, root):  # save every path sum in res
-        if not root:  # corner case
-            return []
-        if not root.left and not root.right:
-            return [root.val]
+        root = TreeNode(preorder[pre_l])  # 构建当前“根”
+        index = dic[preorder[pre_l]]  # 从哈希表中找到当前“根”的索引
 
-        stack = [[root, [root.val]]]
+        # 更新前序遍历、中序遍历边界，然后递归构建左右子树
+        # 我们可以通过“前序和中序个数是相同”这个隐含条件，求出前序左右边界
+        root.left = self.dfs(preorder, inorder, dic, pre_l + 1, pre_l + 1 + index - in_l, in_l, index )
+        root.right = self.dfs(preorder, inorder, dic, pre_l + 1 + index - in_l, pre_r, index + 1, in_r )
+        return root
 
-        res = []
-        while stack:
-            root, tmp = stack.pop()
-            if root.right:
-                r = tmp.copy()
-                r.append(root.right.val)
-                stack.append([root.right, r])
-            if root.left:
-                l = tmp.copy()
-                l.append(root.left.val)
-                stack.append([root.left, l])
-            if not root.left and not root.right:
-                res.append(self.transfer(tmp))
-        return res
-
-
-    def transfer(self, tmp):  # transfer list to int
-        if not tmp:  # corner case
-            return 0
-
-        if len(tmp) == 1:
-            return tmp
-
-        res = 0
-        for elem in tmp:  # calculate sum of list
-            res = res * 10 + elem
-        return res
-
-class TreeNode:
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
-
-from collections import deque
-def constructTree(nodeList):  # input: list using bfs, output: root
-    new_node = []
-    for elem in nodeList:  # transfer list val to tree node
-        if elem:
-            new_node.append(TreeNode(elem))
-        else:
-            new_node.append(None)
-
-    queue = deque()
-    queue.append(new_node[0])
-
-    resHead = queue[0]
-    i = 1
-
-    while i <= len(new_node) - 1:  # bfs method building
-        head = queue.popleft()
-
-        head.left = new_node[i]  # build left and push
-        if head.left:
-            queue.append(head.left)
-        if i + 1 == len(new_node):  # if no i + 1 in new_node
-            break
-        head.right = new_node[i + 1]  # build right and push
-        if head.right:
-            queue.append(head.right)
-        i = i + 2
-    return resHead
-
-
-root = constructTree([4,9,0,5,1])
 x = Solution()
-print(x.sumNumbers(root))
+print(x.buildTree(preorder = [3,9,20,15,7], inorder = [9,3,15,20,7]))
