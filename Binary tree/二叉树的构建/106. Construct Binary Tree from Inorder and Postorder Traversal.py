@@ -99,6 +99,8 @@ class Solution:
             root = TreeNode(postorder[post_r - 1])
             mid = dic[postorder[post_r - 1]]
 
+            # 更新中序遍历、后序遍历边界，然后递归构建左右子树
+            # 我们可以通过“中序和后序个数是相同”这个隐含条件，求出后序左右边界
             root.left = dfs(in_l, mid, post_l, mid - in_l + post_l)
             root.right = dfs(mid + 1, in_r, post_r - 1 - (in_r - mid - 1), post_r - 1)
             return root
