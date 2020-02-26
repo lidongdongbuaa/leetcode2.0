@@ -95,12 +95,12 @@ class Solution:
 '''
 思路：iterative using up level to connect lower level
 方法：
-    traversal level
-        traversal current level's node - cur
-            build dummy and tail for lower level
-                if cur has left/right, tail connect the node
-            renew cur in this level
-        renew cur to next level
+    traversal every level's leftmost node as cur
+        traversal every node in one level as cur, build dummy and tail for lower level
+            if cur has left/right, tail connect them
+            renew cur using next
+        renew cur by dummy.next
+    return root
 time complex: O(N)
 space complex: O(1)
 易错点：cur = cur.next
