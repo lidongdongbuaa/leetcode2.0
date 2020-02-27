@@ -127,3 +127,31 @@ class Solution:
             if root.right:
                 queue.append([root.right, string + '->' + str(root.right.val)])
         return res
+
+'''
+D. iterative DSF
+    Method:
+        stack store root and its string until empty
+            stack pop as root and string
+            if root is leaf, res add string
+            stack append root.right and string + str(root.l.val)
+            do same things for left part
+        t O(N)  sO(N)
+'''
+class Solution:
+    def binaryTreePaths(self, root):  # return [string]
+        if not root:  # corner case
+            return []
+
+        res = []
+        stack = [[root, str(root.val)]]
+
+        while stack:
+            root, string = stack.pop()
+            if not root.left and not root.right:
+                res.append(string)
+            if root.right:
+                stack.append([root.right, string + '->' + str(root.right.val)])
+            if root.left:
+                stack.append([root.left, string + '->' + str(root.left.val)])
+        return res

@@ -28,8 +28,8 @@
     input:root with tree API, sum: int, tree node, repeated? Y, order? N value range? >0 number range? N, sum range? >0
     output:True or False
     corner case: root None? -> False
-4.方法及方法分析：
-time complexity order: 
+4.方法及方法分析： pre-order DFS, iterative DFS, BFS
+time complexity order: O(N)
 space complexity order: 
 '''
 '''
@@ -105,4 +105,34 @@ class Solution:
 
             if not root.left and not root.right and tmp == sum:
                 return True
+        return False
+
+'''
+C.BFS
+    Method:
+        deque to save root and the value
+            deque pop the left node, the value 
+            deque add node's left/right node and added value
+            if node is leaf and value == target, return
+        return False
+    time O(N) space O(N)
+    
+'''
+from collections import deque
+class Solution:
+    def hasPathSum(self, root, sum):  # return T/F
+        if not root:  # corner case
+            return False
+
+        queue = deque([(root, root.val)])
+
+        while queue:
+            root, value = queue.popleft()
+            if not root.left and not root.right and value == sum:
+                return True
+            if root.left:
+                queue.append([root.left, value + root.left.val])
+            if root.right:
+                queue.append([root.right, value + root.right.val])
+
         return False

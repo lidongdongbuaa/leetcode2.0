@@ -56,7 +56,7 @@ class TreeNode:
         self.right = None
 
 class Solution:
-    def pathSum(self, root: TreeNode, sum: int) -> bool:
+    def pathSum(self, root: TreeNode, sum: int) :
         if not root:  # corner case
             return []
 
@@ -90,7 +90,7 @@ B. iterative method by stack simulating recursion
 '''
 from copy import deepcopy
 class Solution:
-    def pathSum(self, root: TreeNode, sum: int) -> bool:
+    def pathSum(self, root: TreeNode, sum: int):
         return self.helper(root, sum)
 
     def helper(self, root, total):
@@ -146,38 +146,39 @@ tmep
 
 '''
 
-
+'''
+C.BFS
+    Method:
+        queue save nodes until empty
+            queue leftpop node
+            add node.val to tmp list
+            if node is leaf, and sum of tmp is target
+                save tmp to res
+            queue. add node left/right and the tmp add their val
+        return res
+        time complexity O(N), space O(N)
+'''
 from collections import deque
-def constructTree(nodeList):  # input: list using bfs, output: root
-    new_node = []
-    for elem in nodeList:  # transfer list val to tree node
-        if elem:
-            new_node.append(TreeNode(elem))
-        else:
-            new_node.append(None)
+class Solution:
+    def pathSum(self, root: TreeNode, sum: int):   # return list
+        if not root:  # corner case
+            return []
 
-    queue = deque()
-    queue.append(new_node[0])
-
-    resHead = queue[0]
-    i = 1
-
-    while i <= len(new_node) - 1:  # bfs method building
-        head = queue.popleft()
-
-        head.left = new_node[i]  # build left and push
-        if head.left:
-            queue.append(head.left)
-        if i + 1 == len(new_node):  # if no i + 1 in new_node
-            break
-        head.right = new_node[i + 1]  # build right and push
-        if head.right:
-            queue.append(head.right)
-        i = i + 2
-    return resHead
-
-
-root = constructTree([1,2])
-x = Solution()
-print(x.findPath(root, 1))
-
+        res = []
+        queue = deque([(root, [root.val])])
+        while queue:
+            root, tmp = queue.popleft()
+            total = 0
+            for elem in tmp:
+                total += elem
+            if not root.left and not root.right and total == sum:
+                res.append(tmp.copy())
+            if root.left:
+                left = tmp.copy()
+                left.append(root.left.val)
+                queue.append([root.left, left])
+            if root.right:
+                right = tmp.copy()
+                right.append(root.right.val)
+                queue.append([root.right, right])
+        return res

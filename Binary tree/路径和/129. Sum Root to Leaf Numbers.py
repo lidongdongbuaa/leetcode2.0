@@ -220,19 +220,17 @@ class Solution:
         if not root.left and not root.right:  # corner casse
             return root.val
 
-        queue = deque([(root, 0)])
+        queue = deque([(root, root.val)])
 
         res = 0
         while queue:
             root, tmp = queue.popleft()
-            tmp *= 10
-            tmp += root.val
             if not root.left and not root.right:
                 res += tmp  # add directly
             if root.left:
-                queue.append([root.left, tmp])
+                queue.append([root.left, tmp * 10 + root.left.val])
             if root.right:
-                queue.append([root.right, tmp])
+                queue.append([root.right, tmp * 10 + root.right.val])
         return res
 
 
