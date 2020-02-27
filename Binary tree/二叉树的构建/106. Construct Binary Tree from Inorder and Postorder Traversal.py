@@ -28,9 +28,9 @@
     input: two list, no repeated, node value range? N node number? N
     output:root of tree
     corner case: list is None : None
-5.方法及方法分析：
-time complexity order: 
-space complexity order: 
+5.方法及方法分析：DFS + find mid, optimize find index of node
+time complexity order: optimize find index of node O(N) < DFS + find mid O(N**2)
+space complexity order: optimize find index of node O(N) = DFS + find mid O(N)
 6.如何考
 '''
 '''
