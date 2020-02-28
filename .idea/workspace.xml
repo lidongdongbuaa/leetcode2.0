@@ -3,11 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary tree/路径和/112. Path Sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary tree/路径和/112. Path Sum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary tree/路径和/113. Path Sum II.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary tree/路径和/113. Path Sum II.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary tree/路径和/129. Sum Root to Leaf Numbers.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary tree/路径和/129. Sum Root to Leaf Numbers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary tree/路径和/257. Binary Tree Paths.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary tree/路径和/257. Binary Tree Paths.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/Date Structure And Algorithm-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/Date Structure And Algorithm-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binary tree/二叉树的构建/105. Construct Binary Tree from Preorder and Inorder Traversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary tree/二叉树的构建/105. Construct Binary Tree from Preorder and Inorder Traversal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binary tree/二叉树的构建/106. Construct Binary Tree from Inorder and Postorder Traversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary tree/二叉树的构建/106. Construct Binary Tree from Inorder and Postorder Traversal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binary tree/二叉树的构建/109. Convert Sorted List to Binary Search Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary tree/二叉树的构建/109. Convert Sorted List to Binary Search Tree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binary tree/二叉树的构建/构造Binary Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary tree/二叉树的构建/Construt Binary Tree from Level Order Traversal.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/数据结构与算法基础/Date Structure And Algorithm.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/Date Structure And Algorithm.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -107,7 +106,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.Construt Binary Tree from Level Order Traversal">
     <configuration name="105. Construct Binary Tree from Preorder and Inorder Traversal" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="leetcode" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -174,7 +173,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Closest Divisors" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Construt Binary Tree from Level Order Traversal" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="leetcode" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -182,12 +181,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode周赛/200223" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Binary tree/二叉树的构建" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode周赛/200223/Closest Divisors.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Binary tree/二叉树的构建/Construt Binary Tree from Level Order Traversal.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -266,18 +265,18 @@
       <item itemvalue="Python.lc 55" />
       <item itemvalue="Python.lc51" />
       <item itemvalue="Python.test" />
-      <item itemvalue="Python.Closest Divisors" />
       <item itemvalue="Python.1360. Number of Days Between Two Dates" />
       <item itemvalue="Python.113. Path Sum II" />
       <item itemvalue="Python.105. Construct Binary Tree from Preorder and Inorder Traversal" />
+      <item itemvalue="Python.Construt Binary Tree from Level Order Traversal" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Construt Binary Tree from Level Order Traversal" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.105. Construct Binary Tree from Preorder and Inorder Traversal" />
         <item itemvalue="Python.113. Path Sum II" />
         <item itemvalue="Python.1360. Number of Days Between Two Dates" />
-        <item itemvalue="Python.Closest Divisors" />
       </list>
     </recent_temporary>
   </component>
@@ -417,14 +416,7 @@
       <workItem from="1582521320056" duration="50000" />
       <workItem from="1582538632339" duration="12915000" />
       <workItem from="1582585526593" duration="3323000" />
-      <workItem from="1582636931590" duration="55914000" />
-    </task>
-    <task id="LOCAL-00018" summary="0112">
-      <created>1578873691309</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1578873691309</updated>
+      <workItem from="1582636931590" duration="63293000" />
     </task>
     <task id="LOCAL-00019" summary="0114 位运算">
       <created>1578974192002</created>
@@ -762,7 +754,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582788639487</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="0227">
+      <created>1582811331701</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1582811331701</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -1116,7 +1115,7 @@
           <option name="timeStamp" value="218" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Binary tree/二叉树的构建/构造Binary Tree.py</url>
+          <url>file://$PROJECT_DIR$/Binary tree/二叉树的构建/Construt Binary Tree from Level Order Traversal.py</url>
           <line>56</line>
           <option name="timeStamp" value="234" />
         </line-breakpoint>
@@ -1140,6 +1139,11 @@
           <line>15</line>
           <option name="timeStamp" value="248" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Binary tree/二叉树的构建/Construt Binary Tree from Level Order Traversal.py</url>
+          <line>51</line>
+          <option name="timeStamp" value="249" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -1149,15 +1153,6 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="PythonConfigurationType">
-        <watch expression="pre_l + 1" language="Python" />
-        <watch expression="pre_l + 1 + index - in_l" language="Python" />
-        <watch expression="__py_debug_temp_var_122959294" />
-        <watch expression="index" />
-        <watch expression="__py_debug_temp_var_122959294" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/leetcode$lc_547.coverage" NAME="lc 547 Coverage Results" MODIFIED="1568543535127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -1223,6 +1218,7 @@
     <SUITE FILE_PATH="coverage/leetcode$lc_187.coverage" NAME="lc 187 Coverage Results" MODIFIED="1565093029960" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode2_0$5308__Minimum_Flips_to_Make_a_OR_b_Equal_to_c.coverage" NAME="5308. Minimum Flips to Make a OR b Equal to c Coverage Results" MODIFIED="1579414927974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/200112" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1581303008666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/leetcodeText400AG$Construt_Binary_Tree_from_Level_Order_Traversal.coverage" NAME="Construt Binary Tree from Level Order Traversal Coverage Results" MODIFIED="1582848445810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary tree/二叉树的构建" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$29__Divide_Two_Integers.coverage" NAME="29. Divide Two Integers Coverage Results" MODIFIED="1579305572889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bit manipulation 位运算/数学相关问题" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$5308__Minimum_Flips_to_Make_a_OR_b_Equal_to_c.coverage" NAME="5308. Minimum Flips to Make a OR b Equal to c Coverage Results" MODIFIED="1578896596869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/200112" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$113__Path_Sum_II.coverage" NAME="113. Path Sum II Coverage Results" MODIFIED="1582581074357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary tree/路径和" />

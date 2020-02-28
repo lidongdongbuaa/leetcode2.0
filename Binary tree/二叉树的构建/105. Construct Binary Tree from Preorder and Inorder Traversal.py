@@ -106,3 +106,28 @@ class Solution:
 
 x = Solution()
 x.buildTree(preorder = [3,9,20,15,7], inorder = [9,3,15,20,7])
+
+
+'''
+preorder左右边界整理版
+'''
+
+
+class Solution:
+    def buildTree(self, preorder, inorder) -> TreeNode:
+
+        def dfs(pre_l, pre_r, in_l, in_r):
+            if pre_l == pre_r:
+                return None
+
+            root = TreeNode(preorder[pre_l])
+            mid = dic[preorder[pre_l]]
+
+            root.left = dfs(pre_l + 1, mid - in_l + pre_l + 1, in_l, mid)
+            # root.right = dfs(mid - in_l + pre_l + 1, pre_r, mid + 1, in_r)
+            root.right = dfs(pre_r - (in_r - (mid + 1)), pre_r, mid + 1, in_r)
+            return root
+
+        dic = {value : i for i, value in enumerate(inorder)}
+        root = dfs(0, len(preorder), 0, len(inorder))
+        return root

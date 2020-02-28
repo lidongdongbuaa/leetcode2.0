@@ -90,8 +90,6 @@ class Solution:
         if len(inorder) == 0:  # corner case
             return None
 
-        dic = {value : index for index, value in enumerate(inorder)}
-
         def dfs(in_l, in_r, post_l, post_r):
             if in_l == in_r:
                 return None
@@ -102,7 +100,9 @@ class Solution:
             # 更新中序遍历、后序遍历边界，然后递归构建左右子树
             # 我们可以通过“中序和后序个数是相同”这个隐含条件，求出后序左右边界
             root.left = dfs(in_l, mid, post_l, mid - in_l + post_l)
-            root.right = dfs(mid + 1, in_r, post_r - 1 - (in_r - mid - 1), post_r - 1)
+            # root.right = dfs(mid + 1, in_r, post_r - 1 - (in_r - mid - 1), post_r - 1)
+            root.right = dfs(mid + 1, in_r, mid - in_l + post_l, post_r - 1)
             return root
 
+        dic = {value: index for index, value in enumerate(inorder)}
         return dfs(0, len(inorder), 0, len(postorder))
