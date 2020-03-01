@@ -1,28 +1,24 @@
-from collections import deque
+from collections import defaultdict
+class Solution:
+    def rankTeams(self, votes):  # return string of team name
+        if len(votes) == 1:  # corner case
+            return votes[0]
 
+        num = len(votes[0])  # kinds of alphabet
 
-class MySolution:
-    def bfsGraph(self, num, slides):
-        graph = [[] for _ in range(num)]  # 建立空邻接表
-        visited = [0 for _ in range(num)]  # 建立空访问表
+        lookup = defaultdict(list)
+        used = set()  # 统计出现的字符
 
-        for i, j in slides:  # 填充邻接表
-            graph[i].append(j)
-            graph[j].append(i)
+        for vote in votes:
+            for i, v in enumerate(vote):
+                used.add(v)
+                if len(lookup[v]) == 0:
+                    lookup[v] = [0] * 26  # 构造一个dict， key是字母，value是list,[times], 元素是各个位置出现的频率
+                lookup[v][i] += 1
 
-        queue = deque()
-        queue.append(0)
+        tmp = sorted(list(used), key = lambda x : (lookup[x], -ord(x)))  # ord 技巧
+        tmp.reverse()
+        return ''.join(tmp)
 
-        while queue:
-            node_ind = queue.popleft()  # 从某个顶点出发，访问其各个邻接点
-            visited[node_ind] = 1
-            print('visited node index:%s' % node_ind)
-            print('visit: %s' % visited)
-            for neigh_ind in graph[node_ind]:  # 从邻接点出发，访问邻接点的邻接点
-                if visited[neigh_ind] == 0:
-                    queue.append(neigh_ind)
-        return
-
-
-x = MySolution()
-x.bfsGraph(5, [[0, 1], [0, 2], [0, 3], [1, 4]])
+x = Solution()
+x.rankTeams(["BCA","CAB","CBA","ABC","ACB","BAC"])
