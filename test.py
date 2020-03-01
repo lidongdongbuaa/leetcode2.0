@@ -1,29 +1,28 @@
+from collections import deque
 
-class TreeNode:
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
 
-class Solution:
-    def buildTree(self, preorder, inorder) -> TreeNode:
-        if len(preorder) == 0:  # corner case
-            return None
-        dic = {value : i for i, value in enumerate(inorder)}
-        return self.dfs(preorder, inorder, dic, 0, len(preorder), 0, len(inorder))
+class MySolution:
+    def bfsGraph(self, num, slides):
+        graph = [[] for _ in range(num)]  # 建立空邻接表
+        visited = [0 for _ in range(num)]  # 建立空访问表
 
-    def dfs(self, preorder, inorder, dic, pre_l, pre_r, in_l, in_r):  # return root
-        if pre_l == pre_r:
-            return None
+        for i, j in slides:  # 填充邻接表
+            graph[i].append(j)
+            graph[j].append(i)
 
-        root = TreeNode(preorder[pre_l])  # 构建当前“根”
-        index = dic[preorder[pre_l]]  # 从哈希表中找到当前“根”的索引
+        queue = deque()
+        queue.append(0)
 
-        # 更新前序遍历、中序遍历边界，然后递归构建左右子树
-        # 我们可以通过“前序和中序个数是相同”这个隐含条件，求出前序左右边界
-        root.left = self.dfs(preorder, inorder, dic, pre_l + 1, pre_l + 1 + index - in_l, in_l, index )
-        root.right = self.dfs(preorder, inorder, dic, pre_l + 1 + index - in_l, pre_r, index + 1, in_r )
-        return root
+        while queue:
+            node_ind = queue.popleft()  # 从某个顶点出发，访问其各个邻接点
+            visited[node_ind] = 1
+            print('visited node index:%s' % node_ind)
+            print('visit: %s' % visited)
+            for neigh_ind in graph[node_ind]:  # 从邻接点出发，访问邻接点的邻接点
+                if visited[neigh_ind] == 0:
+                    queue.append(neigh_ind)
+        return
 
-x = Solution()
-print(x.buildTree(preorder = [3,9,20,15,7], inorder = [9,3,15,20,7]))
+
+x = MySolution()
+x.bfsGraph(5, [[0, 1], [0, 2], [0, 3], [1, 4]])
