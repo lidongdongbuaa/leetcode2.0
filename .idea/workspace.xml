@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/leetcode周赛/200301/How Many Numbers Are Smaller Than the Current Number.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode周赛/200301/Linked List in Binary Tree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode周赛/200301/Rank Teams by Votes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Binary tree/综合题目/从下至上分析/979. Distribute Coins in Binary Tree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Binary tree/综合题目/从下至上分析/Construt Binary Tree from Level Order Traversal.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mock record/200301/200301li.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mock record/200301/200301su.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binary tree/二叉树的构建/Construt Binary Tree from Level Order Traversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary tree/二叉树的构建/Construt Binary Tree from Level Order Traversal.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/数据结构与算法基础/Date Structure And Algorithm.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/Date Structure And Algorithm.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,7 +65,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../面经题目/google/OA/2019(1-3月)" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Binary tree/综合题目/从下至上分析" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -417,14 +418,7 @@
       <workItem from="1582538632339" duration="12915000" />
       <workItem from="1582585526593" duration="3323000" />
       <workItem from="1582636931590" duration="63909000" />
-      <workItem from="1582935669599" duration="32198000" />
-    </task>
-    <task id="LOCAL-00021" summary="0115">
-      <created>1579067665723</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1579067665723</updated>
+      <workItem from="1582935669599" duration="35593000" />
     </task>
     <task id="LOCAL-00022" summary="0116">
       <created>1579180354616</created>
@@ -762,7 +756,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583029692595</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="0302">
+      <created>1583107151180</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1583107151180</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -805,7 +806,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="0120" />
     <MESSAGE value="0126" />
     <MESSAGE value="0201" />
     <MESSAGE value="0202" />
@@ -830,7 +830,8 @@
     <MESSAGE value="0226" />
     <MESSAGE value="0227" />
     <MESSAGE value="0301" />
-    <option name="LAST_COMMIT_MESSAGE" value="0301" />
+    <MESSAGE value="0302" />
+    <option name="LAST_COMMIT_MESSAGE" value="0302" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2740" y="176" key="#xdebugger.evaluate" timestamp="1579417161456">
