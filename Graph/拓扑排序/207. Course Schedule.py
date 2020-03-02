@@ -54,7 +54,7 @@ A. Graph - DFS
 
 
 class Solution:
-    def course(self, nums, condition):  # return T/F
+    def canFinish(self, nums, condition):  # return T/F
         if nums == 0:  # corner case
             return True
         if condition == []:
@@ -71,6 +71,7 @@ class Solution:
                 if not self.dfs(graph, visit, i):
                     return False
         return True
+
 
     def dfs(self, graph, visit, ind):  # when repeat, return True or False
         if visit[ind] == 0:
