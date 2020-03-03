@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="0302">
-      <change afterPath="$PROJECT_DIR$/题目整理.xlsx" afterDir="false" />
+    <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test2.py" beforeDir="false" afterPath="$PROJECT_DIR$/test2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/Date Structure And Algorithm-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/Date Structure And Algorithm-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/数据结构与算法基础/Date Structure And Algorithm.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/Date Structure And Algorithm.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/题目整理.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/题目整理.xlsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -416,14 +415,8 @@
       <workItem from="1582538632339" duration="12915000" />
       <workItem from="1582585526593" duration="3323000" />
       <workItem from="1582636931590" duration="63909000" />
-      <workItem from="1582935669599" duration="51290000" />
-    </task>
-    <task id="LOCAL-00025" summary="0117">
-      <created>1579242708739</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1579242708739</updated>
+      <workItem from="1582935669599" duration="52422000" />
+      <workItem from="1583241694505" duration="1413000" />
     </task>
     <task id="LOCAL-00026" summary="0117">
       <created>1579252473209</created>
@@ -761,7 +754,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583159227990</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="0302">
+      <created>1583211802000</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1583211802001</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
