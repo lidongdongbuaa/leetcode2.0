@@ -1,39 +1,39 @@
-class Solution:
-    def findOrder(self, nums, condition):  # return T/F
-        if nums == 0:  # corner case
-            return []
-        if condition == []:
-            return [i for i in range(nums)]
-        if nums == 1:
-            return [0]
+class SortList:
+    def mergeSort(self, arr):  # Merge sort by bottom-up merge sort
+        if len(arr) == 0 or len(arr) == 1:  # edge case
+            return arr
 
-        graph = [[] for _ in range(nums)]
-        visit = [-1 for _ in range(nums)]  # 三种状态，-1未访问，0正在DFS中访问，1已经访问
+        length = len(arr)
+        interval = 1
+        while interval < length:
+            for i in range(0, length, 2 * interval):  # bottom-up merge sort
+                arr[i: i + 2 * interval] = self.subsort(arr[i: i + interval], arr[i + interval: i + interval * 2])
+            interval = interval * 2
+        return arr
 
-        for i, j in condition:  # build adjacency table
-            graph[j].append(i)
+    def subsort(self, list1, list2):  # sort two sorted list
+        if not list1:
+            return list2
+        if not list2:
+            return list1
 
-        stack = []
-        for i in range(nums):
-            if visit[i] == -1:  # 只访问未访问的，相当于剪枝
-                if not self.dfs(graph, visit, i, stack):
-                    return []
-        return stack[::-1]
+        new_list = []
+        left_len = len(list1)
+        right_len = len(list2)
+        i, j = 0, 0
+        while i < left_len and j < right_len:
+            if list1[i] < list2[j]:
+                new_list.append(list1[i])
+                i += 1
+            else:
+                new_list.append(list2[j])
+                j += 1
 
+        if i != left_len:
+            new_list.extend(list1[i:])
+        if j != right_len:
+            new_list.extend(list2[j:])
+        return new_list
 
-    def dfs(self, graph, visit, ind, stack):  # when repeat, return True or False
-        if visit[ind] == 0:
-            return False
-        if visit[ind] == 1:
-            return True
-
-        visit[ind] = 0
-        for elem in graph[ind]:
-            if not self.dfs(graph, visit, elem, stack):
-                return False
-        visit[ind] = 1  # 底部的
-        stack.append(ind)
-        return True
-
-x = Solution()
-x.findOrder(5, [[3,2],[2,1],[1,0],[0,4]])
+x = SortList()
+x.mergeSort([4,3,2,1,0])
