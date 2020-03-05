@@ -1,40 +1,46 @@
-class Node:
-    def __init__(self, val = 0, neighbors = []):
-        self.val = val
-        self.neighbors = neighbors
+from collections import defaultdict, deque
 
-from collections import deque
+
 class Solution:
-    def cloneGraph(self, node: 'Node') -> 'Node':
-        if not node:  # corner case
-            return None
-        if not node.neighbors:
-            return node.copy()
+    def findPath(self, n, pairs):  # return int
+        graph = defaultdict(list)
 
-        res = new = Node(node.val)
-        visit = []
+        visited = {i: 0 for i in range(1, n + 1)}
 
-        queue =deque([(node, new)])
+        for i, j in pairs:
+            graph[i].append(j)
+            graph[j].append(i)
+
+        res = []
+
+        for i in range(1, n + 1):
+            v = visited.copy()
+            g = graph.copy()
+            path = []
+            longest = self.bfs(i, v, g, path)
+            res.append(longest)
+        return min(res)
+
+    def bfs(self, i, v, g, path):  # return longest path int
+        queue = deque([(i, 1)])
         while queue:
-            node, new = queue.popleft()
-            visit.append(node)
-            for elem in node.neighbors:
-                if elem not in visit:
-                    tmp = Node(elem.val)
-                    new.neighbors.append(tmp)
-                    queue.append([elem, tmp])
+            ind, level = queue.popleft()
+            v[ind] = 1
+            for elem in g[ind]:
+                if v[elem] == 0:
+                    queue.append([elem, level + 1])
+                else:
+                    path.append(level)
+        return level - 1
 
-        return res
 
-a = Node(1)
-b = Node(2)
-c = Node(3)
-d = Node(4)
+def transfer(case):  # transfer input [string] to find level require format
+    print(case)
+    n = int(case[0])
+    pair = [[int(i), int(j)] for i, j in case[1:]]
+    return n, pair
 
-a.neighbors = [b, d]
-b.neighbors = [a, c]
-c.neighbors = [b, d]
-d.neighbors = [a, c]
 
+n, pair = transfer(['6', ['1', '4'], ['2', '3'], ['3', '4'], ['4', '5'], ['5', '6']])
 x = Solution()
-print(x.cloneGraph(a).neighbors[1].val)
+print(x.findPath(n, pair))

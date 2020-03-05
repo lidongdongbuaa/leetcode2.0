@@ -72,9 +72,9 @@
         None -> None
         only node without neighbor -> return node copy
 
-5.方法及方法分析：
-time complexity order: 
-space complexity order: 
+5.方法及方法分析：BFS + dict, DFS + dict
+time complexity order: O(N)
+space complexity order: O(N)
 6.如何考
 '''
 '''
@@ -89,7 +89,7 @@ A. bfs the node and copy it like a tree copy
                 new.neighbor.append(tmp)
                 queue.append([elem, tmp])
         3. return res
-    time complexity O(V + E)  space O(V)         
+    time complexity O(N)  space O(N)         
 易错点：
 '''
 """
@@ -142,7 +142,11 @@ print(x.cloneGraph(a).neighbors[1].val)
 
 '''
 正确的解法
-use dict to show corresponding
+BFS
+    use dict to show corresponding
+    先创立点，再建立dic映射，再在新的graph上连接点
+易错点：neigbor遇到重复点时，不要重复新建节点
+    time complexity O(N)  space O(N) 
 '''
 class Node:
     def __init__(self, val = 0, neighbors = []):
@@ -152,14 +156,56 @@ class Node:
 from collections import deque
 class Solution:
     def cloneGraph(self, node: 'Node') -> 'Node':
-        if not node:  #  corner case
+        if not node:  # corner case
             return None
         if not node.neighbors:
-            res = node
+            res = Node(node.val)
             return res
 
         visited = {}
 
-        queue = deque([node])
+        queue =deque([node])
         visited[node] = Node(node.val)
 
+        while queue:
+            n = queue.popleft()
+            for elem in n.neighbors:
+                if elem not in visited:
+                    visited[elem] = Node(elem.val)
+                    queue.append(elem)
+                visited[n].neighbors.append(visited[elem])
+        return visited[node]
+
+'''
+B. DFS
+    Method:
+        1. build visited dict {node:new_node}
+        2. dfs() recursion : return dic[Node]
+            end： node in dict
+            process： dict[node] = newNode
+            trigger: for elem in neighbors, do dfs(elem)
+        3. return dict[node]
+    time complexity O(N)  space O(N) 
+'''
+class Solution:
+    def cloneGraph(self, node: 'Node') -> 'Node':
+        if not node:  # corner case
+            return None
+        if not node.neighbors:
+            res = Node(node.val)
+            return res
+
+        dic = {}
+        self.dfs(node, dic)
+        return dic[node]
+
+    def dfs(self, node, dic):  # result save in dic
+        if node in dic:
+            return
+
+        dic[node] = Node(node.val)
+
+        for elem in node.neighbors:
+            self.dfs(elem, dic)
+            dic[node].neighbors.append(dic[elem])
+        return
