@@ -38,7 +38,7 @@ class Solution:
         if n == 0:
             return 0
         if not pair:
-            return n
+            return 1
 
         from collections import defaultdict
         outdegree = defaultdict(list)
@@ -63,6 +63,39 @@ class Solution:
                     if indegree[elem] == 0:
                         queue.append(elem)
         return level
+
+
+
+'''
+B.queue里添加[elem, level]
+'''
+from collections import defaultdict, deque
+class Solution:
+    def findlevel(self, n, pair):  # return level
+        if n == 0:  # corner case
+            return 0
+        if not pair:
+            return 1
+
+        indegree = { x : 0 for x in range(1, n + 1)}
+        outdegree = defaultdict(list)
+
+        for x, y in pair:  # fulfill the table
+            indegree[y] += 1
+            outdegree[x].append(y)
+
+        queue = deque()
+        queue.append([[x, 1] for key, val in indegree.items() if val == 0])   # [node, level]
+
+        while queue:
+            ind, level = queue.popleft()
+            for elem in outdegree[ind]:
+                indegree[elem] -= 1
+                if indegree[elem] == 0:
+                    level += 1
+                    queue.append([elem, level])
+        return level
+
 
 x = Solution()
 print(x.findlevel(5, [[1,3], [3, 4], [2, 3], [3, 5], [1, 4]]))

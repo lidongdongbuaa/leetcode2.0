@@ -111,7 +111,7 @@ class Solution:
                 outdegree[elem] -= 1
                 if outdegree[elem] == 0:
                     queue.append(elem)
-        return res.sort()
+        return sorted(res)
 
 
 '''
@@ -121,7 +121,7 @@ B. DFS to scan every node's path, if no cycle, save it
         2. scan every node
             do dfs() on them
                 if dfs != False, save it in result set
-        3. return res : set
+        3. return res : 
         3. dfs(graph, visit, index) recursion, return True - no cycle, False has cycle
             end: 
                 visit[index] is 1, return True
@@ -146,10 +146,10 @@ class Solution:
 
         visit = [-1] * len(graph)
 
-        res = set()
+        res = []
         for index in range(len(graph)):
             if self.dfs(index, graph, visit):
-                res.add(index)
+                res.append(index)
         return sorted(res)
 
     def dfs(self, index, graph, visit):
@@ -164,3 +164,4 @@ class Solution:
                 return False
         visit[index] = 1
         return True
+

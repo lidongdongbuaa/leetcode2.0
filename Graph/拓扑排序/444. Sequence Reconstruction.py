@@ -138,3 +138,87 @@ class Solution:
 
 x = Solution()
 x.sequenceReconstruction([1,2,3], [[1,2],[1,3]])
+
+'''
+input: org list[int], seqs list[list]. have order? seq has the same order with Org element.  repeated word in Org? N, in seq list list? No
+output: True or False
+corner case: 
+Org is None, is [] -> False
+seq is None is [] -> False
+Org and seq is None or [] -> True
+if org elem != seq elem , False
+Org has only one, seq has only one, and same -> True, else False
+
+
+核心：queue加入[index, [list of path]]
+B. BFS find the path sum
+    Method:
+        corner case
+        create indegree dict, outdegreee dict
+        find indegree = 0, push [key,[key]]  of it into queue
+            if more than 1, return False
+        traversal the queue
+            ind, tmp = queue popleft
+            if not outdegree[ind]:
+                res.append(tmp[:])
+            for elem in outdegree[ind]
+                indegree[elem] -= 1
+                if == 0, queue.append([elem, [key + elem]]). (first copy, then append)
+易错点：存在循环，[1, 2], [2, 1],故不能if org == seqs[0]
+    indegree初始化，val必须全部赋值0
+'''
+from collections import defaultdict, deque
+
+
+class Solution:
+    def sequenceReconstruction(self, org, seqs) -> bool:
+        if not org and not seqs:  # corner case
+            return True
+        if not org or not seqs:
+            return False
+        seq_set = set()
+        for elem in seqs:
+            for i in elem:
+                seq_set.add(i)
+        if set(org) != seq_set:
+            return False
+        # if org == seqs[0]:
+        #     return True
+
+        indegree = defaultdict(int)
+        for elem in seq_set:
+            indegree[elem] = 0
+        outdegree = defaultdict(list)
+
+        for elem in seqs:
+            for i in range(0, len(elem) - 1):
+                indegree[elem[i + 1]] += 1
+                outdegree[elem[i]].append(elem[i + 1])
+
+        queue = deque()
+        for k, v in indegree.items():
+            if v == 0:
+                queue.append([k, [k]])
+        if len(queue) > 1:  # two 0 indegree node
+            return False
+
+        res = []
+        while queue:
+            ind, tmp = queue.popleft()
+            if outdegree[ind] == []:
+                res.append(tmp[:])
+            for elem in outdegree[ind]:
+                indegree[elem] -= 1
+                if indegree[elem] == 0:
+                    new = tmp[:]
+                    new.append(elem)
+                    queue.append([elem, new])
+
+        if org in res:
+            return True
+        else:
+            return False
+
+
+
+
