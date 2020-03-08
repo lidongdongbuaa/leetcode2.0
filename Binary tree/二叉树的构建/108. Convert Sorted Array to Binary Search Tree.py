@@ -95,3 +95,37 @@ class Solution:
         root.left = self.sortedArrayToBST(nums[:length // 2])
         root.right = self.sortedArrayToBST(nums[length // 2 + 1:])
         return root
+
+'''
+C.iterative method
+易错点：
+    TreeNode(nums[mid])不是TreeNode(mid)
+    全部闭区间
+    rMid = (r - mid) // 2 + mid + 1
+'''
+
+class Solution:
+    def sortedArrayToBST(self, nums) -> TreeNode:
+        if not nums:  # corner case
+            return None
+        if len(nums) == 1:
+            return TreeNode(nums[0])
+
+        length = len(nums)
+        mid = length // 2
+        res = root = TreeNode(nums[mid])
+        stack = []
+        stack.append([root, 0, length - 1, mid])
+
+        while stack:
+            root, l, r, mid = stack.pop()
+            if mid < r:
+                rMid = (r - mid) // 2 + mid + 1
+                root.right = R = TreeNode(nums[rMid])
+                stack.append([R, mid + 1, r, rMid])
+            if l < mid:
+                lMid = (mid - l) // 2 + l
+                root.left = L = TreeNode(nums[lMid])
+                stack.append([L, l, mid - 1, lMid])
+
+        return res
