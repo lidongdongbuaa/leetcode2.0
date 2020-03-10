@@ -105,3 +105,38 @@ class Solution:
                 if parent != j:  # 若该点访问过，若无环，则j必是i的parent；若有环，则j不是i的parent
                     return False
         return True
+
+'''
+BFS 判断环
+parent法
+'''
+from collections import deque, defaultdict
+class Solution:
+    def validTree(self, n: int, edges) -> bool:
+        if not n:
+            return False
+        if n == 1:
+            return True
+        if not edges:
+            return False
+        if n != len(edges) + 1:
+            return False
+
+        visited = [0] * n
+        graph = defaultdict(set)
+
+        for i, j in edges:
+            graph[i].add(j)
+            graph[j].add(i)
+
+        queue = deque([(edges[0][0], -1)])
+        while queue:
+            index, parent = queue.popleft()
+            visited[index] = 1
+            for j in graph[index]:
+                if visited[j] == 0:
+                    queue.append([j, index])
+                else:
+                    if j != parent:
+                        return False
+        return True

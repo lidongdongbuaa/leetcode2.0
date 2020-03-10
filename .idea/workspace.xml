@@ -2,28 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Binary tree/路径和/1372. Longest ZigZag Path in a Binary Tree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graph/搜索/DFS/733. Flood Fill.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graph/无向图/并查集/261. Graph Valid Tree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graph/无向图/并查集/323. Number of Connected Components in an Undirected Graph.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graph/无向图/并查集/547. Friend Circles.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graph/有向图/路径和-求层数/1376. Time Needed to Inform All Employees.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode周赛/200308/Bulb Switcher III.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode周赛/200308/Generate a String With Characters That Have Odd Counts.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode周赛/200308/Time Needed to Inform All Employees.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/复习-面试经验/2019 new grad找全职个人心得分享_一亩三分地求职（非面经）版.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/复习-面试经验/冷门但十分有用的面试准备技巧（MS New Grad）_一亩三分地求职（非面经）版.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary tree/二叉树的构建/108. Convert Sorted Array to Binary Search Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary tree/二叉树的构建/108. Convert Sorted Array to Binary Search Tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Graph/图的基础/无向图的最长距离.py" beforeDir="false" afterPath="$PROJECT_DIR$/Graph/无向图/无向图的最长距离.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Graph/拓扑排序/207. Course Schedule.py" beforeDir="false" afterPath="$PROJECT_DIR$/Graph/有向图/拓扑排序/207. Course Schedule.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Graph/拓扑排序/210. Course Schedule II.py" beforeDir="false" afterPath="$PROJECT_DIR$/Graph/有向图/拓扑排序/210. Course Schedule II.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Graph/拓扑排序/444. Sequence Reconstruction.py" beforeDir="false" afterPath="$PROJECT_DIR$/Graph/有向图/拓扑排序/444. Sequence Reconstruction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Graph/拓扑排序/802. Find Eventual Safe States.py" beforeDir="false" afterPath="$PROJECT_DIR$/Graph/有向图/拓扑排序/802. Find Eventual Safe States.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Graph/拓扑排序/程序的依赖关系.py" beforeDir="false" afterPath="$PROJECT_DIR$/Graph/有向图/拓扑排序/程序的依赖关系.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test2.py" beforeDir="false" afterPath="$PROJECT_DIR$/test2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph/无向图/并查集/261. Graph Valid Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/Graph/无向图/并查集/261. Graph Valid Tree.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/Date Structure And Algorithm-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/Date Structure And Algorithm-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/数据结构与算法基础/Date Structure And Algorithm.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/Date Structure And Algorithm.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/题目整理.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/题目整理.xlsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -461,14 +445,8 @@
       <workItem from="1583298229804" duration="56729000" />
       <workItem from="1583461094188" duration="3321000" />
       <workItem from="1583533437457" duration="30246000" />
-      <workItem from="1583665009837" duration="5128000" />
-    </task>
-    <task id="LOCAL-00030" summary="0120">
-      <created>1579481767245</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1579481767245</updated>
+      <workItem from="1583665009837" duration="5273000" />
+      <workItem from="1583795143535" duration="1895000" />
     </task>
     <task id="LOCAL-00031" summary="0126">
       <created>1580022139273</created>
@@ -806,7 +784,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583416804326</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="0305">
+      <created>1583675429017</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1583675429017</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
