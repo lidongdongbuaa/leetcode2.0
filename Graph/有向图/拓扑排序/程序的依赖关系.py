@@ -68,33 +68,37 @@ class Solution:
 
 '''
 B.queue里添加[elem, level]
+易错点：
+    1. 不能写成 queue.append([[x, 1] for key, val in indegree.items() if val == 0])，因为queue里是[[[1],[2]]],列表生成式整个放了进去
+    2. 不能在for循环中level += 1，因为是对每层+1，故应该放在while的popleft后，或者queue.append([elem, level + 1])
 '''
 from collections import defaultdict, deque
-class Solution:
-    def findlevel(self, n, pair):  # return level
-        if n == 0:  # corner case
-            return 0
-        if not pair:
-            return 1
+def findlevel(n, pair):  # return level
+    if n == 0:  # corner case
+        return 0
+    if not pair:
+        return 1
 
-        indegree = { x : 0 for x in range(1, n + 1)}
-        outdegree = defaultdict(list)
+    indegree = { x : 0 for x in range(1, n + 1)}
+    outdegree = defaultdict(list)
 
-        for x, y in pair:  # fulfill the table
-            indegree[y] += 1
-            outdegree[x].append(y)
+    for x, y in pair:  # fulfill the table
+        indegree[y] += 1
+        outdegree[x].append(y)
 
-        queue = deque()
-        queue.append([[x, 1] for key, val in indegree.items() if val == 0])   # [node, level]
+    queue = deque()
+    for k, v in indegree.items():
+        if v == 0:
+            queue.append([k, 1])
+    # 不能写成这样queue.append([[x, 1] for key, val in indegree.items() if val == 0])，
 
-        while queue:
-            ind, level = queue.popleft()
-            for elem in outdegree[ind]:
-                indegree[elem] -= 1
-                if indegree[elem] == 0:
-                    level += 1
-                    queue.append([elem, level])
-        return level
+    while queue:
+        ind, level = queue.popleft()
+        for elem in outdegree[ind]:
+            indegree[elem] -= 1
+            if indegree[elem] == 0:
+                queue.append([elem, level + 1])
+    return level
 
 
 x = Solution()

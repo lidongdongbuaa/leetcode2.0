@@ -51,8 +51,6 @@ A. Graph - DFS
     time complexity: O(V + E) space: O(V)
 易错点：
 '''
-
-
 class Solution:
     def canFinish(self, nums, condition):  # return T/F
         if nums == 0:  # corner case
@@ -131,3 +129,16 @@ class Solution:
             return True
         else:
             return False
+
+'''
+无法处理1->3, 1->2->3的情况
+C. BFS
+    Method:
+        1. create the visited table and graph
+        2. use queue to save [index] and traversal every node
+            index = queue.popleft
+            set visited[index] as 1
+            traversal index's neighbor nodes j
+                if j is visited...
+            
+'''
