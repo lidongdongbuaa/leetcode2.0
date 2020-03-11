@@ -27,7 +27,7 @@
     The number of edges in the graph will not exceed 32000.
     Each graph[i] will be a sorted list of different integers, chosen within the range [0, graph.length - 1]
     
-2.理解:DAG中，找到所有出度为0的点
+2.理解: 是否有断点开始的安全结尾
 3.类型：
 4.确认输入输出及边界条件：
 
@@ -71,6 +71,7 @@ x = Solution()
 x.eventualSafeNodes([[1,2],[2,3],[5],[0],[5],[],[]])
 
 '''
+
 B. topological sort
     Method:
         1. count indegree list [[1,3]...] and outdegree list [int] by graph

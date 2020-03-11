@@ -150,7 +150,7 @@ if org elem != seq elem , False
 Org has only one, seq has only one, and same -> True, else False
 
 
-核心：queue加入[index, [list of path]]
+核心：queue加入[index, [list of path]] 保存所有从头到尾的path，看org在不在里面
 B. BFS find the path sum
     Method:
         corner case

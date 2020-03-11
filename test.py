@@ -1,39 +1,26 @@
 class Graph:
-    def countIsland(self, grid):  # return number of island
-        if not grid:  # corner case
-            return 0
-        if grid == [['0']]:
-            return 0
-        if grid == [['1']]:
-            return 1
+    def division(self, equations, values, queries):
+        def divide(x, y, visited):
+            if x == y:
+                return 1.0
+            visited.add(x)
+            for n in g[x]:
+                if n in visited:
+                    continue
+                visited.add(n)
+                d = divide(n, y, visited)
+                if d > 0:
+                    return d * g[x][n]
+            return -1.0
 
-        visited = [[0 for _ in range(len(grid[0]))] for _ in range(len(grid))]
+        from collections import defaultdict
+        g = defaultdict(dict)
+        for (x, y), v in zip(equations, values):
+            g[x][y] = v
+            g[y][x] = 1.0 / v
 
-        times = 0
-        for i in range(len(grid)):
-            for j in range(len(grid[i])):
-                if visited[i][j] == 0 and grid[i][j] == '1':
-                    from collections import deque
-                    queue = deque([(i, j)])
-                    visited[i][j] = 1
-                    while queue:
-                        print(len(queue))
-                        r, c = queue.popleft()
-                        visited[r][c] = 1
-                        if r - 1 >= 0 and visited[r - 1][c] == 0 and grid[r - 1][c] == '1':
-                            queue.append([r - 1, c])
-                            visited[r - 1][c] = 1
-                        if r + 1 <= len(grid) - 1 and visited[r + 1][c] == 0 and grid[r + 1][c] == '1':
-                            queue.append([r + 1, c])
-                            visited[r + 1][c] = 1
-                        if c - 1 >= 0 and visited[r][c - 1] == 0 and grid[r][c - 1] == '1':
-                            queue.append([r, c - 1])
-                            visited[r][c - 1] = 1
-                        if c + 1 <= len(grid[0]) - 1 and visited[r][c + 1] == 0 and grid[r][c + 1] == '1':
-                            queue.append([r, c + 1])
-                            visited[r][c + 1] = 1
-                    times += 1
-        return times
+        ans = [divide(x, y, set()) if x in g and y in g else -1 for x, y in queries]
+        return ans
 
 x = Graph()
-print(x.countIsland([['1','1','1','1','1'],['1','1','1','1','1'],['1','1','1','1','1'],['1','1','1','1','1']]))
+x.division(equations = [ ["a", "b"], ["b", "c"] ],values = [2.0, 3.0], queries = [ ["a", "c"], ["b", "a"], ["a", "e"], ["a", "a"], ["x", "x"] ] )

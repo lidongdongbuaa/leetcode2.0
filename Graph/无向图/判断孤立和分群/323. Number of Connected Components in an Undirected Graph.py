@@ -54,7 +54,7 @@ A. DFS to find numbs of do dfs
 易错点：
 '''
 class Solution:
-    def countComponents(self, n: int, edges: List[List[int]]) -> int:
+    def countComponents(self, n: int, edges) -> int:
         if not n:  # corner case
             return 0
         if n == 1:
@@ -100,7 +100,7 @@ B. union-find method
 易错点：
 '''
 class Solution:
-    def countComponents(self, n: int, edges: List[List[int]]) -> int:
+    def countComponents(self, n: int, edges) -> int:
         if not n:  # corner case
             return 0
         if n == 1:
@@ -127,4 +127,7 @@ class Solution:
             return i
         else:
             return self.find(group[i], group)
+
+x = Solution()
+x.countComponents(4, [[0,3],[0,2],[1,2]])
 
