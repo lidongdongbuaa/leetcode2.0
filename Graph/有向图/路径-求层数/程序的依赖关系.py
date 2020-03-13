@@ -6,7 +6,7 @@
 ''''''
 '''
 题目分析
-1.要求：求indegree 0 开始，所有的路径和
+1.要求：求indegree 0 开始，路径层数
 2.理解：find the level of the graph
 3.类型：
 4.确认输入输出及边界条件：
@@ -67,7 +67,7 @@ class Solution:
 
 
 '''
-B.queue里添加[elem, level]
+B.改进版的topo sort queue里添加[elem, level]
 易错点：
     1. 不能写成 queue.append([[x, 1] for key, val in indegree.items() if val == 0])，因为queue里是[[[1],[2]]],列表生成式整个放了进去
     2. 不能在for循环中level += 1，因为是对每层+1，故应该放在while的popleft后，或者queue.append([elem, level + 1])
@@ -103,3 +103,4 @@ def findlevel(n, pair):  # return level
 
 x = Solution()
 print(x.findlevel(5, [[1,3], [3, 4], [2, 3], [3, 5], [1, 4]]))
+

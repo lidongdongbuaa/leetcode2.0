@@ -2,21 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Graph/399. Evaluate Division.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graph/无向图/判断孤立和分群/1202. Smallest String With Swaps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graph/有向图/判断孤立个数和分群/841. Keys and Rooms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Binary Search and Binary Search Tree/有明确的target/33. Search in Rotated Sorted Array.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Binary Search and Binary Search Tree/有明确的target/367. Valid Perfect Square.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Binary Search and Binary Search Tree/有明确的target/374. Guess Number Higher or Lower.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Binary Search and Binary Search Tree/没有明确的target/34. Find First and Last Position of Element in Sorted Array.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Binary Search and Binary Search Tree/没有明确的target/35. Search Insert Position.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Binary Search and Binary Search Tree/没有明确的target/458. Last Position of Target (Lintcode).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Binary Search and Binary Search Tree/没有明确的target类型，可以越界类型/153. Find Minimum in Rotated Sorted Array.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Binary Search and Binary Search Tree/没有明确的target类型，可以越界类型/162. Find Peak Element.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graph/无向图/路径-求层数/399. Evaluate Division.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/数据结构与算法总结-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法总结.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Graph/无向图/并查集/261. Graph Valid Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/Graph/无向图/判断环/261. Graph Valid Tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Graph/无向图/并查集/323. Number of Connected Components in an Undirected Graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/Graph/无向图/判断孤立和分群/323. Number of Connected Components in an Undirected Graph.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Graph/无向图/并查集/547. Friend Circles.py" beforeDir="false" afterPath="$PROJECT_DIR$/Graph/无向图/判断孤立和分群/547. Friend Circles.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Graph/无向图/无向图的最长距离.py" beforeDir="false" afterPath="$PROJECT_DIR$/Graph/无向图/路径-求层数/无向图的最长距离.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Graph/有向图/拓扑排序/207. Course Schedule.py" beforeDir="false" afterPath="$PROJECT_DIR$/Graph/有向图/判断环/207. Course Schedule.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Graph/有向图/拓扑排序/210. Course Schedule II.py" beforeDir="false" afterPath="$PROJECT_DIR$/Graph/有向图/路径-求层数/210. Course Schedule II.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Graph/有向图/拓扑排序/444. Sequence Reconstruction.py" beforeDir="false" afterPath="$PROJECT_DIR$/Graph/有向图/路径-求层数/444. Sequence Reconstruction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Graph/有向图/拓扑排序/802. Find Eventual Safe States.py" beforeDir="false" afterPath="$PROJECT_DIR$/Graph/有向图/判断环/802. Find Eventual Safe States.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Graph/有向图/拓扑排序/程序的依赖关系.py" beforeDir="false" afterPath="$PROJECT_DIR$/Graph/有向图/路径-求层数/程序的依赖关系.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Graph/有向图/路径和-求层数/1376. Time Needed to Inform All Employees.py" beforeDir="false" afterPath="$PROJECT_DIR$/Graph/有向图/路径-求层数/1376. Time Needed to Inform All Employees.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph/399. Evaluate Division.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph/有向图/路径-求层数/程序的依赖关系.py" beforeDir="false" afterPath="$PROJECT_DIR$/Graph/有向图/路径-求层数/程序的依赖关系.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/Data Structure And Algorithm-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/Data Structure And Algorithm-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/数据结构与算法基础/Data Structure And Algorithm.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/Data Structure And Algorithm.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -89,19 +90,19 @@
     </option>
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\working\leetcodeText400AG\Graph\无向图\路径-求层数" />
+      <recent name="D:\working\leetcodeText400AG\Graph\无向图\判断孤立个数" />
+      <recent name="D:\working\leetcodeText400AG\Graph\无向图\判断环" />
+      <recent name="D:\working\leetcodeText400AG\Graph\有向图\判断环" />
+      <recent name="D:\working\leetcodeText400AG\Graph\有向图\路径-求层数" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\working\leetcodeText400AG\Graph\有向图" />
       <recent name="D:\working\面经题目\google\OA\2019(1-3月)" />
       <recent name="D:\working\leetcodeText400AG\Binary tree\综合题目\从下至上分析" />
       <recent name="D:\working\leetcodeText400AG\内建模块" />
       <recent name="D:\working\leetcodeText400AG\Binary tree\综合题目" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\working\leetcodeText400AG\Graph\无向图\判断孤立个数" />
-      <recent name="D:\working\leetcodeText400AG\Graph\无向图\路径-求层数" />
-      <recent name="D:\working\leetcodeText400AG\Graph\无向图\判断环" />
-      <recent name="D:\working\leetcodeText400AG\Graph\有向图\判断环" />
-      <recent name="D:\working\leetcodeText400AG\Graph\有向图\路径-求层数" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -116,7 +117,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.399. Evaluate Division">
+  <component name="RunManager" selected="Python.test">
     <configuration name="1202. Smallest String With Swaps" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="leetcode" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -161,6 +162,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="374. Guess Number Higher or Lower" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="leetcode" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Binary Search and Binary Search Tree/有明确的target" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Binary Search and Binary Search Tree/有明确的target/374. Guess Number Higher or Lower.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="399. Evaluate Division" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="leetcode" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -174,29 +197,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Graph/399. Evaluate Division.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="841. Keys and Rooms" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="leetcode" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Graph" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\working\leetcodeText400AG\Graph\有向图\判断孤立个数\841. Keys and Rooms.py" />
+      <option name="SCRIPT_NAME" value="D:\working\leetcodeText400AG\Graph\无向图\路径-求层数\399. Evaluate Division.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -275,18 +276,18 @@
       <item itemvalue="Python.lc 55" />
       <item itemvalue="Python.lc51" />
       <item itemvalue="Python.test" />
-      <item itemvalue="Python.841. Keys and Rooms" />
       <item itemvalue="Python.1202. Smallest String With Swaps" />
       <item itemvalue="Python.323. Number of Connected Components in an Undirected Graph" />
       <item itemvalue="Python.399. Evaluate Division" />
+      <item itemvalue="Python.374. Guess Number Higher or Lower" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.399. Evaluate Division" />
         <item itemvalue="Python.test" />
+        <item itemvalue="Python.399. Evaluate Division" />
+        <item itemvalue="Python.374. Guess Number Higher or Lower" />
         <item itemvalue="Python.1202. Smallest String With Swaps" />
         <item itemvalue="Python.323. Number of Connected Components in an Undirected Graph" />
-        <item itemvalue="Python.841. Keys and Rooms" />
       </list>
     </recent_temporary>
   </component>
@@ -435,6 +436,7 @@
       <workItem from="1583665009837" duration="5273000" />
       <workItem from="1583795143535" duration="1895000" />
       <workItem from="1583824280926" duration="40735000" />
+      <workItem from="1583963986307" duration="40631000" />
     </task>
     <task id="LOCAL-00033" summary="0201">
       <created>1580517985784</created>
@@ -1183,9 +1185,14 @@
           <option name="timeStamp" value="281" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test.py</url>
-          <line>21</line>
-          <option name="timeStamp" value="283" />
+          <url>file://$PROJECT_DIR$/Binary Search and Binary Search Tree/有明确的target/374. Guess Number Higher or Lower.py</url>
+          <line>75</line>
+          <option name="timeStamp" value="289" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Graph/无向图/路径-求层数/399. Evaluate Division.py</url>
+          <line>114</line>
+          <option name="timeStamp" value="291" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -1203,8 +1210,9 @@
     <SUITE FILE_PATH="coverage/leetcode$lc_452.coverage" NAME="lc 452 Coverage Results" MODIFIED="1562379814901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/code$Binary_Tree.coverage" NAME="构造Binary Tree Coverage Results" MODIFIED="1581415426515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary tree" />
     <SUITE FILE_PATH="coverage/leetcode$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1572310587622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$test.coverage" NAME="test Coverage Results" MODIFIED="1583935587570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/leetcodeText400AG$test.coverage" NAME="test Coverage Results" MODIFIED="1584087115662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$lc_20.coverage" NAME="lc 20 Coverage Results" MODIFIED="1565579542821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/leetcodeText400AG$374__Guess_Number_Higher_or_Lower.coverage" NAME="374. Guess Number Higher or Lower Coverage Results" MODIFIED="1584011316710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary Search and Binary Search Tree/有明确的target" />
     <SUITE FILE_PATH="coverage/leetcode$lc_53.coverage" NAME="lc 53 Coverage Results" MODIFIED="1565941361242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$Number_of_Days_Between_Two_Dates.coverage" NAME="Number of Days Between Two Dates Coverage Results" MODIFIED="1582426649934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/200223" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$Minimum_Number_of_Steps_to_Make_Two_Strings_Anagram.coverage" NAME="Minimum Number of Steps to Make Two Strings Anagram Coverage Results" MODIFIED="1581220438736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/200209" />
@@ -1250,7 +1258,7 @@
     <SUITE FILE_PATH="coverage/leetcode$lc_290.coverage" NAME="lc 290 Coverage Results" MODIFIED="1564580182876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$lc_409.coverage" NAME="lc 409 Coverage Results" MODIFIED="1564579455562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$Product_of_the_Last_K_Numbers.coverage" NAME="Product of the Last K Numbers Coverage Results" MODIFIED="1581822987738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/200216" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$399__Evaluate_Division.coverage" NAME="399. Evaluate Division Coverage Results" MODIFIED="1583935741770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Graph" />
+    <SUITE FILE_PATH="coverage/leetcodeText400AG$399__Evaluate_Division.coverage" NAME="399. Evaluate Division Coverage Results" MODIFIED="1584011361227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Graph" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$841__Keys_and_Rooms.coverage" NAME="841. Keys and Rooms Coverage Results" MODIFIED="1583911803312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Graph" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$201__Bitwise_AND_of_Numbers_Range.coverage" NAME="201. Bitwise AND of Numbers Range Coverage Results" MODIFIED="1579310223730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bit manipulation 位运算/数学相关问题" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$Bulb_Switcher_III.coverage" NAME="Bulb Switcher III Coverage Results" MODIFIED="1583638355142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/200308" />

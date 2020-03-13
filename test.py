@@ -1,26 +1,17 @@
-class Graph:
-    def division(self, equations, values, queries):
-        def divide(x, y, visited):
-            if x == y:
-                return 1.0
-            visited.add(x)
-            for n in g[x]:
-                if n in visited:
-                    continue
-                visited.add(n)
-                d = divide(n, y, visited)
-                if d > 0:
-                    return d * g[x][n]
-            return -1.0
+class Solution:
+    def findPeakElement(self, nums: List[int]) -> int:  # return peak value's index
+        if nums is None:
+            return None
 
-        from collections import defaultdict
-        g = defaultdict(dict)
-        for (x, y), v in zip(equations, values):
-            g[x][y] = v
-            g[y][x] = 1.0 / v
+        l, r = 0, len(nums) - 1
+        while l < r:  # 在l = r时，退出，找到这个点
+            mid = l + (r - l) // 2
+            if nums[mid] <= nums[mid + 1]:
+                l = mid + 1
+            if nums[mid] > nums[mid + 1]:
+                r = mid
 
-        ans = [divide(x, y, set()) if x in g and y in g else -1 for x, y in queries]
-        return ans
+        return l
 
-x = Graph()
-x.division(equations = [ ["a", "b"], ["b", "c"] ],values = [2.0, 3.0], queries = [ ["a", "c"], ["b", "a"], ["a", "e"], ["a", "a"], ["x", "x"] ] )
+x = Solution()
+print(x.findPeakElement([1,2,1,3,5,6,4]))
