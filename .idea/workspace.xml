@@ -2,22 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Binary Search and Binary Search Tree/有明确的target/33. Search in Rotated Sorted Array.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Binary Search and Binary Search Tree/有明确的target/367. Valid Perfect Square.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Binary Search and Binary Search Tree/有明确的target/374. Guess Number Higher or Lower.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Binary Search and Binary Search Tree/没有明确的target/34. Find First and Last Position of Element in Sorted Array.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Binary Search and Binary Search Tree/没有明确的target/35. Search Insert Position.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Binary Search and Binary Search Tree/没有明确的target/458. Last Position of Target (Lintcode).py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Binary Search and Binary Search Tree/没有明确的target类型，可以越界类型/153. Find Minimum in Rotated Sorted Array.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Binary Search and Binary Search Tree/没有明确的target类型，可以越界类型/162. Find Peak Element.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graph/无向图/路径-求层数/399. Evaluate Division.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/数据结构与算法总结-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法总结.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Binary Search and Binary Search Tree/有明确的target/167. Two Sum II - Input array is sorted.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Binary Search and Binary Search Tree/有明确的target/laMian.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Binary Search and Binary Search Tree/没有明确的target/278. First Bad Version.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Binary Search and Binary Search Tree/没有明确的target/441. Arranging Coins.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Binary Search and Binary Search Tree/没有明确的target/69. Sqrt(x).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Binary Search and Binary Search Tree/没有明确的target/744. Find Smallest Letter Greater Than Target.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Binary Search and Binary Search Tree/没有明确的target类型，可以越界类型/852. Peak Index in a Mountain Array.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode周赛/200315/Balance a Binary Search Tree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode周赛/200315/Lucky Numbers in a Matrix.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/数据结构与算法基础/binary_search.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Graph/399. Evaluate Division.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Graph/有向图/路径-求层数/程序的依赖关系.py" beforeDir="false" afterPath="$PROJECT_DIR$/Graph/有向图/路径-求层数/程序的依赖关系.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binary Search and Binary Search Tree/有明确的target/33. Search in Rotated Sorted Array.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary Search and Binary Search Tree/有明确的target/33. Search in Rotated Sorted Array.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/Data Structure And Algorithm-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/Data Structure And Algorithm-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/数据结构与算法基础/Data Structure And Algorithm.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/Data Structure And Algorithm.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -118,7 +115,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.test">
-    <configuration name="1202. Smallest String With Swaps" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="拉面" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="leetcode" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -126,56 +123,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Graph" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../面经题目/google/OA/2019李" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\working\leetcodeText400AG\Graph\无向图\判断孤立个数\1202. Smallest String With Swaps.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="323. Number of Connected Components in an Undirected Graph" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="leetcode" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Graph/无向图/判断孤立个数" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Graph/无向图/判断孤立个数/323. Number of Connected Components in an Undirected Graph.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="374. Guess Number Higher or Lower" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="leetcode" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Binary Search and Binary Search Tree/有明确的target" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Binary Search and Binary Search Tree/有明确的target/374. Guess Number Higher or Lower.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../面经题目/google/OA/2019李/拉面.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -198,6 +151,50 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="D:\working\leetcodeText400AG\Graph\无向图\路径-求层数\399. Evaluate Division.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Lucky Numbers in a Matrix" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="leetcode" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode周赛/200315" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode周赛/200315/Lucky Numbers in a Matrix.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="laMian" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="leetcode" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Binary Search and Binary Search Tree/有明确的target" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Binary Search and Binary Search Tree/有明确的target/laMian.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -276,18 +273,18 @@
       <item itemvalue="Python.lc 55" />
       <item itemvalue="Python.lc51" />
       <item itemvalue="Python.test" />
-      <item itemvalue="Python.1202. Smallest String With Swaps" />
-      <item itemvalue="Python.323. Number of Connected Components in an Undirected Graph" />
       <item itemvalue="Python.399. Evaluate Division" />
-      <item itemvalue="Python.374. Guess Number Higher or Lower" />
+      <item itemvalue="Python.拉面" />
+      <item itemvalue="Python.laMian" />
+      <item itemvalue="Python.Lucky Numbers in a Matrix" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.test" />
+        <item itemvalue="Python.Lucky Numbers in a Matrix" />
+        <item itemvalue="Python.拉面" />
+        <item itemvalue="Python.laMian" />
         <item itemvalue="Python.399. Evaluate Division" />
-        <item itemvalue="Python.374. Guess Number Higher or Lower" />
-        <item itemvalue="Python.1202. Smallest String With Swaps" />
-        <item itemvalue="Python.323. Number of Connected Components in an Undirected Graph" />
       </list>
     </recent_temporary>
   </component>
@@ -436,14 +433,8 @@
       <workItem from="1583665009837" duration="5273000" />
       <workItem from="1583795143535" duration="1895000" />
       <workItem from="1583824280926" duration="40735000" />
-      <workItem from="1583963986307" duration="40631000" />
-    </task>
-    <task id="LOCAL-00033" summary="0201">
-      <created>1580517985784</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1580517985784</updated>
+      <workItem from="1583963986307" duration="51822000" />
+      <workItem from="1584163962043" duration="14238000" />
     </task>
     <task id="LOCAL-00034" summary="0202">
       <created>1580646850706</created>
@@ -781,7 +772,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583907025509</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="0313">
+      <created>1584104253901</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1584104253902</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -824,7 +822,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="0204" />
     <MESSAGE value="0205" />
     <MESSAGE value="0206" />
     <MESSAGE value="0207" />
@@ -849,7 +846,8 @@
     <MESSAGE value="0305" />
     <MESSAGE value="0310" />
     <MESSAGE value="0311" />
-    <option name="LAST_COMMIT_MESSAGE" value="0311" />
+    <MESSAGE value="0313" />
+    <option name="LAST_COMMIT_MESSAGE" value="0313" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2740" y="176" key="#xdebugger.evaluate" timestamp="1579417161456">
@@ -1194,6 +1192,21 @@
           <line>114</line>
           <option name="timeStamp" value="291" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Binary Search and Binary Search Tree/有明确的target/laMian.py</url>
+          <line>77</line>
+          <option name="timeStamp" value="309" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Binary Search and Binary Search Tree/有明确的target/laMian.py</url>
+          <line>107</line>
+          <option name="timeStamp" value="311" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Binary Search and Binary Search Tree/有明确的target/laMian.py</url>
+          <line>56</line>
+          <option name="timeStamp" value="312" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -1209,8 +1222,9 @@
     <SUITE FILE_PATH="coverage/leetcode$lc_449.coverage" NAME="lc 449 Coverage Results" MODIFIED="1563277786455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$lc_452.coverage" NAME="lc 452 Coverage Results" MODIFIED="1562379814901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/code$Binary_Tree.coverage" NAME="构造Binary Tree Coverage Results" MODIFIED="1581415426515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary tree" />
+    <SUITE FILE_PATH="coverage/leetcodeText400AG$laMian.coverage" NAME="laMian Coverage Results" MODIFIED="1584150856973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary Search and Binary Search Tree/有明确的target" />
     <SUITE FILE_PATH="coverage/leetcode$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1572310587622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$test.coverage" NAME="test Coverage Results" MODIFIED="1584087115662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/leetcodeText400AG$test.coverage" NAME="test Coverage Results" MODIFIED="1584256342357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$lc_20.coverage" NAME="lc 20 Coverage Results" MODIFIED="1565579542821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$374__Guess_Number_Higher_or_Lower.coverage" NAME="374. Guess Number Higher or Lower Coverage Results" MODIFIED="1584011316710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary Search and Binary Search Tree/有明确的target" />
     <SUITE FILE_PATH="coverage/leetcode$lc_53.coverage" NAME="lc 53 Coverage Results" MODIFIED="1565941361242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -1218,7 +1232,7 @@
     <SUITE FILE_PATH="coverage/leetcodeText400AG$Minimum_Number_of_Steps_to_Make_Two_Strings_Anagram.coverage" NAME="Minimum Number of Steps to Make Two Strings Anagram Coverage Results" MODIFIED="1581220438736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/200209" />
     <SUITE FILE_PATH="coverage/leetcode$83__Remove_Duplicates_from_Sorted_List.coverage" NAME="83. Remove Duplicates from Sorted List Coverage Results" MODIFIED="1572905619501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../leetcode - 教材- 400 -amaGoog/linkedList/链表删除" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$Check_If_N_and_Its_Double_Exist.coverage" NAME="Check If N and Its Double Exist Coverage Results" MODIFIED="1581221291916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/200209" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$.coverage" NAME="依赖关系 Coverage Results" MODIFIED="1583884690551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../面经题目/google/OA/2019(1-3月)" />
+    <SUITE FILE_PATH="coverage/leetcodeText400AG$.coverage" NAME="拉面 Coverage Results" MODIFIED="1584150974979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../面经题目/google/OA/2019李" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$The_K_Weakest_Rows_in_a_Matrix.coverage" NAME="The K Weakest Rows in a Matrix Coverage Results" MODIFIED="1580646354870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/20200202" />
     <SUITE FILE_PATH="coverage/leetcode$lc_449__1_.coverage" NAME="lc 449 (1) Coverage Results" MODIFIED="1563859803472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$lc_78.coverage" NAME="lc 78 Coverage Results" MODIFIED="1570880723840" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/recursive + backtracking" />
@@ -1257,6 +1271,7 @@
     <SUITE FILE_PATH="coverage/leetcode$lc_473.coverage" NAME="lc 473 Coverage Results" MODIFIED="1565871303273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$lc_290.coverage" NAME="lc 290 Coverage Results" MODIFIED="1564580182876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$lc_409.coverage" NAME="lc 409 Coverage Results" MODIFIED="1564579455562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/leetcodeText400AG$Lucky_Numbers_in_a_Matrix.coverage" NAME="Lucky Numbers in a Matrix Coverage Results" MODIFIED="1584240658659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/200315" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$Product_of_the_Last_K_Numbers.coverage" NAME="Product of the Last K Numbers Coverage Results" MODIFIED="1581822987738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/200216" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$399__Evaluate_Division.coverage" NAME="399. Evaluate Division Coverage Results" MODIFIED="1584011361227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Graph" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$841__Keys_and_Rooms.coverage" NAME="841. Keys and Rooms Coverage Results" MODIFIED="1583911803312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Graph" />
