@@ -1,39 +1,49 @@
+'''
+C.DFS
+    Method:
+        1. build graph
+            a -> b 2.0, b -> a 1.0 / 2
+        2. do dfs on each pairs in queries
+            corner case i or j not in graph
+            do dfs, find depth path of i, collect the weight and multiply them as ans
+            return ans
+        3 sum up the ans and return
+    Time complexity: O(e + q*e)
+    Space: O(e)
+易错点：改为buildMap
+'''
+
+from collections import defaultdict
 class Solution:
     def calcEquation(self, equations, values, queries):
-        def buildMap(equations, values, d):
-            for (a, b), c in zip(equations, values):
-                d[a][b] = c
-                d[b][a] = 1.0 / c
+        def buildMap():
+            graph = defaultdict(dict)
+            for (i, j), val in zip(equations, values):
+                graph[i][j] = val
+                graph[j][i] = 1.0 / val
+            return graph
 
-        from collections import defaultdict, deque
-        d = defaultdict(dict)
-        buildMap(equations, values, d)
+        graph = buildMap()
         res = []
 
-        def helper(d, query):
-            a, b = query
-            if a not in d or b not in d:
-                return -1.0
-            if a == b:
+        def dfs(i, j):  # return pair's multiply result
+            if i == j:
                 return 1.0
 
-            q = deque()
-            q.append((a, 1.0))
-            visited = set()
-            visited.add(a)
-            while q:
-                node, value = q.popleft()
-                if node == b:
-                    return value
-                for v in d[node]:
-                    if v not in visited:
-                        visited.add(v)
-                        q.append((v, value * d[node][v]))
+            visited.add(i)
+            for elem in graph[i]:
+                if elem not in visited:
+                    return graph[i][elem] * dfs(elem, j)
             return -1.0
 
-        for query in queries:
-            res.append(helper(d, query))
+
+        for i, j in queries:
+            if i not in graph or j not in graph:
+                res.append(-1.0)
+            visited = set()
+            res.append(dfs(i, j))
         return res
 
+
 x = Solution()
-print(x.calcEquation([["a","b"],["b","c"]], [2.0,3.0], [["a","c"],["b","a"],["a","e"],["a","a"],["x","x"]]))
+print(x.calcEquation([["x1","x2"],["x2","x3"],["x3","x4"],["x4","x5"]], [3.0,4.0,5.0,6.0], [["x2","x4"]]))

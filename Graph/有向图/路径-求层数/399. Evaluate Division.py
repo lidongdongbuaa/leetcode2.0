@@ -35,9 +35,9 @@
         len(equation) == len(values)? Y
         value is None? N
         value is only one? Y
-5.方法及方法分析：
-time complexity order: 
-space complexity order: 
+5.方法及方法分析：DFS, BFS
+time complexity order: O(E) + O(E) * Q = (EQ + E)
+space complexity order: O(E)
 6.如何考
 '''
 '''
@@ -57,49 +57,50 @@ A. create the graph by dict and use dfs to search this graph to get result
             save the result in a ans list 
         3. return the ans list
     time complexity: O(e + e * q) 
-    space complexity: O(e + q)
+    space complexity: O(e)
 易错点：
     注意dfs也是有返回值的
     格式上依照无向图的dfs写
     时间空间复杂度也是要根据变量名来写
+    注意：d = dfs(elem,j),只有在d != -1时，才返回d * graph[elem][j]，否则进行i的其他neighbors
 '''
 
+from collections import defaultdict
+class Solution:
+    def calcEquation(self, equations, values, queries):
+        def buildMap():
+            graph = defaultdict(dict)
+            for (i, j), val in zip(equations, values):
+                graph[i][j] = val
+                graph[j][i] = 1.0 / val
+            return graph
 
-class Graph:
-    def division(self, equations, values, queries):  # return division result
-        from collections import defaultdict
-        g = defaultdict(dict)  # 带权图的表示方法
+        graph = buildMap()
+        res = []
 
-        for (x, y), val in zip(equations, values):  # 同时遍历两个数
-            g[x][y] = val
-            g[y][x] = 1.0 / val  # float格式的话，直接与float格式数字计算即可
-
-        def dfs(x, y, visited):
-            if x == y:
+        def dfs(i, j):  # return pair's multiply result
+            if i == j:
                 return 1.0
 
-            visited.add(x)  # x就相当于普通dfs里的i， y其实是目标值
-            for j in g[x]:  # 对x的邻居进行遍历
-                if j not in visited:
-                    d = dfs(j, y, visited)
-                    if d > 0:
-                        return d * g[x][j]
+            visited.add(i)
+            for elem in graph[i]:
+                if elem not in visited:
+                    d = dfs(elem, j)
+                    if d != -1.0:
+                        return d * graph[i][elem]
             return -1.0
 
-        ans = []
-        for x, y in queries:
-            if x in g and y in g:
-                visited = set()
-                ans.append(dfs(x, y, visited))
+
+        for i, j in queries:
+            if i not in graph or j not in graph:
+                res.append(-1.0)
             else:
-                ans.append(-1)
-        return ans
+                visited = set()
+                res.append(dfs(i, j))
+        return res
 
-
-x = Graph()
-x.division(equations=[["a", "b"], ["b", "c"]], values=[2.0, 3.0],
-           queries=[["a", "c"], ["b", "a"], ["a", "e"], ["a", "a"], ["x", "x"]])
-
+x = Solution()
+print(x.calcEquation([["x1","x2"],["x2","x3"],["x3","x4"],["x4","x5"]], [3.0,4.0,5.0,6.0], [["x2","x4"]]))
 '''
 B Union-find method
     不理解，有点难
@@ -155,43 +156,59 @@ x = Solution()
 x.calcEquation(equations=[["a", "b"], ["b", "c"]], values=[2.0, 3.0],
            queries=[["a", "c"], ["b", "a"], ["a", "e"], ["a", "a"], ["x", "x"]])
 
-''''
-C.bfs
-苏丹的方法，需要学习
 '''
+C.BFS
+    Method:
+        1. build graph
+            a -> b = 2, b ->a = 1.0/2
+        2. do a bfs for each query
+            first check if in the map and conrer case a == b
+            start to find a shortest path to b and collect the weight and multiply them
+            save in res
+        3. return res
+    
+    E = len(equation), Q = len(queries)
+    Time complexity: O(E) + O(E) * Q = (EQ + E)
+    Space: 
+        O(E) = O(Vertex)
+易错点：改为buildMap
+'''
+
+from collections import defaultdict, deque
 class Solution:
     def calcEquation(self, equations, values, queries):
-        def buildMap(equations, values, d):
-            for (a, b), c in zip(equations, values):
-                d[a][b] = c
-                d[b][a] = 1.0 / c
+        def buildMap():  # build the graph, and return
+            graph = defaultdict(dict)
+            for (i, j), val in zip(equations, values):
+                graph[i][j] = val
+                graph[j][i] = 1.0 / val
+            return graph
 
-        from collections import defaultdict, deque
-        d = defaultdict(dict)
-        buildMap(equations, values, d)
-        res = []
+        graph = buildMap()
 
-        def helper(d, query):
-            a, b = query
-            if a not in d or b not in d:
+        def find(i, j):  # use bfs to find i, j division result
+            if i not in graph or j not in graph:
                 return -1.0
-            if a == b:
+            if i == j:
                 return 1.0
 
-            q = deque()
-            q.append((a, 1.0))
+            q = deque([(i, 1)])
             visited = set()
-            visited.add(a)
+            visited.add(i)
             while q:
-                node, value = q.popleft()
-                if node == b:
-                    return value
-                for v in d[node]:
-                    if v not in visited:
-                        visited.add(v)
-                        q.append((v, value * d[node][v]))
+                node, val = q.popleft()
+                if node == j:
+                    return val
+                for elem, elemVal in graph[node].items():
+                    if elem not in visited:
+                        visited.add(elem)
+                        q.append([elem, elemVal * val ])
             return -1.0
 
-        for query in queries:
-            res.append(helper(d, query))
+        res = []
+        for i, j in queries:
+            res.append(find(i, j))
         return res
+
+x = Solution()
+print(x.calcEquation([["a","b"],["b","c"]], [2.0,3.0], [["a","c"],["b","a"],["a","e"],["a","a"],["x","x"]]))
