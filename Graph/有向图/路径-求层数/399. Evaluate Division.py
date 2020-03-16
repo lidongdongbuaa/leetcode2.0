@@ -57,8 +57,9 @@ A. create the graph by dict and use dfs to search this graph to get result
             save the result in a ans list 
         3. return the ans list
     time complexity: O(e + e * q) 
-    space complexity: O(e)
+    space complexity: O(e) # 不计入输出的space，map占用2e, queue占用最多e，故是e，就是边数
 易错点：
+    本题空间复杂度的计算
     注意dfs也是有返回值的
     格式上依照无向图的dfs写
     时间空间复杂度也是要根据变量名来写
