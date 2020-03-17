@@ -66,39 +66,60 @@ A. create the graph by dict and use dfs to search this graph to get result
     注意：d = dfs(elem,j),只有在d != -1时，才返回d * graph[elem][j]，否则进行i的其他neighbors
 '''
 
+'''
+B. DFS
+    Method:
+        1. corner case
+        2. create the graph, a -> b:2.0, b -> a: 1/2
+        3. do dfs on each pair, i, j,of equary
+            a. check i or j in the graph or i == j
+            b. find the path from i to j, collect the weight, and multiply them
+            c. else return the -1
+        4. use ans list to save all dfs result, and return
+
+    Time complexity: O(e + q*e)
+    Space: O(e)
+'''
+
 from collections import defaultdict
+
+
 class Solution:
-    def calcEquation(self, equations, values, queries):
-        def buildMap():
-            graph = defaultdict(dict)
-            for (i, j), val in zip(equations, values):
-                graph[i][j] = val
-                graph[j][i] = 1.0 / val
-            return graph
+    def calcEquation(self, equations: List[List[str]], values: List[float], queries: List[List[str]]) -> List[float]:
+        if not equations or equations == [[]]:  # corner case
+            return []
 
-        graph = buildMap()
+        graph = self.createGraph(equations, values)
+
         res = []
-
-        def dfs(i, j):  # return pair's multiply result
-            if i == j:
-                return 1.0
-
-            visited.add(i)
-            for elem in graph[i]:
-                if elem not in visited:
-                    d = dfs(elem, j)
-                    if d != -1.0:
-                        return d * graph[i][elem]
-            return -1.0
-
-
         for i, j in queries:
-            if i not in graph or j not in graph:
-                res.append(-1.0)
-            else:
-                visited = set()
-                res.append(dfs(i, j))
+            visited = set()
+            res.append(self.dfs(i, j, graph, visited))
         return res
+
+    def createGraph(self, equations, values):  # return Graph
+        g = defaultdict(dict)
+
+        for (i, j), val in zip(equations, values):
+            g[i][j] = val
+            g[j][i] = 1.0 / val
+        return g
+
+    def dfs(self, i, j, graph, visited):  # return the division res
+        if i not in graph or j not in graph:  # corner case
+            return -1.0
+        if i == j:
+            return 1.0
+
+        visited.add(i)
+        for elem in graph[i]:
+            if elem not in visited:
+                visited.add(elem)
+                d = self.dfs(elem, j, graph, visited)
+                if d != -1:
+                    return d * graph[i][elem]
+        return -1.0
+
 
 x = Solution()
 print(x.calcEquation([["x1","x2"],["x2","x3"],["x3","x4"],["x4","x5"]], [3.0,4.0,5.0,6.0], [["x2","x4"]]))
@@ -175,41 +196,47 @@ C.BFS
 易错点：改为buildMap
 '''
 
-from collections import defaultdict, deque
+from collections import deque, defaultdict
+
+
 class Solution:
-    def calcEquation(self, equations, values, queries):
-        def buildMap():  # build the graph, and return
-            graph = defaultdict(dict)
-            for (i, j), val in zip(equations, values):
-                graph[i][j] = val
-                graph[j][i] = 1.0 / val
-            return graph
+    def calcEquation(self, equations, values, queries):  # return divsion result in list
+        if not equations or equations == [[]]:
+            return []
 
-        graph = buildMap()
-
-        def find(i, j):  # use bfs to find i, j division result
-            if i not in graph or j not in graph:
-                return -1.0
-            if i == j:
-                return 1.0
-
-            q = deque([(i, 1)])
-            visited = set()
-            visited.add(i)
-            while q:
-                node, val = q.popleft()
-                if node == j:
-                    return val
-                for elem, elemVal in graph[node].items():
-                    if elem not in visited:
-                        visited.add(elem)
-                        q.append([elem, elemVal * val ])
-            return -1.0
+        graph = self.createGraph(equations, values)
 
         res = []
-        for i, j in queries:
-            res.append(find(i, j))
+        for x, y in queries:
+            if x not in graph or y not in graph:
+                res.append(-1.0)
+            else:
+                res.append(self.bfs(x, y, graph))
         return res
+
+    def createGraph(self, equations, value):  # return graph in dic[dic]
+        g = defaultdict(dict)
+        for (i, j), val in zip(equations, value):
+            g[i][j] = val
+            g[j][i] = 1.0 / val
+        return g
+
+    def bfs(self, x, y, graph):  # return division result
+        if x == y:  # corner case
+            return 1.0
+
+        visited = set()
+        queue = deque([(x, 1.0)])
+        visited.add(x)
+        while queue:
+            node, val = queue.popleft()
+            if node == y:
+                return val
+            for j in graph[node]:
+                if j not in visited:
+                    visited.add(j)
+                    queue.append([j, val * graph[node][j]])
+        return -1.0
 
 x = Solution()
 print(x.calcEquation([["a","b"],["b","c"]], [2.0,3.0], [["a","c"],["b","a"],["a","e"],["a","a"],["x","x"]]))

@@ -100,10 +100,7 @@ class Node:
         self.neighbors = neighbors
 """
 
-class Node:
-    def __init__(self, val = 0, neighbors = []):
-        self.val = val
-        self.neighbors = neighbors
+
 
 from collections import deque
 class Solution:
