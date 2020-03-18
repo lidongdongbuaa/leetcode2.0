@@ -113,13 +113,14 @@ loop1:
     r = 0
 '''
 '''
-C.模板解法
-易错点: 划分区间时,无论左区间是有序的,还是无序的,最小值有可能在此左区间,故不能用左区间两端点来划分区间
+没有明确target，根据左右边界趋势判断 -> 类型3
+左边部分无论有序无序，最小值都有可能在其中，无法缩小lr范围，故使用右边部分进行判断
+易错点：rotated sorted包含没有rotated的情况
 '''
 
 class Solution:
     def findMin(self, nums: List[int]) -> int:
-        if not nums:  # corner case
+        if nums is None:  # corner case
             return None
         if len(nums) == 1:
             return nums[0]
@@ -127,8 +128,10 @@ class Solution:
         l, r = 0, len(nums) - 1
         while l + 1 < r:
             mid = l + (r - l) // 2
-            if nums[r] < nums[mid]:
-                l = mid
-            else:
+            if nums[mid] < nums[r]:  # 右边部分有序，最小值不在右边部分
                 r = mid
+            elif nums[mid] == nums[r]: # 右边部分为1个数，最小值可能在其中
+                r = mid
+            elif nums[mid] > nums[r]:  # 右边部分无序，左边有序，则最小值在右边
+                l = mid
         return min(nums[l], nums[r])

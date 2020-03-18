@@ -137,3 +137,33 @@ class Solution:
             return l
         else:
             return r
+
+
+'''
+B. binary Search - peak elem is bigger then its next elemt
+    Method:
+        1. corner case
+        2. binary search
+            a. set left and right boundary
+            b. find mid, compare nums[mid] and nums[mid + 1]
+        3. compare nums[left boundary] with nums[right], return bigger one's index
+    
+    Time complexity: O(logN)
+    Space O(1)
+'''
+class Solution:
+    def findPeakElement(self, nums: List[int]) -> int:
+        if not nums:
+            return []
+
+        l, r = 0, len(nums) - 1
+        while l + 1 < r:
+            mid = l + (r - l) // 2
+            if nums[mid] < nums[mid + 1]:
+                l = mid
+            else:
+                r = mid
+        if nums[l] < nums[r]:
+            return r
+        else:
+            return l

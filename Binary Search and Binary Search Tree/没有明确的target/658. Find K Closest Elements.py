@@ -30,78 +30,43 @@ corner case:
     k is 1? return closest one []
 
 
-A. Brute force
+A. brute force - find the x index, and search the front and later k neighbors
     Method:
         1. corner case
-        2. target is out of range of nums, return k numbers
-        3. traversal elem in nums and compare with target, if target = elem or < elem, stop
-            search near k closest elements
-    Time O(n)
-    Space O(1)
+        2. traversal arr to find x's index, or bigger one's elems
+            [1,2,4], x is 3 -> 4's index
+        3. get more half value before x, get less half value after x
+        4. return
+    Time complexity: O(N) N is length of arr
+    Space: O(1)
 
-B. binary search
+B. binary search - from 0 to len(arr) - k, to find i index to get min arr[i:i + k]
     Method:
-        1.
-    Time: O(logN)
-    Space:O(1)
-    
-    Intuition
-    The array is sorted.
-    If we want find the one number closest to x,
-    we don't have to check one by one.
-    it's straightforward to use binary research.
-    
-    Now we want the k closest,
-    the logic should be similar.
-    
-    
-    Explanation:
-    Assume we are taking A[i] ~ A[i + k -1].
-    We can binary research i
-    We compare the distance between x - A[mid] and A[mid + k] - x
-    
-    If x - A[mid] > A[mid + k] - x,
-    it means A[mid + 1] ~ A[mid + k] is better than A[mid] ~ A[mid + k - 1],
-    and we have mid smaller than the right i.
-    So assign left = mid + 1.
-    
-    Note that, you SHOULD NOT compare the absolute value of abs(x - A[mid]) and abs(A[mid + k] - x).
-    It fails at cases like A = [1,1,2,2,2,2,2,3,3], x = 3, k = 3
-    
-    The problem is interesting and good.
-    Unfortunately the test cases is terrible.
-    The worst part of Leetcode test cases is that,
-    you sumbit a wrong solution but get accepted.
-    
-    You didn't read my post and upvote carefully,
-    then you miss this key point.
-    
-    
-    Time Complexity:
-    O(log(N - K)) to binary research and find reseult
-    O(K) to create the returned list.
+        1. corner case
+        2. binary search
+            a. set left and right boundary
+            b. find the mid, compare x - arr[mid] and arr[mid + k] - x to scale the boundary
+            c. return arr[l:l + k]
+            
+    Time complexity: O(log(N-K)) binary search + O(K) for res slice 
+    Space: O(1)
 
-
+解释：
+    首先取寻找i，使[i,i +k]符合题意，故改变r为len(arr) - k - 1
+    其次，把x看成mid和mid + k的中点，要使得左半边x->arr[mid]比右半边arr[mid+k]->x更小，故进行比较
+    在相等时，继续缩小右边界
+    最后返回找到的l值，得到arr[l:l + k]
 '''
 
-
 class Solution:
-    def findClosestElements(self, arr: List[int], k: int, x: int) -> List[int]:
-        if not arr:  # corner case
-            return None
-        if not k:
-            return None
-        if x is None:
-            return None
-
-        left, right = 0, len(arr) - k
-        while left < right:
-            mid = left + (right - left) // 2
-            if x - arr[mid] > arr[k + mid] - x:
-                left = mid + 1
-            elif x - arr[mid] == arr[k + mid] - x:
-                right = mid
+    def findClosestElements(self, arr, k: int, x: int):
+        l, r = 0, len(arr) - k - 1
+        while l <= r:
+            mid = l + (r - l) // 2
+            if x - arr[mid] < arr[mid + k] - x:
+                r = mid - 1
+            elif x - arr[mid] == arr[mid + k] - x:
+                r = mid - 1
             else:
-                right = mid
-
-        return arr[left:left + k]
+                l = mid + 1
+        return arr[l:l + k]

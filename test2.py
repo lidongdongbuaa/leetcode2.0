@@ -1,13 +1,15 @@
-
-
-
-edges = [[0,1],[0,4],[1,4],[2,3]]
-graph = [[] for _ in range(5)]
-for i, j in edges:
-    graph[i].append(j)
-    graph[j].append(i)
-print(graph)
-
+class Solution:
+    def findClosestElements(self, arr, k: int, x: int):
+        l, r = 0, len(arr) - 1
+        while l <= r:
+            mid = l + (r - l) // 2
+            if arr[mid] == x:
+                return mid
+            elif arr[mid] < x:
+                l = mid + 1
+            elif arr[mid] > x:
+                r = mid - 1
+        return l
 
 
 

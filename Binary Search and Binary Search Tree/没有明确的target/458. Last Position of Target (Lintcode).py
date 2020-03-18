@@ -37,10 +37,10 @@ class Solution:
                 r = mid - 1
             elif nums[mid] < target:
                 l = mid + 1
-        if nums[r] == target:
-            return r
-        else:
+        if r < 0:
             return -1
-'''
-
-'''
+        else:
+            if nums[r] == target:
+                return r
+            else:
+                return -1

@@ -7,8 +7,6 @@
 '''
 题目分析
 求target的index range
-    先确定target存在
-    后转化为
         l = 求 target前值（不明确）的r值，即比target前值大的最小值
         r = 求 target后值（不明确）的l值，即比target后值小的最大值
 
@@ -51,108 +49,121 @@ class Solution:
             if val == target:
                 ans.append(index)
         return [ans[0], ans[-1]]
-'''
-B.binary search 
-    Method:
-        1. corner case
-        2. use find1() to find the left position
-            a. set left bonderay, l, as 0, set right boundary, r, as len(nums) - 1
-            b. do while loop, l <= r
-                find mid = l + (r - l) // 2
-                if target = nums[mid], change r = mid - 1
-                if target < nums[mid], cahnge r = mid - 1
-                if target > nums[mid], change l = mid + 1
-                return l as result
-        3. use find2() to find the right position
-            a. set left, and right bondary
-            b. do while loop, l<= r
-                find mid
-                if target = nums[mid], change l = mid + 1
-                ....if , if 
-                return r as result
-        4. return [l, r]
-    Time complexity: O(logN)
-    space: O(1)
 
 '''
+B. binary search
+    Method:
+        1. corner case
+        2.check T is out of range
+        2. use binary search to find first position
+        3. use binary search to find last position
+    Time O(logN)
+    Space O(1)
+方法1： 提前处理T out of range + 判断nums[l] = T
+'''
+class Solution:
+    def searchRange(self, nums: List[int], target: int) -> List[int]:
+        if not nums:  # corner case
+            return [-1, -1]
+
+        if target < nums[0] or target > nums[-1]:
+            return [-1, -1]
+
+        left = self.findFirst(nums, target)
+        right = self.findLast(nums, target)
+
+        return [left, right]
+
+    def findFirst(self, nums, target):  # return the first index else return -1
+        l, r = 0, len(nums) - 1
+        while l <= r:
+            mid = l + (r - l) // 2
+            if nums[mid] == target:
+                r = mid -1
+            elif nums[mid] < target:
+                l = mid + 1
+            else:
+                r = mid - 1
+        if nums[l] == target:
+            return l
+        else:
+            return -1
+
+    def findLast(self, nums, target):  # return the last index else return -1
+        l, r = 0, len(nums) - 1
+        while l <= r:
+            mid = l + (r - l) // 2
+            if nums[mid] == target:
+                l = mid + 1
+            elif nums[mid] < target:
+                l = mid + 1
+            else:
+                r = mid - 1
+        if nums[r] == target:
+            return r
+        else:
+            return -1
+
+
+'''
+求target的首末index，若无，返回-1
+
+易错点：
+    返回值的情况分类
+
+    左端点值
+        T大于nums：l = len(l)
+        T在nums之内
+            存在：nuns[l] = T
+            不存在 nums[l] != T
+        T小于nums nums[l] != T
+方法二：对所有情况进行分类
+'''
+
 
 class Solution:
     def searchRange(self, nums: List[int], target: int) -> List[int]:
-        if target not in nums:  # corner case
+        if not nums:  # corner case
             return [-1, -1]
 
+        left = self.findFirst(nums, target)
+        right = self.findLast(nums, target)
 
-        def findL():  # return target's first position
-            l, r = 0, len(nums) - 1
-            while l <= r:
-                mid = l + (r - l) // 2
-                if nums[mid] == target:
-                    r = mid - 1
-                elif target < nums[mid]:
-                    r = mid - 1
-                elif nums[mid] < target:
-                    l = mid + 1
-            return l
+        return [left, right]
 
-        def findR():  # return target's last position
-            l, r = 0, len(nums) - 1
-            while l <= r:
-                mid = l + (r - l) // 2
-                if target == nums[mid]:
-                    l = mid + 1
-                elif target < nums[mid]:
-                    r = mid - 1
-                elif nums[mid] < target:
-                    l = mid + 1
-            return r
+    def findFirst(self, nums, target):  # return the first index else return -1
+        l, r = 0, len(nums) - 1
+        while l <= r:
+            mid = l + (r - l) // 2
+            if nums[mid] == target:
+                r = mid - 1
+            elif nums[mid] < target:
+                l = mid + 1
+            else:
+                r = mid - 1
+        if l > len(nums) - 1:  # T大于all nums的情况,l为len(nums)
+            return -1
+        else:  # T在nums范围内，及小于all nums的情况
+            if nums[l] == target:  # target在nums中存在的情况
+                return l
+            else:  # target在nums不存在，及target大于nums的情况
+                return -1
 
-        l = findL()
-        r = findR()
-        return [l, r]
+    def findLast(self, nums, target):  # return the last index else return -1
+        l, r = 0, len(nums) - 1
+        while l <= r:
+            mid = l + (r - l) // 2
+            if nums[mid] == target:
+                l = mid + 1
+            elif nums[mid] < target:
+                l = mid + 1
+            else:
+                r = mid - 1
+        if r < 0:  # T小于all nums的情况，r为-1
+            return -1
+        else:  # T在nums范围内，及大于all nums的情况
+            if nums[r] == target:  # T在nums有
+                return r
+            else:  # T在nums里没有，及 T大于all nums的情况
+                return -1
 
-'''
-nums = [5,7,7,8,8,10], target = 8
-1. pass corner case
-2. get l
-    l, r = 0, 5
-    loop 1
-        0 <= 5
-        mid = 0 + 2 = 2
-        nums[mid]= 7 < target 8
-            l = 2 + 1 = 3
-    loop 2
-        3 <= 5
-        mid = 4
-        nums[mid] = 8 = target 8
-            r = 3
-    loop 3
-        3 <= 3
-        mid = 3
-        nums[mid] = 8 = target
-            r = 2
-    loop 4
-        3 <= 2
-        return 3
-    
-3. get r
-    l, r = 0, 5
-    loop 1
-        0 <= 5
-        mid = 2
-        nums[mid] = 7 < target 8
-            l = 3
-    loop 2
-        3 <= 5
-        mid = 4
-        nums[mid] = 8 = target
-        l = 4 + 1 = 5
-    loop 3
-        5 <= 5
-        mid = 5
-        nums[mid] = 10 > target
-        r = mid - 1 = 4
-    loop 4
-        5 <= 4
-        return 4
-    4. return [l, r] -> [3, 4]
-'''

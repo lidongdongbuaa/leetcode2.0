@@ -90,19 +90,22 @@ class Solution:
 
 
 '''
-C. binary Search - search diagonals
+corner case:
+    1. matrix is None/[[]] -> False
+    2. target is None -> False
+
+A. diagoal bianry search
     Method:
         1. corner case
-        2. from top left to bottom right, scan every node,i
-            a. scan i horizontal elements, if meet value, return true log(N),N = n,n-1, n-2,...1
-            b. scan i vertical elements, do same things
-        3. return False
-
-    Time Complexity: O(logN + log(N-1) + ...) = O(logN!) < O(NlogN), N is min (rows, columns)
-    space: O(1)
-
-易错点：弄清l,r的前后顺序，在子函数中
+        2. search from the left-up part of matrix to the right- bottom, i node
+            binary search i node's horizontal and vertical element
+    Time Complexity: O(logN!) < O(NlogN), N is min(m, n) m, n is row numbers, column numbers
+    Space: O(1)
+易错点：
+    r的边界应该是 m/n - 1，这个减一不能忘
 '''
+
+
 class Solution:
     def searchMatrix(self, matrix, target):
         """
@@ -110,39 +113,47 @@ class Solution:
         :type target: int
         :rtype: bool
         """
-        if matrix == [] or matrix == [[]]:
+        if matrix == []:  # corner case
+            return False
+        if matrix == [[]]:
+            return False
+        if target is None:
             return False
 
-        for i in range(min(len(matrix), len(matrix[0]))):
-            vertical = self.find(matrix, target, i, True)
-            horizontal = self.find(matrix, target, i, False)
-            if vertical or horizontal:
+        m = len(matrix)
+        n = len(matrix[0])
+
+        for i in range(min(m, n)):
+            r = self.binarySearch(i, matrix, m, n, target, 1)
+            c = self.binarySearch(i, matrix, m, n, target, 0)
+            if r or c:
                 return True
         return False
 
-    def find(self, matrix, target, start, vertical):  # if find target, return True
-        l = start
-        if vertical:
-            r = len(matrix) - 1
+    def binarySearch(self, i, matrix, m, n, target, horizontal):  # return if the row or columns has target
+        if horizontal == 1:
+            r = n - 1
         else:
-            r = len(matrix[0]) - 1
+            r = m - 1
+        l = i
 
-        while l <= r:
-            if vertical:  # 纵向扫描
+        if horizontal == 1:
+            while l <= r:
                 mid = l + (r - l) // 2
-                midV = matrix[mid][start]
-                if midV == target:
+                midVal = matrix[i][mid]
+                if midVal == target:
                     return True
-                if midV < target:
+                if midVal < target:
                     l = mid + 1
                 else:
                     r = mid - 1
-            else:  # 横向扫描
+        else:
+            while l <= r:
                 mid = l + (r - l) // 2
-                midV = matrix[start][mid]
-                if midV == target:
+                midVal = matrix[mid][i]
+                if midVal == target:
                     return True
-                if midV < target:
+                if midVal < target:
                     l = mid + 1
                 else:
                     r = mid - 1
@@ -153,13 +164,17 @@ class Solution:
 D.search space reduction
     Method:
         1. corner case
-        2. initialize a pointer,i,  in bottom left of matrix
-            if target > i, move it to right
-            else: move i to up, until find the target
-    Time complexity: O(n + m)
-    space: O(1)
+        2. from left bottom [len(matrix)][0] i,to search
+            if i < target, move up
+            if i == target return True
+            if i > target, move right
+    Time complexity: O(m + n)
+    Space: O(1)
+易错点：
+    1.并不是每个格子都扫到，其实只扫了一行和一列，故tO(m + n)
 
 '''
+
 class Solution:
     def searchMatrix(self, matrix, target):
         """
@@ -167,22 +182,21 @@ class Solution:
         :type target: int
         :rtype: bool
         """
-        if not matrix or matrix == [[]]:
+        if matrix == []:  # corner case
+            return False
+        if matrix == [[]]:
+            return False
+        if target is None:
             return False
 
-        r = len(matrix) - 1
-        c = len(matrix[0]) - 1
-
-        i = r
+        i = len(matrix) - 1
         j = 0
 
-        while i >= 0 and j <= c:
-            pointer = matrix[i][j]
-            if pointer == target:
+        while i >= 0 and j <= len(matrix[0]) - 1:
+            if matrix[i][j] == target:
                 return True
-            if pointer < target:
+            elif matrix[i][j] < target:
                 j += 1
             else:
                 i -= 1
-
         return False
