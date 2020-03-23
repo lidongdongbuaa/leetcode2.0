@@ -18,86 +18,79 @@ time complexity order:  链表转置法 O(N) = 转化为数字法 O(N)
 space complexity order: 链表转置法 O(1) < 转化为数字法 O(N)
 '''
 
-'''
-转化为数字法
-思路：把链表保存成整数，整数加1，然后再还原成链表
-方法：
-    traverse every node,  transfer to integer by numb = numb*10 + node.val；tO(N) sO(1)
-    加一；tO(1) 
-    transfer new_numb to string, then traverse it, and use int (every string elem) to rebuild the new Linklist # tO(N) sO(N)
-边界条件：
-time complex: O(N)
-space complex: O(N)
-易错点： integer 的拼写
-'''
-
-class Solution:
-    def plusOne(self, head):  # input: head; output: head
-        integer = 0
-        while head:  # transfer to integer
-            integer = integer * 10 + head.val
-            head = head.next
-
-        new_numb = integer + 1  # integer + 1
-
-        dummy = pre = ListNode(0)
-        for elem in str(new_numb):  # transfer to linklist
-            new_node = ListNode(int(elem))
-            pre.next = new_node
-            pre = pre.next
-
-        return dummy.next
-
-
-'''
-链表转置法
-思路：先转置链表，变成从个位到高位；从低位迭代到高位，同时对个位加1，若为10，本head.val改为0，下一位继续加1；若不为，终止迭代
-方法：先迭代整个链表进行转置；
-    i=1, 后对新链表递归，若head.val + i == 10，head.val = 0, 继续下个迭代；若head.val +i !=10, head.val = head.val+ i,终止迭代，返回头节点
-    对新链表转置，返回转置后的新链表
-边界条件：head.val = 0 / 最高位变为10，需要加1位数
-time complex: tO(N)
-space complex: sO(1)
-易错点：一定要curr = curr.next
-            b = ListNode(2) a = b.next a = ListNode(9) 这样时a.val = 9,但是b.next依然为None,
-            即因为python等于号 = 的含义是赋地址，故在a = ListNode(9)后，a获得了新地址，b.next还是原来老a的，故不匹配
-            只有next可以链接地址，故在curr = curr.next之前把curr.next = ListNode(1)建立好
-        while curr反复练习
-'''
 class ListNode:
     def __init__(self, x):
         self.val = x
         self.next = None
 
+
+'''
+input: linkedlist head; None? N; length range? >= 1; value range? > 0; no leading zero? Y; order? most signficant digit is the head, 1->2->3 is 123
+output:head of linklist
+
+
+A.brute force - transfer as integer, add one, tranfer back
+    Time: O(N)
+    Space: O(1)
+'''
 class Solution:
     def plusOne(self, head: ListNode) -> ListNode:
-        new_head = None
-        while head: #tO(N)
-            next_head = head.next
-            head.next = new_head
-            new_head = head
-            head = next_head
+        integer = 0
+        cur = head
+        while cur:
+            integer = integer * 10 + cur.val
+            cur = cur.next
 
-        curr = new_head
-        while curr: #max is tO(N), sO(1) while的循环是基于+1是否递进
-            if curr.val + 1 == 10:
-                curr.val = 0
-                if curr.next is None:
-                    curr.next = ListNode(1) #1 是新添加的，该结束了，不然又一轮while
-                    break
+        integer += 1
+
+        dummy = curr = ListNode(-1)
+        for i in str(integer):
+            curr.next = ListNode(int(i))
+            curr = curr.next
+
+        return dummy.next
+
+'''
+B. reverse - reverse it, add one, reverse back
+    Method:
+        1. reverse 
+            1->2->3 : 3 -> 2 -> 1
+        2. add 1 to  last digit
+            4->2-> 1
+        3. reverse the it again
+            1->2->4
+    Time: O(N)
+    Space O(N)
+
+'''
+class Solution:
+    def plusOne(self, head: ListNode) -> ListNode:
+
+        curr = self.reverse(head)
+
+        carry = 1
+        dummy = newH = ListNode(-1)
+        while curr or carry:
+            if curr:
+                carry += curr.val
                 curr = curr.next
-            else:
-                curr.val = curr.val + 1
-                break
+            newH.next = ListNode(carry % 10)
+            newH = newH.next
+            carry = carry // 10
 
-        final_head = None
-        while new_head: #tO(N)
-            next_head = new_head.next
-            new_head.next = final_head
-            final_head = new_head
-            new_head = next_head
+        res = self.reverse(dummy.next)
 
-        return final_head
+        return res
+
+    def reverse(self, head):  # return reversed linkedlist head
+        curr = None
+        while head:
+            nextHead = head.next
+            head.next = curr
+            curr = head
+            head = nextHead
+        return curr
+
 
 
 

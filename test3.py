@@ -1,57 +1,33 @@
-class ListNode:
-    def __init__(self, x):
-        self.val = x
-        self.next = None
+from collections import defaultdict
+
 
 class Solution:
-    def __init__(self):
-        self.left = None
-        self.stop = None
+    def makeConnected(self, n: int, connections) -> int:
+        if not connections or connections == [[]]:
+            return -1
+        if len(connections) < n - 1:
+            return -1
 
-    def reverseBetween(self, head: ListNode, m: int, n: int) -> ListNode:
-        if not head:
-            return None
+        graph = defaultdict(set)
+        visited = [0] * n
 
-        self.left = head
-        self.stop = False
+        for i, j in connections:
+            graph[i].add(j)
+            graph[j].add(i)
 
-        right = head
-        self.recurseAndReverse(right, m, n)
-        return head
-
-    def recurseAndReverse(self,right, m, n):
-        #n代表right node的目前为止，m代表left node的目前为止
-        #n比m大，故以n到达位置为判断标准，进行return
-        if n == 1:
+        def dfs(i):  # visited i and neighbors in depth
+            visited[i] = 1
+            for j in graph[i]:
+                if visited[j] == 0:
+                    dfs(j)
             return
 
-        right = right.next
+        times = 0
+        for i in range(n):
+            if visited[i] == 0:
+                dfs(i)
+                times += 1
+        return times - 1
 
-        if m > 1:
-            #m同时向前进
-            self.left = self.left.next
-
-        #m,n同时进行改变
-        self.recurseAndReverse(right, m - 1, n - 1)
-        #利用回溯的过程中，数据回代的特点
-        #当两者交叉时，说明转置完成
-        if self.left == right or right.next == self.left:
-            self.stop = True
-
-        #如果转置未完成
-        if not self.stop:
-            self.left.val, right.val = right.val, self.left.val  # 两个数的调换
-            self.left = self.left.next
-
-head = ListNode(1)
-b = ListNode(2)
-c = ListNode(3)
-d = ListNode(4)
-e = ListNode(5)
-head.next = b
-b.next = c
-c.next = d
-d.next = e
-
-rl = Solution()
-print(rl.reverseBetween(head,2,4).val)
+x = Solution()
+x.makeConnected(5, [[0,1],[0,2],[3,4],[2,3]])

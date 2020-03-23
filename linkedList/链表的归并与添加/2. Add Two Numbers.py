@@ -17,121 +17,104 @@ time complexity order: 两两值相加迭代法 O(N) = 转化为数字法O(N)
 space complexity order:  两两值相加迭代法 O(N) = 转化为数字法O(N)
 '''
 
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+
 '''
-两两值相加迭代法
-思路：构建新链表，同时迭代两个链表，把两个链表节点值的和构建成新链表的节点值；直到其中一个/两个链表到底
-方法: 新建链表，while l1 and l2, 两个链表节点和为新链表的节点值，若为10，则加入下一位，若为某链末尾，则另一个链表下一位加1
-边界条件：节点和为10时/节点和为10且为最后一位时
-time complex: tO(N)
-space complex: sO(N)
-易错点：迭代链表(while)时，一定不要忘了head.next = head-->首先就要添加
-    此题可以为9+9，跟369加1是不一样的，故curr.next = ListNode(l1.val + l2.val + i - 10)，不要忘记减10
-    同样的9+9，在最后，可能出现l1和l2都为None时，这个时候要新建1node添加到链表最后
+input: digit is saved in linked list; length of list? >= 1; value range? No limit; repeated? Y; order? reverse
+123 -> 3->2-1; leading zero? N
+output: linkedlist
+
+if having leadin zero?
+if not reverse?
+
+A. brute force - transfer linkedlist as integer and add and transfer
+    Method:
+        1. transfer linkedlist to interger
+            2->4->3  ->  342
+        2. add one int to another
+        3. transfer the combination to linkedlist, and return
+    
+    Time complexity: O(m + n), m and n is length of two linked list
+    Space: O(1) 
+
+
 '''
+
 class ListNode:
     def __init__(self, x):
         self.val = x
         self.next = None
 
-
 class Solution:
-    def addOne(self, head):
-        curr = head
-        while head:
-            if head.val + 1 == 10:
-                head.val = 0
-                if head.next is None:
-                    head.next = ListNode(1)
-                    break
-                head = head.next
-            elif head.val + 1 != 10:
-                head.val += 1
-                break
-        return curr
-
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
-        curr = new_head = ListNode(0)
-        i = 0
-        while l1 and l2: #tO(N), sO(N)
-            if l1.val + l2.val + i >= 10:
-                curr.next = ListNode(l1.val + l2.val + i - 10)
-                i = 1
-            else:
-                curr.next = ListNode(l1.val + l2.val + i)
-                i = 0
-            curr = curr.next
-            l1 = l1.next
-            l2 = l2.next
 
-        if i == 0:#tO(1), sO(1)
-            if l1 is None:
-                curr.next = l2
-            elif l2 is None:
-                curr.next = l1
-        elif i == 1:  #tO(N), sO(N)
-            if l1 is None and l2 is not None:
-                curr.next = self.addOne(l2)
-            elif l2 is None and l1 is not None:
-                curr.next = self.addOne(l1)
-            elif l1 is None and l2 is None:
-                curr.next = ListNode(1)
+        int1 = int2 = 0
+        int1 = self.transfer(l1)
+        int2 = self.transfer(l2)
 
-        return new_head.next
+        total = int1 + int2
 
-'''
-优化法
-'''
-def addTwoNumbers(self, l1, l2):
-    dummy = cur = ListNode(0)
-    carry = 0
-    while l1 or l2 or carry:
-        if l1:
-            carry += l1.val
-            l1 = l1.next
-        if l2:
-            carry += l2.val
-            l2 = l2.next
-        cur.next = ListNode(carry % 10)
-        cur = cur.next
-        carry = carry // 10
-    return dummy.next
-'''
-转化为数字法
-思路：把两个链表都转化为整数，然后相加得到结果，最后把结果转成链表并转置输出
-方法: 使用while遍历链表，每遍历一次，node.val乘以10，同时累加这个结果，得到最后的转化整数；
-    相加两个整数；
-    把这个整数转化为string；
-    逆序遍历这个string的每个elem，构造为新的链表，输出！
-边界条件：head = None
-time complex: O(N) + O(1) + O(N) + O(N) = O(N)
-space complex: O(1) + O(1) + O(1) + O(N) = O(N)
-易错点：算完和之后，结果整数是正常顺序的，而题目要求是倒叙数，故在采用转成string，再逆序重建链表
-'''
-class ListNode:
-    def __init__(self, x):
-        self.val = x
-        self.next = None
+        return self.reverseTransfer(total)
 
+    def transfer(self, node):  # transfer linkedlist to integer
+        if not node:
+            return 0
 
-class Solution:
-    def LinkedListToNum(self,head):
-        num = 0
+        integer = 0
         times = 1
-        while head:
-            num += head.val*times
-            head = head.next
+        while node:
+            integer += node.val * times
             times *= 10
-        return num
+            node = node.next
+        return integer
 
+    def reverseTransfer(self, numb):  # transfer numb to linkedlist
+        dummy = curr = ListNode(-1)
+        for s in str(numb)[::-1]:
+            curr.next = ListNode(int(s))
+            curr = curr.next
 
+        return dummy.next
+
+'''
+B. linked list combination - use carry to show the tens of digit
+    Method:
+        1. traversal every val in linkedlist A and linkedlist B
+            add A val and B val and carry as sum
+            use single digit of sum to build newNode
+            give tens digit sum to carry
+    
+    Time: O(max(m,n))
+    Space: O(1)
+易错点:
+    变量使用之前，一定要初始化 - 
+    有一个算一个的迭代方法，分开使用if迭代
+    求十分位是tens，个位是single digit
+'''
+class Solution:
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
-        num1 = self.LinkedListToNum(l1)
-        num2 = self.LinkedListToNum(l2)
+        dummy = cur = ListNode(-1)
+        carry = 0
 
-        total= num1 + num2
-        total_string = str(total)
-        pre = new_head = ListNode(0)
-        return
+        while l1 or l2 or carry:
+            if l1:
+                carry += l1.val
+                l1 = l1.next
+            if l2:
+                carry += l2.val
+                l2 = l2.next
+            newNode = ListNode(carry % 10)
+            cur.next = newNode
+            cur = cur.next
+            carry = carry // 10
+        return dummy.next
+
+
 
 '''
 test case
