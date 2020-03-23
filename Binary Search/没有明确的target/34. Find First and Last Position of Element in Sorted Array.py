@@ -16,7 +16,7 @@ space complexity order: binary search O(1) < brute force - traversal O(N)
 6.如何考
 '''
 '''
-find the index of first and last position of element 
+find the index of first and last position of element  
 O(logN) time 
 binary search problem
 
