@@ -2,37 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Binary Search Tree 二叉搜索树/235. Lowest Common Ancestor of a Binary Search Tree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/数据结构与算法1-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法1.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Binary Search Tree 二叉搜索树/450. Delete Node in a BST.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Binary Search Tree 二叉搜索树/669. Trim a Binary Search Tree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Binary Search Tree 二叉搜索树/700. Search in a Binary Search Tree.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search and Binary Search Tree/有明确的target/167. Two Sum II - Input array is sorted.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary Search/有明确的target/167. Two Sum II - Input array is sorted.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search and Binary Search Tree/有明确的target/240. Search a 2D Matrix II.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary Search/有明确的target/240. Search a 2D Matrix II.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search and Binary Search Tree/有明确的target/33. Search in Rotated Sorted Array.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary Search/有明确的target/33. Search in Rotated Sorted Array.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search and Binary Search Tree/有明确的target/367. Valid Perfect Square.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary Search/有明确的target/367. Valid Perfect Square.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search and Binary Search Tree/有明确的target/374. Guess Number Higher or Lower.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary Search/有明确的target/374. Guess Number Higher or Lower.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search and Binary Search Tree/有明确的target/74. Search a 2D Matrix.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary Search/有明确的target/74. Search a 2D Matrix.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search and Binary Search Tree/有明确的target/81. Search in Rotated Sorted Array II.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary Search/有明确的target/81. Search in Rotated Sorted Array II.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search and Binary Search Tree/有明确的target/laMian.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary Search/有明确的target/laMian.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search and Binary Search Tree/没有明确的target/278. First Bad Version.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary Search/没有明确的target/278. First Bad Version.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search and Binary Search Tree/没有明确的target/34. Find First and Last Position of Element in Sorted Array.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary Search/没有明确的target/34. Find First and Last Position of Element in Sorted Array.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search and Binary Search Tree/没有明确的target/35. Search Insert Position.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary Search/没有明确的target/35. Search Insert Position.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search and Binary Search Tree/没有明确的target/441. Arranging Coins.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary Search/没有明确的target/441. Arranging Coins.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search and Binary Search Tree/没有明确的target/447 Search in a Big Sorted Array （LintCode）.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary Search/没有明确的target/447 Search in a Big Sorted Array （LintCode）.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search and Binary Search Tree/没有明确的target/458. Last Position of Target (Lintcode).py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary Search/没有明确的target/458. Last Position of Target (Lintcode).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search and Binary Search Tree/没有明确的target/459. Closest Number in Sorted Array (Lintcode).py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary Search/没有明确的target/459. Closest Number in Sorted Array (Lintcode).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search and Binary Search Tree/没有明确的target/658. Find K Closest Elements.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary Search/没有明确的target/658. Find K Closest Elements.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search and Binary Search Tree/没有明确的target/69. Sqrt(x).py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary Search/没有明确的target/69. Sqrt(x).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search and Binary Search Tree/没有明确的target/744. Find Smallest Letter Greater Than Target.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary Search/没有明确的target/744. Find Smallest Letter Greater Than Target.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search and Binary Search Tree/没有明确的target类型，可以越界类型/153. Find Minimum in Rotated Sorted Array.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary Search/没有明确的target类型，可以越界类型/153. Find Minimum in Rotated Sorted Array.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search and Binary Search Tree/没有明确的target类型，可以越界类型/162. Find Peak Element.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary Search/没有明确的target类型，可以越界类型/162. Find Peak Element.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search and Binary Search Tree/没有明确的target类型，可以越界类型/852. Peak Index in a Mountain Array.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary Search/没有明确的target类型，可以越界类型/852. Peak Index in a Mountain Array.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linkedList/链表的归并与添加/21. Merge Two Sorted Lists.py" beforeDir="false" afterPath="$PROJECT_DIR$/linkedList/链表的归并与添加/21. Merge Two Sorted Lists.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/Data Structure And Algorithm-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/Data Structure And Algorithm.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法1.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法2.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法总结.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法总结.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -131,7 +107,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.templeV3.0 - 副本">
+  <component name="RunManager" selected="Python.test">
     <configuration name="lc 55" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="leetcode" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -297,8 +273,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.templeV3.0 - 副本" />
         <item itemvalue="Python.test" />
+        <item itemvalue="Python.templeV3.0 - 副本" />
         <item itemvalue="Python.test3" />
         <item itemvalue="Python.test2" />
         <item itemvalue="Python.test4" />
@@ -462,14 +438,7 @@
       <workItem from="1584743392515" duration="195000" />
       <workItem from="1584838757792" duration="13801000" />
       <workItem from="1584958326613" duration="3020000" />
-      <workItem from="1584964870835" duration="4538000" />
-    </task>
-    <task id="LOCAL-00042" summary="0209">
-      <created>1581215592373</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1581215592373</updated>
+      <workItem from="1584964870835" duration="15714000" />
     </task>
     <task id="LOCAL-00043" summary="0210">
       <created>1581306246757</created>
@@ -807,7 +776,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584940047939</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary=" 0323">
+      <created>1585006813637</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1585006813639</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -1250,6 +1226,11 @@
           <line>24</line>
           <option name="timeStamp" value="326" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test.py</url>
+          <line>5</line>
+          <option name="timeStamp" value="327" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -1267,7 +1248,7 @@
     <SUITE FILE_PATH="coverage/code$Binary_Tree.coverage" NAME="构造Binary Tree Coverage Results" MODIFIED="1581415426515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary tree" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$laMian.coverage" NAME="laMian Coverage Results" MODIFIED="1584150856973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary Search and Binary Search Tree/有明确的target" />
     <SUITE FILE_PATH="coverage/leetcode$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1572310587622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$test.coverage" NAME="test Coverage Results" MODIFIED="1584964633368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/leetcodeText400AG$test.coverage" NAME="test Coverage Results" MODIFIED="1585028148414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$lc_20.coverage" NAME="lc 20 Coverage Results" MODIFIED="1565579542821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$374__Guess_Number_Higher_or_Lower.coverage" NAME="374. Guess Number Higher or Lower Coverage Results" MODIFIED="1584011316710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary Search and Binary Search Tree/有明确的target" />
     <SUITE FILE_PATH="coverage/leetcode$lc_53.coverage" NAME="lc 53 Coverage Results" MODIFIED="1565941361242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
