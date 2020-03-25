@@ -5,10 +5,12 @@
 # @FileName: 658. Find K Closest Elements.py
 ''''''
 '''
-没太懂
-题目概述：
-题目考点：
-解决方案：
+
+题目概述：在排序arr中，求某数x的周围k个数，若有左右相同的位置的数，取左边的数
+题目考点：把取某点扩展成为求以某点为中心的数，再转化为求该段数的左端点数 
+解决方案： x - arr[mid] = arr[mid + k] - x
+     把2x当成target， arr[mid] + arr[mid + k]当作arr[mid]
+     相当于找某重复数的左边界数l
 方法及方法分析：
 time complexity order: 
 space complexity order: 

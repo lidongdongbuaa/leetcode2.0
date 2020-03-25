@@ -13,8 +13,8 @@
     与369题类似，可以深化为怎么求两个整数 (3 -> 4 -> 2) + (4 -> 6 -> 5)的和，即先转置成本题这样，再转置回去
 3.类型：链表节点求和
 4.方法及方法分析：两两值相加迭代法 转化为数字法
-time complexity order: 两两值相加迭代法 O(N) = 转化为数字法O(N)
-space complexity order:  两两值相加迭代法 O(N) = 转化为数字法O(N)
+time complexity order: 
+space complexity order:  
 '''
 
 # Definition for singly-linked list.

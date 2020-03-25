@@ -1,35 +1,35 @@
-#  Union by rank 方法, 求 component number
 class Graph:
-    def unionFind(self, n, pairs):  # 
-        if not pairs or pairs == [[]]:
-            return -1
+    def countIsland(self, grid):  # return numb of island
+        if not grid:  # corner case
+            return 0
+        if grid == [['1']]:
+            return 1
+        if grid == [['0']]:
+            return 0
 
-        groupTag = [i for i in range(n)]
-        rank = [1] * n
+        visited = [[0 for _ in range(len(grid[0]))] for _ in range(len(grid))]  # 0 is unvisited
+        times = 0
 
-        def find(index):  # return tag the i node belongs to
-            if groupTag[index] == index:
-                return index
-            else:
-                return find(groupTag[index])
+        def dfs(i, j):  # from [i, j] to search its neighbors
+            if i < 0 or j < 0 or i > len(grid) - 1 or j > len(grid[0]) - 1 or visited[i][j] == 1 or grid[i][j] == '0':  # end condition
+                return
 
-        for i, j in pairs:
-            root1 = find(i)
-            root2 = find(j)
-            if root1 == root2:
-                continue
-            else:
-                if rank[root1] >= rank[root2]:
-                    rank[root1] += rank[root2]
-                    groupTag[root2] = root1
-                else:
-                    rank[root2] += rank[root1]
-                    groupTag[root1] = root2
+            visited[i][j] = 1
+            dfs(i - 1, j)
+            dfs(i + 1, j)
+            dfs(i, j - 1)
+            dfs(i, j + 1)
+            return
 
-        print(groupTag)
-        nums = len(set([find(i) for i in groupTag]))
-        return nums
+        for i in range(len(grid)):
+            for j in range(len(grid[i])):
+                if grid[i][j] == '1' and visited[i][j] == 0:
+                    dfs(i, j)
+                    times += 1
+        return times
 
-
+'''
+test code
+'''
 x = Graph()
-print(x.unionFind(9, [[0, 1], [1, 2],[2, 8], [3, 4], [3, 5],[5,6], [6, 7],[1, 3]]))
+print(x.countIsland([["1","1","1","1","0"],["1","1","0","1","0"],["1","1","0","0","0"],["0","0","0","0","0"]]))

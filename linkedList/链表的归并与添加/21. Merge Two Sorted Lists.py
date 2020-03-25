@@ -36,12 +36,20 @@ A.brute force - save val in list, merger, sorted, transfer as Linkist
     Time: O(max(m, n)) save in list + O(m / n) + O((m+n)log(m + n)) + O(m + n) = O((m+n)log(m+n))
     Space: O(m + n)
 
-B. iterative linklist and create new one
-    Method:
+A. traversal and build new one 
+    Method:  
         1. corner case
-        2. set newHead, interative l1 and l2, add the smaller one as new next node
-    Time: O(m + n)
-    Space: O(1)
+        2. build a dummy and cur 
+        3. traversal list1 and list2 at same time
+            cur would next to new node make up of smaller value of list 1 and list 2
+            list1 or list 2 move
+            until list1 or list2 is None
+        4. connect cur to left list1 or list2
+        5. return dummy next
+    
+    Time: O(m + n), m, n is the length of list1 and list2
+    Space: O(1) except output
+易错点：l1 and l2 不是or
 '''
 # Definition for singly-linked list.
 class ListNode:
@@ -51,30 +59,27 @@ class ListNode:
 
 class Solution:
     def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
-        if not l1:  # corner case
+        if l1 is None:  # corner case
             return l2
-        if not l2:
+        if l2 is None:
             return l1
-        if not l1 and not l2:
+        if l1 is None and l2 is None:
             return None
 
         dummy = cur = ListNode(-1)
-        while l1 or l2:
-            if l1 and l2:
-                if l1.val < l2.val:
-                    cur.next = ListNode(l1.val)
-                    l1 = l1.next
-                    cur = cur.next
-                else:
-                    cur.next = ListNode(l2.val)
-                    l2 = l2.next
-                    cur = cur.next
-            elif l1:
+        while l1 and l2:
+            if l1.val <= l2.val:
                 cur.next = l1
-                break
+                l1 = l1.next
+                cur = cur.next
             else:
                 cur.next = l2
-                break
+                l2 = l2.next
+                cur = cur.next
+        if l1:
+            cur.next = l1
+        if l2:
+            cur.next = l2
         return dummy.next
 
 '''
