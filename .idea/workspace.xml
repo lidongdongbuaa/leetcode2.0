@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Binary Search Tree 二叉搜索树/230. Kth Smallest Element in a BST.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Binary Search Tree 二叉搜索树/701. Insert into a Binary Search Tree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Binary Search Tree 二叉搜索树/98. Validate Binary Search Tree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Binary Search Tree 二叉搜索树/99. Recover Binary Search Tree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Binary Search Tree 二叉搜索树/501. Find Mode in Binary Search Tree.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法1.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法2.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法总结.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法总结.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -442,14 +436,7 @@
       <workItem from="1584964870835" duration="50578000" />
       <workItem from="1585174975179" duration="4111000" />
       <workItem from="1585208923499" duration="4227000" />
-      <workItem from="1585264146071" duration="5349000" />
-    </task>
-    <task id="LOCAL-00045" summary="0212">
-      <created>1581487739206</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1581487739206</updated>
+      <workItem from="1585264146071" duration="7098000" />
     </task>
     <task id="LOCAL-00046" summary="0212">
       <created>1581515351418</created>
@@ -787,7 +774,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585180681366</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="0327">
+      <created>1585272585016</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1585272585017</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -830,7 +824,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="0216" />
     <MESSAGE value="0217" />
     <MESSAGE value="0219" />
     <MESSAGE value="0220" />
@@ -855,7 +848,8 @@
     <MESSAGE value=" 0323" />
     <MESSAGE value=" 0324" />
     <MESSAGE value="0326" />
-    <option name="LAST_COMMIT_MESSAGE" value="0326" />
+    <MESSAGE value="0327" />
+    <option name="LAST_COMMIT_MESSAGE" value="0327" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2740" y="176" key="#xdebugger.evaluate" timestamp="1579417161456">
