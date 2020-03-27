@@ -2,20 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/巨硬/oa/Count Visible Nodes in Binary Tree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/巨硬/oa/Crop Words.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/巨硬/oa/Largest Alphabetic Character.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/巨硬/oa/Largest M-aligned Subset.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/巨硬/oa/Largest number X which occurs X times.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/巨硬/oa/Max Chunks to Sort Array.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Binary Search Tree 二叉搜索树/230. Kth Smallest Element in a BST.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Binary Search Tree 二叉搜索树/701. Insert into a Binary Search Tree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Binary Search Tree 二叉搜索树/98. Validate Binary Search Tree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Binary Search Tree 二叉搜索树/99. Recover Binary Search Tree.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search/没有明确的target/658. Find K Closest Elements.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary Search/没有明确的target/658. Find K Closest Elements.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linkedList/链表的归并与添加/2. Add Two Numbers.py" beforeDir="false" afterPath="$PROJECT_DIR$/linkedList/链表的归并与添加/2. Add Two Numbers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linkedList/链表的归并与添加/21. Merge Two Sorted Lists.py" beforeDir="false" afterPath="$PROJECT_DIR$/linkedList/链表的归并与添加/21. Merge Two Sorted Lists.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test2.py" beforeDir="false" afterPath="$PROJECT_DIR$/test2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/数据结构与算法1-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/数据结构与算法1-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法1.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法2.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法总结.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法总结.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -446,14 +440,9 @@
       <workItem from="1584838757792" duration="13801000" />
       <workItem from="1584958326613" duration="3020000" />
       <workItem from="1584964870835" duration="50578000" />
-      <workItem from="1585174975179" duration="1946000" />
-    </task>
-    <task id="LOCAL-00044" summary="0212">
-      <created>1581472467800</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1581472467800</updated>
+      <workItem from="1585174975179" duration="4111000" />
+      <workItem from="1585208923499" duration="4227000" />
+      <workItem from="1585264146071" duration="5349000" />
     </task>
     <task id="LOCAL-00045" summary="0212">
       <created>1581487739206</created>
@@ -791,7 +780,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585050020830</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="0326">
+      <created>1585180681366</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1585180681366</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -834,7 +830,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="0213" />
     <MESSAGE value="0216" />
     <MESSAGE value="0217" />
     <MESSAGE value="0219" />
@@ -859,7 +854,8 @@
     <MESSAGE value="0319" />
     <MESSAGE value=" 0323" />
     <MESSAGE value=" 0324" />
-    <option name="LAST_COMMIT_MESSAGE" value=" 0324" />
+    <MESSAGE value="0326" />
+    <option name="LAST_COMMIT_MESSAGE" value="0326" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2740" y="176" key="#xdebugger.evaluate" timestamp="1579417161456">
