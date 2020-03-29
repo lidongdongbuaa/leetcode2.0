@@ -37,11 +37,11 @@ A. recursion - 把trim(node.left/right)假设为在node的子树上的理想答�
 
 '''
 # Definition for a binary tree node.
-# class TreeNode:
-def __init__(self, x):
-    self.val = x
-    self.left = None
-    self.right = None
+class TreeNode:
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
 
 class Solution:
     def trimBST(self, root: TreeNode, L: int, R: int) -> TreeNode:
