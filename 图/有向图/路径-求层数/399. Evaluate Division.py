@@ -97,7 +97,7 @@ class Solution:
             res.append(self.dfs(i, j, graph, visited))
         return res
 
-    def createGraph(self, equations, values):  # return Graph
+    def createGraph(self, equations, values):  # return 图
         g = defaultdict(dict)
 
         for (i, j), val in zip(equations, values):

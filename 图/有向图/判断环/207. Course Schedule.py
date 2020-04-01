@@ -41,7 +41,7 @@ space complexity order:
 6.如何考
 '''
 '''
-A. Graph - DFS
+A. 图 - DFS
     Method:
         build a adjacency table, show the rely connection of nodes
         traversal every nodes and its next node until end from first node

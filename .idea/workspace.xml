@@ -2,27 +2,81 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Graph/网格搜索 grid/BFS模板1/490. The Maze.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graph/网格搜索 grid/DFS模板2/417. Pacific Atlantic Water Flow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graph/网格搜索 grid/求点到点的所有路径.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/回溯法/46. Permutations.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/回溯法/77. Combinations.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/回溯法/78. Subsets.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/回溯法/90. Subsets II.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/回溯法/求点到点的所有路径.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/动态规划/子序列问题/1143. Longest Common Subsequence.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/动态规划/子序列问题/300. Longest Increasing Subsequence.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/动态规划/子序列问题/516. Longest Palindromic Subsequence.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/动态规划/子序列问题/72. Edit Distance.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Graph/网格搜索 grid/130. Surrounded Regions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Graph/网格搜索 grid/DFS模板1/130. Surrounded Regions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Graph/网格搜索 grid/200. Number of Islands.py" beforeDir="false" afterPath="$PROJECT_DIR$/Graph/网格搜索 grid/DFS模板1/200. Number of Islands.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Graph/网格搜索 grid/286. Walls and Gates.py" beforeDir="false" afterPath="$PROJECT_DIR$/Graph/网格搜索 grid/DFS模板1/286. Walls and Gates.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Graph/网格搜索 grid/329. Longest Increasing Path in a Matrix.py" beforeDir="false" afterPath="$PROJECT_DIR$/Graph/网格搜索 grid/DFS模板2/329. Longest Increasing Path in a Matrix.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Graph/网格搜索 grid/542. 01 Matrix.py" beforeDir="false" afterPath="$PROJECT_DIR$/Graph/网格搜索 grid/DFS模板1/542. 01 Matrix.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Graph/网格搜索 grid/695. Max Area of Island.py" beforeDir="false" afterPath="$PROJECT_DIR$/Graph/网格搜索 grid/DFS模板2/695. Max Area of Island.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Graph/网格搜索 grid/733. Flood Fill.py" beforeDir="false" afterPath="$PROJECT_DIR$/Graph/网格搜索 grid/DFS模板1/733. Flood Fill.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test2.py" beforeDir="false" afterPath="$PROJECT_DIR$/test2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/数据结构与算法1-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/数据结构与算法1-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph/图的基础/133. Clone Graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/图/图的基础/133. Clone Graph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph/无向图/判断孤立和分群/1202. Smallest String With Swaps.py" beforeDir="false" afterPath="$PROJECT_DIR$/图/无向图/判断孤立和分群/1202. Smallest String With Swaps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph/无向图/判断孤立和分群/1319. Number of Operations to Make Network Connected.py" beforeDir="false" afterPath="$PROJECT_DIR$/图/无向图/判断孤立和分群/1319. Number of Operations to Make Network Connected.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph/无向图/判断孤立和分群/323. Number of Connected Components in an Undirected Graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/图/无向图/判断孤立和分群/323. Number of Connected Components in an Undirected Graph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph/无向图/判断孤立和分群/547. Friend Circles.py" beforeDir="false" afterPath="$PROJECT_DIR$/图/无向图/判断孤立和分群/547. Friend Circles.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph/无向图/判断环/261. Graph Valid Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/图/无向图/判断环/261. Graph Valid Tree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph/无向图/路径-求层数/无向图的最长距离.py" beforeDir="false" afterPath="$PROJECT_DIR$/图/无向图/路径-求层数/无向图的最长距离.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph/有向图/判断孤立个数和分群/841. Keys and Rooms.py" beforeDir="false" afterPath="$PROJECT_DIR$/图/有向图/判断孤立个数和分群/841. Keys and Rooms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph/有向图/判断环/207. Course Schedule.py" beforeDir="false" afterPath="$PROJECT_DIR$/图/有向图/判断环/207. Course Schedule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph/有向图/判断环/802. Find Eventual Safe States.py" beforeDir="false" afterPath="$PROJECT_DIR$/图/有向图/判断环/802. Find Eventual Safe States.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph/有向图/路径-求层数/1376. Time Needed to Inform All Employees.py" beforeDir="false" afterPath="$PROJECT_DIR$/图/有向图/路径-求层数/1376. Time Needed to Inform All Employees.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph/有向图/路径-求层数/210. Course Schedule II.py" beforeDir="false" afterPath="$PROJECT_DIR$/图/有向图/路径-求层数/210. Course Schedule II.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph/有向图/路径-求层数/399. Evaluate Division.py" beforeDir="false" afterPath="$PROJECT_DIR$/图/有向图/路径-求层数/399. Evaluate Division.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph/有向图/路径-求层数/444. Sequence Reconstruction.py" beforeDir="false" afterPath="$PROJECT_DIR$/图/有向图/路径-求层数/444. Sequence Reconstruction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph/有向图/路径-求层数/程序的依赖关系.py" beforeDir="false" afterPath="$PROJECT_DIR$/图/有向图/路径-求层数/程序的依赖关系.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph/网格搜索 grid/BFS模板1/490. The Maze.py" beforeDir="false" afterPath="$PROJECT_DIR$/图/网格搜索 grid/BFS模板1/490. The Maze.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph/网格搜索 grid/DFS模板1/130. Surrounded Regions.py" beforeDir="false" afterPath="$PROJECT_DIR$/图/网格搜索 grid/DFS模板1/130. Surrounded Regions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph/网格搜索 grid/DFS模板1/200. Number of Islands.py" beforeDir="false" afterPath="$PROJECT_DIR$/图/网格搜索 grid/DFS模板1/200. Number of Islands.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph/网格搜索 grid/DFS模板1/286. Walls and Gates.py" beforeDir="false" afterPath="$PROJECT_DIR$/图/网格搜索 grid/DFS模板1/286. Walls and Gates.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph/网格搜索 grid/DFS模板1/542. 01 Matrix.py" beforeDir="false" afterPath="$PROJECT_DIR$/图/网格搜索 grid/DFS模板1/542. 01 Matrix.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph/网格搜索 grid/DFS模板1/733. Flood Fill.py" beforeDir="false" afterPath="$PROJECT_DIR$/图/网格搜索 grid/DFS模板1/733. Flood Fill.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph/网格搜索 grid/DFS模板2/329. Longest Increasing Path in a Matrix.py" beforeDir="false" afterPath="$PROJECT_DIR$/图/网格搜索 grid/DFS模板2/329. Longest Increasing Path in a Matrix.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph/网格搜索 grid/DFS模板2/417. Pacific Atlantic Water Flow.py" beforeDir="false" afterPath="$PROJECT_DIR$/图/网格搜索 grid/DFS模板2/417. Pacific Atlantic Water Flow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph/网格搜索 grid/DFS模板2/695. Max Area of Island.py" beforeDir="false" afterPath="$PROJECT_DIR$/图/网格搜索 grid/DFS模板2/695. Max Area of Island.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph/网格搜索 grid/求点到点的所有路径.py" beforeDir="false" afterPath="$PROJECT_DIR$/图/网格搜索 grid/求点到点的所有路径.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkedList/判断链表与子序列的关系/817. Linked List Components.py" beforeDir="false" afterPath="$PROJECT_DIR$/链表/判断链表与子序列的关系/817. Linked List Components.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkedList/判断链表与子序列的关系/判断链表与子序列的关系总结" beforeDir="false" afterPath="$PROJECT_DIR$/链表/判断链表与子序列的关系/判断链表与子序列的关系总结" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkedList/判断链表回文/234. Palindrome Linked List.py" beforeDir="false" afterPath="$PROJECT_DIR$/链表/判断链表回文/234. Palindrome Linked List.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkedList/复杂链表的复制/138. Copy List with Random Pointer.py" beforeDir="false" afterPath="$PROJECT_DIR$/链表/复杂链表的复制/138. Copy List with Random Pointer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkedList/复杂链表的复制/单链表的复制.py" beforeDir="false" afterPath="$PROJECT_DIR$/链表/复杂链表的复制/单链表的复制.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkedList/注意要点" beforeDir="false" afterPath="$PROJECT_DIR$/链表/注意要点" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkedList/链表删除/19. Remove Nth Node From End of List.py" beforeDir="false" afterPath="$PROJECT_DIR$/链表/链表删除/19. Remove Nth Node From End of List.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkedList/链表删除/203. Remove Linked List Elements.py" beforeDir="false" afterPath="$PROJECT_DIR$/链表/链表删除/203. Remove Linked List Elements.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkedList/链表删除/237. Delete Node in a Linked List.py" beforeDir="false" afterPath="$PROJECT_DIR$/链表/链表删除/237. Delete Node in a Linked List.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkedList/链表删除/82. Remove Duplicates from Sorted List II.py" beforeDir="false" afterPath="$PROJECT_DIR$/链表/链表删除/82. Remove Duplicates from Sorted List II.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkedList/链表删除/83. Remove Duplicates from Sorted List.py" beforeDir="false" afterPath="$PROJECT_DIR$/链表/链表删除/83. Remove Duplicates from Sorted List.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkedList/链表删除/链表删除总结" beforeDir="false" afterPath="$PROJECT_DIR$/链表/链表删除/链表删除总结" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkedList/链表总结.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/链表/链表总结.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkedList/链表排序与划分/143. Reorder List.py" beforeDir="false" afterPath="$PROJECT_DIR$/链表/链表排序与划分/143. Reorder List.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkedList/链表排序与划分/147. Insertion Sort List.py" beforeDir="false" afterPath="$PROJECT_DIR$/链表/链表排序与划分/147. Insertion Sort List.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkedList/链表排序与划分/148. Sort List (linked list).py" beforeDir="false" afterPath="$PROJECT_DIR$/链表/链表排序与划分/148. Sort List (linked list).py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkedList/链表排序与划分/206. Reverse Linked List.py" beforeDir="false" afterPath="$PROJECT_DIR$/链表/链表排序与划分/206. Reverse Linked List.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkedList/链表排序与划分/24. Swap Nodes in Pairs.py" beforeDir="false" afterPath="$PROJECT_DIR$/链表/链表排序与划分/24. Swap Nodes in Pairs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkedList/链表排序与划分/25. Reverse Nodes in k-Group.py" beforeDir="false" afterPath="$PROJECT_DIR$/链表/链表排序与划分/25. Reverse Nodes in k-Group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkedList/链表排序与划分/328. Odd Even Linked List.py" beforeDir="false" afterPath="$PROJECT_DIR$/链表/链表排序与划分/328. Odd Even Linked List.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkedList/链表排序与划分/61. Rotate List.py" beforeDir="false" afterPath="$PROJECT_DIR$/链表/链表排序与划分/61. Rotate List.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkedList/链表排序与划分/725. Split Linked List in Parts.py" beforeDir="false" afterPath="$PROJECT_DIR$/链表/链表排序与划分/725. Split Linked List in Parts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkedList/链表排序与划分/86. Partition List.py" beforeDir="false" afterPath="$PROJECT_DIR$/链表/链表排序与划分/86. Partition List.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkedList/链表排序与划分/92. Reverse Linked List II.py" beforeDir="false" afterPath="$PROJECT_DIR$/链表/链表排序与划分/92. Reverse Linked List II.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkedList/链表排序与划分/链表排序与划分总结" beforeDir="false" afterPath="$PROJECT_DIR$/链表/链表排序与划分/链表排序与划分总结" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkedList/链表求交点/160. Intersection of Two Linked Lists.py" beforeDir="false" afterPath="$PROJECT_DIR$/链表/链表求交点/160. Intersection of Two Linked Lists.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkedList/链表求环/141. Linked List Cycle.py" beforeDir="false" afterPath="$PROJECT_DIR$/链表/链表求环/141. Linked List Cycle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkedList/链表求环/142. Linked List Cycle II.py" beforeDir="false" afterPath="$PROJECT_DIR$/链表/链表求环/142. Linked List Cycle II.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkedList/链表的归并与添加/2. Add Two Numbers.py" beforeDir="false" afterPath="$PROJECT_DIR$/链表/链表的归并与添加/2. Add Two Numbers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkedList/链表的归并与添加/21. Merge Two Sorted Lists.py" beforeDir="false" afterPath="$PROJECT_DIR$/链表/链表的归并与添加/21. Merge Two Sorted Lists.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkedList/链表的归并与添加/23. Merge k Sorted Lists.py" beforeDir="false" afterPath="$PROJECT_DIR$/链表/链表的归并与添加/23. Merge k Sorted Lists.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkedList/链表的归并与添加/369. Plus One Linked List.py" beforeDir="false" afterPath="$PROJECT_DIR$/链表/链表的归并与添加/369. Plus One Linked List.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkedList/链表的归并与添加/708. Insert into a Cyclic Sorted List.py" beforeDir="false" afterPath="$PROJECT_DIR$/链表/链表的归并与添加/708. Insert into a Cyclic Sorted List.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkedList/链表的归并与添加/708. 自拟题.py" beforeDir="false" afterPath="$PROJECT_DIR$/链表/链表的归并与添加/708. 自拟题.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkedList/链表的归并与添加/链表的归并与添加总结" beforeDir="false" afterPath="$PROJECT_DIR$/链表/链表的归并与添加/链表的归并与添加总结" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock record/191130/261. Graph Valid Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/mock record/191130/261. Graph Valid Tree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recursive + backtracking/78. Subsets.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recursive + backtracking/recursive注意要点" beforeDir="false" afterPath="$PROJECT_DIR$/回溯法/recursive注意要点" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recursive + backtracking/【算法16】递归算法的时间复杂度终结篇 - python27 - 博客园.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/回溯法/【算法16】递归算法的时间复杂度终结篇 - python27 - 博客园.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recursive + backtracking/算法导论------递归算法的时间复杂度求解 - 麦田里的码农 - CSDN博客.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/回溯法/算法导论------递归算法的时间复杂度求解 - 麦田里的码农 - CSDN博客.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recursive + backtracking/经典例子.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stack and queue/150. Evaluate Reverse Polish Notation.py" beforeDir="false" afterPath="$PROJECT_DIR$/栈和队列/150. Evaluate Reverse Polish Notation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test3.py" beforeDir="false" afterPath="$PROJECT_DIR$/test3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/回溯法/78. Subsets.py" beforeDir="false" afterPath="$PROJECT_DIR$/回溯法/78. Subsets.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/数据结构与算法2-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/数据结构与算法2-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法1.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法2.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -95,19 +149,19 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\working\leetcodeText400AG\Graph\网格搜索 grid\DFS模板1" />
-      <recent name="D:\working\leetcodeText400AG\Graph\网格搜索 grid\DFS模板2" />
-      <recent name="D:\working\leetcodeText400AG\Array\two pointer" />
-      <recent name="D:\working\leetcodeText400AG\Array" />
-      <recent name="D:\working\leetcodeText400AG\Binary Search and Binary Search Tree\没有明确的target类型，可以越界类型" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\working\leetcodeText400AG\回溯法" />
       <recent name="D:\working\leetcodeText400AG\Graph\有向图" />
       <recent name="D:\working\面经题目\google\OA\2019(1-3月)" />
       <recent name="D:\working\leetcodeText400AG\Binary tree\综合题目\从下至上分析" />
       <recent name="D:\working\leetcodeText400AG\内建模块" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\working\leetcodeText400AG\回溯法" />
+      <recent name="D:\working\leetcodeText400AG\Graph\网格搜索 grid\DFS模板1" />
+      <recent name="D:\working\leetcodeText400AG\Graph\网格搜索 grid\DFS模板2" />
+      <recent name="D:\working\leetcodeText400AG\Array\two pointer" />
+      <recent name="D:\working\leetcodeText400AG\Array" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -122,7 +176,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.test3">
     <configuration name="求点到点的所有路径" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="leetcode" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -145,7 +199,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Crop Words" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="72. Edit Distance" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="leetcode" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -153,34 +207,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/巨硬/oa" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/动态规划/子序列问题" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/巨硬/oa/Crop Words.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Max Chunks to Sort Array" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="leetcode" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/巨硬/oa" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/巨硬/oa/Max Chunks to Sort Array.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/动态规划/子序列问题/72. Edit Distance.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -277,22 +309,44 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="leetcode" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.lc 55" />
       <item itemvalue="Python.lc51" />
       <item itemvalue="Python.test" />
-      <item itemvalue="Python.Max Chunks to Sort Array" />
-      <item itemvalue="Python.Crop Words" />
       <item itemvalue="Python.test2" />
       <item itemvalue="Python.求点到点的所有路径" />
+      <item itemvalue="Python.72. Edit Distance" />
+      <item itemvalue="Python.test3" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test3" />
+        <item itemvalue="Python.72. Edit Distance" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.求点到点的所有路径" />
         <item itemvalue="Python.test2" />
-        <item itemvalue="Python.Crop Words" />
-        <item itemvalue="Python.Max Chunks to Sort Array" />
       </list>
     </recent_temporary>
   </component>
@@ -458,14 +512,8 @@
       <workItem from="1585208923499" duration="4227000" />
       <workItem from="1585264146071" duration="9630000" />
       <workItem from="1585291665393" duration="21114000" />
-      <workItem from="1585451339584" duration="38247000" />
-    </task>
-    <task id="LOCAL-00049" summary="0216">
-      <created>1581842818947</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1581842818948</updated>
+      <workItem from="1585451339584" duration="38400000" />
+      <workItem from="1585648952249" duration="16130000" />
     </task>
     <task id="LOCAL-00050" summary="0217">
       <created>1581910062182</created>
@@ -803,7 +851,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585491469340</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="0331">
+      <created>1585619659927</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1585619659927</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -846,8 +901,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="0219" />
-    <MESSAGE value="0220" />
     <MESSAGE value="0221" />
     <MESSAGE value="0222" />
     <MESSAGE value="0223" />
@@ -871,7 +924,9 @@
     <MESSAGE value="0326" />
     <MESSAGE value="0327" />
     <MESSAGE value="0329" />
-    <option name="LAST_COMMIT_MESSAGE" value="0329" />
+    <MESSAGE value="0331" />
+    <MESSAGE value="0401" />
+    <option name="LAST_COMMIT_MESSAGE" value="0401" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2740" y="176" key="#xdebugger.evaluate" timestamp="1579417161456">
@@ -1177,32 +1232,32 @@
           <option name="timeStamp" value="252" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Graph/有向图/路径-求层数/210. Course Schedule II.py</url>
+          <url>file://$PROJECT_DIR$/图/有向图/路径-求层数/210. Course Schedule II.py</url>
           <line>76</line>
           <option name="timeStamp" value="254" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Graph/无向图/判断环/261. Graph Valid Tree.py</url>
+          <url>file://$PROJECT_DIR$/图/无向图/判断环/261. Graph Valid Tree.py</url>
           <line>41</line>
           <option name="timeStamp" value="269" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Graph/有向图/判断孤立个数和分群/841. Keys and Rooms.py</url>
+          <url>file://$PROJECT_DIR$/图/有向图/判断孤立个数和分群/841. Keys and Rooms.py</url>
           <line>119</line>
           <option name="timeStamp" value="275" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Graph/无向图/判断孤立和分群/1202. Smallest String With Swaps.py</url>
+          <url>file://$PROJECT_DIR$/图/无向图/判断孤立和分群/1202. Smallest String With Swaps.py</url>
           <line>111</line>
           <option name="timeStamp" value="276" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Graph/无向图/判断孤立和分群/323. Number of Connected Components in an Undirected Graph.py</url>
+          <url>file://$PROJECT_DIR$/图/无向图/判断孤立和分群/323. Number of Connected Components in an Undirected Graph.py</url>
           <line>113</line>
           <option name="timeStamp" value="279" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Graph/无向图/判断孤立和分群/1202. Smallest String With Swaps.py</url>
+          <url>file://$PROJECT_DIR$/图/无向图/判断孤立和分群/1202. Smallest String With Swaps.py</url>
           <line>105</line>
           <option name="timeStamp" value="281" />
         </line-breakpoint>
@@ -1212,7 +1267,7 @@
           <option name="timeStamp" value="289" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Graph/有向图/路径-求层数/399. Evaluate Division.py</url>
+          <url>file://$PROJECT_DIR$/图/有向图/路径-求层数/399. Evaluate Division.py</url>
           <line>136</line>
           <option name="timeStamp" value="291" />
         </line-breakpoint>
@@ -1232,16 +1287,6 @@
           <option name="timeStamp" value="312" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test3.py</url>
-          <line>16</line>
-          <option name="timeStamp" value="325" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test3.py</url>
-          <line>24</line>
-          <option name="timeStamp" value="326" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../面经题目/google/OA/2020(1-3月)/task1水果投票.py</url>
           <line>44</line>
           <option name="timeStamp" value="335" />
@@ -1252,7 +1297,7 @@
           <option name="timeStamp" value="341" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Graph/网格搜索 grid/求点到点的所有路径.py</url>
+          <url>file://$PROJECT_DIR$/图/网格搜索 grid/求点到点的所有路径.py</url>
           <line>40</line>
           <option name="timeStamp" value="353" />
         </line-breakpoint>
@@ -1289,6 +1334,7 @@
     <SUITE FILE_PATH="coverage/leetcode$lc_20.coverage" NAME="lc 20 Coverage Results" MODIFIED="1565579542821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$374__Guess_Number_Higher_or_Lower.coverage" NAME="374. Guess Number Higher or Lower Coverage Results" MODIFIED="1584011316710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary Search and Binary Search Tree/有明确的target" />
     <SUITE FILE_PATH="coverage/leetcode$lc_53.coverage" NAME="lc 53 Coverage Results" MODIFIED="1565941361242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/leetcodeText400AG$72__Edit_Distance.coverage" NAME="72. Edit Distance Coverage Results" MODIFIED="1585711829722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/动态规划/子序列问题" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$Number_of_Days_Between_Two_Dates.coverage" NAME="Number of Days Between Two Dates Coverage Results" MODIFIED="1582426649934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/200223" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$Largest_M_aligned_Subset.coverage" NAME="Largest M-aligned Subset Coverage Results" MODIFIED="1585134564412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/巨硬/oa" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$Minimum_Number_of_Steps_to_Make_Two_Strings_Anagram.coverage" NAME="Minimum Number of Steps to Make Two Strings Anagram Coverage Results" MODIFIED="1581220438736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/200209" />
@@ -1330,7 +1376,7 @@
     <SUITE FILE_PATH="coverage/code$test.coverage" NAME="test Coverage Results" MODIFIED="1581415429664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$lc_92.coverage" NAME="lc 92 Coverage Results" MODIFIED="1569453341060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/linkedList" />
     <SUITE FILE_PATH="coverage/leetcode$lc_315.coverage" NAME="lc 315 Coverage Results" MODIFIED="1564014673220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$test3.coverage" NAME="test3 Coverage Results" MODIFIED="1584929794448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/leetcodeText400AG$test3.coverage" NAME="test3 Coverage Results" MODIFIED="1585742695343" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$133__Clone_Graph.coverage" NAME="133. Clone Graph Coverage Results" MODIFIED="1583377631816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Graph/图的基础" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$477__Total_Hamming_Distance.coverage" NAME="477. Total Hamming Distance Coverage Results" MODIFIED="1579178763197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bit manipulation 位运算/汉明距离" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$temple.coverage" NAME="temple Coverage Results" MODIFIED="1579396759229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../面经题目/google/OA/模板" />

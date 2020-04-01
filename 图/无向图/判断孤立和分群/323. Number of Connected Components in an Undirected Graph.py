@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2020/3/7 10:37
 # @Author  : LI Dongdong
-# @FileName: 323. Number of Connected Components in an Undirected Graph.py
+# @FileName: 323. Number of Connected Components in an Undirected 图.py
 ''''''
 '''
 题目分析

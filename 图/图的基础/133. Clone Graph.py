@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2020/3/5 11:13
 # @Author  : LI Dongdong
-# @FileName: 133. Clone Graph.py
+# @FileName: 133. Clone 图.py
 ''''''
 '''
 题目分析
@@ -62,7 +62,7 @@
     Node.val is unique for each node.
     Number of Nodes will not exceed 100.
     There is no repeated edges and no self-loops in the graph.
-    The Graph is connected and all nodes can be visited starting from the given node.
+    The 图 is connected and all nodes can be visited starting from the given node.
 2.理解：复制一个graph
 3.类型：图基础，构建图
 4.确认输入输出及边界条件：
