@@ -13,40 +13,6 @@ time complexity order:
 space complexity order: 
 如何考
 没做出来
-'''
-class Matrix:
-    def findPath(self, matrix):  # return all path in list
-        if not matrix:
-            return []
-
-        m, n = len(matrix), len(matrix[0])
-        visited = []
-
-        def dfs(i, j,visited, tmp):  # save all path in res
-            if i < 0 or j < 0 or i > m - 1 or j > n - 1 or (i, j) in visited:
-                return
-
-
-            tmp.append(j)
-            visited.append((i, j))
-            if i == m - 1 and j == n - 1:
-                res.append(tmp.copy())
-            dfs(i - 1, j, visited,tmp)
-            dfs(i + 1, j, visited,tmp)
-            dfs(i, j - 1, visited,tmp)
-            dfs(i, j + 1, visited,tmp)
-
-
-        res = []
-        tmp = []
-        dfs(0, 0, visited, tmp)
-        return res
-
-
-x = Matrix()
-print(x.findPath([[0,1,2],[3,4,5]]))
-
-'''
 苏丹法
 https://labuladong.gitbook.io/algo/suan-fa-si-wei-xi-lie/zi-ji-pai-lie-zu-he
 '''
