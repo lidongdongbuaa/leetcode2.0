@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary tree/路径和/257. Binary Tree Paths.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary tree/路径和/257. Binary Tree Paths.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test2.py" beforeDir="false" afterPath="$PROJECT_DIR$/test2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/图/网格搜索 grid/求点到点的所有路径.py" beforeDir="false" afterPath="$PROJECT_DIR$/图/网格搜索 grid/求点到点的所有路径.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法1.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法2.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -107,7 +105,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test2">
+  <component name="RunManager" selected="Python.test">
     <configuration name="求点到点的所有路径" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="leetcode" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -273,8 +271,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test2" />
         <item itemvalue="Python.test" />
+        <item itemvalue="Python.test2" />
         <item itemvalue="Python.test3" />
         <item itemvalue="Python.72. Edit Distance" />
         <item itemvalue="Python.求点到点的所有路径" />
@@ -444,14 +442,7 @@
       <workItem from="1585264146071" duration="9630000" />
       <workItem from="1585291665393" duration="21114000" />
       <workItem from="1585451339584" duration="38400000" />
-      <workItem from="1585648952249" duration="25549000" />
-    </task>
-    <task id="LOCAL-00051" summary="0217">
-      <created>1581948288901</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1581948288901</updated>
+      <workItem from="1585648952249" duration="37063000" />
     </task>
     <task id="LOCAL-00052" summary="0219">
       <created>1582114694697</created>
@@ -789,7 +780,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585749188778</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="0401">
+      <created>1585793875032</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1585793875032</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -1232,11 +1230,6 @@
           <line>40</line>
           <option name="timeStamp" value="353" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test.py</url>
-          <line>29</line>
-          <option name="timeStamp" value="356" />
-        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -1261,7 +1254,7 @@
     <SUITE FILE_PATH="coverage/code$Binary_Tree.coverage" NAME="构造Binary Tree Coverage Results" MODIFIED="1581415426515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary tree" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$laMian.coverage" NAME="laMian Coverage Results" MODIFIED="1584150856973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary Search and Binary Search Tree/有明确的target" />
     <SUITE FILE_PATH="coverage/leetcode$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1572310587622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$test.coverage" NAME="test Coverage Results" MODIFIED="1585793091486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/leetcodeText400AG$test.coverage" NAME="test Coverage Results" MODIFIED="1585811714346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$lc_20.coverage" NAME="lc 20 Coverage Results" MODIFIED="1565579542821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$374__Guess_Number_Higher_or_Lower.coverage" NAME="374. Guess Number Higher or Lower Coverage Results" MODIFIED="1584011316710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary Search and Binary Search Tree/有明确的target" />
     <SUITE FILE_PATH="coverage/leetcode$lc_53.coverage" NAME="lc 53 Coverage Results" MODIFIED="1565941361242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -1359,7 +1352,7 @@
     <SUITE FILE_PATH="coverage/code$104__Maximum_Depth_of_Binary_Tree.coverage" NAME="104. Maximum Depth of Binary Tree Coverage Results" MODIFIED="1581474429584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary tree/二叉树性质相关题目" />
     <SUITE FILE_PATH="coverage/leetcode$lc_120.coverage" NAME="lc 120 Coverage Results" MODIFIED="1566093691731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode2_0$5308__Minimum_Flips_to_Make_a_OR_b_Equal_to_c.coverage" NAME="5308. Minimum Flips to Make a OR b Equal to c Coverage Results" MODIFIED="1579414927974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/200112" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1585793547256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/leetcodeText400AG$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1585809744934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$5308__Minimum_Flips_to_Make_a_OR_b_Equal_to_c.coverage" NAME="5308. Minimum Flips to Make a OR b Equal to c Coverage Results" MODIFIED="1578896596869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/200112" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$113__Path_Sum_II.coverage" NAME="113. Path Sum II Coverage Results" MODIFIED="1582581074357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary tree/路径和" />
     <SUITE FILE_PATH="coverage/leetcode$lc_3.coverage" NAME="lc 3 Coverage Results" MODIFIED="1565048468786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

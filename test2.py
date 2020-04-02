@@ -6,34 +6,40 @@ class TreeNode:
         self.right = None
 
 
-class Solution:
-    def binaryTreePaths(self, root: TreeNode) :
+class Tree:
+    def findPath(self, root):
         if not root:
             return []
 
         res = []
 
-        def findPath(root, path):
+        def dfs(root, path):
             if not root:
                 return
-            # 基于前序遍历，针对root这个值，只管root在循环，root没往左走时，加上，弄完
-            for child in (root.left, root.mid, root.right):
-                if child: print(child.val)
-                findPath(child, path)
+            if not root.left and not root.right:
+                res.append(path[:])
 
-        findPath(root, [])
-        print(res)
+            path.append(root.val)
+            dfs(root.left, path)
+            dfs(root.right, path)
+            path.pop()
+
+        dfs(root, [])
+        return res
 
 a = TreeNode(1)
 b = TreeNode(2)
 c = TreeNode(3)
 d = TreeNode(4)
 e = TreeNode(5)
-
+f = TreeNode(6)
+g = TreeNode(7)
 a.left = b
-a.mid = c
-a.right = d
-b.left = e
+a.right = c
+b.left = d
+b.right = e
+d.left = g
+c.left = f
 
-x = Solution()
-x.binaryTreePaths(a)
+x = Tree()
+print(x.findPath(a))
