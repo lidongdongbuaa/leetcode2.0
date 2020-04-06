@@ -154,44 +154,38 @@ input
 '''
 '''
 B.
-思路：bottom-up- dfs
-方法：
-    先判断子树的，再判断子树的parent的
-    helper function: scan every node adn calculate two subtree's max height, if find dif > 1, break, return -1 by DFS or BFS
-    main function: if helper function == -1, return False, else return True 
-time complex: worst O(N) compute its height in constant time as well as compare the height of its children.
-space complex: worst O(N) 
-易错点：depth() 正常情况下，输出max height，遇到unbalanced情况， 输出不平衡标志，可以为-1，也可以为'a'等其他符号
+要返回是否平衡，就要需要目前最大深度这个中间变量，故dfs返回两个值，一个是是否平衡，一个是高度
+基于求最大深度的模板修改，dfs可以返回多个性质，bottom up的思路
+dfs返回是否是balanced,和height
 '''
 class Solution:
     def isBalanced(self, root: TreeNode) -> bool:
         if not root:  # corner case
             return True
 
-        if self.depth(root) == -1:  # -1: no balance  0: balance
-            return False
-        else:
+        def dfs(root):  # return max height and if is balanced
+            if not root:
+                return True, 0
+
+            leftBalanced, leftH = dfs(root.left)
+
+            rightBalanced, rightH = dfs(root.right)
+
+            if abs(leftH - rightH) > 1 or not leftBalanced or not rightBalanced:
+                return False, max(leftH, rightH) + 1
+            else:
+                return True, max(leftH, rightH) + 1
+
+
+
+        isBalanced, maxHeight = dfs(root)
+        if isBalanced:
             return True
-
-    def depth(self, root):
-        if not root:
-            return 0
-
-        depth_left = self.depth(root.left)  #  check root left
-        if depth_left == -1:
-            return -1
-
-        depth_right = self.depth(root.right)  # check root right
-        if depth_right == -1:
-            return -1
-
-        if abs(depth_left - depth_right) <= 1:  # check root
-            return 1 + max(depth_left, depth_right)  # scan other node
         else:
-            return -1
+            return False
 
 '''
-思路：bottom-up- BFS 
+思路：bottom-up- 栈模拟递归
 '''
 class Solution:
     def isBalanced(self, root: TreeNode) -> bool:

@@ -5,27 +5,28 @@ class TreeNode:
         self.mid = None
         self.right = None
 
-
-class Tree:
-    def findPath(self, root):
-        if not root:
+class Solution:
+    def binaryTreePaths(self, root: TreeNode):
+        if not root:  # corner case
             return []
 
         res = []
 
-        def dfs(root, path):
+        def backtrack(root, path):  # save path of string in res
             if not root:
                 return
-            if not root.left and not root.right:
-                res.append(path[:])
 
-            path.append(root.val)
-            dfs(root.left, path)
-            dfs(root.right, path)
-            path.pop()
+            if root:
+                path.append(str(root.val))
+                if not root.left and not root.right:
+                    res.append(path[:])
+                for node in (root.left, root.right):
+                    backtrack(node, path)
+                path.pop()
 
-        dfs(root, [])
-        return res
+        backtrack(root, [])
+        ans = ['->'.join(elem) for elem in res]
+        return ans
 
 a = TreeNode(1)
 b = TreeNode(2)
@@ -41,5 +42,5 @@ b.right = e
 d.left = g
 c.left = f
 
-x = Tree()
-print(x.findPath(a))
+x = Solution()
+print(x.binaryTreePaths(a))
