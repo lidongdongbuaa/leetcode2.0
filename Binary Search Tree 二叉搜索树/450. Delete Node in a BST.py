@@ -12,6 +12,8 @@
 time complexity order: O(logN)
 space complexity order: O(logN)
 如何考
+易错点：不要写成helper函数（直接在tree上删除，无返回），因为root = root.right等是直接赋值的，导致原root的根本没变，
+    故需要有返回值，return 返回后的头节点
 '''
 '''
 delete the node in BST
@@ -89,7 +91,8 @@ B. recursion：
             c. node have only right child, use right child replace it
             d. node has left and right, use the successor/predecessor node replace it
         3. return root
-
+    
+    
     Time complexity: O(logN) logN  is height of the tree
     Space: O(logN)
 '''

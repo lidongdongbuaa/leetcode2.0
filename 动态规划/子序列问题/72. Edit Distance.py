@@ -32,7 +32,10 @@ A. brute force - dp recursion from end to start of string
         4. return dp(m-1, n-1), m i s len of word1, n is len of word2
     Time complexity :O((3^max(m, n)) 递归树节点的总数 * 每个节点的操作时间
     Space: O((max(m, n)) Height of the recursion stack
-
+易错点：如何理解  delete = dp(i - 1, j) + 1
+                insert = dp(i, j - 1) + 1
+                replace = dp(i - 1, j - 1) + 1
+    delete dp(i, j)= dp(i - 1, j) + 1, 现在的状态是i，那么删除之后的状态就是i-1
 '''
 
 
