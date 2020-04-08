@@ -7,7 +7,7 @@
 '''
 题目概述：求一个array的最长上升子序列，sequence
 题目考点：回溯；一维dp
-解决方案：dp[i]代表以nums[i]结尾的最长上升子序列
+解决方案：dp[i]代表以nums[i]结尾的最长上升子序列，因为需要明确上升的限制，故定义为以i结尾的子序列
 方法及方法分析：回溯；dp
 time complexity order: 回溯 O(2^n) > dp O(n^2) 
 space complexity order: 回溯 O(2^n) > dp O(n)

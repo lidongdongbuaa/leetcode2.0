@@ -2,18 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/动态规划/01背包问题/01背包问题.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/动态规划/01背包问题/416. Partition Equal Subset Sum.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/动态规划/打家劫舍问题/198. House Robber.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/动态规划/打家劫舍问题/213. House Robber II.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/动态规划/打家劫舍问题/337. House Robber III.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/数据结构与算法老版-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法老版.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search Tree 二叉搜索树/450. Delete Node in a BST.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binary Search Tree 二叉搜索树/450. Delete Node in a BST.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/动态规划/子序列问题/72. Edit Distance.py" beforeDir="false" afterPath="$PROJECT_DIR$/动态规划/子序列问题/72. Edit Distance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/动态规划/01背包问题/416. Partition Equal Subset Sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/动态规划/01背包问题/416. Partition Equal Subset Sum.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/动态规划/子序列问题/300. Longest Increasing Subsequence.py" beforeDir="false" afterPath="$PROJECT_DIR$/动态规划/子序列问题/300. Longest Increasing Subsequence.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/数据结构与算法1-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/数据结构与算法1-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/数据结构与算法2-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/数据结构与算法2-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/数据结构与算法总结-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/数据结构与算法总结-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/数据结构与算法总结-checkpoint.ipynb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法1.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法2.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法总结.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法总结.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法总结.ipynb" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +115,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.01背包问题">
+  <component name="RunManager" selected="Python.test">
     <configuration name="01背包问题" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="leetcode" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -278,8 +281,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.01背包问题" />
         <item itemvalue="Python.test" />
+        <item itemvalue="Python.01背包问题" />
         <item itemvalue="Python.test2" />
         <item itemvalue="Python.test3" />
         <item itemvalue="Python.72. Edit Distance" />
@@ -459,14 +462,7 @@
       <workItem from="1585995668051" duration="48000" />
       <workItem from="1586058870699" duration="6461000" />
       <workItem from="1586168733126" duration="3394000" />
-      <workItem from="1586215426604" duration="17247000" />
-    </task>
-    <task id="LOCAL-00056" summary="0221">
-      <created>1582283706550</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1582283706551</updated>
+      <workItem from="1586215426604" duration="23598000" />
     </task>
     <task id="LOCAL-00057" summary="0222">
       <created>1582339056404</created>
@@ -804,7 +800,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586175867881</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="0407">
+      <created>1586268487577</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1586268487578</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -847,7 +850,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="0224" />
     <MESSAGE value="0225" />
     <MESSAGE value="0226" />
     <MESSAGE value="0227" />
@@ -872,7 +874,8 @@
     <MESSAGE value="0402" />
     <MESSAGE value="0403" />
     <MESSAGE value="0406" />
-    <option name="LAST_COMMIT_MESSAGE" value="0406" />
+    <MESSAGE value="0407" />
+    <option name="LAST_COMMIT_MESSAGE" value="0407" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2740" y="176" key="#xdebugger.evaluate" timestamp="1579417161456">
@@ -1274,7 +1277,7 @@
     <SUITE FILE_PATH="coverage/code$Binary_Tree.coverage" NAME="构造Binary Tree Coverage Results" MODIFIED="1581415426515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary tree" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$laMian.coverage" NAME="laMian Coverage Results" MODIFIED="1584150856973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary Search and Binary Search Tree/有明确的target" />
     <SUITE FILE_PATH="coverage/leetcode$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1572310587622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$test.coverage" NAME="test Coverage Results" MODIFIED="1586130195692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/leetcodeText400AG$test.coverage" NAME="test Coverage Results" MODIFIED="1586310419824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$lc_20.coverage" NAME="lc 20 Coverage Results" MODIFIED="1565579542821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$374__Guess_Number_Higher_or_Lower.coverage" NAME="374. Guess Number Higher or Lower Coverage Results" MODIFIED="1584011316710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary Search and Binary Search Tree/有明确的target" />
     <SUITE FILE_PATH="coverage/leetcode$lc_53.coverage" NAME="lc 53 Coverage Results" MODIFIED="1565941361242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
