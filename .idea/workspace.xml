@@ -2,105 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/动态规划/股票问题/121. Best Time to Buy and Sell Stock.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/动态规划/股票问题/122. Best Time to Buy and Sell Stock II.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/动态规划/股票问题/123. Best Time to Buy and Sell Stock III.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/动态规划/股票问题/188. Best Time to Buy and Sell Stock IV.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/动态规划/股票问题/309. Best Time to Buy and Sell Stock with Cooldown.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/动态规划/股票问题/714. Best Time to Buy and Sell Stock with Transaction Fee.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/贪心算法/区间问题/435. Non-overlapping Intervals.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/贪心算法/区间问题/452. Minimum Number of Arrows to Burst Balloons.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search Tree 二叉搜索树/230. Kth Smallest Element in a BST.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉搜索树/230. Kth Smallest Element in a BST.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search Tree 二叉搜索树/235. Lowest Common Ancestor of a Binary Search Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉搜索树/235. Lowest Common Ancestor of a Binary Search Tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search Tree 二叉搜索树/450. Delete Node in a BST.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉搜索树/450. Delete Node in a BST.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search Tree 二叉搜索树/501. Find Mode in Binary Search Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉搜索树/501. Find Mode in Binary Search Tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search Tree 二叉搜索树/669. Trim a Binary Search Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉搜索树/669. Trim a Binary Search Tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search Tree 二叉搜索树/700. Search in a Binary Search Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉搜索树/700. Search in a Binary Search Tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search Tree 二叉搜索树/701. Insert into a Binary Search Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉搜索树/701. Insert into a Binary Search Tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search Tree 二叉搜索树/98. Validate Binary Search Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉搜索树/98. Validate Binary Search Tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search Tree 二叉搜索树/99. Recover Binary Search Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉搜索树/99. Recover Binary Search Tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search/有明确的target/167. Two Sum II - Input array is sorted.py" beforeDir="false" afterPath="$PROJECT_DIR$/二分搜索/有明确的target/167. Two Sum II - Input array is sorted.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search/有明确的target/240. Search a 2D Matrix II.py" beforeDir="false" afterPath="$PROJECT_DIR$/二分搜索/有明确的target/240. Search a 2D Matrix II.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search/有明确的target/33. Search in Rotated Sorted Array.py" beforeDir="false" afterPath="$PROJECT_DIR$/二分搜索/有明确的target/33. Search in Rotated Sorted Array.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search/有明确的target/367. Valid Perfect Square.py" beforeDir="false" afterPath="$PROJECT_DIR$/二分搜索/有明确的target/367. Valid Perfect Square.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search/有明确的target/374. Guess Number Higher or Lower.py" beforeDir="false" afterPath="$PROJECT_DIR$/二分搜索/有明确的target/374. Guess Number Higher or Lower.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search/有明确的target/74. Search a 2D Matrix.py" beforeDir="false" afterPath="$PROJECT_DIR$/二分搜索/有明确的target/74. Search a 2D Matrix.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search/有明确的target/81. Search in Rotated Sorted Array II.py" beforeDir="false" afterPath="$PROJECT_DIR$/二分搜索/有明确的target/81. Search in Rotated Sorted Array II.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search/有明确的target/laMian.py" beforeDir="false" afterPath="$PROJECT_DIR$/二分搜索/有明确的target/laMian.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search/没有明确的target/278. First Bad Version.py" beforeDir="false" afterPath="$PROJECT_DIR$/二分搜索/没有明确的target/278. First Bad Version.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search/没有明确的target/34. Find First and Last Position of Element in Sorted Array.py" beforeDir="false" afterPath="$PROJECT_DIR$/二分搜索/没有明确的target/34. Find First and Last Position of Element in Sorted Array.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search/没有明确的target/35. Search Insert Position.py" beforeDir="false" afterPath="$PROJECT_DIR$/二分搜索/没有明确的target/35. Search Insert Position.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search/没有明确的target/441. Arranging Coins.py" beforeDir="false" afterPath="$PROJECT_DIR$/二分搜索/没有明确的target/441. Arranging Coins.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search/没有明确的target/447 Search in a Big Sorted Array （LintCode）.py" beforeDir="false" afterPath="$PROJECT_DIR$/二分搜索/没有明确的target/447 Search in a Big Sorted Array （LintCode）.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search/没有明确的target/458. Last Position of Target (Lintcode).py" beforeDir="false" afterPath="$PROJECT_DIR$/二分搜索/没有明确的target/458. Last Position of Target (Lintcode).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search/没有明确的target/459. Closest Number in Sorted Array (Lintcode).py" beforeDir="false" afterPath="$PROJECT_DIR$/二分搜索/没有明确的target/459. Closest Number in Sorted Array (Lintcode).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search/没有明确的target/658. Find K Closest Elements.py" beforeDir="false" afterPath="$PROJECT_DIR$/二分搜索/没有明确的target/658. Find K Closest Elements.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search/没有明确的target/69. Sqrt(x).py" beforeDir="false" afterPath="$PROJECT_DIR$/二分搜索/没有明确的target/69. Sqrt(x).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search/没有明确的target/744. Find Smallest Letter Greater Than Target.py" beforeDir="false" afterPath="$PROJECT_DIR$/二分搜索/没有明确的target/744. Find Smallest Letter Greater Than Target.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search/没有明确的target类型，可以越界类型/153. Find Minimum in Rotated Sorted Array.py" beforeDir="false" afterPath="$PROJECT_DIR$/二分搜索/没有明确的target类型，可以越界类型/153. Find Minimum in Rotated Sorted Array.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search/没有明确的target类型，可以越界类型/162. Find Peak Element.py" beforeDir="false" afterPath="$PROJECT_DIR$/二分搜索/没有明确的target类型，可以越界类型/162. Find Peak Element.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary Search/没有明确的target类型，可以越界类型/852. Peak Index in a Mountain Array.py" beforeDir="false" afterPath="$PROJECT_DIR$/二分搜索/没有明确的target类型，可以越界类型/852. Peak Index in a Mountain Array.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary tree/二叉树性质相关题目/100. Same Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/二叉树性质相关题目/100. Same Tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary tree/二叉树性质相关题目/101. Symmetric Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/二叉树性质相关题目/101. Symmetric Tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary tree/二叉树性质相关题目/104. Maximum Depth of Binary Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/二叉树性质相关题目/104. Maximum Depth of Binary Tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary tree/二叉树性质相关题目/110. Balanced Binary Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/二叉树性质相关题目/110. Balanced Binary Tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary tree/二叉树性质相关题目/111. Minimum Depth of Binary Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/二叉树性质相关题目/111. Minimum Depth of Binary Tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary tree/二叉树性质相关题目/662. Maximum Width of Binary Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/二叉树性质相关题目/662. Maximum Width of Binary Tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary tree/二叉树性质相关题目/求所有路径的深度.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/二叉树性质相关题目/求所有路径的深度.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary tree/二叉树性质相关题目/求每层的宽度.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/二叉树性质相关题目/求每层的宽度.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary tree/二叉树性质相关题目/求每层的节点数.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/二叉树性质相关题目/求每层的节点数.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary tree/二叉树的构建/105. Construct Binary Tree from Preorder and Inorder Traversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/二叉树的构建/105. Construct Binary Tree from Preorder and Inorder Traversal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary tree/二叉树的构建/106. Construct Binary Tree from Inorder and Postorder Traversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/二叉树的构建/106. Construct Binary Tree from Inorder and Postorder Traversal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary tree/二叉树的构建/108. Convert Sorted Array to Binary Search Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/二叉树的构建/108. Convert Sorted Array to Binary Search Tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary tree/二叉树的构建/109. Convert Sorted List to Binary Search Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/二叉树的构建/109. Convert Sorted List to Binary Search Tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary tree/二叉树的构建/Construt Binary Tree from Level Order Traversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/二叉树的构建/Construt Binary Tree from Level Order Traversal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary tree/二叉树的遍历/BFS/102. Binary Tree Level Order Traversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/二叉树的遍历/BFS/102. Binary Tree Level Order Traversal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary tree/二叉树的遍历/BFS/103. Binary Tree Zigzag Level Order Traversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/二叉树的遍历/BFS/103. Binary Tree Zigzag Level Order Traversal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary tree/二叉树的遍历/BFS/107. Binary Tree Level Order Traversal II.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/二叉树的遍历/BFS/107. Binary Tree Level Order Traversal II.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary tree/二叉树的遍历/BFS/116. Populating Next Right Pointers in Each Node.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/二叉树的遍历/BFS/116. Populating Next Right Pointers in Each Node.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary tree/二叉树的遍历/BFS/117. Populating Next Right Pointers in Each Node II.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/二叉树的遍历/BFS/117. Populating Next Right Pointers in Each Node II.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary tree/二叉树的遍历/DFS/144. Binary Tree Preorder Traversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/二叉树的遍历/DFS/144. Binary Tree Preorder Traversal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary tree/二叉树的遍历/DFS/145. Binary Tree Postorder Traversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/二叉树的遍历/DFS/145. Binary Tree Postorder Traversal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary tree/二叉树的遍历/DFS/94. Binary Tree Inorder Traversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/二叉树的遍历/DFS/94. Binary Tree Inorder Traversal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary tree/综合题目/1361. Validate Binary Tree Nodes.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/综合题目/1361. Validate Binary Tree Nodes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary tree/综合题目/236. Lowest Common Ancestor of a Binary Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/综合题目/236. Lowest Common Ancestor of a Binary Tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary tree/综合题目/从下至上分析/979. Distribute Coins in Binary Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/综合题目/从下至上分析/979. Distribute Coins in Binary Tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary tree/路径和/112. Path Sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/路径和/112. Path Sum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary tree/路径和/113. Path Sum II.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/路径和/113. Path Sum II.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary tree/路径和/129. Sum Root to Leaf Numbers.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/路径和/129. Sum Root to Leaf Numbers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary tree/路径和/1372. Longest ZigZag Path in a Binary Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/路径和/1372. Longest ZigZag Path in a Binary Tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary tree/路径和/257. Binary Tree Paths.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/路径和/257. Binary Tree Paths.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bit manipulation 位运算/全组合问题/78. Subsets.py" beforeDir="false" afterPath="$PROJECT_DIR$/位运算/全组合问题/78. Subsets.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bit manipulation 位运算/判断二进制数结构/693. Binary Number with Alternating Bits.py" beforeDir="false" afterPath="$PROJECT_DIR$/位运算/判断二进制数结构/693. Binary Number with Alternating Bits.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bit manipulation 位运算/反转相关题目/190. Reverse Bits.py" beforeDir="false" afterPath="$PROJECT_DIR$/位运算/反转相关题目/190. Reverse Bits.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bit manipulation 位运算/反转相关题目/476. Number Complement.py" beforeDir="false" afterPath="$PROJECT_DIR$/位运算/反转相关题目/476. Number Complement.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bit manipulation 位运算/只出现一次的数字/136. Single Number.py" beforeDir="false" afterPath="$PROJECT_DIR$/位运算/只出现一次的数字/136. Single Number.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bit manipulation 位运算/只出现一次的数字/137. Single Number II.py" beforeDir="false" afterPath="$PROJECT_DIR$/位运算/只出现一次的数字/137. Single Number II.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bit manipulation 位运算/只出现一次的数字/260. Single Number III.py" beforeDir="false" afterPath="$PROJECT_DIR$/位运算/只出现一次的数字/260. Single Number III.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bit manipulation 位运算/数学相关问题/201. Bitwise AND of Numbers Range.py" beforeDir="false" afterPath="$PROJECT_DIR$/位运算/数学相关问题/201. Bitwise AND of Numbers Range.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bit manipulation 位运算/数学相关问题/29. Divide Two Integers.py" beforeDir="false" afterPath="$PROJECT_DIR$/位运算/数学相关问题/29. Divide Two Integers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bit manipulation 位运算/数学相关问题/371. Sum of Two Integers.py" beforeDir="false" afterPath="$PROJECT_DIR$/位运算/数学相关问题/371. Sum of Two Integers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bit manipulation 位运算/汉明距离/191. Number of 1 Bits.py" beforeDir="false" afterPath="$PROJECT_DIR$/位运算/汉明距离/191. Number of 1 Bits.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bit manipulation 位运算/汉明距离/461. Hamming Distance.py" beforeDir="false" afterPath="$PROJECT_DIR$/位运算/汉明距离/461. Hamming Distance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bit manipulation 位运算/汉明距离/477. Total Hamming Distance.py" beforeDir="false" afterPath="$PROJECT_DIR$/位运算/汉明距离/477. Total Hamming Distance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bit manipulation 位运算/混合问题/1318. Minimum Flips to Make a OR b Equal to c.py" beforeDir="false" afterPath="$PROJECT_DIR$/位运算/混合问题/1318. Minimum Flips to Make a OR b Equal to c.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Greedy/253. Meeting Rooms II.py" beforeDir="false" afterPath="$PROJECT_DIR$/贪心算法/区间问题/253. Meeting Rooms II.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Greedy/455. Assign Cookies.py" beforeDir="false" afterPath="$PROJECT_DIR$/贪心算法/455. Assign Cookies.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode周赛/200315/Balance a Binary Search Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode周赛/200315/Balance a Binary Search Tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock record/191117/112. Path Sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/mock record/191117/112. Path Sum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/巨硬/oa/Count Visible Nodes in Binary Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/复习-面试经验/巨硬/oa/Count Visible Nodes in Binary Tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/巨硬/oa/Crop Words.py" beforeDir="false" afterPath="$PROJECT_DIR$/复习-面试经验/巨硬/oa/Crop Words.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/巨硬/oa/Largest Alphabetic Character.py" beforeDir="false" afterPath="$PROJECT_DIR$/复习-面试经验/巨硬/oa/Largest Alphabetic Character.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/巨硬/oa/Largest M-aligned Subset.py" beforeDir="false" afterPath="$PROJECT_DIR$/复习-面试经验/巨硬/oa/Largest M-aligned Subset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/巨硬/oa/Largest number X which occurs X times.py" beforeDir="false" afterPath="$PROJECT_DIR$/复习-面试经验/巨硬/oa/Largest number X which occurs X times.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/巨硬/oa/Max Chunks to Sort Array.py" beforeDir="false" afterPath="$PROJECT_DIR$/复习-面试经验/巨硬/oa/Max Chunks to Sort Array.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/数据结构与算法1-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/数据结构与算法1-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/数据结构与算法2-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/数据结构与算法2-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法2.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法老版.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法老版.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/未分类题目/lc 236.py" beforeDir="false" afterPath="$PROJECT_DIR$/未分类题目/lc 236.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/动态规划/322. Coin Change.py" beforeDir="false" afterPath="$PROJECT_DIR$/动态规划/01背包问题/322. Coin Change.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/动态规划/子序列问题/300. Longest Increasing Subsequence.py" beforeDir="false" afterPath="$PROJECT_DIR$/动态规划/子序列问题/300. Longest Increasing Subsequence.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -172,19 +76,19 @@
     </option>
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\working\leetcodeText400AG\动态规划\01背包问题" />
+      <recent name="D:\working\leetcodeText400AG\复习-面试经验" />
+      <recent name="D:\working\leetcodeText400AG\贪心算法\区间问题" />
+      <recent name="D:\working\leetcodeText400AG\回溯法" />
+      <recent name="D:\working\leetcodeText400AG\Graph\网格搜索 grid\DFS模板1" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\working\leetcodeText400AG\回溯法" />
       <recent name="D:\working\leetcodeText400AG\Graph\有向图" />
       <recent name="D:\working\面经题目\google\OA\2019(1-3月)" />
       <recent name="D:\working\leetcodeText400AG\Binary tree\综合题目\从下至上分析" />
       <recent name="D:\working\leetcodeText400AG\内建模块" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\working\leetcodeText400AG\复习-面试经验" />
-      <recent name="D:\working\leetcodeText400AG\贪心算法\区间问题" />
-      <recent name="D:\working\leetcodeText400AG\回溯法" />
-      <recent name="D:\working\leetcodeText400AG\Graph\网格搜索 grid\DFS模板1" />
-      <recent name="D:\working\leetcodeText400AG\Graph\网格搜索 grid\DFS模板2" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -549,13 +453,7 @@
       <workItem from="1586215426604" duration="23616000" />
       <workItem from="1586330542680" duration="15945000" />
       <workItem from="1586475756525" duration="14020000" />
-    </task>
-    <task id="LOCAL-00058" summary="0223">
-      <created>1582465472395</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1582465472395</updated>
+      <workItem from="1586559968473" duration="1081000" />
     </task>
     <task id="LOCAL-00059" summary="0224">
       <created>1582517873582</created>
@@ -893,7 +791,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586319484996</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="0411">
+      <created>1586560079199</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1586560079199</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -936,7 +841,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="0225" />
     <MESSAGE value="0226" />
     <MESSAGE value="0227" />
     <MESSAGE value="0301" />
@@ -961,7 +865,8 @@
     <MESSAGE value="0403" />
     <MESSAGE value="0406" />
     <MESSAGE value="0407" />
-    <option name="LAST_COMMIT_MESSAGE" value="0407" />
+    <MESSAGE value="0411" />
+    <option name="LAST_COMMIT_MESSAGE" value="0411" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2740" y="176" key="#xdebugger.evaluate" timestamp="1579417161456">

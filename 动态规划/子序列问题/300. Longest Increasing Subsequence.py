@@ -113,11 +113,21 @@ class Solution:
 
 
 '''
-报错
-C. binary tree  - patient sort
+C. patient sort
     Method:
         1. corner case
-        2. 
+        2. buidl several heap which top elem is increasing, traversal elem X in numbs
+            if X < smallest numb of heaps' top, put X on the top of first heap top
+            if X > biggest numb of heaps' top, build a new heap to hold X
+            else: use binary search to find heap top the X belongs to
+            2, 9, 10
+            3, 5
+            18, 7, 
+            101 
+        3. return the heap numbers
+    Time: O(N) traversal every elem in numbs
+    Space: O(N) in worst case, the heap used
+
 '''
 
 
@@ -128,24 +138,30 @@ class Solution:
         if len(nums) == 1:
             return 1
 
-        top = [0] * len(nums)
-        piles = 0
-        for i in range(len(nums)):
-            poker = nums[i]
+        heap = [nums[0]]
 
-            l, r = 0, piles
+        def binarySearch(heap, elem):  # return index of elem in heap, if not, return right value
+            n = len(heap)
+            l, r = 0, n - 1
+
             while l <= r:
                 mid = l + (r - l) // 2
-                if poker < top[mid]:
+                if heap[mid] == elem:
+                    return mid
+                elif elem < heap[mid]:
                     r = mid - 1
-                elif poker == top[mid]:
-                    l = mid + 1
                 else:
                     l = mid + 1
+            return l
 
-            if l > piles - 1:
-                piles += 1
-            top[l] = poker
-        return piles
+        for elem in nums[1:]:
+            if elem < heap[0]:
+                heap[0] = elem
+            elif heap[-1] < elem:
+                heap.append(elem)
+            else:  # elem in heap top value range
+                index = binarySearch(heap, elem)
+                heap[index] = elem
+        return len(heap)
 
 
