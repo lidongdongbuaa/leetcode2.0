@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2020/3/27 14:15
 # @Author  : LI Dongdong
-# @FileName: 501. Find Mode in Binary Search Tree.py
+# @FileName: 501. Find Mode in 二分搜索 Tree.py
 ''''''
 '''
 题目概述：在有重复数值的BST中，找到众数，众数可能是多个
@@ -77,45 +77,47 @@ class Solution:
         return res
 
 
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
 '''
-B. inorder traversal the tree - count the time
+input: BST root; root number range is from 0 to 1000; have repeated value; 
+output: the node value with mode
+corner case
+    if all node appear only once, return all node? Y
+    root is None, return []
+
+A. inorder traversal and accumulate
     Method:
         1. corner case
-        2. inorder traversal the tree by iteration method
-            a. use ans list save [mode], record maxTimes, preNode, times
-            b. renew the ans list
-        3. return 
-    Time: O(N) 
+        2. inorder iterative traversal the tree
+            1-2-2
+            compare cur node value with pre node value
+                if same, accumlate current node times
+                else, save current time as preTime, set cur times = 1
+            if current node times > pre node time, clear res stack, add cur node
+            elif, =, add cur node to stack
+            elif <, pass
+        3. return res
+    Time complexity: O(N), N is number of tree nodes
     Space: O(1)
-
 易错点：
-    1. 不要用复杂的变量命名，尤其是带s等，容易错，所以都不要带
-    2. 修改代码时，要注意改完的代码和之前的变量命名是否一致
-    3. 本题思路：先记录time，在比对max和time进行res值的替换
+    1. 先积累目前的次数，可更新前值；再拿目前的次数与max次数进行比较
 '''
-
-
-# Definition for a binary tree node.
-class TreeNode:
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
-
-
 class Solution:
     def findMode(self, root: TreeNode) -> List[int]:
-        if not root:  # corner case
+        if not root:  # corn case
             return []
-        if not root.left and not root.right:
-            return [root.val]
-
-        ans = []
-        maxTimes = 0
-        pre = TreeNode(float('-inf'))
-        times = 0  # cur node appear times
 
         stack = []
+        maxTimes = curTimes = 0
+        preVal = float('-inf')
+        res = []
+
         while stack or root:
             while root:
                 stack.append(root)
@@ -123,21 +125,23 @@ class Solution:
 
             cur = stack.pop()
 
-            if cur.val == pre.val:  # record times
-                times += 1
-            else:
-                times = 1
+            if preVal ==  cur.val:
+                curTimes += 1
+            elif preVal < cur.val:
+                curTimes = 1
+                preVal = cur.val
 
-            if maxTimes < times:
-                ans = [cur.val]
-                maxTimes = times
-            elif maxTimes == times:
-                ans.append(cur.val)
-            else:
+            if curTimes == maxTimes:
+                res.append(cur.val)
+            elif curTimes < maxTimes:
                 pass
+            else:
+                res = [cur.val]
+                maxTimes = curTimes
 
-            pre = cur
 
             if cur.right:
                 root = cur.right
-        return ans
+        return res
+
+

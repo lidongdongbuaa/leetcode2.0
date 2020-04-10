@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2020/3/26 9:33
 # @Author  : LI Dongdong
-# @FileName: 701. Insert into a Binary Search Tree.py
+# @FileName: 701. Insert into a 二分搜索 Tree.py
 ''''''
 '''
 题目概述：在bst中插入节点

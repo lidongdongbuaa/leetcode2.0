@@ -10,7 +10,7 @@
     Input: [[0, 30],[5, 10],[15, 20]]  Output: 2
     Input: [[7,10],[2,4]] Output: 1
 2.理解：calculate number of rooms that is being used at the same time
-3.类型：Greedy
+3.类型：贪心算法
 4.方法及方法分析：
 time complexity order: 
 space complexity order: 
@@ -21,7 +21,7 @@ space complexity order:
 '''
 
 '''
-idea：Greedy algorithm
+idea：贪心算法 algorithm
 Method：
     sort the input base on list[i][0]
     traversal the elements, record the i-end time in stack
@@ -92,7 +92,7 @@ class Solution:
         return output
 
 '''
-idea：Greedy algorithm + heap
+idea：贪心算法 algorithm + heap
 Method：
 time complex: O(NlogN)
 space complex: O(N)

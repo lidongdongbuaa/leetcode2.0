@@ -62,8 +62,8 @@ class Solution:
             if not node:  # end
                 return 0
 
-            not_do = dp(node.left) + dp(node.right)
-            ll = lr = rl = rr = 0
+            not_do = dp(node.left) + dp(node.right)  # not rob root level
+            ll = lr = rl = rr = 0  # rob root level
             if node.left:
                 ll = dp(node.left.left)
                 lr = dp(node.left.right)

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2020/3/26 16:48
 # @Author  : LI Dongdong
-# @FileName: 98. Validate Binary Search Tree.py
+# @FileName: 98. Validate 二分搜索 Tree.py
 ''''''
 '''
 题目概述：判断一个树是否是BST

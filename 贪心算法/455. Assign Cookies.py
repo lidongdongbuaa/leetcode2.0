@@ -13,7 +13,7 @@
     If sj >= gi, we can assign the cookie j to the child i, and the child i will be content. 
     Your goal is to maximize the number of your content children and output the maximum number.
 2.理解：
-3.类型：Greedy algrithm
+3.类型：贪心算法 algrithm
 4.方法及方法分析：
 time complexity order: 
 space complexity order: 

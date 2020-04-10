@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2020/3/15 11:53
 # @Author  : LI Dongdong
-# @FileName: Balance a Binary Search Tree.py
+# @FileName: Balance a 二分搜索 Tree.py
 ''''''
 '''
 题目目的概述

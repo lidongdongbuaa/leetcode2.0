@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2020/3/24 17:31
 # @Author  : LI Dongdong
-# @FileName: 700. Search in a Binary Search Tree.py
+# @FileName: 700. Search in a 二分搜索 Tree.py
 ''''''
 '''
 题目概述：在BST中寻找值为key的node，并返回其及其所在的树

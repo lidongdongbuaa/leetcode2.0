@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2020/3/23 19:13
 # @Author  : LI Dongdong
-# @FileName: 235. Lowest Common Ancestor of a Binary Search Tree.py
+# @FileName: 235. Lowest Common Ancestor of a 二分搜索 Tree.py
 ''''''
 '''
 题目概述：在BST中，求两个点的最近公共祖先
