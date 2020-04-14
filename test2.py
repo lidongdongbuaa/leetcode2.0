@@ -1,46 +1,28 @@
-class TreeNode:
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.mid = None
-        self.right = None
-
 class Solution:
-    def binaryTreePaths(self, root: TreeNode):
-        if not root:  # corner case
-            return []
+    def maximalSquare(self, matrix) -> int:
+        if not matrix or matrix == [[]]:  # corner case
+            return 0
 
-        res = []
+        m, n = len(matrix), len(matrix[0])
 
-        def backtrack(root, path):  # save path of string in res
-            if not root:
-                return
+        dp = [[float('-inf')] * (n + 1) for _ in range(m + 1)]
 
-            if root:
-                path.append(str(root.val))
-                if not root.left and not root.right:
-                    res.append(path[:])
-                for node in (root.left, root.right):
-                    backtrack(node, path)
-                path.pop()
+        maxLength = 0
+        for i in range(1, m + 1):
+            for j in range(1, n + 1):
+                if i == 1 and j == 1:
+                    if matrix[i - 1][j - 1] == '1':
+                        dp[i][j] = 1
+                    else:
+                        dp[i][j] = float('-inf')
+                else:
+                    dp[i][j] = min(dp[i][j - 1], dp[i - 1][j], dp[i - 1][j - 1]) + 1
 
-        backtrack(root, [])
-        ans = ['->'.join(elem) for elem in res]
-        return ans
+                if dp[i][j] != float('-inf'):
+                    maxLength = max(maxLength, dp[i][j])
 
-a = TreeNode(1)
-b = TreeNode(2)
-c = TreeNode(3)
-d = TreeNode(4)
-e = TreeNode(5)
-f = TreeNode(6)
-g = TreeNode(7)
-a.left = b
-a.right = c
-b.left = d
-b.right = e
-d.left = g
-c.left = f
+        return maxLength * maxLength
+
 
 x = Solution()
-print(x.binaryTreePaths(a))
+print(x.maximalSquare([["1","0","1","0","0"],["1","0","1","1","1"],["1","1","1","1","1"],["1","0","0","1","0"]]))
