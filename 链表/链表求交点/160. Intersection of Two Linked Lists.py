@@ -10,7 +10,7 @@
 (注意：val相同，next相同的两个节点的地址不一定相同，故不一定相等)
 保持原有结构->不构建新的链表；O(1) memory->iterative method;
 3.类型：链表题；两单链表；找交点
-4.方法：brute force;hash table;reduce gap;two pointer
+4.方法：brute force;hash table;reduce gap;双指针
 5.边界条件：链表为None，返回None
 """
 

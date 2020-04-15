@@ -10,9 +10,9 @@
     Follow up:Could you do this in one pass?
 2.理解：删除倒数第n个节点
 3.类型：删除题
-4.方法及方法分析：next跳跃法；list重构法；one-pass(two pointer)法
-time complexity order: next跳跃法 O(N) =list重构法 O(N) = one-pass(two pointer)法 O(N)
-space complexity order: next跳跃法 O(1) = one-pass(two pointer)法 O(1) < list重构法 O(N) 
+4.方法及方法分析：next跳跃法；list重构法；one-pass(双指针)法
+time complexity order: next跳跃法 O(N) =list重构法 O(N) = one-pass(双指针)法 O(N)
+space complexity order: next跳跃法 O(1) = one-pass(双指针)法 O(1) < list重构法 O(N) 
 '''
 
 '''
@@ -89,7 +89,7 @@ class Solution:
 
 
 '''
-one-pass(two pointer)法
+one-pass(双指针)法
 思路：用两个node，并保持距离为n，故当第一个node到达尾部时，第二个node在-n处，正好开始next跳跃
 方法：建立两个node，first_node先后移n次，然后first和second同时后移，直到first到达链表底部，然后进行next跳跃
 边界条件：head = None；head.next = None, n = 1；n = length

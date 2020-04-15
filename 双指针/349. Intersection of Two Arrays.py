@@ -39,7 +39,7 @@ B. Optimzed space
     Time: O(m * n)
     Space: O(1)
 
-C.sorted nums + two pointer 
+C.sorted nums + 双指针 
     Method:
         1. corner case
         2. sorted nums

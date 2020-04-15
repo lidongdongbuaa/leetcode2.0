@@ -14,85 +14,44 @@ space complexity order:
 如何考
 '''
 '''
-dp[i][j] is the max edge lenght of square inclusing i, j cell
-    dp(i,j) =  min(dp(i - 1, j), dp(i - 1, j - 1), dp(i, j - 1)) + 1
-    base case:
-         i or j < 0, return float('-inf')
-         i = j = 0, if matrix[i][j] = 1, return 1
-            else, return 0
+input: matrix, list[list]; length range is from 0 to inf; value is only 0 or 1
+output:int, the area of the square
+corner case:
+    1. matrix is None, return 0
 
+A. DP - dp[i][j] is the longest length of the edge of the square with right bottom point (i, j)
+    Method:
+        1. corner case
+        2. dp(i,j) =  min(dp(i - 1, j), dp(i - 1, j - 1), dp(i, j - 1)) + 1
+        3. base case:
+            a. for i in range (1, m + 1)
+            b. dp = [float('inf')]
+            c. meet '0', dp = [float('inf')]
 '''
 
 
 class Solution:
-    def maximalSquare(self, matrix) -> int:
+    def maximalSquare(self, matrix: List[List[str]]) -> int:
         if not matrix or matrix == [[]]:  # corner case
             return 0
 
-        m, n = len(matrix), len(matrix[0])
-        memo = {}
+        m = len(matrix)
+        n = len(matrix[0])
 
-        def dp(i, j):  # return largest area
-            if (i, j) in memo:
-                return memo[(i, j)]
-            if i < 0 or j < 0:
-                return float('-inf')
+        dp = [[0] * (n + 1) for _ in range(m + 1)]
 
-            if (i == 0 or j == 0) and matrix[i][j] == '1':
-                res = 1
-            elif (i == 0 or j == 0) and matrix[i][j] == '0':
-                res = float('-inf')
-
-            elif matrix[i][j] == '1':
-                res = min(dp(i - 1, j), dp(i, j - 1), dp(i - 1, j - 1)) + 1
-            else:
-                res = dp(i - 1, j - 1)
-            memo[(i, j)] = res
-            return res
-
-        dp(m - 1, n - 1)
-        maxLength = 0
-        for l in memo.values():
-            if l != float('inf'):
-                maxLength = max(maxLength, l)
-        return maxLength * maxLength
-
-
-'''
-有问题，回头看
-'''
-'''
-dp[i][j] is the max edge lenght of square inclusing i, j cell
-    dp(i,j) =  min(dp(i - 1, j), dp(i - 1, j - 1), dp(i, j - 1)) + 1
-    base case:
-         i or j < 0, return float('-inf')
-         i = j = 0, if matrix[i][j] = 1, return 1
-            else, return 0
-
-'''
-
-
-class Solution:
-    def maximalSquare(self, matrix) -> int:
-        if not matrix or matrix == [[]]:  # corner case
-            return 0
-
-        m, n = len(matrix), len(matrix[0])
-
-        dp = [[float('-inf')] * (n + 1) for _ in range(m + 1)]
-
-        maxLength = 0
+        length = 0
         for i in range(1, m + 1):
             for j in range(1, n + 1):
-                if i == 1 and j == 1:
-                    if matrix[i - 1][j - 1] == '1':
+                if matrix[i - 1][j - 1] == '1':
+                    if i == 1 or j == 1:  # 包含了原点和边
                         dp[i][j] = 1
                     else:
-                        dp[i][j] = float('-inf')
-                else:
-                    dp[i][j] = min(dp[i][j - 1], dp[i - 1][j], dp[i - 1][j - 1]) + 1
+                        dp[i][j] = min(dp[i - 1][j], dp[i - 1][j - 1], dp[i][j - 1]) + 1
+                    length = max(dp[i][j], length)
+        return length * length
 
-                if dp[i][j] != float('-inf'):
-                    maxLength = max(maxLength, dp[i][j])
-
-        return maxLength * maxLength
+'''
+这种跳值的，即matrix[i - 1][j - 1] == 0,时，dp[i][j]直接为0的情况下，无法进行dp memo方法，
+总结就是 若除了base case，若dp只能用dp的sub的情况表示时，可以用dp memo，否则只能用dp table
+'''
