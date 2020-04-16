@@ -1,3 +1,2 @@
-y = [0, 2]
-
-print(y[:-1])
+a = list(range(10))
+print(a)
