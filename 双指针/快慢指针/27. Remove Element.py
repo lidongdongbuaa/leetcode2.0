@@ -64,3 +64,49 @@ val = 2
 
 [3,2,2,3]
 '''
+'''
+之前的方法是把遇到需要删除的元素时，就把后一位的元素前移, 此时元素的顺序不发生变化
+现在的方法是遇到删除的元素时，把最后一位的元素放到当前位，此时元素的顺序发生了变化
+
+input:
+    nums
+    val
+output: int, length of removed nums
+corner case:
+    nums is None, return 0
+易错点：
+    1. 注意l <= r的细节条件-》 解决元素完全等于tager的情况
+'''
+
+
+class Solution:
+    def removeElement(self, nums: List[int], val: int) -> int:
+        if not nums:
+            return 0
+        if len(nums) == 1 and nums[0] == val:
+            return 0
+        if len(nums) == 1 and nums[0] != val:
+            return 1
+
+        l, r = 0, len(nums) - 1
+        while l <= r:
+            if nums[l] == val:
+                nums[l] = nums[r]
+                r -= 1
+            else:
+                l += 1
+        return l
+
+
+'''
+test case
+ val = 3,
+ [2,2,2,3]
+    l
+    r
+
+val = 3
+ [3, 3]
+  l
+  r
+'''
