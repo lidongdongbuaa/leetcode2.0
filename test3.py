@@ -1,2 +1,5 @@
-a = list(range(10))
-print(a)
+a = True
+b = False
+c = False
+if a + b + c > 1:
+    print('$$$$$$$$$$$')

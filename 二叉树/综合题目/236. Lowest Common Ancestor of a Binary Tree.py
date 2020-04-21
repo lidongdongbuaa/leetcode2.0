@@ -5,10 +5,10 @@
 # @FileName: 236. Lowest Common Ancestor of a Binary Tree.py
 ''''''
 '''
-题目概述：
-题目考点：
-解决方案：
-方法及方法分析：
+题目概述：求两个树中节点的最近公共祖先
+题目考点：bottom-up 的recursion方法
+解决方案：dfs(root) return true if root tree have p or q, then judge l + r + mid condition
+方法及方法分析：递归法；
 time complexity order: 
 space complexity order: 
 如何考
@@ -19,7 +19,37 @@ space complexity order:
 #         self.val = x
 #         self.left = None
 #         self.right = None
+'''
+A. recursion
+    Method: dfs(root): if p or q in root tree, return True
+        1. bottom-up method
+        2. if p and q in two of left, right, root, the root is result
+Time:O(n)
+Sace：O(n)
 
+'''
+class Solution:
+    def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
+        self.res = None
+
+        def dfs(root):  # return True if q or p in root
+            if not root:
+                return False
+
+            if root == q or root == p:
+                mid = True
+            else:
+                mid = False
+
+            l = dfs(root.left)
+            r = dfs(root.right)
+
+            if l + r + mid >= 2:
+                self.res = root
+            return l or r or mid
+
+        dfs(root)
+        return self.res
 
 '''
 Method:
@@ -64,3 +94,6 @@ class Solution:
         self.findPath(root.left, path, res, target, finish)
         self.findPath(root.right, path, res, target, finish)
         path.pop()
+
+
+
