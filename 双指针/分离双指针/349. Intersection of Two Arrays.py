@@ -39,37 +39,7 @@ B. Optimzed space
         3. return the list(set)
     Time: O(m * n)
     Space: O(1)
-
-
-d. sorted nums + binary search
-    Method:
-        1. corner case
-        2. sorted one nums
-        3. compare elem in unsorted nums with sorted nums, if in, add to set
-    Time: O(nlogn + mlogn)
-    space： O(n)
-
-e. two set
-    Method:
-        1.corner case
-        2. set two nums
-        3. compare elems of nums1 with nums by in, if true, save it in res
-        4.return res
-    Time O(m + n + m * 1) = O(m + n)
-    space O(m + n)
-
 '''
-
-
-class Solution:
-    def intersection(self, nums1: List[int], nums2: List[int]) -> List[int]:
-        arr1 = set(nums1)
-        arr2 = set(nums2)
-
-        res = [x for x in arr1 if x in arr2]
-        return res
-
-
 '''
 C. two pointer
     Method:
@@ -81,11 +51,9 @@ C. two pointer
             else
                 add i value in set
         4. return list(set)
-    Time：O(max(nlogn, mlogm))
+    Time：O(nlogn + mlogm)
     space: O(m + n)
 '''
-
-
 class Solution:
     def intersection(self, nums1: List[int], nums2: List[int]) -> List[int]:
         if not nums1 or not nums2:  # corner case
@@ -107,3 +75,52 @@ class Solution:
             else:
                 j += 1
         return list(res)
+'''
+
+d. sorted nums + binary search
+    Method:
+        1. corner case
+        2. sorted one nums
+        3. compare elem in unsorted nums with sorted nums, if in, add to set
+    Time: O(nlogn + mlogn)
+    space： O(n)
+'''
+
+'''
+e. two set 1
+    Method:
+        1.corner case
+        2. set two nums
+        3. compare elems of nums1 with nums by in, if true, save it in res
+        4.return res
+    Time O(m + n + m * 1) = O(m + n)
+    space O(m + n)
+
+'''
+
+
+class Solution:
+    def intersection(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        arr1 = set(nums1)
+        arr2 = set(nums2)
+
+        res = [x for x in arr1 if x in arr2]
+        return res
+
+'''
+f. set method
+Time: O(m + n)
+Space:O(m + n)
+'''
+class Solution:
+    def intersection(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        if not nums1 or not nums2:  # corner case
+            return []
+
+        set1 = set(nums1)
+        set2 = set(nums2)
+
+        return list(set1 & set2)
+
+
+

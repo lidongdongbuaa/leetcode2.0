@@ -9,7 +9,7 @@
 Follow-up:Can you solve it without using extra space?
 2.理解：判断是否有环，记录环的位置
 3.类型：链表题；有环链表
-4.方法：hash table method; 双指针-数组 running method
+4.方法：hash table method; 双指针 running method
 5.边界条件：链表为空，返回None
 '''
 ####################### hash table method ##################

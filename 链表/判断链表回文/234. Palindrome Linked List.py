@@ -52,7 +52,7 @@ class Solution:
 
 '''
 reverse-TwoPointer Method
-Idea：use 双指针-数组 in linkedlist so that in one traverse, we can scan the front and later part of linkedlist at the same time
+Idea：use 双指针 in linkedlist so that in one traverse, we can scan the front and later part of linkedlist at the same time
 Method：
     set slow pointer -> one node step, fast-p ->two step. traverse pointer, so when fast-p arrive at end, slow arrive at mid. 
         Meanwhile for slow-p, reverse its scaned node, set new_head. #tO(N/2) sO(1)

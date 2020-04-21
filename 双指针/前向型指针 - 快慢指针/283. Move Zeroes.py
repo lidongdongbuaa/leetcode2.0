@@ -5,9 +5,9 @@
 # @FileName: 283. Move Zeroes.py
 ''''''
 '''
-题目概述：
-题目考点：
-解决方案：
+题目概述：一组尾排序数组把数组中的0都移到末尾
+题目考点：快慢指针
+解决方案：快指针寻找非0值，慢指针位于0处
 方法及方法分析：
 time complexity order: 
 space complexity order: 
@@ -32,9 +32,10 @@ A. slow - fast pointer - f search for no-Zero value
     Time complexity: O(n)
     Space: O(1)
 
- [1,3,12,3,12]
-      s
-              f
+ [1,1,0,3,12]
+s
+f
+f 
 '''
 
 

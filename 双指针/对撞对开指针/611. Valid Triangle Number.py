@@ -5,12 +5,12 @@
 # @FileName: 611. Valid Triangle Number.py
 ''''''
 '''
-题目概述：
-题目考点：
-解决方案：
+题目概述：判断一列数组里的数字是否可以组成三角形
+题目考点：two pointer；
+解决方案：固定长边，找其他两条边
 方法及方法分析：
-time complexity order: 
-space complexity order: 
+time complexity order: O(n^2)
+space complexity order: O(1)
 如何考
 '''
 '''
@@ -73,6 +73,8 @@ B. two pointer method - scan the value and check it is triangle
                     if j + k > i, count + k - j; k -= 1 (or j += 1?)， 此时 (j,k), (j + 1, k),...(k -1, k)都满足条件
                     if j + k <= i, j += 1
         3. return the times
+    Time：O(n^2)
+    Space: O(1)
 易错点：two pointer都在twoSum里面
     每次判断条件只移动一个pointer
 '''

@@ -37,13 +37,13 @@ corner case:
     3. target is NOne? Y -> 0
     4. target is out of range of arr? Y
     
-方法及方法分析：brute force - 双指针-数组; binary search
-time complexity order: binary search O(logN) < brute force - 双指针-数组 O(N)
+方法及方法分析：brute force - 双指针; binary search
+time complexity order: binary search O(logN) < brute force - 双指针 O(N)
 space complexity order: O(1)
 6.如何考
 '''
 '''
-A brute force - 双指针-数组 and compare
+A brute force - 双指针 and compare
     Method:
         1. corner case, out of range, only one
         2. traversal arr elements,i index, from 0 to len(arr) - 1
