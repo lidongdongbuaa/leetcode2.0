@@ -6,11 +6,11 @@
 ''''''
 '''
 题目概述：原位删除与目标值相同的数字
-题目考点：快慢指针 - 有进阶做法
-解决方案：
+题目考点：快慢指针， 把后一位前移到本位；对撞对开指针，把最后一位替换到本位；
+解决方案：针对removed的数字特别少的情况，用对撞指针；针对remove特别多的情况，用快慢指针
 方法及方法分析：
-time complexity order: 
-space complexity order: 
+time complexity order: O(n)
+space complexity order: O(1)
 如何考
 '''
 '''
@@ -67,6 +67,7 @@ val = 2
 '''
 之前的方法是把遇到需要删除的元素时，就把后一位的元素前移, 此时元素的顺序不发生变化
 现在的方法是遇到删除的元素时，把最后一位的元素放到当前位，此时元素的顺序发生了变化
+本种方案的优势在于移除元素很少时的情况
 
 input:
     nums
@@ -76,6 +77,8 @@ corner case:
     nums is None, return 0
 易错点：
     1. 注意l <= r的细节条件-》 解决元素完全等于tager的情况
+Time: O(n)
+Space: O(1)
 '''
 
 

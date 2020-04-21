@@ -7,7 +7,7 @@
 '''
 题目概述：在重复元素的list里， 找四个数，让这四个数的和等于target
 题目考点：基于two sum的对撞指针法
-解决方案：2 for loop + 对撞指针
+解决方案：2 for loop + 对撞对开指针
 方法及方法分析：
 time complexity order: O(n^3)
 space complexity order: O(1)

@@ -152,37 +152,60 @@ input
     root.right  20 NOne   7  None None
     abs(L-R)    1  0      9  0    0
 '''
+
 '''
-B.
-要返回是否平衡，就要需要目前最大深度这个中间变量，故dfs返回两个值，一个是是否平衡，一个是高度
-基于求最大深度的模板修改，dfs可以返回多个性质，bottom up的思路
-dfs返回是否是balanced,和height
+在求树的最高高度上进行修改而得
+input: root of tree; root number range is from 0 to inf; no value range; have repeated value; no order
+output: True if balanced or False
+corner case:
+    root is None, or only one elem, return True
+
+bottom-up recursion check
+Method:
+    1. corner case
+    2. helper(root), return height of each node 只要返回高度就可以了，如果不成立，返回-1
+        base case, root is None, return 0
+        explore left children, 
+            if height = -1
+                return -1
+            else:
+                return height
+        explore rigt children
+            if height = -1
+                return -1
+            else:
+                return left
+        check left and right height gap,
+            if balanced, return height
+            else, return -1
 '''
 class Solution:
     def isBalanced(self, root: TreeNode) -> bool:
         if not root:  # corner case
             return True
 
-        def dfs(root):  # return max height and if is balanced
+        def helper(root):  # return height of node or -1
             if not root:
-                return True, 0
+                return 0
 
-            leftBalanced, leftH = dfs(root.left)
+            l = helper(root.left)
+            if l == -1:
+                return -1
 
-            rightBalanced, rightH = dfs(root.right)
+            r = helper(root.right)
+            if r == -1:
+                return -1
 
-            if abs(leftH - rightH) > 1 or not leftBalanced or not rightBalanced:
-                return False, max(leftH, rightH) + 1
+            if abs(r - l) <= 1:
+                return max(r, l) + 1
             else:
-                return True, max(leftH, rightH) + 1
+                return -1
 
-
-
-        isBalanced, maxHeight = dfs(root)
-        if isBalanced:
-            return True
-        else:
+        if helper(root) == -1:
             return False
+        else:
+            return True
+
 
 '''
 思路：bottom-up- 栈模拟递归

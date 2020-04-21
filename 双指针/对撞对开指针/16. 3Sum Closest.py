@@ -6,7 +6,7 @@
 ''''''
 '''
 题目概述：一列数中，求三数之和，其与target最相近
-题目考点：two pointer法 对撞指针
+题目考点：two pointer法 对撞对开指针
 解决方案：two pointer法
 方法及方法分析：brute force + binary search; two pointer
 time complexity order: two pointer O(n^2)
