@@ -6,7 +6,7 @@
 ''''''
 '''
 题目概述：两个无序重复arr的交叉集
-题目考点：set的去重，&和|的性质，set查询是O(1)的性质
+题目考点：set的去重，&和|的性质，set查询是O(1)的性质; two pointer，分离双指针
 解决方案：先set去重，再遍历一个与另一个进行in比较
 方法及方法分析：two set, sorted binary search, brute force
 time complexity order:  two set O(m + n)< sorted binary search O(nlogn + nlogm) < brute force Optimzed space O(m*n)
@@ -16,11 +16,12 @@ space complexity order: brute force Optimzed space O(1) < < sorted binary search
 '''
 find the intersection of two arrays
 
-input: arr1, arr2 [int]; length range of arr1, arr2? [0, +10000];value range? [any]; elem of nums is repeated? Y; ordered? N
-output: list[int]
-corner case:
-    one of arr is None: []
-    both arr is None: []
+input:
+    nums1, nums2, list; length range is from 0 to inf; value range, no limit; have repeated value; no order
+output:
+    list, unique common value
+corner case
+    one nums is None, return []
 
 A. Brute force
     Method:
@@ -39,13 +40,6 @@ B. Optimzed space
     Time: O(m * n)
     Space: O(1)
 
-C.sorted nums + 双指针 
-    Method:
-        1. corner case
-        2. sorted nums
-        3. pointe 1/2 to nums1/2, compare values and move pointers, if same, add to set
-    Time：O(max(nlogn, mlogm))
-    space: O(m + n)
 
 d. sorted nums + binary search
     Method:
@@ -75,3 +69,41 @@ class Solution:
         res = [x for x in arr1 if x in arr2]
         return res
 
+
+'''
+C. two pointer
+    Method:
+        1. sort nums
+        2. each nums use one pointer, nums1 use i, nums2 use j
+        3. scan value at same time
+            if i value < j value, move i
+            if i value > j value, move j
+            else
+                add i value in set
+        4. return list(set)
+    Time：O(max(nlogn, mlogm))
+    space: O(m + n)
+'''
+
+
+class Solution:
+    def intersection(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        if not nums1 or not nums2:  # corner case
+            return []
+
+        nums1.sort()
+        nums2.sort()
+
+        i = j = 0
+        res = set()
+
+        while i < len(nums1) and j < len(nums2):
+            if nums1[i] < nums2[j]:
+                i += 1
+            elif nums1[i] == nums2[j]:
+                res.add(nums1[i])
+                i += 1
+                j += 1
+            else:
+                j += 1
+        return list(res)

@@ -8,9 +8,9 @@
 题目概述: 求两个list之间共同的元素，要求输出全部的共同元素
 题目考点：dict的使用；two pointer的方法
 解决方案：转化小size的为dict，对第二个进行遍历；sorted两个nums，然后two pointer进行比较
-方法及方法分析：dict save and count；Sorted and 双指针
-time complexity order: dict save and count O(m + n) < Sorted and 双指针 O(nlogn + mlogm)
-space complexity order:Sorted and 双指针 O(1) <  dict save and count O(min(m,n))
+方法及方法分析：dict save and count；Sorted and 双指针-数组
+time complexity order: dict save and count O(m + n) < Sorted and 双指针-数组 O(nlogn + mlogm)
+space complexity order:Sorted and 双指针-数组 O(1) <  dict save and count O(min(m,n))
 如何考
 '''
 '''
@@ -42,11 +42,11 @@ B. !!optimized - dict save and count
     Space O(min(m,n))
 
 
-C. !!Sorted and 双指针
+C. !!Sorted and 双指针-数组
     Method:
         1. corner case
         2. sorted nums1 and 2
-        3. use 双指针 to compare the nums, and add the common to result
+        3. use 双指针-数组 to compare the nums, and add the common to result
     Time: O(nlogn + mlogm + max(m,n))
     Space: O(m + n)
 

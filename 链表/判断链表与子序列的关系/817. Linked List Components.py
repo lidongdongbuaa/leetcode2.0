@@ -14,8 +14,8 @@
 2.理解：判断list里的元素(为subset of linklist)是否是linklist里的连续或单独元素, 返回数量 
 3.类型：list成分判断题
 4.方法及方法分析：
-time complexity order:  optimization SET method O(N) < 双指针 method O(N2)
-space complexity order: optimization SET method O(1) = 双指针 method O(1)
+time complexity order:  optimization SET method O(N) < 双指针-数组 method O(N2)
+space complexity order: optimization SET method O(1) = 双指针-数组 method O(1)
 5.edge case: 
     input:
         linklist length?  1 <= N <= 10000 
@@ -32,7 +32,7 @@ space complexity order: optimization SET method O(1) = 双指针 method O(1)
 '''
 
 '''
-idea： brute force - 双指针 method
+idea： brute force - 双指针-数组 method
 Method：
     traversal linklist  #tO(N) *N = tO(N2), sO(1)
         case 1: prev not in G, curr in G: numb_connect + 1  t(N) s(1)

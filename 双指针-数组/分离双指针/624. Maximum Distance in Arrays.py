@@ -6,7 +6,7 @@
 ''''''
 '''
 题目概述：求list[sub_list]，求sub_list里面的最大差值，差值不能出现在同一个sub_list里。
-题目考点：linear scan; 双指针;求差值，就是目前的极值与历史极值的差值，故scan sub_list更新结果和历史极值，
+题目考点：linear scan; 双指针-数组;求差值，就是目前的极值与历史极值的差值，故scan sub_list更新结果和历史极值，
 解决方案：
 方法及方法分析：
 time complexity order: 

@@ -5,7 +5,7 @@
 # @FileName: 80. Remove Duplicates from Sorted Array II.py
 ''''''
 '''
-题目概述：快慢指针
+题目概述：前向型指针 - 快慢指针
 题目考点：
 解决方案：
 方法及方法分析：

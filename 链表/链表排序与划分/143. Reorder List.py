@@ -18,7 +18,7 @@ space complexity order: reverse-TwoPointer Method O(1) < list store-rebuild meth
 '''
 '''
 reverse-TwoPointer Method
-idea: 双指针, one ->front half head, another -> last half head; 
+idea: 双指针-数组, one ->front half head, another -> last half head; 
     reverse last half, meanwhile front half head points to last half
 edge case：head is None/head.next is None; even or odd node numb
 method：
