@@ -1,36 +1,22 @@
+from heapq import *
+
+
 class Solution:
-    def minSubArrayLen(self, s: int, nums) -> int:
-        if not nums:  # corner case
-            return 0
+    def kthSmallest(self, matrix, k: int) -> int:
+        if not matrix or matrix == [[]]:  # corner case
+            return None
 
-        prefix = [nums[0]]
-        for elem in nums[1:]:
-            prefix.append(elem + prefix[-1])
+        heap = []
+        m = len(matrix)
+        n = len(matrix[0])
 
-        def binarySearch(target, arr):  # return target index in arr
-            l, r = 0, len(arr) - 1
-            while l < r:
-                mid = l + (r - l) // 2
-                if arr[mid] == target:
-                    return mid
-                elif arr[mid] < target:
-                    l = mid + 1
+        for i in range(m):
+            for j in range(n):
+                if len(heap) < k:
+                    heappush(heap, -matrix[i][j])
                 else:
-                    r = mid - 1
-            return l
-
-        res = float('inf')
-        n = len(prefix)
-        for i in range(n):
-            target = s - prefix[i]
-            if target > 0:
-                j = binarySearch(target, prefix[i + 1:])
-                res = min(res, j + i + 1 - i + 1)
-            else:
-                res = 1
-
-
-        return res if res != float('inf') else 0
+                    heappushpop(heap, -matrix[i][j])
+        return -heappop(heap)
 
 X = Solution()
-print(X.minSubArrayLen(4, [1,4,4]))
+X.kthSmallest([[1,5,9],[10,11,13],[12,13,15]], 8)

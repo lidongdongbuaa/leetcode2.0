@@ -38,22 +38,19 @@ A.Two Pointer Method
 '''
 class Solution:
     def numSubarrayProductLessThanK(self, nums: List[int], k: int) -> int:
-        if not nums:  # corner case
-            return 0
-
-        l = r = 0
-        res = 0
-        prod = 1
-        n = len(nums)
-
-        while r < n:  #
-            prod *= nums[r]
-            while l <= r and prod >= k:  # 如果乘积大于k，则移动左边界，直到小于k
-                prod = prod / nums[l]
-                l += 1
-            res += r - l + 1  # 当前右边界下，满足条件的数组数量
-            r += 1  # 右边界右移
-        return res
+        left = 0
+        product = 1
+        count = 0
+        for right in range(len(nums)):
+            # 右边界右移
+            product *= nums[right]
+            # 如果乘积>=k，左边界右移
+            while left <= right and product >= k:
+                product /= nums[left]
+                left += 1
+            # 当前右边界下，满足条件的数组
+            count += right - left + 1
+        return count
 
 '''
 k = 100

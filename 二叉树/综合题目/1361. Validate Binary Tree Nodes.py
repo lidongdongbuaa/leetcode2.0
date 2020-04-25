@@ -121,3 +121,34 @@ class Solution:
             return True
         else:
             return False
+
+
+class Solution:
+    def validateBinaryTreeNodes(self, n: int, leftChild: List[int], rightChild: List[int]) -> bool:
+        if n == 1:  # corner case
+            return True
+
+        edgeNum = 0
+        for elem in leftChild:
+            if elem != -1:
+                edgeNum += 1
+        for elem in rightChild:
+            if elem != -1:
+                edgeNum += 1
+
+        if n != edgeNum + 1:
+            return False
+
+        from collections import defaultdict
+        parent = defaultdict(list)
+        for ind, val in enumerate(leftChild):  # {child:parent}
+            if val != -1:
+                parent[val].append(ind)
+        for ind, val in enumerate(rightChild):  # {child:parent}
+            if val != -1:
+                parent[val].append(ind)
+
+        for val in parent.values():
+            if len(val) > 1:
+                return False
+        return True

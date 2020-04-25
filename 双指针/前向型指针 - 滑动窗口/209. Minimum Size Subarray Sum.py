@@ -94,18 +94,13 @@ class Solution:
         res = float('inf')
         total = 0
 
-        while r < n:
+        for r in range(n):
             total += nums[r]
             while total >= s:
                 res = min(res, r - l + 1)
                 total -= nums[l]
                 l += 1
-            r += 1
-
-        if res == float('inf'):
-            return 0
-        else:
-            return res
+        return res if res != float('inf') else 0
 
 '''
 binarySearch有问题，回来再修改
