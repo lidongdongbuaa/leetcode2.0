@@ -5,147 +5,64 @@
 # @FileName: 100. Same Tree.py
 ''''''
 '''
-题目分析
-1.要求：Given two binary trees, write a function to check if they are the same or not.
-    Two binary trees are considered the same if they are structurally identical and the nodes have the same value.
-2.理解：judge whether two binary trees are same
-3.类型：BT
-4.确认输入输出及边界条件：
-    input: repeated value? Y ordered? N node val range? None
-    output: True or False
-    corner case: None? N one only node? N
-4.方法及方法分析：brute force, compare directly - dfs, compare- bfs
-time complexity order: brute force O(N) = compare directly - dfs O(N) = compare- bfs O(N)
-space complexity order: brute force O(N) = compare directly - dfs O(N) = compare- bfs O(N)
+题目概述：给定两个tree root，判定这两个tree是否相同
+题目考点：多个tree的同时遍历
+解决方案：dfs；bfs
+方法及方法分析：
+time complexity order: O(n)
+space complexity order: dfs:O(logN); bfs:O(N)
+如何考
 '''
 '''
-思路：brute force
-方法：
-    traversal two trees, save them as lists tO(N) sO(N)
-    compare these two lists tO(N) sO(1)
-time complex: tO(N)
-space complex: sO(N)
-易错点：
+corner case
+    one is None
+    both are None
+
+思路：分治；一边遍历，一边比对
+
+A. pre-order scan
 '''
-
-class TreeNode:
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
-
-
 class Solution:
     def isSameTree(self, p: TreeNode, q: TreeNode) -> bool:
-        data = []
-        listP = self.transfer(p, data)  # transfer as list
-        data = []
-        listQ = self.transfer(q, data)
-
-        if listP == listQ:  # compare
+        if not p and not q:
             return True
-        else:
-            return False
-
-    def transfer(self, treeNode, data):  # transfer tree as list
-        if not treeNode:  # corner case
-            return data.append(None)
-
-        data.append(treeNode.val)
-        self.transfer(treeNode.left, data)
-        self.transfer(treeNode.right, data)
-        return data
-
-
-a = TreeNode(1)
-b = TreeNode(2)
-c = TreeNode(2)
-a.left = b
-# a.right = c
-
-a1 = TreeNode(1)
-b1 = TreeNode(2)
-c1 = TreeNode(2)
-# a.left = b
-a1.right = c1
-
-X = Solution()
-data = []
-print(X.isSameTree(a, a1))
-
-'''
-思路：compare node directly - dfs
-方法：
-    recurse the tree, compare every node
-time complex: tO(N)
-space complex: 
-        best case: O(log(N)), completely balanced tree 
-        worst case :O(N), completely unbalanced tree, to keep a recursion stack.
-易错点：
-'''
-'''
-Optimized code
-未变之处：多种情况下的条件判断没变
-优化之处：最后递归的合并
-'''
-class TreeNode:
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
-
-class Solution:
-    def isSameTree(self, p: TreeNode, q: TreeNode) -> bool:
-        if not p and not q:  # corner case
-            return True
-
         if not p or not q:
             return False
 
-        if p.val != q.val:
+        if p.val == q.val:
+            l = self.isSameTree(p.left, q.left)
+            r = self.isSameTree(p.right, q.right)
+            if l == True and r == True:
+                return True
+            else:
+                return False
+        else:
             return False
-
-        return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
-
 '''
-思路：compare node directly - bfs
-方法：
-    iterate the tree, compare every node
-time complex: tO(N)
-space complex: 
-        best case: O(log(N)), completely balanced tree 
-        worst case :O(N), completely unbalanced tree, to keep a deque
-易错点：1.初始的q和p的情况判断
-    2. 后面的情况判断
+B. level order scan
 '''
-'''
-Optimized code
-未变之处：判断条件
-优化之处：
-    1. 开头和while中的判断重复，故只保留了while的
-    2. 把p和q合并到一个list里，再放入deque
-'''
-from collections import deque
 class Solution:
     def isSameTree(self, p: TreeNode, q: TreeNode) -> bool:
-        if not p and not q:  # corner case
+        if not p and not q:
             return True
 
-        queue = deque()  # ues deque
-        queue.append([p, q])
+        from collections import deque
+        queue = deque([(p, q)])
 
         while queue:
-            n1, n2 = queue.popleft()
-            if not n1 and not n2:
-                continue
-            elif not n1 or not n2:
-                return False
-            elif n1 and n2:
-                if n1.val != n2.val:
-                    return False
+            p, q = queue.popleft()
+            if q and p:
+                if q.val == p.val:
+                    queue.append([q.left, p.left])
+                    queue.append([q.right, p.right])
                 else:
-                    queue.append([n1.left, n2.left])  # if..elif..elif already contain None case
-                    queue.append([n1.right, n2.right])
+                    return False
+            else:
+                if not q and not p:
+                    pass
+                else:
+                    return False
         return True
+
 
 

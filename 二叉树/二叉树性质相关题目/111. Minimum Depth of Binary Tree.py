@@ -5,166 +5,74 @@
 # @FileName: 111. Minimum Depth of Binary Tree.py
 ''''''
 '''
-题目分析
-1.要求：Given a binary tree, find its minimum depth.
-    The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.
-    
-    Note: A leaf is a node with no children.
-    
-    Example:
-    
-    Given binary tree [3,9,20,null,null,15,7],
-    
-        3
-       / \
-      9  20
-        /  \
-       15   7
-    return its minimum depth = 2.
-2.理解：find the minimal path length
-3.类型: binary tree
-4.确认输入输出及边界条件：
-    input: root with definition, no range node val, repeated? Y, order？ N
-    output：int
-    corner case：
-        None： 0
-        Only one: 1
-4.方法及方法分析：dfs, bfs
-time complexity order: dfs O(N) = bfs O(N)
-space complexity order: dfs O(logN) < bfs O(N)
+题目概述：求树的最小深度，以leaf为最底端
+题目考点：分治 dfs ； bfs
+解决方案：求所有的深度，返回最小的 dfs ； 直接求返回最小值；bfs返回第一个leaf的深度
+方法及方法分析：
+time complexity order: O(n)
+space complexity order: dfs:O(logN); bfs:O(N)
+如何考
 '''
 '''
-A.
-思路：brute force - All node and min one
-方法：
-    DFS to scan all node, get all path height
-    find min path
-time complex: O(N)
-space complex: O(logN)
-易错点
-'''
-class TreeNode:
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
+corner case: not root, return 0
 
-class Solution:
-    def minDepth(self, root: TreeNode) -> int:
-        if not root:
-            return 0
-
-        height = 0
-        res = []
-        self.depth(root, height, res)
-
-        return min(res)
-
-    def depth(self, root, height, res):  # root, res:List
-        if not root:
-            return
-
-        if not root.left and not root.right:
-            height += 1
-            res.append(height)
-
-        self.depth(root.left, height + 1, res)
-        self.depth(root.right, height + 1,  res)
-
-'''
-B.
-思路：DFS
-方法：
-    replace the res-list with res - int
-time complex: O(N)
-space complex: O(logN)
+核心思想： 求所有高度中的最小值
 易错点：
+    [1,2]的最小高度是2，不是1
 '''
 class Solution:
     def minDepth(self, root: TreeNode) -> int:
         if not root:
             return 0
 
-        height = 0
-        res = float('inf')
-        res = self.depth(root, height, res)
+        self.res = float('inf')
 
-        return res
+        def helper(root, h):  # calculate the height of root to leaf in h
+            if not root:
+                return
 
-    def depth(self, root, height, res):  # root, res:List
-        if not root:
-            return res
+            if not root.left and not root.right:  # 因为是判断点，故在前/中/后序时判断点都可以
+                self.res = min(h, self.res)
+            helper(root.left, h + 1)
+            helper(root.right, h + 1)
 
-        if not root.left and not root.right:
-            height += 1
-            res = min(height, res)
+        helper(root, 1)
+        return self.res
 
-
-        res = self.depth(root.left, height + 1, res)
-        res = self.depth(root.right, height + 1, res)
-        return res
 '''
-C.
-思路：DFS directly
-方法：
-    use DFS to scan the every node, and accumulate the min height
-        case 1: not root
-        case 2: root is leaf
-        case 3 : root has only one branch
-        case 4: case has two branch
-
+核心思路：分治
+易错点：因为把[1,2]视为最短长度为2，故需要加上对单边树的判断条件
 '''
 class Solution:
     def minDepth(self, root: TreeNode) -> int:
         if not root:
             return 0
 
-        if not root.left and not root.right:  # root is leaf
-            return 1
-
-        if not root.left or not root.right: # root is single branch node
-            return 1 + max(self.minDepth(root.left), self.minDepth(root.right))
-
-        if root.left and root.right:  # root is node having two branch
-            return 1 + min(self.minDepth(root.left), self.minDepth(root.right))
+        l = self.minDepth(root.left)
+        r = self.minDepth(root.right)
+        if l and r:
+            return min(l, r) + 1
+        else:  # 对单边树的判断条件
+            return max(l, r) + 1
 
 '''
-D.
-思路：bfs
-方法：
-    use deque to save [node, height]
-    when meet leaf, return height
-    push the node's l/r, add height
-time complex: O(N)
-space complex: O(N)
-易错点：在第一次到达leaf时，立马return height
+bfs
 '''
-from collections import deque
 class Solution:
     def minDepth(self, root: TreeNode) -> int:
-        if not root:  # corner case
+        if not root:
             return 0
 
-        queue = deque()
-        queue.append([root, 1])
+        from collections import deque
+        queue = deque([(root, 1)])
 
         while queue:
-            node, height = queue.popleft()
-            if not node.left and not node.right:
-                return height
-            if node.left:
-                queue.append([node.left, height + 1])
-            if node.right:
-                queue.append([node.right, height + 1])
-
-'''
-test code
-root = [1, 2, 3, None, None, 4]
-queue [1,1]
-node = 1, h = 1
-queue [2,2] [3, 2]
-node = 2, h = 2
-return 2
-'''
+            root, h = queue.popleft()
+            if not root.left and not root.right:
+                return h
+            if root.left:
+                queue.append([root.left, h + 1])
+            if root.right:
+                queue.append([root.right, h + 1])
 
 
