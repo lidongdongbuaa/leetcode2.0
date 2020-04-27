@@ -1,22 +1,42 @@
-from heapq import *
-
-
 class Solution:
-    def kthSmallest(self, matrix, k: int) -> int:
-        if not matrix or matrix == [[]]:  # corner case
-            return None
+    def minWindow(self, s: str, t: str) -> str:
+        if not s or not t:  # corner case
+            return ''
 
-        heap = []
-        m = len(matrix)
-        n = len(matrix[0])
+        res = s + '0'
+        n = len(s)
+        l = r = 0
 
-        for i in range(m):
-            for j in range(n):
-                if len(heap) < k:
-                    heappush(heap, -matrix[i][j])
+        dicT = {}
+        for elem in t:
+            if elem in dicT:
+                dicT[elem] += 1
+            else:
+                dicT[elem] = 1
+
+        def judge(subS):  # judege T in subS
+            dicS = {}
+            for elem in subS:
+                if elem in dicS:
+                    dicS[elem] += 1
                 else:
-                    heappushpop(heap, -matrix[i][j])
-        return -heappop(heap)
+                    dicS[elem] = 1
+            for key, val in dicT.items():
+                if key not in dicS:
+                    return False
+                else:
+                    if dicS[key] < val:
+                        return False
+            return True
+
+        for r in range(n):
+            subS = s[l:r + 1]
+            while judge(subS):
+                if len(subS) < len(res):
+                    res = subS
+                l += 1
+                subS = s[l:r + 1]
+        return res if res != (s + '0') else ''
 
 X = Solution()
-X.kthSmallest([[1,5,9],[10,11,13],[12,13,15]], 8)
+print(X.minWindow("ADOBECODEBANC", "ABC"))
