@@ -5,12 +5,12 @@
 # @FileName: 归并排序-迭代法.py
 ''''''
 '''
-题目概述：
+题目概述：归并排序-迭代法
 题目考点：
 解决方案：
 方法及方法分析：
-time complexity order: 
-space complexity order: 
+time complexity order: O(nlogn)
+space complexity order: O(n)
 如何考
 '''
 '''
@@ -58,9 +58,9 @@ class Sort:
                     j += 1
 
             if i < len(nums1):
-                res.extend(nums1[i:])
+                res += nums1[i:]
             if j < len(nums2):
-                res.extend(nums2[j:])
+                res +=nums2[j:]
             return res
 
 
@@ -68,10 +68,6 @@ class Sort:
             for i in range(0, length, 2 * interval):
                 nums[i:i + 2 * interval] = subSort(nums[i:i + interval], nums[i + interval: i + 2 * interval])
             interval *=2
-        return nums
-
-
-
         return nums
 
 X = Sort()

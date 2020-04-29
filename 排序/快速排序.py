@@ -5,12 +5,12 @@
 # @FileName: 快速排序.py
 ''''''
 '''
-题目概述：
+题目概述：快速排序
 题目考点：
 解决方案：
 方法及方法分析：
-time complexity order: 
-space complexity order: 
+time complexity order: O(nlogn)
+space complexity order: O(n)
 如何考
 '''
 class Sort:
@@ -19,17 +19,16 @@ class Sort:
             return nums
 
         pivot = nums[0]
-        i, j = 0, len(nums) - 1
-        while i < j:
-            if nums[j] < pivot:
-                nums[i] = nums[j]
-                i += 1
-            if nums[i] >= pivot:
-                nums[j] = nums[i]
-                j -= 1
-        nums[i] = pivot
-        nums[:i] = self.quickSort(nums[:i])
-        nums[i + 1:] = self.quickSort(nums[i + 1:])
+        l = []
+        r = []
+        for elem in nums[1:]:
+            if elem < pivot:
+                l.append(elem)
+            else:
+                r.append(elem)
+        left = self.quickSort(l)
+        right = self.quickSort(r)
+        nums = left + [pivot] + right
         return nums
 
 X = Sort()
