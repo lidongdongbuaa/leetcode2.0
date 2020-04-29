@@ -1,12 +1,6 @@
-class Graph:
-    def clone(self, nums):
-        self.dic = {}
+def change(nums):
+    nums[1] =2
 
-        def helper(nums):
-            self.dic[nums[1]] = 2
-
-        helper(nums)
-        print(self.dic[nums[1]])
-
-x = Graph()
-x.clone([1,2,3])
+nums = [0,0,0]
+change(nums[1:3])
+print(nums)

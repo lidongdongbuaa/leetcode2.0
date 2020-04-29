@@ -1,15 +1,20 @@
-from collections import Counter
-from heapq import nlargest
-class Solution:
-    def topKFrequent(self, nums, k: int):
-        from collections import defaultdict
-        dic = defaultdict(int)
-        for elem in nums:
-            dic[elem] += 1
+class Sort:
+    def quickSort(self, nums):  # return sorted nums
+        if not nums or len(nums) == 1:  # corner case
+            return nums
 
-        print(dic.values())
+        pivot = nums[0]
+        l = []
+        r = []
+        for elem in nums[1:]:
+            if elem < pivot:
+                l.append(elem)
+            else:
+                r.append(elem)
+        left = self.quickSort(l)
+        right = self.quickSort(r)
+        nums = left + [pivot] + right
+        return nums
 
-        return nlargest(k,dic,key = lambda x:dic[x])
-
-X = Solution()
-print(X.topKFrequent(nums = [1,1,1,2,2,3], k = 2))
+X = Sort()
+print(X.quickSort([9,8,7,6,5,4,3,2,1]))
