@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2020/3/13 16:03
 # @Author  : LI Dongdong
-# @FileName: 153. Find Minimum in Rotated Sorted Array.py
+# @FileName: 153. Find Minimum in Rotated Sorted 数组.py
 ''''''
 '''
 题目目的概述。 找rotated sorted list里的最小值

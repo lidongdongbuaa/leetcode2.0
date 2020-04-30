@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2020/4/17 11:54
 # @Author  : LI Dongdong
-# @FileName: 26. Remove Duplicates from Sorted Array.py
+# @FileName: 26. Remove Duplicates from Sorted 数组.py
 ''''''
 '''
 题目概述：原位删除重复的数组，输出不重复value的数量

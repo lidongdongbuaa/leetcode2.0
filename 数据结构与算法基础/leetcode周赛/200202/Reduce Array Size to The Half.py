@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2020/2/2 12:39
 # @Author  : LI Dongdong
-# @FileName: Reduce Array Size to The Half.py
+# @FileName: Reduce 数组 Size to The Half.py
 ''''''
 '''
 题目分析

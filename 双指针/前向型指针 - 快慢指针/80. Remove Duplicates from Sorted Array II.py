@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2020/4/21 9:19
 # @Author  : LI Dongdong
-# @FileName: 80. Remove Duplicates from Sorted Array II.py
+# @FileName: 80. Remove Duplicates from Sorted 数组 II.py
 ''''''
 '''
 题目概述：前向型指针 - 快慢指针

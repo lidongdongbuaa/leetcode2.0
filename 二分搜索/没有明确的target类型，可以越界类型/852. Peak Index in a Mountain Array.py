@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2020/3/14 16:25
 # @Author  : LI Dongdong
-# @FileName: 852. Peak Index in a Mountain Array.py
+# @FileName: 852. Peak Index in a Mountain 数组.py
 ''''''
 '''
 题目目的概述: 一列数，前半段上升，后半段下降，找出峰值点

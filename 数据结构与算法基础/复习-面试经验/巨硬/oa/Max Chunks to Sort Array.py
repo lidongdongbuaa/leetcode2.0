@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2020/3/25 20:20
 # @Author  : LI Dongdong
-# @FileName: Max Chunks to Sort Array.py
+# @FileName: Max Chunks to Sort 数组.py
 ''''''
 '''
 题目概述：给一个不重复的arr，需要把其排序，现在可以采用分段的方式进行sort，即每一段sort，再拼接再一起，最多可以分为几段

@@ -2,10 +2,10 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2019/12/22 20:56
 # @Author  : LI Dongdong
-# @FileName: 905. Sort Array By Parity.py
+# @FileName: 905. Sort 数组 By Parity.py
 ''''''
 '''
-905. Sort Array By Parity
+905. Sort 数组 By Parity
 1.要求：Given an array A of non-negative integers, return an array consisting of all the even elements of A, followed by all the odd elements of A.
     You may return any answer array that satisfies this condition.
     Input: [3,1,2,4] Output: [2,4,3,1]

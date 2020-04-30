@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2020/3/17 19:44
 # @Author  : LI Dongdong
-# @FileName: 447 Search in a Big Sorted Array （LintCode）.py
+# @FileName: 447 Search in a Big Sorted 数组 （LintCode）.py
 ''''''
 '''
     Description
