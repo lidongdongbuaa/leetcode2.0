@@ -5,8 +5,8 @@
 # @FileName: 55. Jump Game.py
 ''''''
 '''
-题目概述：
-题目考点：
+题目概述：给定一个list，元素是可以跳到步数，问是否可以跳到list的最末尾
+题目考点：Greedy
 解决方案：
 方法及方法分析：
 time complexity order: 
@@ -46,51 +46,32 @@ class Solution:
         return True
 
 '''
-方法2
-'''
-class Solution:
-    def canJump(self, nums: List[int]) -> bool:
-        index = []
-        for i in range(len(nums)):
-            index.append(i + nums[i])
-
-        jump = 0
-        maxindex = index[0]
-        while jump < len(index) and jump <= maxindex:
-            if maxindex < index[jump]:
-                maxindex = index[jump]
-            else:
-                jump = jump + 1
-        if jump == len(index):
-            return True
-        else:
-            return False
-
-
-'''
-做的不对
 B. Greedy
 核心
     farIndex就是边界点的集合
     初始化范围为[0,farIndex[0]]，在此范围内，向右移动指针i，根据farIndex[i]的值，更新右边界，直到指针达到范围右边界或者nums的边界
 Time complexity: O(n)
 Space:O(n)
+易错点：
+    1. while中i的范围：什么时候跳出
+        a. i可以到达end点，故是超出end点
+        b. i可以到达右端点，故是超出右端点
+    2. i的判断条件
+        假设可以到达右端点，i = n 
 '''
-
-
 class Solution:
-    def canJump(self, nums: List[int]) -> bool:
+    def canJump(self, nums) -> bool:
         farIndex = [ind + val for ind, val in enumerate(nums)]
 
         end = farIndex[0]
         n = len(farIndex)
         i = 0
-        while i <= end and i < n - 1:
+        while i <= end and i <= n - 1:
             if farIndex[i] > end:
                 end = farIndex[i]
             else:
                 i += 1
-        if i == n - 1:
+        if i == n:
             return True
         else:
             return False
