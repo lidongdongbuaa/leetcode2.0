@@ -28,61 +28,52 @@ A. backtrack - find path and return path numbers
     Time complexity: O(2^(m * n))
     Space: O(m + n) recursion stack used
 
+input:matrix; length range is from 0 to inf; vlaue is 0 or 1;
+output: int, the number of path
+corner case:
+    matrix is None; return 0
+    only one cell, matrix[0][0] == 1, return 0 else 1
 
-
-B. DP - dp(i, j) is the number of path when reach to i,j cell
+A.DP - dp(i, j) is the ways number when reaching to matrix[i][j]
     Method:
-        1. corner case
-        2. function: 
-            if gird[i][j] == 0
-                dp(i,j) = max(dp(i -1, j), dp(i, j - 1), dp(i - 1, j) + dp(i, j - 1))
-            else:
-                dp(i,j) = float('-inf')
-        3. base case,
-            i or j < 0
-            i = j = 0, grid[i][j] = 1/0
+        1. dp(i, j) = dp(i - 1, j) + dp(i, j - 1)
+        2. base case
+            if i == 0 and matrix[i][0] = 1, return 0
+                matrix[i][0]= 0, return 1
+            if j == 0 and matrix[0][j] = 1, return 0
+                matrix[0][j] = 0, return 1
+            if matrix[i][j] = 1, return 0
+        3. return dp(len(matrix) -1 , len(matrix[0] - 1))
     Time complexity: O(m * n)
-    Space: O(m * n)
+    Space: O(m + n)
 
-困难点：矩阵时的base case 
- '''
-
-
+'''
 class Solution:
     def uniquePathsWithObstacles(self, obstacleGrid: List[List[int]]) -> int:
-        if not obstacleGrid or obstacleGrid == [[]]:
+        grid = obstacleGrid
+        if not grid:  # corner case
             return 0
 
-        grid = obstacleGrid
-
-        m, n = len(grid), len(grid[0])
-
         memo = {}
-
-        def dp(i, j):
+        m = len(grid)
+        n = len(grid[0])
+        def dp(i, j):  # return number when reaching to i, j cell
             if (i, j) in memo:
                 return memo[(i, j)]
-
             if i < 0 or j < 0:
-                return float('-inf')
+                return 0
             if i == 0 and j == 0 and grid[i][j] == 1:
-                return float('-inf')
+                return 0
             if i == 0 and j == 0 and grid[i][j] == 0:
                 return 1
-
             if grid[i][j] == 1:
-                res = float('-inf')
-            else:
-                res = max(dp(i, j - 1), dp(i - 1, j), dp(i - 1, j) + dp(i, j - 1))
+                return 0
 
+            res = dp(i - 1, j) + dp(i, j - 1)
             memo[(i, j)] = res
             return res
 
-        res = dp(m - 1, n - 1)
-        if res == float('-inf'):
-            return 0
-        else:
-            return res
+        return dp(m - 1, n - 1)
 '''
 DP Table
 '''
