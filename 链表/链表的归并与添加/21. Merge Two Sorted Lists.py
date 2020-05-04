@@ -87,8 +87,8 @@ c. 递归
 思路
     1. 返回的是新链表的头，为新变量，除此之外，不需要其他的新变量，故不需要helper()函数
     2. End：l1 或 l2 为空，返回l2 或 l1的头
-    3. Trigger：
-         l1 value < l2 value时，l1.next = 其余部分的头
+    3. Trigger：32
+         if l1 value < l2 value, do recursion on the left nodes expect l1, and connect l1 with the left nodes
          再返回此时的头l1
          else 同样
     Time: O(m + n)
