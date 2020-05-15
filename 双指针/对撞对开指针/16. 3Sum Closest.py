@@ -14,75 +14,33 @@ space complexity order: two pointer O(1)
 如何考
 '''
 '''
-input: nums, list; length range is from 3 to inf; have repeated value; no order
+input: nums, list; length range is from 3 to inf; value range is -inf to inf; have repeated value; no order
 output: int
-corner case:
-    if length of nums is 3, return sum of nums
+corner case: if len(nums) == 3, return sum(nums)
 
-A. brute force + binary search
-    method:
-        1. list all possible combination sum of the three element in nums, save in list; tO(n^3)
-        2. sort the list; tO(n^3log(n^3))
-        3. use binary search to find the closest one tO(log(n^3))
-    Time complexity: tO(n^3log(n^3)), n is length of nums
-    Space: O(n^3)
-
-B. two pointer search
-    Method:
-        1. sort the elem
-        1. scan elem nums[i] in nums, set res = inf
-            calculate the reduced value (target - nums[i]) as X
-            use two pointer from left and right to center
-                if left + right == X
-                    return target
-                elif left + right < x
-                    renew res = min(abs(), res)
-                    move left + 1
-                else, renew res, move right - 1
-        2. return res
+sort + two pointer
+Steps:
+    1. sort the nums
+    2. traverse i from 0 to n - 3
+        left = target - nums[i]
+        two pointer to find j and k in [i + 1, n]
+            calculate sum of k and j sum, and renew the res
+    3. return res
+    
     Time complexity: O(n^2)
-    Space: O(1)
-
-易错点：别忘记sort
+    Spac: O(n)
 '''
 class Solution:
     def threeSumClosest(self, nums: List[int], target: int) -> int:
-        if len(nums) == 3:  # corner case
+        n = len(nums)
+        if n == 3:
             return sum(nums)
 
         nums.sort()
-
+        i = 0
         res = float('inf')
-        for i in range(len(nums) - 2):
-            j, k = i + 1, len(nums) - 1
-            X = target - nums[i]
-            while j < k:
-                if nums[j] + nums[k] < X:
-                    if abs(nums[i] + nums[j] + nums[k] - target) < abs(res - target):
-                        res = nums[i] + nums[j] + nums[k]
-                    j += 1
-                elif nums[j] + nums[k] == X:
-                    return target
-                else:
-                    if abs(nums[i] + nums[j] + nums[k] - target) < abs(res - target):
-                        res = nums[i] + nums[j] + nums[k]
-                    k -= 1
-        return res
-
-
-'''
-优化代码
-'''
-class Solution:
-    def threeSumClosest(self, nums: List[int], target: int) -> int:
-        if len(nums) == 3:  # corner case
-            return sum(nums)
-
-        nums.sort()
-
-        res = float('inf')
-        for i in range(len(nums) - 2):
-            j, k = i + 1, len(nums) - 1
+        while i < n - 2:
+            j, k = i + 1, n - 1
             while j < k:
                 total = nums[i] + nums[j] + nums[k]
                 if abs(total - target) < abs(res - target):
@@ -90,7 +48,8 @@ class Solution:
                 if total < target:
                     j += 1
                 elif total == target:
-                    return target
+                    return total
                 else:
                     k -= 1
+            i += 1
         return res

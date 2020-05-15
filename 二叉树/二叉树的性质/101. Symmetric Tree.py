@@ -5,8 +5,8 @@
 # @FileName: 101. Symmetric Tree.py
 ''''''
 '''
-题目概述：给定两个tree root，判定这两个tree是否相同
-题目考点：多个tree的同时遍历
+题目概述：
+题目考点
 解决方案：dfs；bfs
 方法及方法分析：
 time complexity order: O(n)

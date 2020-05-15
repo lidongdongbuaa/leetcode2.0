@@ -68,3 +68,36 @@ class Solution:
 
         helper(node)
         return self.visited[node]
+
+
+'''
+A.DFS method
+Steps:
+    1. if node in dic, return node[dic]
+    2. create node copy, save it in dict
+    3. do 1, 2 on the node's neighbors
+
+    Time complexity: O(n)
+    Space: O(n)
+'''
+
+
+class Solution:
+    def cloneGraph(self, node: 'Node') -> 'Node':
+        if not node:
+            return None
+
+        dic = {}
+
+        def dfs(node):  # return copy node
+            if node in dic:
+                return dic[node]
+
+            dic[node] = Node(node.val)
+
+            for neigh in node.neighbors:
+                dic[node].neighbors.append(dfs(neigh))
+
+            return dic[node]
+
+        return dfs(node)
