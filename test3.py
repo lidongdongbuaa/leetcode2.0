@@ -1,5 +1,4 @@
-a = True
-b = False
-c = False
-if a + b + c > 1:
-    print('$$$$$$$$$$$')
+l = ["leetcode","google","facebook"]
+r = ["facebook","google"]
+# print(setL - setR)
+print(set([1, 2, 3]) - set([2, 3, 4]))
