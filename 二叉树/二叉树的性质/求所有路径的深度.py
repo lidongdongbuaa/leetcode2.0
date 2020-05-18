@@ -6,7 +6,7 @@
 ''''''
 '''
 题目分析
-1.要求：
+1.要求：求所有的路径深度
 2.理解：
 3.类型：
 4.确认输入输出及边界条件：
@@ -15,70 +15,100 @@ time complexity order:
 space complexity order: 
 '''
 '''
-思路：DFS
-方法：
-    scan all nodes by DFS, renew height, save height of leaf in res
-        break case: root is None, root is leaf
-        trigger: other case
-time complex: 
-space complex: 
-易错点：
+
+
+ input: tree root; root number range is from 0 to inf
+ output: int
+ corner case
+    if root is None, return 0
+    if only root, return 1
 '''
-class TreeNode:
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
 
-class Solution:
-    def allDepth(self, root: TreeNode) -> int:
+'''
+dfs to scan every node and record
+Steps:
+    1. create res = []
+    2. create helper(root, depth)
+        visit current root, if root is leaf, append depth to res
+        visit left child tree
+        visit right child tree
+    3. return res
+
+Time complexity: O(N)
+Space: O(logN)
+'''
+class Tree:
+    def findDepth(self, root):  # return all depth in list
         if not root:
-            return 0
-
-        height = 0
-        res = []
-        self.depth(root, height, res)
-        return res
-
-    def depth(self, root, height, res):  # root, res:List
-        if not root:
-            return
-
+            return [0]
         if not root.left and not root.right:
-            height += 1
-            res.append(height)
-            return
-
-        self.depth(root.left, height + 1, res)
-        self.depth(root.right, height + 1,  res)
-
-
-'''
-思路：BFS
-方法：
-    scan every node by BFS
-        save [node, height] in queue
-        when meeting leaf, save height in res 
-time complex: 
-space complex: 
-易错点：
-'''
-from collections import deque
-class Solution:
-    def allDepth(self, root: TreeNode) -> int:
-        if not root:  # corner case
-            return 0
-
-        queue = deque()
-        queue.append([root, 1])
+            return [1]
 
         res = []
-        while queue:
-            node, height = queue.popleft()
-            if not node.left and not node.right:  # root is leaf
-                res.append(height)
-            if node.left:  # 必须有，否则node.left为None时，下个循环中，node为None，判断Node.left报错
-                queue.append([node.left, height + 1])
-            if node.right:
-                queue.append([node.right, height + 1])
+
+        def helper(root, depth):  # scan every nodes
+            if not root:
+                return
+
+            if not root.left and not root.right:
+                res.append(depth)
+            helper(root.left, depth + 1)
+            helper(root.right, depth + 1)
+            return
+
+        helper(root, 1)
         return res
+
+
+'''
+test case [1, 2, 3, 4]
+
+corner case, pass
+
+res = [ 3, 2 ]
+root = 1, 2, 4, 3
+depth = 1, 2, 3, 2
+
+return [3, 2]
+'''
+'''
+bfs to scan every node and record [node, depth]
+Steps:
+    1. create a queue and save[node, depth]
+    2. use bfs method to scan every node
+        if node is leaf, save depth in res
+        push node child and its depth into queue
+    3. return res
+
+Time complexity: O(N)
+Space: O(N), average case, in best case, O(1)
+'''
+class Tree:
+    def findDepth(self, root):  # return all depth in list
+        if not root:
+            return [0]
+        if not root.left and not root.right:
+            return [1]
+
+        res = []
+
+        from collections import deque
+        queue = deque([(root, 1)])
+        while queue:
+            root, depth = queue.popleft()
+            if not root.left and not root.right:
+                res.append(depth)
+            if root.left:
+                queue.append([root.left, depth + 1])
+            if root.right:
+                queue.append([root.right, depth + 1])
+        return res
+'''
+test case [1, 2, 3, 4]
+res = [ 2,3]
+root = 1
+queue = [ ( (4, 3)   ]
+root = 1, 2, 3,4
+depth = 1, 2, 2, 3
+'''
+

@@ -85,70 +85,61 @@ space complex: average O(N) best O(1)
 
 '''
 
-class TreeNode:
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
+'''
+input: tree node, node number range is from 0 to inf; 
+output: int, the max width
+corner case
+    if root is None,return 0
+    if only root, return 1
 
-from collections import deque
+BFS + index tag
+Steps:
+    1. create a queue with (node, node index)
+    2. calculate the gap between the first node's index with last node's index, renew the res with the gap
+    3. use for loop to popleft the all node, if it have child node, push them into the queue
+    4. return res
+Time complexity: O(n), n is number of nodes
+Space: O(n), average case; in worse case, O(1)
+
+'''
+
+
 class Solution:
     def widthOfBinaryTree(self, root: TreeNode) -> int:
         if not root:  # corner case
             return 0
-        if not root.left and not root.right:  # corner case
+        if not root.left and not root.right:
             return 1
 
-        queue = deque()
-        queue.append([root, 0])  # index from 0 to i in every level
-        maxWidth = 0
+        from collections import deque
+        queue = deque([(root, 1)])
 
+        res = 0
         while queue:
-            length = len(queue)  # use length to control the scan range, not scan lower level node
-            l = queue[0][1]
-            r = queue[-1][1]
-            maxWidth = max(maxWidth, r - l + 1)
-            for i in range(length):  # length 是实际宽度
+            res = max(res, queue[-1][1] - queue[0][1] + 1)
+            n = len(queue)
+            for _ in range(n):
                 node, index = queue.popleft()
                 if node.left:
                     queue.append([node.left, 2 * index])
                 if node.right:
                     queue.append([node.right, 2 * index + 1])
-        return maxWidth
+        return res
+
 
 '''
-test code
-None -> 0
-only one ->1
-[1, 3, None, 5, 3]
-queue [1, 0] w = 0
-leng = 1
-node = 1 ind = 0
-i = 0
-f = 0
-i = 0
-end = 0
-w = 1
-queue [3, 0]
-length = 1
-    i = 0
-    node = 3
-    ind = 0
-    first = 0
-    end = 0
-    wid = 1
-    queue [5, 0] [3, 1]
-leng = 2
-    i = 0
-        node = 5
-        index = 0
-        first = 0
-    i = 1
-        node = 3
-        index = 1
-        end = 1
-        wid = max(1, 2) = 2
-return 2  
+           1
+         /   \
+        3     2
+       / \     \  
+      5   3     9 
+
+queue =  (5, 4), (3, 5), (9, 7)
+res = 2
+n = 2
+node = 2
+index =3
+
 '''
 
 '''

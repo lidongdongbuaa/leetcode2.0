@@ -1,29 +1,50 @@
+'''
+求所有的路径深度
 
-def peopleIndexes(favoriteCompanies):
-    c = favoriteCompanies
-    if len(c) == 1:
-        return [0]
+ input: tree root; root number range is from 0 to inf
+ output: int
+ corner case
+    if root is None, return 0
+    if only root, return 1
+'''
 
-    dic = {tuple(val): index for index, val in enumerate(c)}
-    res = [0] * len(c)
-    c.sort(key=lambda x: len(x))
-    sortC = c
-    n = len(sortC)
+'''
+bfs to scan every node and record [node, depth]
+Steps:
+    1. create a queue and save[node, depth]
+    2. use bfs method to scan every node
+        if node is leaf, save depth in res
+        push node child and its depth into queue
+    3. return res
 
-    def check(l, r):
-        for elem in l:
-            if elem not in r:
-                return False
-        return True
+Time complexity: O(N)
+Space: O(N), average case, in best case, O(1)
+'''
+class Tree:
+    def findDepth(self, root):  # return all depth in list
+        if not root:
+            return [0]
+        if not root.left and not root.right:
+            return [1]
 
-    for i in range(n - 1):
-        lenL = len(sortC[i])
-        l  = sortC[i]
-        for j in range(i + 1, n):
-            r = sortC[j]
-            if lenL < len(r) and check(l, r):
-                res[dic[tuple(l)]] = 1
+        res = []
 
-    return [i for i, val in enumerate(res) if val == 0]
-
-print(peopleIndexes([["leetcode","google","facebook"],["google","microsoft"],["google","facebook"],["google"],["amazon"]]))
+        from collections import deque
+        queue = deque([(root, 1)])
+        while queue:
+            root, depth = queue.popleft()
+            if not root.left and not root.right:
+                res.append(depth)
+            if root.left:
+                queue.append([root.left, depth + 1])
+            if root.right:
+                queue.append([root.right, depth + 1])
+        return res
+'''
+test case [1, 2, 3, 4]
+res = [ 2,3]
+root = 1
+queue = [ ( (4, 3)   ]
+root = 1, 2, 3,4
+depth = 1, 2, 2, 3
+'''
