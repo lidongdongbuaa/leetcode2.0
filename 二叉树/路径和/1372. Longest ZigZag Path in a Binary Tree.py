@@ -28,18 +28,6 @@ corner case
     root is only one node, return 0
 
 dfs - return the left and right longest path
-Steps:
-    1. self.res = 0
-    2. do the helper(), return the left and right longest path
-        1. if node is leaf, return 0, 0
-        leftL, leftR, rightL, rightR = 0, 0, 0, 0
-        2. if node has left, 
-            leftL, leftR = helper on left node
-            IF node has right
-            else, rightL, rightR = helper on right node
-            cur = max(leftR, rightL) + 1
-            res = max(res, cur)
-        3. return res
 '''
 class Solution:
     def longestZigZag(self, root: TreeNode) -> int:
