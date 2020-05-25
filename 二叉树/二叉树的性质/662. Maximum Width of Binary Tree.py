@@ -6,49 +6,7 @@
 ''''''
 '''
 题目分析
-1.要求：Given a binary tree, write a function to get the maximum width of the given tree. The width of a tree is the maximum width among all levels. The binary tree has the same structure as a full binary tree, but some nodes are null.
-    The width of one level is defined as the length between the end-nodes (the leftmost and right most non-null nodes in the level, where the null nodes between the end-nodes are also counted into the length calculation.
-    Example 1:
-        Input: 
-               1
-             /   \
-            3     2
-           / \     \  
-          5   3     9 
-        Output: 4
-        Explanation: The maximum width existing in the third level with the length 4 (5,3,null,9).
-    Example 2:
-        Input: 
-             1
-             /  
-            3    
-           / \       
-          5   3     
-        Output: 2
-        Explanation: The maximum width existing in the third level with the length 2 (5,3).
-    Example 3:
-        Input: 
-    
-              1
-             / \
-            3   2 
-           /        
-          5      
-        Output: 2
-        Explanation: The maximum width existing in the second level with the length 2 (3,2).
-    Example 4:
-        Input: 
-    
-              1
-             / \
-            3   2
-           /     \  
-          5       9 
-         /         \
-        6           7
-        Output: 8
-        Explanation:The maximum width existing in the fourth level with the length 8 (6,null,null,null,null,null,null,7).
-        Note: Answer will in the range of 32-bit signed integer.
+1.要求：
 2.理解：find the max width of level of tree, None between the node was counted into.
 3.类型：binary tree basic
 4.确认输入输出及边界条件：
@@ -61,29 +19,7 @@
 time complexity order: bfs O(N) = dfs O(N)
 space complexity order: average dfs O(logN) < bfs O(N)
 '''
-'''
-思路：bfs + count numb
-方法：
-    1.create a deque to save [node, index of node]
-    2 scan all node by bfs
-        for one level node, scan them, find the max dif of index
-time complex: O(N)
-space complex: average O(N) best O(1)
-易错点：
-    计算核心：计算同一层内的index差值
-    控制在同一层内
-        queue内会保存所有同层node和下层node，
-        故在queue一开始就测量其长度length，即此时queue内只有同层。之后用for循环消耗掉此同层的node，不污染下层node
-        解决方案：while内部对queue的value进行循环遍历, 使用len(length)控制遍历的次数，不会遍历到下一层的node
-        length是每一层的实际长度
-        index差是每一层的声明长度
-    计算index差值
-        使用[root,index]去保存每个节点的index，上层和下层节点的关系是 n -> n*2, n*2 + 1
-        两种编码方式
-            每层从0到1-> [root, 0]
-            整体的从0到i -> [root,1]
 
-'''
 
 '''
 input: tree node, node number range is from 0 to inf; 
@@ -143,44 +79,65 @@ index =3
 '''
 
 '''
-思路：dfs
-方法：
-    dfs to scan every node, record level, index of node
-        meanwhile use dic to store the first node's level val and index of every level
-        compare the index with other same level node's index, to get the max width
+dfs - 遍历点复杂形式
+Steps:
+    1. self.res = 0, use dict to record every level's left first index
+    2. create a helper function dfs(node, level, index)
+        visit current node
+            if current level in dict, renew res by calculate gap between current index and dict[level], else, push current level and index into dict
+        visite left children tree
+        visite right children tree
+    3. return res
 
-time complex: O(N)
-space complex: O(logN)
-易错点：使用dic的key指向每层，用value存储该层的第一个index
+    Time complexity: O(n)
+    Space: O(logN) average case, in worst case, O(n)
+易错点： 
+index - dic[level] + 1， 加1别忘了
+
 '''
-
-class TreeNode:
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
-
 class Solution:
     def widthOfBinaryTree(self, root: TreeNode) -> int:
         if not root:  # corner case
             return 0
+        if not root.left and not root.right:
+            return 1
 
-        level = 0
-        index = 0
-        dic ={}  # store level and index
-        self.res = 1
+        self.res = 0
+        dic = dict()
 
-        self.dfs(root, level, index, dic)
-        return self.res
+        def dfs(root, level, index):
+            if not root:
+                return
 
-    def dfs(self, root, level, index, dic):
-        if not root:  # corner case
+            if level in dic:
+                self.res = max(self.res, index - dic[level] + 1)
+            else:
+                dic[level] = index
+                self.res = max(1, self.res)
+            dfs(root.left, level + 1, index * 2)
+            dfs(root.right, level + 1, index * 2 + 1)
             return
 
-        if level not in dic:  # this level's first node show up firstly in dic, so store its level and index
-            dic[level] = index
-        else:
-            self.res = max(self.res, index - dic[level]+ 1)  # not first show, calculate the distance of index of same level
-        self.dfs(root.left, level + 1, index * 2, dic)
-        self.dfs(root.right, level + 1, index * 2 + 1, dic)
+        dfs(root, 1, 1)
+        return self.res
+
+'''
+test case
+       1
+     /   \
+    3     2
+   / \     \  
+  5   3     9 
+  
+  res = 0
+  dic = 2:2, 3:4, 
+  root = 3, 5
+  level = 2, 3, 3, 2,3
+  index = 2, 4, 5, 3,7
+  res = 0/1 = 1 / 2 = 2 / 2 = 2/7-4 + 1 = 2 / 4 = 4
+  return 4
+  
+  
+
+'''
 

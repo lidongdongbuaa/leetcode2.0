@@ -1,57 +1,55 @@
 '''
-求所有的路径深度
+求每层的宽度index宽度
 
- input: tree root; root number range is from 0 to inf
- output: int
- corner case
-    if root is None, return 0
-    if only root, return 1
+input: tree root; tree root number is from 0 to inf
+output: list[int]
+corner case
+    root is None, return []
+    root is only one, return [1]
 '''
 
 '''
-dfs to scan every node and record
+dfs + dic save index tag
 Steps:
-    1. create res = []
-    2. create helper(root, depth)
-        visit current root, if root is leaf, append depth to res
-        visit left child tree
-        visit right child tree
-    3. return res
-
-Time complexity: O(N)
-Space: O(logN)
+    1. use a dict to save level and left first node's index of this level, res is a dict[level: width]
+    2. use a helper (node, level, index) by dfs to scan every  node
+        if level not in res, save level and index in dict
+        else, renew the res
+        visit left child node
+        visit right child node
+    3. transfer res to list
+    4. return res
+Time complexity: O(N), N is number of nodes
+Space: O(logN) in average case; O(N) is worst case for skewed tree
 '''
 class Tree:
-    def findDepth(self, root):  # return all depth in list
-        if not root:
-            return [0]
+    def findAllWidth(self, root):  # return list containing all width
+        if not root:  # corner case
+            return  []
         if not root.left and not root.right:
             return [1]
 
-        res = []
-
-        def helper(root, depth):  # scan every nodes
+        dic = dict()
+        res = dict()
+        def dfs(root, level, index):
             if not root:
                 return
 
-            if not root.left and not root.right:
-                res.append(depth)
-            helper(root.left, depth + 1)
-            helper(root.right, depth + 1)
+            if level not in dic:
+                dic[level] = index
+            else:
+                res[level] = index - dic[level] + 1
+            dfs(root.left, level + 1, index * 2)
+            dfs(root.right, level + 1, index * 2 + 1)
             return
 
-        helper(root, 1)
+        dfs(root, 1, 1)
+        res = [v for k, v in res]
         return res
-
 
 '''
 test case [1, 2, 3, 4]
-
-corner case, pass
-
-res = [ 3, 2 ]
-root = 1, 2, 4, 3
-depth = 1, 2, 3, 2
-
-return [3, 2
+  1
+ 2 3
+4
 '''
