@@ -6,8 +6,9 @@
 ''''''
 '''
 题目概述：在一列含有重复元素的list里，找到和等于0的不重复的子集
-题目考点：two pointer; set去重；
-解决方案：
+题目考点：two pointer; set去重
+优化核心：判断nums[i]是否重复，若重复，及时跳过；判断nums[i]是否 < 0
+易错点：返回值是list
 方法及方法分析：
 time complexity order: 
 space complexity order: 
@@ -23,7 +24,10 @@ output:
 corner case
     if len(nums)== 3 and sum(nums) == 0, return [nums]
     if sum(nums) != 0, return []
+'''
 
+
+'''
 sort + two pointer
 Steps:
     1. sort the nums
@@ -33,50 +37,54 @@ Steps:
     3. return res
     Time complexity: O(nlogn + n^2) = O(n^2)
     Space: O(n)
-易错点：
-    1. nums[i] <= 0
-    2. i += 1
-    3，注意返回值的格式
-    
+易错点：  
 '''
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
-        if len(nums) == 3 and sum(nums) == 0:
-            return [nums]
-        if len(nums) == 3 and sum(nums) != 0:
+        if not nums or len(nums) <= 2:
             return []
 
-        n = len(nums)
         nums.sort()
-        i = 0
         res = set()
-        while i < n and nums[i] <= 0:
-            target = -nums[i]
+        n = len(nums)
+        for i in range(n - 2):
+            if nums[i] > 0: # 优化的关键
+                break
+            if i >= 1 and nums[i] == nums[i - 1]:  # 优化的关键
+                continue
             j, k = i + 1, n - 1
             while j < k:
-                total = nums[j] + nums[k]
-                if total < target:
+                total = nums[i] + nums[j] + nums[k]
+                if total < 0:
                     j += 1
-                elif total == target:
+                elif total == 0:
                     res.add((nums[i], nums[j], nums[k]))
                     j += 1
                     k -= 1
                 else:
                     k -= 1
-            i += 1
+        return [list(elem) for elem in res]
 
-        return [list(item) for item in res]
 '''
-Given array nums = [-1, 0, 1, 2, -1, -4]
-
-n = len(nums) = 6 > 3
-
-nums.sort = [-4, -1, -1, 0, 1, 2]
-[-4, -1, -1, 0, 1, 2] 
-             i
-             j
-                   k
-target = 1
-total = 1
-res = [[-1, -1, 2], [-1, 0, 1]]
+sort + two sum dic 法
 '''
+class Solution:
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
+        if not nums or len(nums) <= 2:
+            return []
+
+        nums.sort()
+        res = set()
+        for i, val in enumerate(nums[:-2]):
+            if val > 0: # 优化的关键
+                break
+            if i >= 1 and val == nums[i - 1]:  # 优化的关键
+                continue
+            t = - val
+            d = set()
+            for elem in nums[i + 1:]:
+                if (t - elem) in d:
+                    res.add((val, elem, t - elem))
+                else:
+                    d.add(elem)
+        return [list(elem) for elem in res]
