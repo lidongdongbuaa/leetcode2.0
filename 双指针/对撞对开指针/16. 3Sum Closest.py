@@ -7,49 +7,58 @@
 '''
 题目概述：一列数中，求三数之和，其与target最相近
 题目考点：two pointer法 对撞对开指针
-解决方案：two pointer法
-方法及方法分析：brute force + binary search; two pointer
-time complexity order: two pointer O(n^2)
-space complexity order: two pointer O(1)
+优化核心：排除重复的i；sum = target时，及时返回
+易错点：
+方法及方法分析：
+time complexity order: O(n^2)
+space complexity order: O(1)
 如何考
 '''
 '''
-input: nums, list; length range is from 3 to inf; value range is -inf to inf; have repeated value; no order
+input: nums, list, length range is from 3 to 10^3, value range is inf; have repeated value; no order
+    target: range value is inf
 output: int
-corner case: if len(nums) == 3, return sum(nums)
+corner case
+    nums length is 3, return sum of nums
 
-sort + two pointer
-Steps:
-    1. sort the nums
-    2. traverse i from 0 to n - 3
-        left = target - nums[i]
-        two pointer to find j and k in [i + 1, n]
-            calculate sum of k and j sum, and renew the res
-    3. return res
-    
-    Time complexity: O(n^2)
-    Spac: O(n)
+two pointers
+Step:
+1. sort the nums, res = 0, gap = inf
+2. traverse i th elem in nums[:-2]
+    if i >= 1 and i elem = i - 1 elem, continue
+    two pointer, j, k from i + 1, n - 1 th elem, move towards each other
+        if i, j, k elem sum > target, move k to left, if new gap < gap, renew res
+        if equal, return target
+        if sum < target, move i to right, if new gap < gap, renew res
+3. return res
+
+Time complexity: O(nlogn + n^2)
+Space: O(n) store the sorted nums
+
+
 '''
 class Solution:
     def threeSumClosest(self, nums: List[int], target: int) -> int:
-        n = len(nums)
-        if n == 3:
+        if len(nums) == 3:  # corner case
             return sum(nums)
 
         nums.sort()
-        i = 0
-        res = float('inf')
-        while i < n - 2:
-            j, k = i + 1, n - 1
+        res = 0
+        gap = float('inf')
+
+        for i, v in enumerate(nums[:-2]):
+            if i > 1 and nums[i] == nums[i - 1]:  # 排除重复的值
+                continue
+            j, k = i + 1, len(nums) - 1
             while j < k:
                 total = nums[i] + nums[j] + nums[k]
-                if abs(total - target) < abs(res - target):
-                    res = total
-                if total < target:
-                    j += 1
-                elif total == target:
-                    return total
-                else:
+                if total > target:
                     k -= 1
-            i += 1
+                elif total == target:
+                    return target
+                else:
+                    j += 1
+                if abs(total - target) < gap:
+                    gap = abs(total - target)
+                    res = total
         return res
