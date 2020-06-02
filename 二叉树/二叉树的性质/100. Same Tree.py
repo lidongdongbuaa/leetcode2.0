@@ -7,7 +7,7 @@
 '''
 题目概述：给定两个tree root，判定这两个tree是否相同
 题目考点：多个tree的同时遍历
-解决方案：dfs；bfs
+解决方案：dfs返回值；bfs
 方法及方法分析：
 time complexity order: O(n)
 space complexity order: dfs:O(logN); bfs:O(N)
@@ -17,10 +17,7 @@ space complexity order: dfs:O(logN); bfs:O(N)
 corner case
     one is None
     both are None
-
-思路：分治；一边遍历，一边比对
-
-A. pre-order scan
+dfs 返回值模式
 '''
 class Solution:
     def isSameTree(self, p: TreeNode, q: TreeNode) -> bool:
@@ -39,7 +36,59 @@ class Solution:
         else:
             return False
 '''
-B. level order scan
+dfs 参数模式
+'''
+class Solution:
+    def isSameTree(self, p: TreeNode, q: TreeNode) -> bool:
+        if not p and not q:
+            return True
+        if not p or not q:
+            return False
+
+        self.res = True
+
+        def dfs(p, q):
+            if not p and not q:
+                return
+            if not p or not q:
+                self.res = False
+                return
+            if p.val != q.val:
+                self.res = False
+                return
+            dfs(p.left, q.left)
+            dfs(p.right, q.right)
+            return
+
+        dfs(p, q)
+        return self.res
+
+'''
+dfs by iteration 参数模式
+'''
+class Solution:
+    def isSameTree(self, p: TreeNode, q: TreeNode) -> bool:
+        if not p and not q:
+            return True
+        if not p or not q:
+            return False
+
+        stack = [(p, q)]
+        while stack:
+            r1, r2 = stack.pop()
+            if r1 and r2:
+                stack.append([r1.right, r2.right])
+                stack.append([r1.left, r2.left])
+                if r1.val != r2.val:
+                    return False
+            else:
+                if not r1 and not r2:
+                    pass
+                else:
+                    return False
+        return True
+'''
+bfs
 '''
 class Solution:
     def isSameTree(self, p: TreeNode, q: TreeNode) -> bool:

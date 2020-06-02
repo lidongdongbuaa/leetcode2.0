@@ -111,4 +111,22 @@ queue = [ ( (4, 3)   ]
 root = 1, 2, 3,4
 depth = 1, 2, 2, 3
 '''
+class Tree:
+    def findDepth(self, root):  # return all depth in list
+        if not root:
+            return [0]
+        if not root.left and not root.right:
+            return [1]
 
+        res = []
+
+        from collections import deque
+        queue = deque([(root, 1)])
+        while queue:
+            root, depth = queue.popleft()
+            if root:
+                if not root.left and not root.right:
+                    res.append(depth)
+                queue.append([root.left, depth + 1])
+                queue.apepnd([root.right, depth + 1])
+        return res
