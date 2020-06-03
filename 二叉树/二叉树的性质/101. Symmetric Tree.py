@@ -39,6 +39,67 @@ class Solution:
 
         return helper(root.left, root.right)
 
+
+'''
+返回值复杂形式
+转变为 对两个树（子树）是否对称的判断
+dfs return whether two subtree is symmetric
+'''
+
+
+class Solution:
+    def isSymmetric(self, root: TreeNode) -> bool:
+        if not root:
+            return True
+        if not root.left and not root.right:
+            return True
+
+        def checkSub(r1, r2):  # return True or False， 先判断根，再得到左右，并判断左右
+            if not r1 and not r2:
+                return True
+            if not r1 or not r2:
+                return False
+
+            if r1.val == r2.val:
+                l = checkSub(r1.left, r2.right)
+                r = checkSub(r1.right, r2.left)
+                return l and r
+            else:
+                return False
+
+        return checkSub(root.left, root.right)
+
+
+'''
+遍历点模式的复杂模式
+'''
+
+
+class Solution:
+    def isSymmetric(self, root: TreeNode) -> bool:
+        if not root:
+            return True
+        if not root.left and not root.right:
+            return True
+
+        self.res = True
+
+        def scanNode(r1, r2):  # 先判断根，再判断左右
+            if not r1 and not r2:
+                return
+            if not r1 or not r2:
+                self.res = False
+                return
+            if r1.val == r2.val:
+                scanNode(r1.left, r2.right)
+                scanNode(r1.right, r2.left)
+            else:
+                self.res = False
+            return
+
+        scanNode(root.left, root.right)
+        return self.res
+
 '''
 bfs
 '''

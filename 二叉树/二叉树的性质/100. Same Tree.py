@@ -17,7 +17,7 @@ space complexity order: dfs:O(logN); bfs:O(N)
 corner case
     one is None
     both are None
-dfs 返回值模式
+dfs 返回值基本形式
 '''
 class Solution:
     def isSameTree(self, p: TreeNode, q: TreeNode) -> bool:
@@ -29,14 +29,11 @@ class Solution:
         if p.val == q.val:
             l = self.isSameTree(p.left, q.left)
             r = self.isSameTree(p.right, q.right)
-            if l == True and r == True:
-                return True
-            else:
-                return False
+            return l and r
         else:
             return False
 '''
-dfs 参数模式
+dfs 参数基本形式
 '''
 class Solution:
     def isSameTree(self, p: TreeNode, q: TreeNode) -> bool:
@@ -64,7 +61,8 @@ class Solution:
         return self.res
 
 '''
-dfs by iteration 参数模式
+dfs by iteration <--> dfs 无返回基本形式
+use the stack to simulate recursion
 '''
 class Solution:
     def isSameTree(self, p: TreeNode, q: TreeNode) -> bool:
