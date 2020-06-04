@@ -17,7 +17,7 @@ space complexity order: dfs:O(logN); bfs:O(N)
 corner case
     one is None
     both are None
-dfs 返回值基本形式
+dfs 有返回无self形式
 '''
 class Solution:
     def isSameTree(self, p: TreeNode, q: TreeNode) -> bool:
@@ -33,7 +33,7 @@ class Solution:
         else:
             return False
 '''
-dfs 参数基本形式
+dfs  扫描点-无参数形式
 '''
 class Solution:
     def isSameTree(self, p: TreeNode, q: TreeNode) -> bool:
@@ -61,7 +61,7 @@ class Solution:
         return self.res
 
 '''
-dfs by iteration <--> dfs 无返回基本形式
+dfs 迭代法 <--> dfs 扫描点
 use the stack to simulate recursion
 '''
 class Solution:
