@@ -39,45 +39,54 @@ Space: O(n), average case; in worse case, O(1)
 
 '''
 
+'''
+corner case: 
+    if root is None, return 0
+
+max width -> index gap in same level
+bfs + index gap
+dfs 从上至下
+dfs 从下至上
+'''
+
 
 class Solution:
     def widthOfBinaryTree(self, root: TreeNode) -> int:
         if not root:  # corner case
             return 0
-        if not root.left and not root.right:
-            return 1
 
         from collections import deque
         queue = deque([(root, 1)])
-
         res = 0
+
         while queue:
-            res = max(res, queue[-1][1] - queue[0][1] + 1)
             n = len(queue)
+            time = 1
             for _ in range(n):
-                node, index = queue.popleft()
-                if node.left:
-                    queue.append([node.left, 2 * index])
-                if node.right:
-                    queue.append([node.right, 2 * index + 1])
+                root, index = queue.popleft()
+                if root:
+                    if time == 1:
+                        base = index
+                        time += 1
+                    res = max(res, index - base + 1)
+                    queue.append([root.left, index * 2])
+                    queue.append([root.right, index * 2 + 1])
         return res
 
 
 '''
-           1
-         /   \
-        3     2
-       / \     \  
-      5   3     9 
+1
+  2
 
-queue =  (5, 4), (3, 5), (9, 7)
-res = 2
+queue = [None, 2] [2, 3]
+res = 1
 n = 2
-node = 2
-index =3
+base = 2
+for n = 2
+    root, index = None, 2
+    res = max(1, 1- 1+ 1) = 1
 
 '''
-
 '''
 dfs - 遍历点复杂形式
 Steps:

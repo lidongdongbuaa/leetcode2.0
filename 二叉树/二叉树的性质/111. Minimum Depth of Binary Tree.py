@@ -23,8 +23,6 @@ dfs - from top to down  - 注意skewed tree时的返回值不是0
 dfs - from down to top
 dfs - iteration
 bfs
-
-
 '''
 
 class Solution:
