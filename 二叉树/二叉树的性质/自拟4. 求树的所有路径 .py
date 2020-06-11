@@ -15,10 +15,8 @@ space complexity order:
 如何考
 
 dfs自上而下
-dfs回溯
 bfs
 '''
-
 class TreeNode:
     def __init__(self, x):
         self.val = x
@@ -40,32 +38,15 @@ class Tree:
                 res.append(path[:])
                 return
 
-            dfs(root.left, path + [root.left.val])
-            dfs(root.right, path + [root.right.val])
+            if root.left:
+                dfs(root.left, path + [root.left.val])
+            if root.right:
+                dfs(root.right, path + [root.right.val])
             return
 
         dfs(root, [root.val])
         return res
 
-class Tree:
-    def findAllPath(self, root):  # return [[path1], [path2]
-        if not root:
-            return []
-        if not root.left and not root.right:
-            return [[root.val]]
-
-        res = []
-        stack = [(root, [root.val])]
-        while stack:
-            root, path = stack.pop()
-            if root:
-                if not root.left and not root.right:
-                    res.append(path[:])
-                stack.append([root.right, path + [root.right.val]])
-                stack.append([root.left, path + [root.left.val]])
-        return res
-
-# dfs回溯
 class Tree:
     def findAllPath(self, root):  # return [[path1], [path2]
         if not root:
@@ -88,5 +69,49 @@ class Tree:
 
 
         dfs(root, [])
+        return res
+
+class Tree:
+    def findAllPath(self, root):  # return [[path1], [path2]
+        if not root:
+            return []
+        if not root.left and not root.right:
+            return [[root.val]]
+
+        res = []
+        stack = [(root, [root.val])]
+        while stack:
+            root, path = stack.pop()
+            if root:
+                if not root.left and not root.right:
+                    res.append(path[:])
+                if root.right:
+                    stack.append([root.right, path + [root.right.val]])
+                if root.left:
+                    stack.append([root.left, path + [root.left.val]])
+        return res
+
+'''
+bfs
+'''
+class Tree:
+    def findAllPath(self, root):  # return [[path1], [path2]
+        if not root:
+            return []
+        if not root.left and not root.right:
+            return [[root.val]]
+
+        res = []
+        from collections import deque
+        queue = deque([(root, [root.val])])
+
+        while queue:
+            root, path = queue.popleft()
+            if not root.left and not root.right:
+                res.append(path[:])
+            if root.left:
+                queue.append([root.left, path + [root.left.val]])
+            if root.right:
+                queue.append([root.right, path + [root.right.val]])
         return res
 
