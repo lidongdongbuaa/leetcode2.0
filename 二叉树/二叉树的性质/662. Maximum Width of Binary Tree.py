@@ -5,19 +5,15 @@
 # @FileName: 662. Maximum Width of Binary Tree.py
 ''''''
 '''
-题目分析
-1.要求：
-2.理解：find the max width of level of tree, None between the node was counted into.
-3.类型：binary tree basic
-4.确认输入输出及边界条件：
-    input: root with definition, no range of node val, repeated? Y, order？ N
-    output: int
-    corner case: 
-        None -> 0
-        Only one -> 1
-4.方法及方法分析：bfs, dfs
-time complexity order: bfs O(N) = dfs O(N)
-space complexity order: average dfs O(logN) < bfs O(N)
+题目概述：求最大理论宽度
+题目考点：bfs / dfs自上而下 + 用序号标记node，序号差为宽度
+优化核心：
+易错点：当tree 为 skewed tree时，每一层都为1，故每层的第一个数也要计算res
+方法及方法分析：
+time complexity order: 
+space complexity order: 
+如何考
+
 '''
 
 
@@ -46,10 +42,7 @@ corner case:
 max width -> index gap in same level
 bfs + index gap
 dfs 从上至下
-dfs 从下至上
 '''
-
-
 class Solution:
     def widthOfBinaryTree(self, root: TreeNode) -> int:
         if not root:  # corner case
@@ -61,48 +54,23 @@ class Solution:
 
         while queue:
             n = len(queue)
-            time = 1
+            res = max(res, queue[-1][1] - queue[0][1] + 1)
             for _ in range(n):
                 root, index = queue.popleft()
-                if root:
-                    if time == 1:
-                        base = index
-                        time += 1
-                    res = max(res, index - base + 1)
+                if root.left:
                     queue.append([root.left, index * 2])
+                if root.right:
                     queue.append([root.right, index * 2 + 1])
         return res
 
 
 '''
-1
-  2
+corner case: 
+    if root is None, return 0
 
-queue = [None, 2] [2, 3]
-res = 1
-n = 2
-base = 2
-for n = 2
-    root, index = None, 2
-    res = max(1, 1- 1+ 1) = 1
-
-'''
-'''
-dfs - 遍历点复杂形式
-Steps:
-    1. self.res = 0, use dict to record every level's left first index
-    2. create a helper function dfs(node, level, index)
-        visit current node
-            if current level in dict, renew res by calculate gap between current index and dict[level], else, push current level and index into dict
-        visite left children tree
-        visite right children tree
-    3. return res
-
-    Time complexity: O(n)
-    Space: O(logN) average case, in worst case, O(n)
-易错点： 
-index - dic[level] + 1， 加1别忘了
-
+max width -> index gap in same level
+bfs + index gap
+dfs 从上至下，dfs(level, index), dic save the left node, self.res renew the res
 '''
 class Solution:
     def widthOfBinaryTree(self, root: TreeNode) -> int:
@@ -111,42 +79,54 @@ class Solution:
         if not root.left and not root.right:
             return 1
 
+        dic = {}
         self.res = 0
-        dic = dict()
-
-        def dfs(root, level, index):
+        def dfs(root, level, ind):
             if not root:
                 return
 
-            if level in dic:
-                self.res = max(self.res, index - dic[level] + 1)
-            else:
-                dic[level] = index
-                self.res = max(1, self.res)
-            dfs(root.left, level + 1, index * 2)
-            dfs(root.right, level + 1, index * 2 + 1)
+            if level not in dic:
+                dic[level] = ind
+            self.res = max(self.res, ind - dic[level] + 1)  # 当tree 为 skewed tree时，每一层都为1，故res的计算要从第一个数开始
+
+            dfs(root.left, level + 1, ind * 2)
+            dfs(root.right, level + 1, ind * 2 + 1)
             return
 
         dfs(root, 1, 1)
         return self.res
-
 '''
-test case
-       1
-     /   \
-    3     2
-   / \     \  
-  5   3     9 
-  
-  res = 0
-  dic = 2:2, 3:4, 
-  root = 3, 5
-  level = 2, 3, 3, 2,3
-  index = 2, 4, 5, 3,7
-  res = 0/1 = 1 / 2 = 2 / 2 = 2/7-4 + 1 = 2 / 4 = 4
-  return 4
-  
-  
+           1 
+         (1, 1)
+         /   \
+        3     2
+      (2, 2)  (2, 3)
+       / \     \
+      5   3     9
+(3, 4)   (3, 5) (3, 7)
 
+dic = {1:1, 2:2, 3:6}
+res = max(0, 2) = 2 = max(2, 2) = 2 = max(2, 7-4 + 1) = 4
 '''
+
+class Solution:
+    def widthOfBinaryTree(self, root: TreeNode) -> int:
+        if not root:  # corner case
+            return 0
+        if not root.left and not root.right:
+            return 1
+
+        stack = [(root, 1, 1)]
+        dic = {}
+        res = 0
+
+        while stack:
+            root, level, index = stack.pop()
+            if root:
+                if level not in dic:
+                    dic[level] = index
+                res = max(res, index - dic[level] + 1)
+                stack.append([root.right, level + 1, index * 2 + 1])
+                stack.append([root.left, level + 1, index * 2])
+        return res
 

@@ -102,6 +102,32 @@ class Solution:
         backtrack(root, [])
         ans = ['->'.join(elem) for elem in res]
         return ans
+
+
+class Solution:
+    def binaryTreePaths(self, root: TreeNode) -> List[str]:
+        if not root:
+            return []
+        if not root.left and not root.right:
+            return [str(root.val)]
+
+        res = []
+
+        def dfs(root, path):
+            if not root:
+                return
+            if not root.left and not root.right:
+                res.append(path[:])
+                return
+
+            if root.left:
+                dfs(root.left, path + [str(root.left.val)])
+            if root.right:
+                dfs(root.right, path + [str(root.right.val)])
+            return
+
+        dfs(root, [str(root.val)])
+        return ['->'.join(elem) for elem in res]
 '''
 C.BFS iterative method
     Method:

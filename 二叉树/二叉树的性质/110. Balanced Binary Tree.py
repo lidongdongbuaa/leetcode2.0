@@ -22,8 +22,7 @@ corner case:
 core: judge left and right height
 转化为求左右子树的最大高度，从下往上判别 -> 最好用返回值法，其余两种方法也行，但是麻烦
 
-dfs return max height
-
+dfs 自下而上
 '''
 # dfs, return max height
 class Solution:

@@ -16,8 +16,7 @@ space complexity order: O(logN)
 '''
 
 '''
-返回值复杂形式
-返回值路径的最长长度
+dfs 自下而上
 self.res = max(self.res, l + r)
 '''
 

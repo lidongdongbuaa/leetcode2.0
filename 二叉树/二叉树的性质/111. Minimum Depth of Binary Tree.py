@@ -18,11 +18,10 @@ input:root of tree; node number range is from 0 to inf; node value range is no l
 output: int, the shortest height
 corner case:
     if not root, return 0
-
-dfs - from top to down  - 注意skewed tree时的返回值不是0
-dfs - from down to top
-dfs - iteration
-bfs
+    
+    
+注意skewed tree时的返回值不是0
+dfs 自下而上
 '''
 
 class Solution:
@@ -53,7 +52,9 @@ class Solution:
 
         return dfs(root)
 
-
+'''
+dfs 自上而下
+'''
 class Solution:
     def minDepth(self, root: TreeNode) -> int:
         if not root:
@@ -74,6 +75,27 @@ class Solution:
         dfs(root, 1)
         return self.res
 
+class Solution:
+    def minDepth(self, root: TreeNode) -> int:
+        if not root:
+            return 0
+
+        self.res = float('inf')
+
+        def dfs(root, h):  # scan every node
+            if not root:
+                return
+
+            if not root.left and not root.right:
+                self.res = min(self.res, h)
+            h += 1
+            dfs(root.left, h)
+            dfs(root.right, h)
+            h -= 1
+            return
+
+        dfs(root, 1)
+        return self.res
 
 class Solution:
     def minDepth(self, root: TreeNode) -> int:
@@ -92,7 +114,9 @@ class Solution:
                 stack.append([root.left, h + 1])
         return res
 
-
+'''
+bfs
+'''
 class Solution:
     def minDepth(self, root: TreeNode) -> int:
         if not root:

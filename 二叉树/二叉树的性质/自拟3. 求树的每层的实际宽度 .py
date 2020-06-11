@@ -5,8 +5,8 @@
 # @FileName: 求每层的节点.py
 ''''''
 '''
-题目概述：
-题目考点：
+题目概述：求树的每层的实际宽度
+题目考点：bfs / dfs自下而上
 优化核心：
 易错点：
 方法及方法分析：
@@ -14,17 +14,10 @@ time complexity order:
 space complexity order: 
 如何考
 '''
-'''
-input: root
-output: list
-corner case:
-    not root, return []
-    only one root, return [node.val]
-'''
 
 '''
-BFS
-in while loop, use for loop to scan all node in same level
+bfs
+dfs自上而下
 '''
 class Tree:
     def findLevelNode(self, root):
@@ -49,11 +42,6 @@ class Tree:
                     queue.append(node.right)
         return res
 
-'''
-dfs  参数模式
-root的高度为最小值，leaf为最大值
-use parameters in dfs() to record level, use dict to record the level node number
-'''
 class Tree:
     def findLevelNode(self, root):
         if not root:  # corner case
@@ -76,4 +64,25 @@ class Tree:
 
         dfs(root, 1)
 
+        return [val for val in dic.values()]
+
+class Tree:
+    def findLevelNode(self, root):
+        if not root:  # corner case
+            return []
+        if not root.left and not root.right:
+            return [1]
+
+        dic = {}
+        stack = [(root, 1)]
+
+        while stack:
+            root, level = stack.pop()
+            if root:
+                if level in dic:
+                    dic[level] = 1
+                else:
+                    dic[level] += 1
+                stack.append([root.right, level + 1])
+                stack.append([root.left, level + 1])
         return [val for val in dic.values()]

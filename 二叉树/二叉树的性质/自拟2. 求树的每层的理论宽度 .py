@@ -6,7 +6,7 @@
 ''''''
 '''
 题目分析
-1.要求：求每层中，左边第一个到右边第一个的宽度
+1.要求：求树的每层的理论宽度
 2.理解：
 3.类型：
 4.确认输入输出及边界条件：
@@ -15,20 +15,9 @@ time complexity order:
 space complexity order: 
 '''
 '''
-bfs + index tag
-Steps:
-    1. create a queue with [root, node index]
-    2. level first search to scan every node
-        current level width = last node of queue's index - first's index, add it to res
-        for loop current level's all node
-            popleft the node
-            if it has child node, push them and its index (2* index (+1)) into queue
-    3. return res
-Time complexity: O(N), N is number of nodes
-Space: O(N) in average case; O(1) is best case for skewed tree
+bfs
+dfs 自上而下
 '''
-
-
 class Tree:
     def findAllWidth(self, root):  # return list containing all width
         if not root:  # corner case
@@ -51,37 +40,6 @@ class Tree:
                     queue.append([node.right, ind * 2 + 1])
         return res
 
-
-'''
-test case [1, 2, 3, 4]
-  1
- 2 3
-4
-queue = ( []   )
-res = [1]
-n = 1.2
-node = 1, 2
-ind = 1, 2
-
-
-return [1]
-'''
-'''
-dfs + dic save index tag
-Steps:
-    1. use a dict to save level and left first node's index of this level, res is a dict[level: width]
-    2. use a helper (node, level, index) by dfs to scan every  node
-        if level not in res, save level and index in dict
-        else, renew the res
-        visit left child node
-        visit right child node
-    3. transfer res to list
-    4. return res
-Time complexity: O(N), N is number of nodes
-Space: O(logN) in average case; O(N) is worst case for skewed tree
-'''
-
-
 class Tree:
     def findAllWidth(self, root):  # return list containing all width
         if not root:  # corner case
@@ -90,28 +48,40 @@ class Tree:
             return [1]
 
         dic = dict()
-        res = dict()
 
         def dfs(root, level, index):
             if not root:
                 return
 
             if level not in dic:
-                dic[level] = index
+                dic[level] = [index, index]
             else:
-                res[level] = index - dic[level] + 1
+                dic[level][1] = index
             dfs(root.left, level + 1, index * 2)
             dfs(root.right, level + 1, index * 2 + 1)
             return
 
         dfs(root, 1, 1)
-        res = [v for k, v in res]
+        res = [(end - start + 1) for (start, end) in dic.values()]
         return res
 
 
-'''
-test case [1, 2, 3, 4]
-  1
- 2 3
-4
-'''
+class Solution:
+    def widthOfBinaryTree(self, root: TreeNode) -> int:
+        if not root:  # corner case
+            return 0
+        if not root.left and not root.right:
+            return 1
+
+        stack = [(root, 1, 1)]
+        dic = {}
+
+        while stack:
+            root, level, index = stack.pop()
+            if root:
+                if level not in dic:
+                    dic[level] = [index, index]
+                dic[level][0] = index
+                stack.append([root.right, level + 1, index * 2 + 1])
+                stack.append([root.left, level + 1, index * 2])
+        return [(end - start + 1) for (start, end) in dic.values()]

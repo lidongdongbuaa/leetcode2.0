@@ -16,11 +16,7 @@ space complexity order: O(logN)
 '''
 '''
 check the tree -> check the subtrees are symmetirc
-
-1.返回值无self模式 - 判断root，再判断substree
-2.扫描点无参数，判断root，然后遍历子节点
-3.dfs迭代法
-4.bfs法
+dfs 自下而上
 '''
 class Solution:
     def isSymmetric(self, root: TreeNode) -> bool:
@@ -43,6 +39,9 @@ class Solution:
 
         return dfs(root.left, root.right)
 
+'''
+dfs自上而下
+'''
 class Solution:
     def isSymmetric(self, root: TreeNode) -> bool:
         if not root or (not root.left and not root.right):
@@ -84,6 +83,9 @@ class Solution:
                 stack.append([r1.right, r2.left])
         return True
 
+'''
+bfs
+'''
 class Solution:
     def isSymmetric(self, root: TreeNode) -> bool:
         if not root or (not root.left and not root.right):

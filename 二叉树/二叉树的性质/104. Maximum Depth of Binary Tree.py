@@ -13,10 +13,7 @@ space complexity order: dfs:O(logN); bfs:O(N)
 如何考
 '''
 '''
-1. dfs return max height
-2. dfs parameter add height
-3. dfs iteration
-4. bfs [root, height]
+dfs 自下而上
 '''
 class Solution:
     def maxDepth(self, root: TreeNode) -> int:
@@ -28,6 +25,9 @@ class Solution:
         r = self.maxDepth(root.right)
         return max(l, r) + 1
 
+'''
+dfs 自上而下
+'''
 class Solution:
     def maxDepth(self, root: TreeNode) -> int:
         if not root:
@@ -43,6 +43,29 @@ class Solution:
             self.res = max(self.res, h)
             dfs(root.left, h + 1)
             dfs(root.right, h + 1)
+            return
+
+        dfs(root, 1)
+        return self.res
+
+
+class Solution:
+    def maxDepth(self, root: TreeNode) -> int:
+        if not root:
+            return 0
+        if not root.left and not root.right:
+            return 1
+        self.res = 0
+
+        def dfs(root, h):
+            if not root:
+                return
+
+            self.res = max(self.res, h)
+            h += 1
+            dfs(root.left, h)
+            dfs(root.right, h)
+            h -= 1
             return
 
         dfs(root, 1)
@@ -66,6 +89,9 @@ class Solution:
                 stack.append([r.left, h + 1])
         return res
 
+'''
+bfs
+'''
 class Solution:
     def maxDepth(self, root: TreeNode) -> int:
         if not root:
