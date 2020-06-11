@@ -16,6 +16,7 @@ space complexity order: O(logN)
 '''
 
 '''
+求子叶之间的最长路径 -> 求树的最深深度
 dfs 自下而上
 self.res = max(self.res, l + r)
 '''
