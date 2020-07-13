@@ -108,8 +108,7 @@ class Solution:
             if l2:
                 carry += l2.val
                 l2 = l2.next
-            newNode = ListNode(carry % 10)
-            cur.next = newNode
+            cur.next = ListNode(carry % 10)
             cur = cur.next
             carry = carry // 10
         return dummy.next

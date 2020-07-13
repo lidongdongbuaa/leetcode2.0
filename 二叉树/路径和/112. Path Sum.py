@@ -35,7 +35,7 @@ space complexity order:
 '''
 A. pre-order traversal 
 Method: 
-    main() corner case,  + return help()
+    main()  + return help()
     help(root, sum, tmp) use pre-order traversal to scan every path node, add the node value
         if add result = sum, return True
     after traversal, reduce the last node value

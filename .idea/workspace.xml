@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock record/.ipynb_checkpoints/Technical Interview Guidance-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/mock record/.ipynb_checkpoints/Technical Interview Guidance-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock record/Technical Interview Guidance.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/mock record/Technical Interview Guidance.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/动态规划/股票问题/121. Best Time to Buy and Sell Stock.py" beforeDir="false" afterPath="$PROJECT_DIR$/动态规划/股票问题/121. Best Time to Buy and Sell Stock.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/动态规划/股票问题/123. Best Time to Buy and Sell Stock III.py" beforeDir="false" afterPath="$PROJECT_DIR$/动态规划/股票问题/123. Best Time to Buy and Sell Stock III.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/数据结构与算法1-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/数据结构与算法1-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法1.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/二叉树/二叉树的性质/104. Maximum Depth of Binary Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/二叉树的性质/104. Maximum Depth of Binary Tree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/二叉树/路径和/112. Path Sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/路径和/112. Path Sum.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法2.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/链表/链表的归并与添加/2. Add Two Numbers.py" beforeDir="false" afterPath="$PROJECT_DIR$/链表/链表的归并与添加/2. Add Two Numbers.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -147,6 +145,28 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/动态规划/子序列问题/72. Edit Distance.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="handson-ml" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -460,13 +480,11 @@
       <workItem from="1586475756525" duration="14020000" />
       <workItem from="1586559968473" duration="2906000" />
       <workItem from="1586647342162" duration="7628000" />
-    </task>
-    <task id="LOCAL-00060" summary="0224">
-      <created>1582521358871</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1582521358886</updated>
+      <workItem from="1592229736928" duration="3453000" />
+      <workItem from="1592522585053" duration="574000" />
+      <workItem from="1592652202291" duration="1232000" />
+      <workItem from="1592724472438" duration="845000" />
+      <workItem from="1594623845618" duration="4112000" />
     </task>
     <task id="LOCAL-00061" summary="0225">
       <created>1582583462431</created>
@@ -804,7 +822,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586561859323</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="0615">
+      <created>1592229841912</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1592229841912</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -847,7 +872,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="0226" />
     <MESSAGE value="0227" />
     <MESSAGE value="0301" />
     <MESSAGE value="0302" />
@@ -872,7 +896,8 @@
     <MESSAGE value="0406" />
     <MESSAGE value="0407" />
     <MESSAGE value="0411" />
-    <option name="LAST_COMMIT_MESSAGE" value="0411" />
+    <MESSAGE value="0615" />
+    <option name="LAST_COMMIT_MESSAGE" value="0615" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2740" y="176" key="#xdebugger.evaluate" timestamp="1579417161456">
