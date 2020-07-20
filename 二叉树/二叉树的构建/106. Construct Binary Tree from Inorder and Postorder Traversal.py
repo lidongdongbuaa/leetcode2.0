@@ -64,6 +64,29 @@ class Solution:
         root.right = self.buildTree(inorder[mid + 1:], postorder[mid : -1])
         return root
 
+'''
+跟前一个方法比，内存消耗较少
+'''
+class Solution:
+    def buildTree(self, inorder: List[int], postorder: List[int]) -> TreeNode:
+        if len(inorder) != len(postorder):
+            return None
+        if len(inorder) == 0:
+            return None
+
+        def dfs(in_l, in_r, post_l, post_r):
+            if in_l > in_r:
+                return None
+
+            root = TreeNode(postorder[post_r])
+            index = inorder.index(postorder[post_r])
+
+            root.left = dfs(in_l, index - 1, post_l, index - 1 - in_l + post_l)
+            root.right = dfs(index + 1, in_r, index + 1 - in_r + post_r - 1, post_r - 1)
+
+            return root
+
+        return dfs(0, len(inorder) - 1, 0, len(postorder) - 1)
 
 '''
 B. scale index size and use dict to save in_list
@@ -87,22 +110,26 @@ class TreeNode:
 
 class Solution:
     def buildTree(self, inorder: List[int], postorder: List[int]) -> TreeNode:
-        if len(inorder) == 0:  # corner case
+        if len(inorder) == 0:
             return None
 
+        if len(inorder) == 1:
+            return TreeNode(inorder[0])
+
+        dic = {value: index for index, value in enumerate(inorder)}
+
         def dfs(in_l, in_r, post_l, post_r):
-            if in_l == in_r:
+            if in_l > in_r:
                 return None
 
-            root = TreeNode(postorder[post_r - 1])
-            mid = dic[postorder[post_r - 1]]
+            root = TreeNode(postorder[post_r])
+            mid = dic[postorder[post_r]]
 
             # 更新中序遍历、后序遍历边界，然后递归构建左右子树
             # 我们可以通过“中序和后序个数是相同”这个隐含条件，求出后序左右边界
-            root.left = dfs(in_l, mid, post_l, mid - in_l + post_l)
-            # root.right = dfs(mid + 1, in_r, post_r - 1 - (in_r - mid - 1), post_r - 1)
-            root.right = dfs(mid + 1, in_r, mid - in_l + post_l, post_r - 1)
+            root.left = dfs(in_l, mid - 1, post_l, mid - 1 - in_l + post_l)
+            root.right = dfs(mid + 1, in_r, mid + 1 - in_r + post_r - 1, post_r - 1)
+
             return root
 
-        dic = {value: index for index, value in enumerate(inorder)}
-        return dfs(0, len(inorder), 0, len(postorder))
+        return dfs(0, len(inorder) - 1, 0, len(inorder) - 1)

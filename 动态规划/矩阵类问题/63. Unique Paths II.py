@@ -48,6 +48,8 @@ A.DP - dp(i, j) is the ways number when reaching to matrix[i][j]
     Space: O(m + n)
 
 '''
+
+
 class Solution:
     def uniquePathsWithObstacles(self, obstacleGrid: List[List[int]]) -> int:
         grid = obstacleGrid
@@ -57,6 +59,7 @@ class Solution:
         memo = {}
         m = len(grid)
         n = len(grid[0])
+
         def dp(i, j):  # return number when reaching to i, j cell
             if (i, j) in memo:
                 return memo[(i, j)]
@@ -69,11 +72,14 @@ class Solution:
             if grid[i][j] == 1:
                 return 0
 
+
             res = dp(i - 1, j) + dp(i, j - 1)
             memo[(i, j)] = res
             return res
 
         return dp(m - 1, n - 1)
+
+
 '''
 DP Table
 '''
@@ -81,25 +87,25 @@ DP Table
 
 class Solution:
     def uniquePathsWithObstacles(self, obstacleGrid: List[List[int]]) -> int:
-        if not obstacleGrid or obstacleGrid == [[]]:
-            return 0
-
         grid = obstacleGrid
+        m = len(grid)
+        n = len(grid[0])
 
-        m, n = len(grid), len(grid[0])
+        if not grid or grid == [[]]:
+            return 0
 
         dp = [[0] * (n + 1) for _ in range(m + 1)]
-        for i in range(1, m + 1):
-            for j in range(1, n + 1):
-                if i == 1 and j == 1 and grid[i - 1][j - 1] == 0:
-                    dp[i][j] = 1
-                elif grid[i - 1][j - 1] == 0:
-                    dp[i][j] = max(dp[i - 1][j], dp[i][j - 1], dp[i - 1][j] + dp[i][j - 1])
-                elif grid[i - 1][j - 1] == 1:
-                    dp[i][j] = float('-inf')
 
-        res = dp[m][n]
-        if res == float('-inf'):
-            return 0
-        else:
-            return res
+        for r in range(1, m + 1):
+            for c in range(1, n + 1):
+                if r == 1 and c == 1:
+                    if grid[r - 1][c - 1] == 1:
+                        return 0
+                    else:
+                        dp[r][c] = 1
+                else:
+                    if grid[r - 1][c - 1] == 1:
+                        dp[r][c] = 0
+                    else:
+                        dp[r][c] = dp[r - 1][c] + dp[r][c - 1]
+        return dp[m][n]
