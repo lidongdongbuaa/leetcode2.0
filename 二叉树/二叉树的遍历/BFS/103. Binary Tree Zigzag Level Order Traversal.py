@@ -31,101 +31,65 @@ time complexity order: BFS + stack O(N) = DFS + helper O(N)
 space complexity order: BFS + stack O(N) = DFS + helper O(N)
 '''
 '''
-思路：BFS + stack
-方法：
-    use breath first search to scan every node of each level
-        use queue and for loop to scan and save every level's node in tmp
-        for even level, reverse tmp, add to res
-        for odd, add to res
-    return res
-time complex: O(N)
-space complex: O(N)
-易错点：实质上是树的层次遍历（广度优先遍历）。只需要把偶数层的结果进行反转即可
-'''
-class TreeNode:
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
+input: tree root; node number range is from 0 to inf; node value range is no limit; have order? BST? N
+output: list[list]
+corner case
+    not root, return []
 
-from collections import deque
+bfs, use tag to record the left/right order
+'''
 class Solution:
     def zigzagLevelOrder(self, root: TreeNode) -> List[List[int]]:
         if not root:  # corner case
             return []
 
+        from collections import deque
         queue = deque([root])
         res = []
-        reverse = False  # give signal
+        tag = 0
 
-        while queue:  # scan every node
-            tmp = []
-            length = len(queue)
-            for _ in range(length):  # scan every level's node
+        while queue:
+            n = len(queue)
+            level_val = []
+            for _ in range (n):
                 root = queue.popleft()
-                tmp.append(root.val)
+                level_val.append(root.val)
                 if root.left:
                     queue.append(root.left)
                 if root.right:
                     queue.append(root.right)
-            if reverse == False:
-                res.append(tmp)
-                reverse = True
+            if tag == 0:
+                res.append(level_val)
+                tag = 1
             else:
-                res.append(tmp[::-1])
-                reverse = False
+                res.append(level_val[::-1])
+                tag = 0
         return res
 
 '''
-test code
-corner case: None -> []
-[3,9,20,null,null,15,7]
+dfs - record the level index, add node value to dic's value, then return the dic values but reverse odd level value
 
 '''
-'''
-思路：DFS + helper
-方法：
-    main()：set res，helper(root, dic = {}, level = 0), transfer dic to res while odd level is reversed
-    helper(): 
-        depth first search scan every node, use dic to label/save the node's level, level + 1
-time complex: O(N)
-space complex: O(N)
-易错点：根本还是树的层次遍历，关键是从表面上发现问题在于偶数层的反转，和现在方法的联系就是偶数层直接反转即可
-'''
-class TreeNode:
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
-
 class Solution:
     def zigzagLevelOrder(self, root: TreeNode) -> List[List[int]]:
         if not root:  # corner case
             return []
 
-        dic = {}
-        level = 0
-        self.dfs(root, dic, level)
+        from collections import defaultdict
 
-        i = 1
-        res = []
-        for values in dic.values():
-            if i % 2 != 0:
-                res.append(values)
-            else:
-                res.append(values[::-1])
-            i += 1
-        return res
+        dic = defaultdict(list)
 
-    def dfs(self, root, dic, level):  # save level and node in dic
-        if not root:  # corner case
-            return {}
+        def dfs(root, index):
+            if not root:
+                return
 
-        if level not in dic:  # save node to its level list
-            dic[level] = [root.val]
-        else:
-            dic[level].append(root.val)
+            dic[index].append(root.val)
 
-        self.dfs(root.left, dic, level + 1)
-        self.dfs(root.right, dic, level + 1)
-        return
+            dfs(root.left, index + 1)
+            dfs(root.right, index + 1)
+            return
+
+        dfs(root, 1)
+
+        res = list(dic.values())
+        return [value if index % 2 == 0 else value[::-1] for index, value in enumerate(res)]
