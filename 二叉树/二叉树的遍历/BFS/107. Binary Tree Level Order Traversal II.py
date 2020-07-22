@@ -31,92 +31,63 @@ time complexity order: BFS + reverse O(N) = DFS + reverse O(N)
 space complexity order: BFS + reverse O(N) = DFS + reverse O(N)
 '''
 '''
-思路：BFS + reverse 
-方法：
-    use breath first search to scan every node
-        use for loop to scan every level node, save them in res
-    reverse the res to bottom to up
-    return res
-time complex: O(N)
-space complex: O(N)
-易错点：
+input: tree root node, number of node is from 0 to inf; node value range is no limit; have repeated; no order? Y
+output: list[list]
+corner case: 
+    root is None, return []
+
+Method: bfs + reverse result
+Time complexity: O(n)
+Space: O(n)
 '''
-
-class TreeNode:
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
-
-from collections import deque
 class Solution:
     def levelOrderBottom(self, root: TreeNode) -> List[List[int]]:
         if not root:  # corner case
             return []
 
-        res = []
+        from collections import deque
         queue = deque([root])
+        res = []
 
-        while queue:  # scan every node
-            length = len(queue)
-            tmp = []
-            for _ in range(length):  # scan same level node
+        while queue:
+            n = len(queue)
+            level_val = []
+            for _ in range(n):
                 root = queue.popleft()
-                tmp.append(root.val)
+                level_val.append(root.val)
                 if root.left:
                     queue.append(root.left)
                 if root.right:
                     queue.append(root.right)
-            res.append(tmp)
+            res.append(level_val)
         return res[::-1]
 
 '''
-test case
-
+Method: dfs + reverse result
+Time complexity: O(n)
+Space: O(n)
 '''
-'''
-思路：DFS + reverse 
-方法：
-     main(): set dic, level, run helper(), extract res from dic, then reverse it
-     helper():
-        use depth first search to scan every node, record the level
-            save node in its level dic
-time complex: O(N)
-space complex: O(N)
-易错点：
-'''
-
-class TreeNode:
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
-
-
 class Solution:
     def levelOrderBottom(self, root: TreeNode) -> List[List[int]]:
         if not root:  # corner case
             return []
 
-        dic = {}
-        level = 1
-        self.dfs(root, dic, level)
+        from collections import defaultdict
+        dic = defaultdict(list)
 
-        res = [value for value in dic.values()]  # extract res from dic
-        res = res[::-1]
-        return res
+        def dfs(root, index):  # scan every node, save it in dic
+            if not root:  # base case
+                return
 
-    def dfs(self, root, dic, level):  # output: None, save level and its node in dic
-        if not root:  # corner case
-            return {}
+            dic[index].append(root.val)
 
-        if level not in dic:  # save node and its level in dic
-            dic[level] = [root.val]
-        else:
-            dic[level].append(root.val)
+            dfs(root.left, index + 1)
+            dfs(root.right, index + 1)
 
-        self.dfs(root.left, dic, level + 1)
-        self.dfs(root.right, dic, level + 1)
-        return
+            return
+
+        dfs(root, 0)
+
+        return list(dic.values())[::-1]
 
 

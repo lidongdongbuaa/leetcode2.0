@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+ #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 # @Time    : 2020/2/20 19:11
 # @Author  : LI Dongdong
@@ -48,109 +48,63 @@
 time complexity order: 
 space complexity order: 
 '''
-'''
-A.
-思路：BFS scan and add
-方法：
-    use breath first search to scan every nodes in every level
-    in level, turn the node pointer to next node, if no next, pointer to None by for loop
-    return copy of root
-time complex: O(N)
-space complex: O(N)
-易错点：for _ in range(width)，不是width-1
-    deque具有[i]功能
-'''
-class Node:
-    def __init__(self, val: int = 0, left: 'Node' = None, right: 'Node' = None, next: 'Node' = None):
-        self.val = val
-        self.left = left
-        self.right = right
-        self.next = next
 
-from collections import deque
+'''
+input: tree node, node number range is from 0 to inf; node value range is no limit; have repeated; no order
+output: the root of the tree
+corner case
+ root is none, return node
+
+bfs from bottom to up
+base case
+if assume l, r is finished, 
+root.left = l; root.right = r, l.next = r, if l.right exist,l.right.next = r.left
+return root
+
+time complexity: O(n)
+space: O(1)
+'''
+
+
 class Solution:
-    def connect(self, root: 'Node') -> 'Node':
-        if not root:  # corner case
-            return None
+ def connect(self, root: 'Node') -> 'Node':
+     if not root:
+         return None
 
-        queue = deque()
-        queue.append(root)
+     l = self.connect(root.left)
+     r = self.connect(root.right)
 
-        res = root
+     root.left = l
+     root.rigth = r
+     while l:
+         l.next = r
+         l = l.right
+         r = r.left
 
-        while queue:
-            width = len(queue)
-            for i in range(width - 1):  # turn pointer
-                queue[i].next = queue[i + 1]
-            queue[width -1].next = None
-            for _ in range(width):  # pop and append next level
-                root = queue.popleft()
-                if root.left:
-                    queue.append(root.left)
-                if root.right:
-                    queue.append(root.right)
-        return res
+     return root
 
-'''
-test code
-corner case: None -> None
-root = [1,2,3,4,5,6,7]
-q = 1
-w = 1
-1.next = None
-root = 1
-queue 2, 3
-w = 2
-q[0].next = q[1] 2.next = 3
-q[1].next = None
-root = 2
-q 3 4 5
-root = 3
-q 4 5 6 7
-w = 4
-i = 0->2
-q0.next=q1
-q1.next =q2
-q2.next = q3
-q3.next = None
-r = 4,5,6,7
-return 1
-'''
-'''
-B.
-思路：iterative - use up level to control down level pointer
-方法：
-    copy root as leftmost
-    traversal the node level by level from leftMost node
-        move head from leftMost node, change pointer of lower level
-            common root, head.left.next = head.right
-            uncommon root, head.right.next = head.next.left
-    return root
-time complex: O(N)
-space complex: O(1)
-易错点：
-'''
-class Node:
-    def __init__(self, val: int = 0, left: 'Node' = None, right: 'Node' = None, next: 'Node' = None):
-        self.val = val
-        self.left = left
-        self.right = right
-        self.next = next
+ '''
+ bfs
+ connect the next in very level
+ '''
 
-from collections import deque
-class Solution:
-    def connect(self, root: 'Node') -> 'Node':
-        if not root:  # corner case
-            return None
+ class Solution:
+     def connect(self, root: 'Node') -> 'Node':
+         if not root:
+             return None
 
-        leftMost = root  # save root for return
+         from collections import deque
+         queue = deque([root])
 
-        while leftMost.left:  # for perfect tree, last level node have no left node, only scan last second level
-            head = leftMost  # keep leftMost, use head for scan
-            while head:  # scan this level, change lower level node pointer
-                head.left.next = head.right
-                if head.next:  # use next head.left
-                    head.right.next = head.next.left
-                head = head.next
-            leftMost = leftMost.left  # go to next level's leftMost node
-        return root
+         res = root
+         while queue:
+             n = len(queue)
+             for i in range(n - 1):
+                 queue[i].next = queue[i + 1]
+             for _ in range(n):
+                 root = queue.popleft()
+                 if root.left:
+                     queue.append(root.left)
+                 if root.right:
+                     queue.append(root.right)
+         return res

@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/二叉树/二叉树的构建/自拟5. Construct Binary Tree from Level Order Traversal.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/二叉树/二叉树的构建/109. Convert Sorted List to Binary Search Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/二叉树的构建/109. Convert Sorted List to Binary Search Tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/二叉树/二叉树的构建/Construct Binary Tree from Level Order Traversal.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/二叉树/二叉树的遍历/BFS/102. Binary Tree Level Order Traversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/二叉树的遍历/BFS/102. Binary Tree Level Order Traversal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/二叉树/二叉树的遍历/BFS/103. Binary Tree Zigzag Level Order Traversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/二叉树的遍历/BFS/103. Binary Tree Zigzag Level Order Traversal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法1.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法2.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/二叉树/二叉树的遍历/BFS/107. Binary Tree Level Order Traversal II.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/二叉树的遍历/BFS/107. Binary Tree Level Order Traversal II.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/二叉树/二叉树的遍历/BFS/116. Populating Next Right Pointers in Each Node.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/二叉树的遍历/BFS/116. Populating Next Right Pointers in Each Node.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -493,14 +486,8 @@
       <workItem from="1594985374458" duration="2287000" />
       <workItem from="1595131090476" duration="781000" />
       <workItem from="1595197187228" duration="2789000" />
-      <workItem from="1595286178233" duration="7075000" />
-    </task>
-    <task id="LOCAL-00063" summary="0226">
-      <created>1582725284382</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1582725284382</updated>
+      <workItem from="1595286178233" duration="7103000" />
+      <workItem from="1595372714932" duration="3803000" />
     </task>
     <task id="LOCAL-00064" summary="0227">
       <created>1582760695468</created>
@@ -838,7 +825,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595206433273</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="0721">
+      <created>1595296094812</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1595296094813</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -872,7 +866,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="0302" />
     <MESSAGE value="0304" />
     <MESSAGE value="0305" />
     <MESSAGE value="0310" />
@@ -897,7 +890,8 @@
     <MESSAGE value="0615" />
     <MESSAGE value="0713" />
     <MESSAGE value="0720" />
-    <option name="LAST_COMMIT_MESSAGE" value="0720" />
+    <MESSAGE value="0721" />
+    <option name="LAST_COMMIT_MESSAGE" value="0721" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2740" y="176" key="#xdebugger.evaluate" timestamp="1579417161456">
