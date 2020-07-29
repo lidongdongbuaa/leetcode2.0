@@ -15,92 +15,106 @@ time complexity order:
 space complexity order: 
 '''
 
-# Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
 '''
-output: int, the zigzag path
-corner case
-    root is None, return -1
-    root is only one node, return 0
+dfs from bottom to up
+helper function dfs(root), return max left length and max right length
+    renew self.res
+'''
 
-dfs - return the left and right longest path
-'''
+
 class Solution:
     def longestZigZag(self, root: TreeNode) -> int:
-        if not root:
-            return -1
-        if not root.left and not root.right:
+        if not root:  # corner case
             return 0
 
         self.res = 0
 
-        def dfs(root):  # return left and right longest zigzag path
+        def dfs(root):  # scan evey node, return max left lenght and max right length
             if not root:
                 return -1, -1
 
-            leftL, leftR = dfs(root.left)
-            rightL, rightR = dfs(root.right)
-            cur = max(leftR, rightL) + 1
-            self.res = max(self.res, cur)
-            return leftR + 1, rightL + 1
+            l_l, l_r = dfs(root.left)
+            r_l, r_r = dfs(root.right)
+
+            self.res = max(self.res, l_r + 1, r_l + 1)
+
+            return l_r + 1, r_l + 1
 
         dfs(root)
+
         return self.res
 
+
 '''
-多参数方法
+dfs from up to bottom 
+self.res
+dfs(root, left path, right path)
+    renew res by left path and right path
 '''
+
+
 class Solution:
     def longestZigZag(self, root: TreeNode) -> int:
         if not root:  # corner case
-            return -1
-        if not root.left and not root.right:
             return 0
 
         self.res = 0
 
-        def dfs(root, l, r):  # the path length from up to root in left l, in right r
-            if not root:
+        def dfs(root, l, r):  # scan every node
+            if not root:  # base case
                 return
 
             self.res = max(self.res, l, r)
-            if root.left:
-                dfs(root.left, 0, l + 1)
-            if root.right:
-                dfs(root.right, r + 1, 0)
+
+            dfs(root.left, 0, l + 1)
+            dfs(root.right, r + 1, 0)
             return
 
         dfs(root, 0, 0)
+
         return self.res
 
 
 '''
-bfs
-steps:
-1. queue = [root, l, r], reach root, the longest path from left or right
-2. pop node from queue, renew the res
-3. push root.left and root.right into the queue
-4. return the res
-Time complexity: O(n)
-Space: O(1)
+dfs from up to bottom iteration
 '''
 
 
 class Solution:
     def longestZigZag(self, root: TreeNode) -> int:
         if not root:  # corner case
-            return -1
-        if not root.left and not root.right:
             return 0
 
-        from collections import deque
-        queue = deque([(root, 0, 0)])
+        res = 0
+
+        stack = [[root, 0, 0]]
+
+        while stack:
+            root, l, r = stack.pop()
+            res = max(res, l, r)
+            if root.right:
+                stack.append([root.right, r + 1, 0])
+            if root.left:
+                stack.append([root.left, 0, l + 1])
+
+        return res
+
+
+'''
+bfs 
+'''
+
+
+class Solution:
+    def longestZigZag(self, root: TreeNode) -> int:
+        if not root:  # corner case
+            return 0
 
         res = 0
+
+        from collections import deque
+        queue = deque([[root, 0, 0]])
+
         while queue:
             root, l, r = queue.popleft()
             res = max(res, l, r)
@@ -108,4 +122,5 @@ class Solution:
                 queue.append([root.left, 0, l + 1])
             if root.right:
                 queue.append([root.right, r + 1, 0])
+
         return res

@@ -36,125 +36,87 @@ space complexity order: O(N)
 6.如何考: 没法考oa
 '''
 '''
-A. dfs + transfer as string
-    Method:
-        1. main()
-            a. corner case
-            b. use helper() to transfer tree as node value list [[1,2,5]..]  # time complexity O(N), space O(N)
-            c. traversal elements of list to transfer it to [string...]  # time O(N), space O(N)
-        2. helper(root, tmp, res): pre-order recursion 
-            a. end：root is None
-            b. accumulate node.val in tmp, if node is leaf, save it in res
-            c. helper(root.left) + helper(root.right)
-        time O(N), space O(N)
-易错点：
+dfs from top to bottom
+time complexity: O(n)
+space:O(n) skewed tree
+
+dfs(root, path)
 '''
-'''
-corner case:
-    root is None, return None
 
-A. backtrack to get path
-    backtrack template 1, from second level to backtrack
-'''
-class Solution:
-    def binaryTreePaths(self, root: TreeNode) -> List[str]:
-        if not root:  # corner case
-            return []
-
-        def backtrack(root, path):
-            if not root.left and not root.right:
-                res.append(path[:])
-
-            for node in (root.left, root.right):
-                if node:
-                    path.append(str(node.val))
-                    backtrack(node, path)
-                    path.pop()
-
-        res = []
-        backtrack(root, [str(root.val)])
-        ans = ['->'.join(elem) for elem in res]
-        return ans
-
-
-'''
-backtrack template 2
-'''
 
 class Solution:
     def binaryTreePaths(self, root: TreeNode) -> List[str]:
         if not root:  # corner case
             return []
 
-        res = []
+        self.res = []
 
-        def backtrack(root, path):  # save path of string in res
-            if not root:
+        def dfs(root, path):  # scan every node and save leaf path to res
+            if not root:  # base case
                 return
 
-            path.append(str(root.val))
             if not root.left and not root.right:
-                res.append(path[:])
-            backtrack(root.left, path)
-            backtrack(root.right, path)
-            path.pop()
+                self.res.append(path[:])
 
-        backtrack(root, [])
-        ans = ['->'.join(elem) for elem in res]
-        return ans
-'''
-C.BFS iterative method
-    Method:
-        keep a queue [root, string] to store node, until None
-            queue popleft as node, s, if node is leaf, add s to res
-            push[root.left, s + node.val]
-            push[root.right, , s + node.val]
-        return res
-    time complexity: O(N), space complexity O(N)
-'''
-from collections import deque
-class Solution:
-    def binaryTreePaths(self, root):  # return [string]
-        if not root:  # corner case
-            return []
-
-        res = []
-        queue = deque([(root, str(root.val))])
-
-        while queue:
-            root, string = queue.popleft()
-            if not root.left and not root.right:
-                res.append(string)
             if root.left:
-                queue.append([root.left, string + '->' + str(root.left.va)])
+                dfs(root.left, path + '->' + str(root.left.val))
             if root.right:
-                queue.append([root.right, string + '->' + str(root.right.val)])
-        return res
+                dfs(root.right, path + '->' + str(root.right.val))
+
+            return
+
+        dfs(root, str(root.val))
+
+        return self.res
+
 
 '''
-D. iterative DSF
-    Method:
-        stack store root and its string until empty
-            stack pop as root and string
-            if root is leaf, res add string
-            stack append root.right and string + str(root.l.val)
-            do same things for left part
-        t O(N)  sO(N)
+dfs iteration
+right - left
 '''
+
+
 class Solution:
-    def binaryTreePaths(self, root):  # return [string]
+    def binaryTreePaths(self, root: TreeNode) -> List[str]:
         if not root:  # corner case
             return []
 
         res = []
+
         stack = [[root, str(root.val)]]
 
         while stack:
-            root, string = stack.pop()
+            root, path = stack.pop()
             if not root.left and not root.right:
-                res.append(string)
+                res.append(path[:])
             if root.right:
-                stack.append([root.right, string + '->' + str(root.right.val)])
+                stack.append([root.right, path + '->' + str(root.right.val)])
             if root.left:
-                stack.append([root.left, string + '->' + str(root.left.val)])
+                stack.append([root.left, path + '->' + str(root.left.val)])
+        return res
+
+
+'''
+bfs 
+'''
+
+
+class Solution:
+    def binaryTreePaths(self, root: TreeNode) -> List[str]:
+        if not root:  # corner case
+            return []
+
+        res = []
+
+        from collections import deque
+        queue = deque([[root, str(root.val)]])
+
+        while queue:
+            root, path = queue.popleft()
+            if not root.left and not root.right:
+                res.append(path[:])
+            if root.left:
+                queue.append([root.left, path + '->' + str(root.left.val)])
+            if root.right:
+                queue.append([root.right, path + '->' + str(root.right.val)])
         return res

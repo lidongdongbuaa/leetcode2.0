@@ -29,119 +29,68 @@ time complexity order: DFS O(N) = stack to simulate recursion O(N) = interative 
 space complexity order:  DFS O(logN) < stack to simulate recursion O(N) =  interative - color notation O(N)
 '''
 '''
-思路：DFS
-方法：
-    use depth first search to scan all node, save root node in res
-time complex: O(N)
-space complex: average O(logN) worst O(N)
-易错点：
+dfs from up to down
 '''
-class TreeNode:
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
+
 
 class Solution:
     def preorderTraversal(self, root: TreeNode) -> List[int]:
         if not root:  # corner case
-            return None
-
-        res = []
-        self.dfs(root, res)  # helper() to scan nodes
-        return res
-
-    def dfs(self, root, res):  # preorder scan
-        if not root:  # corner case
-            return None
-
-        res.append(root.val)
-        self.dfs(root.left, res)
-        self.dfs(root.right, res)
-
-'''
-test case
-corner case: None - None, only one - [int]
-[1,null,2,3]
-r = 1
-res [1]
-r.l
-r.r =2
-res [1, 2]
-r = 2
-r.l = 3
-res [1, 2, 3]
-return return ...
-'''
-'''
-optimized code
-易错点：corner case return 必须是[], 因为res += 必须加list
-'''
-class Solution:
-    def preorderTraversal(self, root: TreeNode) -> List[int]:
-        if not root:  # corner case
-            return []  # 必须是
-
-        res = []
-        res.append(root.val)
-
-        res += self.preorderTraversal(root.left)  # 可以换成res.extend(....)
-        res += self.preorderTraversal(root.right)
-        return res
-
-'''
-思路：stack to simulate recursion
-方法：
-    use stack to scan all nodes
-        pop root, save it in res
-        stack save right and left
-time complex: O(N)
-space complex: O(N)
-易错点：
-'''
-class Solution:
-    def preorderTraversal(self, root: TreeNode) -> List[int]:
-        if not root:  # corner case
-            return []  #
-
-        stack = [root]
-        res = []
-
-        while stack:
-            node = stack.pop()
-            res.append(node.val)
-            if node.right:
-                stack.append(node.right)
-            if node.left:
-                stack.append(node.left)
-        return res
-'''
-思路：color notation
-方法：
-    new - white, visited - gray
-    use stack to scan and store every [node, color]
-        if color is white, turn gray, push right, left, itself
-        if color is gray, output node 
-time complex: O(N)
-space complex: O(N)
-易错点： 对root.right和root.left的判断
-'''
-class Solution:
-    def preorderTraversal(self, root: TreeNode) -> List[int]:
-        if root == None:
             return []
 
-        stack = [[root, 0]]  # 0 represent new node for res, 1 represent visited in res
+        res = []
+
+        def dfs(root):  # scan every node
+            if not root:
+                return
+
+            res.append(root.val)
+            dfs(root.left)
+            dfs(root.right)
+
+            return
+
+        dfs(root)
+
+        return res
+
+
+'''
+dfs bottom-up
+'''
+
+
+class Solution:
+    def preorderTraversal(self, root: TreeNode) -> List[int]:
+        if not root:
+            return []
+
+        l = self.preorderTraversal(root.left)
+        r = self.preorderTraversal(root.right)
+
+        return [root.val] + l + r
+
+
+'''
+dfs iteration
+'''
+
+
+class Solution:
+    def preorderTraversal(self, root: TreeNode) -> List[int]:
+        if not root:
+            return []
+
+        stack = [root]
 
         res = []
+
         while stack:
-            root, color = stack.pop()
-            if color == 0:
-                if root.right:
-                    stack.append([root.right, 0])
-                if root.left:
-                    stack.append([root.left, 0])
-                stack.append([root, 1])
-            else:
-                res.append(root.val)
+            root = stack.pop()
+            res.append(root.val)
+            if root.right:
+                stack.append(root.right)
+            if root.left:
+                stack.append(root.left)
+
         return res

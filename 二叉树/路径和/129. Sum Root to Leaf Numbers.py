@@ -51,186 +51,91 @@ time complexity order:
 space complexity order: 
 6.如何考
 '''
-'''
-A. find all path and calculate sum of them
-    Method:
-        1. use pre-order traversal to scan every node;  time complexity O(N), space O(N)
-            tmp save node, when meet leaf, save tmp in res [[4,9,5],...]
-        2. transfer the res elem into ints;  tO(N) sO(N)
-        3. calculate the sum of ints; tO(N) sO(1)
-        4. return sum
-    time complexity O(N), space O(N)
-易错点：
-'''
 
 '''
-B. directly calculate sum in A method by DFS
-    Method:
-        1. use pre-order traversal to scan every node; tO(N), sO(logN)
-            tmp [4,5,9] save node, when meet leaf, transfer tmp to int and save int in res
-        2. return sum of res
-    time O(N) spaceO(logN)
+dfs from top to bottom
+helper function dfs(root, path_val)
+    if root is leaf, save path_val to self.res
+return sum of self.res
+
+time complexity: O(n)
+space: O(n)
 '''
-class TreeNode:
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
+
 
 class Solution:
     def sumNumbers(self, root: TreeNode) -> int:
         if not root:  # corner case
             return 0
-        if not root.left and not root.right:  # corner casse
-            return root.val
 
-        tmp = []
-        res = []
-        self.dfs(root, tmp, res)
-        return sum(res)   # 不是sum[res]
+        self.res = 0
 
-    def dfs(self, root, tmp, res):  # save every path sum in res
-        if not root:  # corner case
+        def dfs(root, path_val):  # scan every node, save leaf path to res
+            if not root:
+                return
+
+            if not root.left and not root.right:
+                self.res += path_val
+
+            if root.left:
+                dfs(root.left, path_val * 10 + root.left.val)
+            if root.right:
+                dfs(root.right, path_val * 10 + root.right.val)
             return
 
-        tmp.append(root.val)
-        if not root.left and not root.right:  # root is leaf
-            res.append(self.transfer(tmp))
+        dfs(root, root.val)
 
-        self.dfs(root.left, tmp, res)
-        self.dfs(root.right, tmp, res)
-        tmp.pop()
-
-    def transfer(self, tmp):  # transfer list to int
-        if not tmp:  # corner case
-            return 0
-
-        if len(tmp) == 1:
-            return tmp
-
-        res = 0
-        for elem in tmp:  # calculate sum of list
-            res = res * 10 + elem
-        return res
+        return self.res
 
 
 '''
-test code
-corner case:
-None -> None, only one -> root.val
-    Input: [1,2,3]
-        1
-       / \
-      2   3
-test main(), then helper()
-1. sumNumber()
-res = [12, 13] -> return 24
-2. dfs()
-root = 1 tmp []; res [];
-tmp [1]
-root.l = 2 = root
-tmp [1,2]
-res [12]
-tmp[1]
-root.r = 3 = root
-tmp [1,3]
-res = [12, 13]
-3. transfer
-[1,2]
-elem = 1
-res = 1
-elem = 2
-res = 1*10 + 2= 12
-return res
-done well
+dfs iteration
+first right
+then left
 '''
-'''
-B. directly calculate sum in A method by dfs iterative
-    Method:
-易错点： 
-    left 和right的顺序搞反了！！！
-    r.append(root.right.val) .val不要漏
-    stack.append([root.right, r]) .right不要漏
-    可以继续把transfer整合到bfs里面
-'''
-class TreeNode:
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
 
-class Solution:
-    class Solution:
-        def sumNumbers(self, root: TreeNode) -> int:
-            if not root:  # corner case
-                return 0
-            if not root.left and not root.right:  # corner casse
-                return root.val
 
-            res = self.bfs(root)
-            return sum(res)  # 不是sum[res]
-
-        def bfs(self, root):  # save every path sum in res
-            if not root:  # corner case
-                return []
-            if not root.left and not root.right:
-                return [root.val]
-
-            stack = [[root, [root.val]]]
-
-            res = []
-            while stack:
-                root, tmp = stack.pop()
-                if root.right:
-                    r = tmp.copy()
-                    r.append(root.right.val)
-                    stack.append([root.right, r])
-                if root.left:
-                    l = tmp.copy()
-                    l.append(root.left.val)
-                    stack.append([root.left, l])
-                if not root.left and not root.right:
-                    res.append(self.transfer(tmp))
-            return res
-
-        def transfer(self, tmp):  # transfer list to int
-            if not tmp:  # corner case
-                return 0
-
-            if len(tmp) == 1:
-                return tmp
-
-            res = 0
-            for elem in tmp:  # calculate sum of list
-                res = res * 10 + elem
-            return res
-
-'''
-C. bfs + queue
-Method:
-    1. use level order traversal to scan node level by level, while use [root, tmp_sum] to be save in deque
-            when meet leaf, save the tmp_sum to res
-    2. return res
-'''
-from collections import deque
 class Solution:
     def sumNumbers(self, root: TreeNode) -> int:
         if not root:  # corner case
             return 0
-        if not root.left and not root.right:  # corner casse
-            return root.val
-
-        queue = deque([(root, root.val)])
 
         res = 0
-        while queue:
-            root, tmp = queue.popleft()
+
+        stack = [[root, root.val]]
+
+        while stack:
+            root, path_val = stack.pop()
             if not root.left and not root.right:
-                res += tmp  # add directly
-            if root.left:
-                queue.append([root.left, tmp * 10 + root.left.val])
+                res += path_val
             if root.right:
-                queue.append([root.right, tmp * 10 + root.right.val])
+                stack.append([root.right, path_val * 10 + root.right.val])
+            if root.left:
+                stack.append([root.left, path_val * 10 + root.left.val])
         return res
 
 
+'''
+bfs 
+'''
+
+
+class Solution:
+    def sumNumbers(self, root: TreeNode) -> int:
+        if not root:  # corner case
+            return 0
+
+        res = 0
+
+        from collections import deque
+        queue = deque([[root, root.val]])
+
+        while queue:
+            root, path_val = queue.popleft()
+            if not root.left and not root.right:
+                res += path_val
+            if root.left:
+                queue.append([root.left, path_val * 10 + root.left.val])
+            if root.right:
+                queue.append([root.right, path_val * 10 + root.right.val])
+        return res

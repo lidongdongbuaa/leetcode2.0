@@ -32,107 +32,95 @@
 time complexity order: O(N)
 space complexity order: 
 '''
+
 '''
-A. pre-order traversal 
-Method: 
-    main()  + return help()
-    help(root, sum, tmp) use pre-order traversal to scan every path node, add the node value
-        if add result = sum, return True
-    after traversal, reduce the last node value
-time complex: O(N) visit every node
-space complex: O(logN) average case
-易错点：
+input: tree root; length range is from 0 to inf; node value range is no limit; 
+output: True/False
+corner case
+    root is None, return False
+
+dfs from up to down
+corner case
+helper function dfs(root, node sum)
+    use preorder traverse every node
+    if node is leaf and node sum == sum, self.res = True
+return self.res
+
+Time complexity: O(n)
+Space: O(n), in worst case, tree height is n
 '''
 
-class TreeNode:
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
 
 class Solution:
     def hasPathSum(self, root: TreeNode, sum: int) -> bool:
         if not root:  # corner case
             return False
 
-        tmp = 0
-        return self.dfs(root, sum, tmp)
+        self.res = False
 
-    def dfs(self, root, target, tmp):  # output: T/F
-        if not root:  # corner case
-            return False
+        def dfs(root, node_sum):  # traverse tree node
+            if not root:
+                return
 
-        tmp += root.val
-        if not root.left and not root.right:  # root is leaf
-            if tmp == target:
-                return True
+            if not root.left and not root.right and node_sum == sum:
+                self.res = True
+                return
 
-
-        l = self.dfs(root.left, target, tmp)
-        r = self.dfs(root.right, target, tmp)
-        return l or r
-        tmp -= root.val
-
-'''
-B. iterative method using stack
-Method: 
-    traversal the nodes by stack to simulate the recursion
-        accumulate the node value
-            if == sum, return True
-            else: reduce current node value
-time complex: O(N)
-space complex: O(logN)
-易错点：类似BFS中的queue.append([root, 0])
-'''
-class TreeNode:
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
-
-class Solution:
-    def hasPathSum(self, root: TreeNode, sum: int) -> bool:
-        if not root:  # corner case
-            return False
-
-        stack = [[root, root.val]]
-        while stack:
-            root, tmp = stack.pop()
-            if root.right:
-                stack.append([root.right, tmp + root.right.val])
             if root.left:
-                stack.append([root.left, tmp + root.left.val])
+                dfs(root.left, node_sum + root.left.val)
+            if root.right:
+                dfs(root.right, node_sum + root.right.val)
+            return
 
-            if not root.left and not root.right and tmp == sum:
-                return True
-        return False
+        dfs(root, root.val)
+
+        return self.res
+
 
 '''
-C.BFS
-    Method:
-        deque to save root and the value
-            deque pop the left node, the value 
-            deque add node's left/right node and added value
-            if node is leaf and value == target, return
-        return False
-    time O(N) space O(N)
-    
+dfs using iteration preorder
 '''
-from collections import deque
+
+
 class Solution:
-    def hasPathSum(self, root, sum):  # return T/F
+    def hasPathSum(self, root: TreeNode, sum: int) -> bool:
         if not root:  # corner case
             return False
+
+        stack = [(root, root.val)]
+
+        while stack:
+            root, node_sum = stack.pop()
+            if not root.left and not root.right and node_sum == sum:
+                return True
+            if root.right:
+                stack.append([root.right, node_sum + root.right.val])
+            if root.left:
+                stack.append([root.left, node_sum + root.left.val])
+        return False
+
+
+'''
+bfs
+'''
+
+
+class Solution:
+    def hasPathSum(self, root: TreeNode, sum: int) -> bool:
+        if not root:  # corner case
+            return False
+
+        from collections import deque
 
         queue = deque([(root, root.val)])
 
         while queue:
-            root, value = queue.popleft()
-            if not root.left and not root.right and value == sum:
+            root, node_sum = queue.popleft()
+            if not root.right and not root.left and node_sum == sum:
                 return True
             if root.left:
-                queue.append([root.left, value + root.left.val])
+                queue.append([root.left, node_sum + root.left.val])
             if root.right:
-                queue.append([root.right, value + root.right.val])
-
+                queue.append([root.right, node_sum + root.right.val])
         return False
+

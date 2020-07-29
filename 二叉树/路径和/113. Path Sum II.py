@@ -39,146 +39,88 @@ space complexity order:
 6.如何考？
 '''
 '''
-A. preoder traversal and store
-    Method:
-        1. main(): corner case + helper() + return
-        2. helper(res): return 
-            scan every node in pre-order traversal recursion, save them in list  time complexity O(N) Space O(N)
-                end condition: not root/ root is leaf and sum of nodes = SUM
-                trigger recursion: helper(), list pop last elem 
-            time： O(N) Space：O(N)
-易错点： corner case是 sum == target，不仅仅是root == leaf
+dfs with helper function
+corner case
+create dfs(root, node_list, node_sum)
+    if root is leaf, save node_list to res
+run dfs
+return res
+
+time complexity: O(n*2)
+space: O(n) if the tree is skewed
 '''
-class TreeNode:
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
+
 
 class Solution:
-    def pathSum(self, root: TreeNode, sum: int) :
+    def pathSum(self, root: TreeNode, sum: int) -> List[List[int]]:
         if not root:  # corner case
             return []
 
-        if not root.left and not root.right and root.val == sum:
-            return [[root.val]]
+        self.res = []
 
-        res = []
-        tmp = []
-        self.dfs(root, sum, tmp, res)
-        return res
+        def dfs(root, node_list, node_sum):  # scan all node and save res candidates in res
+            if not root:  # base case
+                return
 
-    def dfs(self, root, target, tmp, res):  # save all res in res: list
-        if not root:  # corner case
+            if not root.left and not root.right and node_sum == sum:
+                self.res.append(node_list[:])
+
+            if root.left:
+                dfs(root.left, node_list + [root.left.val], node_sum + root.left.val)
+            if root.right:
+                dfs(root.right, node_list + [root.right.val], node_sum + root.right.val)
             return
 
-        tmp.append(root.val)
-        if not root.left and not root.right and sum(tmp) == target:
-            res.append(tmp.copy())
+        dfs(root, [root.val], root.val)
+        return self.res
 
-        self.dfs(root.left, target, tmp, res)
-        self.dfs(root.right, target, tmp, res)
-        tmp.pop()
 
 '''
-B. iterative method by stack simulating recursion
-    Method:
-        1. traversal the tree node in pre-order while using stack to store [root, list1 = [nodes value]]
-            if list1 sum == Sum, save it in res
-    time complexity: O(N) space: O(N)  
-易错点：stack模式与BFS模式相同，都是stack[root, XXX] 
+dfs iteration
 '''
-from copy import deepcopy
+
+
 class Solution:
-    def pathSum(self, root: TreeNode, sum: int):
-        return self.helper(root, sum)
-
-    def helper(self, root, total):
-        if not root:  # corner case
+    def pathSum(self, root: TreeNode, sum: int) -> List[List[int]]:
+        if not root:  # base case
             return []
 
-        if not root.left and not root.right and root.val == total:  # corner case
-            return [[root.val]]
+        stack = [[root, [root.val], root.val]]
 
-        stack = [[root, [root.val]]]
         res = []
-        while stack:  # traversal all tree
-            root, value = stack.pop()
+
+        while stack:
+            root, node_list, node_sum = stack.pop()
+            if not root.left and not root.right and node_sum == sum:
+                res.append(node_list[:])
             if root.right:
-                right = value.copy()
-                right.append(root.right.val)
-                stack.append([root.right, right])
+                stack.append([root.right, node_list + [root.right.val], node_sum + root.right.val])
             if root.left:
-                left = value.copy()
-                left.append(root.left.val)
-                stack.append([root.left, left])
-            if  not root.left and not root.right and sum(value) == total:
-                res.append(deepcopy(value))
+                stack.append([root.left, node_list + [root.left.val], node_sum + root.left.val])
         return res
 
-'''
-          5
-         / \
-        4   8
-       /   / \
-      11  13  4
-     /  \    / \
-    7    2  5   1
-test code sum = 22
-stack [[5, 5]] res [] tmp[]
-stack[]
-root 5 value 5
-tmp [5]
-stack [8,13] [4, 9]
-root, val = 4, 9
-stack [8,13]
-tmp [5, 4]
-stack [8,13] [11, 20]
-root, val = 11, 20
-stack [8,13]
-tmp [5, 4, 11]
-stack  [8,13] [2, 22] [7, 27]
-root, val = 7, 27
-stack  [8,13] [2, 22]
-tmp [5, 4, 11, 7]
-root, val = 2, 22
-tmep
 
 '''
+bfs
+'''
 
-'''
-C.BFS
-    Method:
-        queue save nodes until empty
-            queue leftpop node
-            add node.val to tmp list
-            if node is leaf, and sum of tmp is target
-                save tmp to res
-            queue. add node left/right and the tmp add their val
-        return res
-        time complexity O(N), space O(N)
-'''
-from collections import deque
+
 class Solution:
-    def pathSum(self, root: TreeNode, sum: int):   # return list
-        if not root:  # corner case
+    def pathSum(self, root: TreeNode, sum: int) -> List[List[int]]:
+        if not root:  # base case
             return []
 
+        from collections import deque
+        queue = deque([[root, [root.val], root.val]])
+
         res = []
-        queue = deque([(root, [root.val])])
+
         while queue:
-            root, tmp = queue.popleft()
-            total = 0
-            for elem in tmp:
-                total += elem
-            if not root.left and not root.right and total == sum:
-                res.append(tmp.copy())
+            root, node_list, node_sum = queue.popleft()
+            if not root.left and not root.right and node_sum == sum:
+                res.append(node_list[:])
             if root.left:
-                left = tmp.copy()
-                left.append(root.left.val)
-                queue.append([root.left, left])
+                queue.append([root.left, node_list + [root.left.val], node_sum + root.left.val])
             if root.right:
-                right = tmp.copy()
-                right.append(root.right.val)
-                queue.append([root.right, right])
+                queue.append([root.right, node_list + [root.right.val], node_sum + root.right.val])
         return res

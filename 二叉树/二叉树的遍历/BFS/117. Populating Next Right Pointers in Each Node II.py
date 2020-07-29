@@ -51,86 +51,56 @@ time complexity order:
 space complexity order: 
 '''
 '''
-思路：BFS + for loop
-方法：
-    save res = root
-    use breath first search to scan node level by level
-        in same level, connect node each other, the last one pointer to None
-    return res
-time complex: O(N)
-space complex: O(N)
-易错点：BFS 一定先写from
-'''
-class Node:
-    def __init__(self, val: int = 0, left: 'Node' = None, right: 'Node' = None, next: 'Node' = None):
-        self.val = val
-        self.left = left
-        self.right = right
-        self.next = next
+bfs level scan and connect
 
-from collections import deque
+time complexity: O(n)
+space complexity: O(1)
+'''
 class Solution:
     def connect(self, root: 'Node') -> 'Node':
-        if not root:  # corner case
+        if not root:  # base case
             return None
 
-        res = root
+        from collections import deque
         queue = deque([root])
 
+        res = root
         while queue:
-            length = len(queue)
-            for i in range(length - 1):  # connect the pointer
+            n = len(queue)
+            for i in range(n - 1):
                 queue[i].next = queue[i + 1]
-            queue[-1].next = None
-            for i in range(length):  # scan every node and push the lower level node
+            for _ in range(n):
                 root = queue.popleft()
                 if root.left:
                     queue.append(root.left)
                 if root.right:
                     queue.append(root.right)
+
         return res
 
-
-
 '''
-思路：iterative using up level to connect lower level
-方法：
-    traversal every level's leftmost node as cur
-        traversal every node in one level as cur, build dummy and tail for lower level
-            if cur has left/right, tail connect them
-            renew cur using next
-        renew cur by dummy.next
-    return root
-time complex: O(N)
-space complex: O(1)
-易错点：cur = cur.next
+scan the node level by level
+use next to traverse the node in same level, meanwhile connext next level's node
 '''
-class Node:
-    def __init__(self, val: int = 0, left: 'Node' = None, right: 'Node' = None, next: 'Node' = None):
-        self.val = val
-        self.left = left
-        self.right = right
-        self.next = next
-
 class Solution:
     def connect(self, root: 'Node') -> 'Node':
-        if not root:  # corner case
+        if not root:
             return None
 
-        cur = root  # set leftMost as root node
-        while cur:
-            tail = dummy = Node()
+        res = root
 
-            while cur:  # scan node of cur level
-                if cur.left:
-                    tail.next = cur.left
+        while root:  # root is the left most node on every level
+            dummy = tail = Node(-1)
+
+            while root:
+                if root.left:
+                    tail.next = root.left
+                    tail = tail.next
+                if root.right:
+                    tail.next = root.right
                     tail = tail.next
 
-                if cur.right:
-                    tail.next = cur.right
-                    tail = tail.next
-
-                cur = cur.next
-            cur = dummy.next  # renew cur to next level
-        return root
+                root = root.next
+            root = dummy.next
+        return res
 

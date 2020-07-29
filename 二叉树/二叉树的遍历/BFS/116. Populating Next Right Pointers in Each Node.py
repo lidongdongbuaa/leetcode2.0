@@ -86,6 +86,7 @@ class Solution:
  '''
  bfs
  connect the next in very level
+space: O(n)
  '''
 
  class Solution:

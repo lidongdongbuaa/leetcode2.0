@@ -2,9 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/链表/链表排序与划分/Split.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/二叉树/二叉树的遍历/BFS/107. Binary Tree Level Order Traversal II.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/二叉树的遍历/BFS/107. Binary Tree Level Order Traversal II.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/二叉树/二叉树的遍历/BFS/116. Populating Next Right Pointers in Each Node.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/二叉树的遍历/BFS/116. Populating Next Right Pointers in Each Node.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/二叉树/二叉树的遍历/BFS/117. Populating Next Right Pointers in Each Node II.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/二叉树的遍历/BFS/117. Populating Next Right Pointers in Each Node II.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/二叉树/二叉树的遍历/DFS/144. Binary Tree Preorder Traversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/二叉树的遍历/DFS/144. Binary Tree Preorder Traversal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/二叉树/二叉树的遍历/DFS/145. Binary Tree Postorder Traversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/二叉树的遍历/DFS/145. Binary Tree Postorder Traversal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/二叉树/二叉树的遍历/DFS/94. Binary Tree Inorder Traversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/二叉树的遍历/DFS/94. Binary Tree Inorder Traversal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/二叉树/综合题目/1361. Validate Binary Tree Nodes.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/综合题目/诡异题/1361. Validate Binary Tree Nodes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/二叉树/综合题目/236. Lowest Common Ancestor of a Binary Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/综合题目/236. Lowest Common Ancestor of a Binary Tree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/二叉树/路径和/112. Path Sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/路径和/112. Path Sum.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/二叉树/路径和/113. Path Sum II.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/路径和/113. Path Sum II.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/二叉树/路径和/129. Sum Root to Leaf Numbers.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/路径和/129. Sum Root to Leaf Numbers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/二叉树/路径和/1372. Longest ZigZag Path in a Binary Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/路径和/1372. Longest ZigZag Path in a Binary Tree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/二叉树/路径和/257. Binary Tree Paths.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/路径和/257. Binary Tree Paths.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法2.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,19 +89,19 @@
     </option>
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\working\leetcodeText400AG\二叉树\综合题目\诡异题" />
+      <recent name="D:\working\leetcodeText400AG\动态规划\01背包问题" />
+      <recent name="D:\working\leetcodeText400AG\复习-面试经验" />
+      <recent name="D:\working\leetcodeText400AG\贪心算法\区间问题" />
+      <recent name="D:\working\leetcodeText400AG\回溯法" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\working\leetcodeText400AG\回溯法" />
       <recent name="D:\working\leetcodeText400AG\Graph\有向图" />
       <recent name="D:\working\面经题目\google\OA\2019(1-3月)" />
       <recent name="D:\working\leetcodeText400AG\Binary tree\综合题目\从下至上分析" />
       <recent name="D:\working\leetcodeText400AG\内建模块" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\working\leetcodeText400AG\动态规划\01背包问题" />
-      <recent name="D:\working\leetcodeText400AG\复习-面试经验" />
-      <recent name="D:\working\leetcodeText400AG\贪心算法\区间问题" />
-      <recent name="D:\working\leetcodeText400AG\回溯法" />
-      <recent name="D:\working\leetcodeText400AG\Graph\网格搜索 grid\DFS模板1" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -487,14 +500,12 @@
       <workItem from="1595131090476" duration="781000" />
       <workItem from="1595197187228" duration="2789000" />
       <workItem from="1595286178233" duration="7103000" />
-      <workItem from="1595372714932" duration="3803000" />
-    </task>
-    <task id="LOCAL-00064" summary="0227">
-      <created>1582760695468</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1582760695468</updated>
+      <workItem from="1595372714932" duration="4436000" />
+      <workItem from="1595499035578" duration="5877000" />
+      <workItem from="1595735212886" duration="1715000" />
+      <workItem from="1595846611717" duration="3647000" />
+      <workItem from="1595931616280" duration="3761000" />
+      <workItem from="1596017257379" duration="7375000" />
     </task>
     <task id="LOCAL-00065" summary="0227">
       <created>1582761088292</created>
@@ -832,7 +843,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595296094813</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="0722">
+      <created>1595379491092</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1595379491096</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -866,7 +884,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="0304" />
     <MESSAGE value="0305" />
     <MESSAGE value="0310" />
     <MESSAGE value="0311" />
@@ -891,7 +908,8 @@
     <MESSAGE value="0713" />
     <MESSAGE value="0720" />
     <MESSAGE value="0721" />
-    <option name="LAST_COMMIT_MESSAGE" value="0721" />
+    <MESSAGE value="0722" />
+    <option name="LAST_COMMIT_MESSAGE" value="0722" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2740" y="176" key="#xdebugger.evaluate" timestamp="1579417161456">
@@ -1297,7 +1315,7 @@
     <SUITE FILE_PATH="coverage/code$Binary_Tree.coverage" NAME="构造Binary Tree Coverage Results" MODIFIED="1581415426515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary tree" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$laMian.coverage" NAME="laMian Coverage Results" MODIFIED="1584150856973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary Search and Binary Search Tree/有明确的target" />
     <SUITE FILE_PATH="coverage/leetcode$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1572310587622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$test.coverage" NAME="test Coverage Results" MODIFIED="1595291358300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/leetcodeText400AG$test.coverage" NAME="test Coverage Results" MODIFIED="1595854952853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$lc_20.coverage" NAME="lc 20 Coverage Results" MODIFIED="1565579542821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcodeText400AG$374__Guess_Number_Higher_or_Lower.coverage" NAME="374. Guess Number Higher or Lower Coverage Results" MODIFIED="1584011316710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary Search and Binary Search Tree/有明确的target" />
     <SUITE FILE_PATH="coverage/leetcode$lc_53.coverage" NAME="lc 53 Coverage Results" MODIFIED="1565941361242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

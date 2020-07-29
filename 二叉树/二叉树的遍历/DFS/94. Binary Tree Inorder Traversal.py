@@ -31,94 +31,67 @@
 time complexity order: DFS - in order O(N) =  iterative - 0/1 notation O(N)
 space complexity order: DFS - in order O(logN) < iterative - 0/1 notation O(N)
 '''
-'''
-思路：DFS - in- order
-方法：
-    use depth first search to scan all node, save node in res after scan left node
-time complex: O(N)
-space complex: O(logN)
-易错点：
-'''
 
-class TreeNode:
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
-
+'''
+dfs
+'''
 class Solution:
     def inorderTraversal(self, root: TreeNode) -> List[int]:
         if not root:  # corner case
             return []
 
         res = []
-        res += self.inorderTraversal(root.left)
-        res.append(root.val)
-        res += self.inorderTraversal(root.right)
+
+        def dfs(root):  # inorder to scan every node
+            if not root:
+                return
+
+            dfs(root.left)
+            res.append(root.val)
+            dfs(root.right)
+
+            return
+
+        dfs(root)
+
         return res
 
+
 '''
-思路：stack to simulate recursion
-方法：
-    stack store and scan all node
-time complex: O(N)
-space complex: O(N)
-易错点：
+dfs from bottom to up
+'''
+
+
+class Solution:
+    def inorderTraversal(self, root: TreeNode) -> List[int]:
+        if not root:  # corner case
+            return []
+
+        l = self.inorderTraversal(root.left)
+        r = self.inorderTraversal(root.right)
+
+        return l + [root.val] + r
+
+
+'''
+dfs with stack
 '''
 class Solution:
     def inorderTraversal(self, root: TreeNode) -> List[int]:
-        if root == None:
+        if not root:  # corner case
             return []
 
         stack = []
-        output = []
-
-        # 当前访问节点指针
-        p_node = root
-        while stack or p_node:
-            # 把所有当前访问节点的左孩子都入栈
-            while p_node:
-                stack.append(p_node)
-                p_node = p_node.left
-
-            # 操作栈顶节点，如果是第一次运行到这步，那么这是整棵树的最左节点
-            cur_node = stack.pop()
-            # 因为已经保证没有左节点，可以访问根节点
-            output.append(cur_node.val)
-
-            if cur_node.right:
-                # 将指针指向当前节点的右节点
-                p_node = cur_node.right
-
-        return output
-
-'''
-思路：iterative - 0/1 notation
-方法：
-    0 unvisited, 1 visited
-    use stack to store [root, 0/1] and scan every node
-    if 0, append right, root, left node
-    if 1, save node in res
-time complex: O(N)
-space complex: O(N)
-易错点：
-'''
-class Solution:
-    def inorderTraversal(self, root: TreeNode) -> List[int]:
-        if root == None:  # corner case
-            return []
-
-        stack = [[root, 0]]  # 0 is unvisited, 1 is visited
         res = []
 
-        while stack:  # scan all nodes
-            root, notation = stack.pop()
-            if notation == 0:
-                if root.right:
-                    stack.append([root.right, 0])
-                stack.append([root, 1])
-                if root.left:
-                    stack.append([root.left, 0])
-            else:
-                res.append(root.val)
+        while stack or root:
+            while root:
+                stack.append(root)
+                root = root.left
+
+            cur = stack.pop()
+            res.append(cur.val)
+
+            if cur.right:
+                root = cur.right
         return res

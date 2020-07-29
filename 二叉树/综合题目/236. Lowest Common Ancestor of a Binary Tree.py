@@ -19,81 +19,39 @@ space complexity order:
 #         self.val = x
 #         self.left = None
 #         self.right = None
-'''
-A. recursion
-    Method: dfs(root): if p or q in root tree, return True
-        1. bottom-up method
-        2. if p and q in two of left, right, root, the root is result
-Time:O(n)
-Sace：O(n)
 
+'''
+dfs check p or q in the tree of node
 '''
 class Solution:
     def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
+        if not root:  # base case
+            return None
+
         self.res = None
 
-        def dfs(root):  # return True if q or p in root
+        def dfs(root):  # return true is p or q in root
             if not root:
                 return False
-
-            if root == q or root == p:
-                mid = True
-            else:
-                mid = False
 
             l = dfs(root.left)
             r = dfs(root.right)
 
-            if l + r + mid >= 2:
+            if l and r:  # left and right has p and q
                 self.res = root
-            return l or r or mid
+                return
+            if (l or r) and (root.val == p.val or root.val == q.val):  # root has p or q and l or r has p or q
+                self.res = root
+                return
+
+
+            if (root.val == p.val or root.val == q.val) or l or r:
+                return True
+
+            return False
 
         dfs(root)
         return self.res
-
-'''
-Method:
-    1. corner case
-    2. find a path including p and a path including q, save them in list1, and list2
-        3-5-6, 3-1-0
-    3. traversal the list1 and list2 at same time from the begining, if find the last common node is the res
-        3 is result
-优化点:
-    判断path有了target，用root.val == target.val,而不用target.val in path，这样时间复杂度从O(N) - O(1)
-'''
-class Solution:
-    def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
-        if not root:
-            return None
-
-        list1 = []
-        list2 = []
-
-        self.findPath(root, [], list1, p, 0)
-        self.findPath(root, [], list2, q, 0)
-
-        list1 = list1[0]
-        list2 = list2[0]
-
-        i = 0
-        length = min(len(list1), len(list2))
-        for i in range(length):
-            if list1[i] == list2[i]:
-                res = list1[i]
-        return TreeNode(res)
-
-
-    def findPath(self, root, path, res, target, finish):  # find a path including target and save it in res
-        if not root or finish == 1:
-            return
-
-        path.append(root.val)
-        if root.val == target.val:
-            res.append(path[:])
-            finish = 1
-        self.findPath(root.left, path, res, target, finish)
-        self.findPath(root.right, path, res, target, finish)
-        path.pop()
 
 
 
