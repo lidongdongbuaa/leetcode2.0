@@ -26,31 +26,16 @@ dfs 自下而上
 
 class Solution:
     def minDepth(self, root: TreeNode) -> int:
+        # corner case
         if not root:
             return 0
 
         l = self.minDepth(root.left)
         r = self.minDepth(root.right)
-        if l and r:
-            return min(l, r) + 1
-        else:  # l 或 r 其中一个为空，即单边树
+        if not root.left or not root.right:
             return max(l, r) + 1
-
-class Solution:
-    def minDepth(self, root: TreeNode) -> int:
-        if not root:
-            return 0
-
-        def dfs(root):  # return the min height of root
-            if not root:
-                return float('inf')
-            if not root.left and not root.right:
-                return 1
-            l = dfs(root.left)
-            r = dfs(root.right)
+        else:
             return min(l, r) + 1
-
-        return dfs(root)
 
 '''
 dfs 自上而下
@@ -119,16 +104,23 @@ bfs
 '''
 class Solution:
     def minDepth(self, root: TreeNode) -> int:
+        # corner case
         if not root:
             return 0
 
+        # build the queue
         from collections import deque
-        queue = deque([(root, 1)])
+        queue = deque([[root, 1]])
 
+        # use bfs to scan tree
         while queue:
-            root, h = queue.popleft()
-            if root:
-                if not root.left and not root.right:
-                    return h
-                queue.append([root.left, h + 1])
-                queue.append([root.right, h + 1])
+            root, path = queue.popleft()
+            if not root.left and not root.right:
+                return path
+            if root.left:
+                queue.append([root.left, path + 1])
+            if root.right:
+                queue.append([root.right, path + 1])
+
+        return 0
+

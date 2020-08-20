@@ -165,3 +165,103 @@ class Solution:
         return len(heap)
 
 
+'''
+input: arr, list; length range from 0 to inf; value range is no limit; have repeation
+output: int, length 
+corner: 
+    arr is None, return 0
+    arr size is 1, return 1
+
+dp[i] the max length of LIS until i 
+if dp[i] = max(dp[i - 1], 1 + x) -> x 要利用到前一个状态的i的取值，而dp要求只记录阶段的结果，即（状态的取值和由该状态直接可以index得的原数据arr的值），不能占用额外的空间，
+比如到某一阶段时，记录此时的index的值，这样是不行的
+
+故 换状态
+
+dp[i] 以i结尾的最长序列的长度
+if arr[i] > arr[i - 1]: dp[i] = dp[i- 1] + 1 1-> 错误，本方法求的是最长子串，substring
+else:
+    dp[i] = 1
+
+base case: i == 0, dp[0] = 1 
+res = max(dp)
+'''
+# class Solution:
+#     def lengthOfLIS(self, nums: List[int]) -> int:
+#         # corner case
+#         if not nums:
+#             return 0
+#         if len(nums) == 1:
+#             return 1
+
+#         # dp
+#         n = len(nums)
+#         dp = [0] * n
+
+#         for i in range(n):
+#             if i == 0:
+#                 dp[0] = 1
+#             elif nums[i] > nums[i - 1]:
+#                 dp[i] = dp[i - 1] + 1
+#             else:
+#                 dp[i] = 1
+
+#         return max(dp)
+'''
+test case
+corner case: 
+    nums is None, return 0
+    len(nums) == 1, return 1
+nums=[10,9,2,5,3,7,101,18]
+                 i
+n = 8
+dp = [1,1,1,2,1,2,3,1]
+i = 0, 
+i = 1, nums[i- 1]> nums[i]
+i = 2, >
+i = 3, <
+i = 4, >
+i = 5, <
+i = 6, < 
+i = 7, >
+'''
+'''
+修正方法
+dp[i] - 以i结尾的最长序列的长度
+if arr[i] > arr[j]: dp[i] = dp[j] + 1, j < i
+else:
+    dp[i] = 1
+分类讨论：取不取0，1，2，..., i - 1
+    nums[i]是否大于nums[0], 是：dp[0] + 1; 否：dp[i]
+    nums[i]是否大于nums[1]
+    nums[i]是否大于nums[2]
+    ...
+    nums[i]是否大于nums[i - 1]
+
+
+'''
+
+
+class Solution:
+    def lengthOfLIS(self, nums: List[int]) -> int:
+        # corner case
+        if not nums:
+            return 0
+        if len(nums) == 1:
+            return 1
+
+        # dp
+        n = len(nums)
+        dp = [1] * n
+
+        for i in range(n):
+            if i == 0:
+                dp[i] = 1
+                continue
+            for j in range(i):
+                if nums[j] < nums[i]:
+                    dp[i] = max(dp[i], dp[j] + 1)
+                else:
+                    pass
+
+        return max(dp)

@@ -1,25 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:githubCode" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="0a4ce66b-10df-414a-8cb4-9de951fd3087" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/链表/链表排序与划分/Split.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/排序/冒泡排序/冒泡排序2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/other.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/二叉树/二叉树的遍历/BFS/116. Populating Next Right Pointers in Each Node.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/二叉树的遍历/BFS/116. Populating Next Right Pointers in Each Node.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/二叉树/二叉树的遍历/BFS/117. Populating Next Right Pointers in Each Node II.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/二叉树的遍历/BFS/117. Populating Next Right Pointers in Each Node II.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/二叉树/二叉树的遍历/DFS/144. Binary Tree Preorder Traversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/二叉树的遍历/DFS/144. Binary Tree Preorder Traversal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/二叉树/二叉树的遍历/DFS/145. Binary Tree Postorder Traversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/二叉树的遍历/DFS/145. Binary Tree Postorder Traversal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/二叉树/二叉树的遍历/DFS/94. Binary Tree Inorder Traversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/二叉树的遍历/DFS/94. Binary Tree Inorder Traversal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/二叉树/综合题目/1361. Validate Binary Tree Nodes.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/综合题目/诡异题/1361. Validate Binary Tree Nodes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/二叉树/综合题目/236. Lowest Common Ancestor of a Binary Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/综合题目/236. Lowest Common Ancestor of a Binary Tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/二叉树/路径和/112. Path Sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/路径和/112. Path Sum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/二叉树/路径和/113. Path Sum II.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/路径和/113. Path Sum II.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/二叉树/路径和/129. Sum Root to Leaf Numbers.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/路径和/129. Sum Root to Leaf Numbers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/二叉树/路径和/1372. Longest ZigZag Path in a Binary Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/路径和/1372. Longest ZigZag Path in a Binary Tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/二叉树/路径和/257. Binary Tree Paths.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/路径和/257. Binary Tree Paths.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/二叉树/二叉树的性质/111. Minimum Depth of Binary Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/二叉树/二叉树的性质/111. Minimum Depth of Binary Tree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/动态规划/子序列问题/1143. Longest Common Subsequence.py" beforeDir="false" afterPath="$PROJECT_DIR$/动态规划/子序列问题/1143. Longest Common Subsequence.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/动态规划/子序列问题/300. Longest Increasing Subsequence.py" beforeDir="false" afterPath="$PROJECT_DIR$/动态规划/子序列问题/300. Longest Increasing Subsequence.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/排序/冒泡排序.py" beforeDir="false" afterPath="$PROJECT_DIR$/排序/冒泡排序/冒泡排序.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/数据结构与算法2-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/.ipynb_checkpoints/数据结构与算法2-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法1.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构与算法基础/数据结构与算法2.ipynb" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,20 +78,20 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/回溯法" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -89,13 +102,6 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\working\leetcodeText400AG\二叉树\综合题目\诡异题" />
-      <recent name="D:\working\leetcodeText400AG\动态规划\01背包问题" />
-      <recent name="D:\working\leetcodeText400AG\复习-面试经验" />
-      <recent name="D:\working\leetcodeText400AG\贪心算法\区间问题" />
-      <recent name="D:\working\leetcodeText400AG\回溯法" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\working\leetcodeText400AG\回溯法" />
       <recent name="D:\working\leetcodeText400AG\Graph\有向图" />
@@ -103,20 +109,15 @@
       <recent name="D:\working\leetcodeText400AG\Binary tree\综合题目\从下至上分析" />
       <recent name="D:\working\leetcodeText400AG\内建模块" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\working\leetcodeText400AG\排序\冒泡排序" />
+      <recent name="D:\working\leetcodeText400AG\二叉树\综合题目\诡异题" />
+      <recent name="D:\working\leetcodeText400AG\动态规划\01背包问题" />
+      <recent name="D:\working\leetcodeText400AG\复习-面试经验" />
+      <recent name="D:\working\leetcodeText400AG\贪心算法\区间问题" />
+    </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.lc51">
     <configuration name="求最大值" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="leetcode" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -139,7 +140,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="01背包问题" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="冒泡排序2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="leetcode" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -147,36 +148,36 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/动态规划/01背包问题" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/排序/冒泡排序" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/动态规划/01背包问题/01背包问题.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/排序/冒泡排序/冒泡排序2.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <module name="handson-ml" />
+    <configuration name="冒泡排序3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="leetcode" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/排序/冒泡排序" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/排序/冒泡排序/冒泡排序3.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -271,47 +272,26 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="leetcode" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.lc 55" />
       <item itemvalue="Python.lc51" />
       <item itemvalue="Python.test" />
-      <item itemvalue="Python.test2" />
-      <item itemvalue="Python.01背包问题" />
       <item itemvalue="Python.求最大值" />
       <item itemvalue="Python.test (1)" />
+      <item itemvalue="Python.冒泡排序2" />
+      <item itemvalue="Python.冒泡排序3" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.冒泡排序2" />
+        <item itemvalue="Python.冒泡排序3" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.test (1)" />
         <item itemvalue="Python.求最大值" />
-        <item itemvalue="Python.01背包问题" />
-        <item itemvalue="Python.test2" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration>C:\Users\LI Dongdong\AppData\Roaming\Subversion</configuration>
   </component>
@@ -505,14 +485,11 @@
       <workItem from="1595735212886" duration="1715000" />
       <workItem from="1595846611717" duration="3647000" />
       <workItem from="1595931616280" duration="3761000" />
-      <workItem from="1596017257379" duration="7375000" />
-    </task>
-    <task id="LOCAL-00065" summary="0227">
-      <created>1582761088292</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1582761088292</updated>
+      <workItem from="1596017257379" duration="8558000" />
+      <workItem from="1596106467654" duration="14000" />
+      <workItem from="1596151434427" duration="436000" />
+      <workItem from="1596199758828" duration="3222000" />
+      <workItem from="1596349566220" duration="11000" />
     </task>
     <task id="LOCAL-00066" summary="0227">
       <created>1582788639486</created>
@@ -850,7 +827,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595379491096</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="0729">
+      <created>1596027293083</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1596027293083</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -871,20 +855,18 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="0305" />
     <MESSAGE value="0310" />
     <MESSAGE value="0311" />
     <MESSAGE value="0313" />
@@ -909,107 +891,28 @@
     <MESSAGE value="0720" />
     <MESSAGE value="0721" />
     <MESSAGE value="0722" />
-    <option name="LAST_COMMIT_MESSAGE" value="0722" />
+    <MESSAGE value="0729" />
+    <option name="LAST_COMMIT_MESSAGE" value="0729" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2740" y="176" key="#xdebugger.evaluate" timestamp="1579417161456">
-      <screen x="1920" y="0" width="1846" height="1080" />
+    <state x="2495" y="347" key="#Notifications" timestamp="1597746308258">
+      <screen x="1920" y="0" width="1827" height="1080" />
     </state>
-    <state x="2740" y="176" key="#xdebugger.evaluate/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579417161456" />
-    <state x="2290" y="52" key="CommitChangelistDialog2" timestamp="1581421457499">
-      <screen x="1920" y="0" width="1474" height="864" />
+    <state x="2495" y="347" key="#Notifications/0.0.1827.1080/1920.0.1827.1080@1920.0.1827.1080" timestamp="1597746308258" />
+    <state x="693" y="350" key="FileChooserDialogImpl" timestamp="1597672564656">
+      <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state x="370" y="52" key="CommitChangelistDialog2/1920.0.1474.864/0.0.1474.864@0.0.1474.864" timestamp="1580370823284" />
-    <state x="2290" y="52" key="CommitChangelistDialog2/1920.0.1474.864/0.0.1474.864@1920.0.1474.864" timestamp="1581421457499" />
-    <state x="463" y="65" key="CommitChangelistDialog2/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" timestamp="1579423583343" />
-    <state x="463" y="65" key="CommitChangelistDialog2/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579412048092" />
-    <state x="1920" y="0" key="FileDocumentManager.FileCacheConflict" timestamp="1579241345280">
-      <screen x="1920" y="0" width="1846" height="1080" />
+    <state x="693" y="350" key="FileChooserDialogImpl/0.0.1827.1080/1920.0.1827.1080@0.0.1827.1080" timestamp="1597672564656" />
+    <state x="2278" y="175" key="SettingsEditor" timestamp="1597839212336">
+      <screen x="1920" y="0" width="1827" height="1080" />
     </state>
-    <state x="1920" y="0" key="FileDocumentManager.FileCacheConflict/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579241345280" />
-    <state width="1493" height="336" key="GridCell.Tab.0.bottom" timestamp="1581474431490">
-      <screen x="1920" y="0" width="1474" height="864" />
+    <state x="414" y="184" key="SettingsEditor/0.0.1827.1080/1920.0.1827.1080@0.0.1827.1080" timestamp="1597672590732" />
+    <state x="2278" y="175" key="SettingsEditor/1920.0.1827.1080/0.0.1827.1080@1920.0.1827.1080" timestamp="1597839212336" />
+    <state x="2551" y="204" width="840" height="678" key="search.everywhere.popup" timestamp="1597874859752">
+      <screen x="1920" y="0" width="1827" height="1080" />
     </state>
-    <state width="1431" height="334" key="GridCell.Tab.0.bottom/1920.0.1474.864/0.0.1474.864@0.0.1474.864" timestamp="1581409013639" />
-    <state width="1493" height="336" key="GridCell.Tab.0.bottom/1920.0.1474.864/0.0.1474.864@1920.0.1474.864" timestamp="1581474431490" />
-    <state width="1864" height="165" key="GridCell.Tab.0.bottom/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579417786646" />
-    <state width="1493" height="336" key="GridCell.Tab.0.center" timestamp="1581474431490">
-      <screen x="1920" y="0" width="1474" height="864" />
-    </state>
-    <state width="1431" height="334" key="GridCell.Tab.0.center/1920.0.1474.864/0.0.1474.864@0.0.1474.864" timestamp="1581409013639" />
-    <state width="1493" height="336" key="GridCell.Tab.0.center/1920.0.1474.864/0.0.1474.864@1920.0.1474.864" timestamp="1581474431490" />
-    <state width="1864" height="165" key="GridCell.Tab.0.center/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579417786646" />
-    <state width="1493" height="336" key="GridCell.Tab.0.left" timestamp="1581474431490">
-      <screen x="1920" y="0" width="1474" height="864" />
-    </state>
-    <state width="1431" height="334" key="GridCell.Tab.0.left/1920.0.1474.864/0.0.1474.864@0.0.1474.864" timestamp="1581409013639" />
-    <state width="1493" height="336" key="GridCell.Tab.0.left/1920.0.1474.864/0.0.1474.864@1920.0.1474.864" timestamp="1581474431490" />
-    <state width="1864" height="165" key="GridCell.Tab.0.left/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579417786646" />
-    <state width="1493" height="336" key="GridCell.Tab.0.right" timestamp="1581474431490">
-      <screen x="1920" y="0" width="1474" height="864" />
-    </state>
-    <state width="1431" height="334" key="GridCell.Tab.0.right/1920.0.1474.864/0.0.1474.864@0.0.1474.864" timestamp="1581409013639" />
-    <state width="1493" height="336" key="GridCell.Tab.0.right/1920.0.1474.864/0.0.1474.864@1920.0.1474.864" timestamp="1581474431490" />
-    <state width="1864" height="165" key="GridCell.Tab.0.right/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579417786646" />
-    <state width="1493" height="336" key="GridCell.Tab.1.bottom" timestamp="1581474431490">
-      <screen x="1920" y="0" width="1474" height="864" />
-    </state>
-    <state width="1431" height="334" key="GridCell.Tab.1.bottom/1920.0.1474.864/0.0.1474.864@0.0.1474.864" timestamp="1581409014603" />
-    <state width="1493" height="336" key="GridCell.Tab.1.bottom/1920.0.1474.864/0.0.1474.864@1920.0.1474.864" timestamp="1581474431490" />
-    <state width="1864" height="362" key="GridCell.Tab.1.bottom/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579417414565" />
-    <state width="1493" height="336" key="GridCell.Tab.1.center" timestamp="1581474431490">
-      <screen x="1920" y="0" width="1474" height="864" />
-    </state>
-    <state width="1431" height="334" key="GridCell.Tab.1.center/1920.0.1474.864/0.0.1474.864@0.0.1474.864" timestamp="1581409014603" />
-    <state width="1493" height="336" key="GridCell.Tab.1.center/1920.0.1474.864/0.0.1474.864@1920.0.1474.864" timestamp="1581474431490" />
-    <state width="1864" height="362" key="GridCell.Tab.1.center/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579417414565" />
-    <state width="1493" height="336" key="GridCell.Tab.1.left" timestamp="1581474431490">
-      <screen x="1920" y="0" width="1474" height="864" />
-    </state>
-    <state width="1431" height="334" key="GridCell.Tab.1.left/1920.0.1474.864/0.0.1474.864@0.0.1474.864" timestamp="1581409014603" />
-    <state width="1493" height="336" key="GridCell.Tab.1.left/1920.0.1474.864/0.0.1474.864@1920.0.1474.864" timestamp="1581474431490" />
-    <state width="1864" height="362" key="GridCell.Tab.1.left/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579417414565" />
-    <state width="1493" height="336" key="GridCell.Tab.1.right" timestamp="1581474431490">
-      <screen x="1920" y="0" width="1474" height="864" />
-    </state>
-    <state width="1431" height="334" key="GridCell.Tab.1.right/1920.0.1474.864/0.0.1474.864@0.0.1474.864" timestamp="1581409014603" />
-    <state width="1493" height="336" key="GridCell.Tab.1.right/1920.0.1474.864/0.0.1474.864@1920.0.1474.864" timestamp="1581474431490" />
-    <state width="1864" height="362" key="GridCell.Tab.1.right/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579417414565" />
-    <state x="1920" y="85" key="SettingsEditor" timestamp="1579243677128">
-      <screen x="1920" y="0" width="1846" height="1080" />
-    </state>
-    <state x="1920" y="85" key="SettingsEditor/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579243677128" />
-    <state x="2251" y="167" key="Vcs.Push.Dialog.v2" timestamp="1581050312233">
-      <screen x="1920" y="0" width="1474" height="864" />
-    </state>
-    <state x="331" y="167" key="Vcs.Push.Dialog.v2/1920.0.1474.864/0.0.1474.864@0.0.1474.864" timestamp="1580370840253" />
-    <state x="2251" y="167" key="Vcs.Push.Dialog.v2/1920.0.1474.864/0.0.1474.864@1920.0.1474.864" timestamp="1581050312233" />
-    <state x="414" y="209" key="Vcs.Push.Dialog.v2/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" timestamp="1579239466878" />
-    <state x="414" y="209" key="Vcs.Push.Dialog.v2/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579261574061" />
-    <state width="744" height="439" key="XDebugger.FullValuePopup" timestamp="1580377655351">
-      <screen x="0" y="0" width="1474" height="864" />
-    </state>
-    <state width="744" height="439" key="XDebugger.FullValuePopup/1920.0.1474.864/0.0.1474.864@0.0.1474.864" timestamp="1580377655351" />
-    <state x="2365" y="259" key="com.intellij.ide.util.TipDialog" timestamp="1580814414763">
-      <screen x="1920" y="0" width="1474" height="864" />
-    </state>
-    <state x="445" y="259" key="com.intellij.ide.util.TipDialog/1920.0.1474.864/0.0.1474.864@0.0.1474.864" timestamp="1580377345623" />
-    <state x="2365" y="259" key="com.intellij.ide.util.TipDialog/1920.0.1474.864/0.0.1474.864@1920.0.1474.864" timestamp="1580814414763" />
-    <state x="557" y="324" key="com.intellij.ide.util.TipDialog/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" timestamp="1579248667888" />
-    <state x="686" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580351112248">
-      <screen x="0" y="0" width="1474" height="864" />
-    </state>
-    <state x="686" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1846.1080@0.0.1846.1080" timestamp="1579239466878" />
-    <state x="686" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1474.864/0.0.1474.864@0.0.1474.864" timestamp="1580351112248" />
-    <state x="686" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1846.1080/0.0.1846.1080@0.0.1846.1080" timestamp="1579239466878" />
-    <state x="2508" y="84" width="743" height="912" key="find.popup" timestamp="1579401455123">
-      <screen x="1920" y="0" width="1846" height="1080" />
-    </state>
-    <state x="2508" y="84" width="743" height="912" key="find.popup/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579401455123" />
-    <state x="1963" y="45" width="840" height="1034" key="search.everywhere.popup" timestamp="1579402528174">
-      <screen x="1920" y="0" width="1846" height="1080" />
-    </state>
-    <state x="1963" y="45" width="840" height="1034" key="search.everywhere.popup/1920.0.1846.1080/0.0.1846.1080@1920.0.1846.1080" timestamp="1579402528174" />
+    <state x="2551" y="204" width="840" height="678" key="search.everywhere.popup/0.0.1827.1080/1920.0.1827.1080@1920.0.1827.1080" timestamp="1597874859752" />
+    <state x="2551" y="204" width="672" height="678" key="search.everywhere.popup/1920.0.1827.1080/0.0.1827.1080@1920.0.1827.1080" timestamp="1597837567857" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1307,125 +1210,5 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/leetcode$lc_547.coverage" NAME="lc 547 Coverage Results" MODIFIED="1568543535127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcode$lc_449.coverage" NAME="lc 449 Coverage Results" MODIFIED="1563277786455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcode$lc_452.coverage" NAME="lc 452 Coverage Results" MODIFIED="1562379814901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/code$Binary_Tree.coverage" NAME="构造Binary Tree Coverage Results" MODIFIED="1581415426515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary tree" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$laMian.coverage" NAME="laMian Coverage Results" MODIFIED="1584150856973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary Search and Binary Search Tree/有明确的target" />
-    <SUITE FILE_PATH="coverage/leetcode$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1572310587622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$test.coverage" NAME="test Coverage Results" MODIFIED="1595854952853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcode$lc_20.coverage" NAME="lc 20 Coverage Results" MODIFIED="1565579542821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$374__Guess_Number_Higher_or_Lower.coverage" NAME="374. Guess Number Higher or Lower Coverage Results" MODIFIED="1584011316710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary Search and Binary Search Tree/有明确的target" />
-    <SUITE FILE_PATH="coverage/leetcode$lc_53.coverage" NAME="lc 53 Coverage Results" MODIFIED="1565941361242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$72__Edit_Distance.coverage" NAME="72. Edit Distance Coverage Results" MODIFIED="1585711829722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/动态规划/子序列问题" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$Number_of_Days_Between_Two_Dates.coverage" NAME="Number of Days Between Two Dates Coverage Results" MODIFIED="1582426649934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/200223" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$Largest_M_aligned_Subset.coverage" NAME="Largest M-aligned Subset Coverage Results" MODIFIED="1585134564412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/巨硬/oa" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$Minimum_Number_of_Steps_to_Make_Two_Strings_Anagram.coverage" NAME="Minimum Number of Steps to Make Two Strings Anagram Coverage Results" MODIFIED="1581220438736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/200209" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$templeV3_0.coverage" NAME="templeV3.0 Coverage Results" MODIFIED="1584366154513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../面经题目/google/OA/模板" />
-    <SUITE FILE_PATH="coverage/leetcode$83__Remove_Duplicates_from_Sorted_List.coverage" NAME="83. Remove Duplicates from Sorted List Coverage Results" MODIFIED="1572905619501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../leetcode - 教材- 400 -amaGoog/linkedList/链表删除" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$Count_Visible_Nodes_in_Binary_Tree.coverage" NAME="Count Visible Nodes in Binary Tree Coverage Results" MODIFIED="1585132758858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/巨硬/oa" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$Check_If_N_and_Its_Double_Exist.coverage" NAME="Check If N and Its Double Exist Coverage Results" MODIFIED="1581221291916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/200209" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$.coverage" NAME="求点到点的所有路径 Coverage Results" MODIFIED="1585559849450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Graph/网格搜索 grid" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$The_K_Weakest_Rows_in_a_Matrix.coverage" NAME="The K Weakest Rows in a Matrix Coverage Results" MODIFIED="1580646354870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/20200202" />
-    <SUITE FILE_PATH="coverage/leetcode$lc_449__1_.coverage" NAME="lc 449 (1) Coverage Results" MODIFIED="1563859803472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcode$lc_78.coverage" NAME="lc 78 Coverage Results" MODIFIED="1570880723840" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/recursive + backtracking" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$323__Number_of_Connected_Components_in_an_Undirected_Graph.coverage" NAME="323. Number of Connected Components in an Undirected Graph Coverage Results" MODIFIED="1583923300648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Graph/无向图/判断孤立个数" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$371__Sum_of_Two_Integers.coverage" NAME="371. Sum of Two Integers Coverage Results" MODIFIED="1579393821408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bit manipulation 位运算/数学相关问题" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$5304__XOR_Queries_of_a_Subarray.coverage" NAME="5304. XOR Queries of a Subarray Coverage Results" MODIFIED="1578196768815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/200105" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$__1_.coverage" NAME="无向图的最长距离 (1) Coverage Results" MODIFIED="1583450049852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../面经题目/google/OA/2019李" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$task2.coverage" NAME="task2岛的种类数 Coverage Results" MODIFIED="1585101489419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../面经题目/google/OA/2020(1-3月)" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$1202__Smallest_String_With_Swaps.coverage" NAME="1202. Smallest String With Swaps Coverage Results" MODIFIED="1583925206243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Graph" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$templeV3_0___.coverage" NAME="templeV3.0 - 副本 Coverage Results" MODIFIED="1584965073953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../面经题目/google/OA/模板" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$802__Find_Eventual_Safe_States.coverage" NAME="802. Find Eventual Safe States Coverage Results" MODIFIED="1583301703646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Graph/拓扑排序" />
-    <SUITE FILE_PATH="coverage/leetcode$lc_70.coverage" NAME="lc 70 Coverage Results" MODIFIED="1565934438496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$461__Hamming_Distance.coverage" NAME="461. Hamming Distance Coverage Results" MODIFIED="1579177961264" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bit manipulation 位运算" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$01.coverage" NAME="01背包问题 Coverage Results" MODIFIED="1586255809298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/动态规划/01背包问题" />
-    <SUITE FILE_PATH="coverage/leetcode$lc_64.coverage" NAME="lc 64 Coverage Results" MODIFIED="1567299263985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$191__Number_of_1_Bits.coverage" NAME="191. Number of 1 Bits Coverage Results" MODIFIED="1579163058823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bit manipulation 位运算" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$Filter_Restaurants_by_Vegan_Friendly__Price_and_Distance.coverage" NAME="Filter Restaurants by Vegan-Friendly, Price and Distance Coverage Results" MODIFIED="1580012306630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/200126" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$Rank_Teams_by_Votes.coverage" NAME="Rank Teams by Votes Coverage Results" MODIFIED="1583041748486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/200301" />
-    <SUITE FILE_PATH="coverage/leetcode$test3.coverage" NAME="test3 Coverage Results" MODIFIED="1571919469382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$200__Number_of_Islands.coverage" NAME="200. Number of Islands Coverage Results" MODIFIED="1583906104460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Graph/网格搜索 grid" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$104__Maximum_Depth_of_Binary_Tree.coverage" NAME="104. Maximum Depth of Binary Tree Coverage Results" MODIFIED="1581555851405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary tree/二叉树性质相关题目" />
-    <SUITE FILE_PATH="coverage/leetcode$lc_307.coverage" NAME="lc 307 Coverage Results" MODIFIED="1568618079026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcode$lc_141.coverage" NAME="lc 141 Coverage Results" MODIFIED="1570247409744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/linkedList" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$210__Course_Schedule_II.coverage" NAME="210. Course Schedule II Coverage Results" MODIFIED="1583144696336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Graph/拓扑排序" />
-    <SUITE FILE_PATH="coverage/leetcode$lc_402.coverage" NAME="lc 55 Coverage Results" MODIFIED="1560909792799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcode2_0$78__Subsets.coverage" NAME="78. Subsets Coverage Results" MODIFIED="1579251634962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bit manipulation 位运算/全组合问题" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$260__Single_Number_III.coverage" NAME="260. Single Number III Coverage Results" MODIFIED="1579227759478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bit manipulation 位运算/只出现一次的数字" />
-    <SUITE FILE_PATH="coverage/leetcode$lc_187.coverage" NAME="lc 187 Coverage Results" MODIFIED="1565093029960" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$Construt_Binary_Tree_from_Level_Order_Traversal.coverage" NAME="Construt Binary Tree from Level Order Traversal Coverage Results" MODIFIED="1582848445810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary tree/二叉树的构建" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$29__Divide_Two_Integers.coverage" NAME="29. Divide Two Integers Coverage Results" MODIFIED="1579305572889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bit manipulation 位运算/数学相关问题" />
-    <SUITE FILE_PATH="coverage/leetcode$lc_86.coverage" NAME="lc 86 Coverage Results" MODIFIED="1570456391568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/linkedList/链表划分" />
-    <SUITE FILE_PATH="coverage/code$test.coverage" NAME="test Coverage Results" MODIFIED="1581415429664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcode$lc_92.coverage" NAME="lc 92 Coverage Results" MODIFIED="1569453341060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/linkedList" />
-    <SUITE FILE_PATH="coverage/leetcode$lc_315.coverage" NAME="lc 315 Coverage Results" MODIFIED="1564014673220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$test3.coverage" NAME="test3 Coverage Results" MODIFIED="1585789214120" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$133__Clone_Graph.coverage" NAME="133. Clone Graph Coverage Results" MODIFIED="1583377631816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Graph/图的基础" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$477__Total_Hamming_Distance.coverage" NAME="477. Total Hamming Distance Coverage Results" MODIFIED="1579178763197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bit manipulation 位运算/汉明距离" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$temple.coverage" NAME="temple Coverage Results" MODIFIED="1579396759229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../面经题目/google/OA/模板" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$136__Single_Number.coverage" NAME="136. Single Number Coverage Results" MODIFIED="1579213841885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bit manipulation 位运算/只出现一次的数字" />
-    <SUITE FILE_PATH="coverage/leetcode$lc_473.coverage" NAME="lc 473 Coverage Results" MODIFIED="1565871303273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcode$lc_290.coverage" NAME="lc 290 Coverage Results" MODIFIED="1564580182876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcode$lc_409.coverage" NAME="lc 409 Coverage Results" MODIFIED="1564579455562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$Largest_number_X_which_occurs_X_times.coverage" NAME="Largest number X which occurs X times Coverage Results" MODIFIED="1585135173537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/巨硬/oa" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$Lucky_Numbers_in_a_Matrix.coverage" NAME="Lucky Numbers in a Matrix Coverage Results" MODIFIED="1584240658659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/200315" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$Product_of_the_Last_K_Numbers.coverage" NAME="Product of the Last K Numbers Coverage Results" MODIFIED="1581822987738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/200216" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$399__Evaluate_Division.coverage" NAME="399. Evaluate Division Coverage Results" MODIFIED="1584011361227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Graph" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$841__Keys_and_Rooms.coverage" NAME="841. Keys and Rooms Coverage Results" MODIFIED="1583911803312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Graph" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$201__Bitwise_AND_of_Numbers_Range.coverage" NAME="201. Bitwise AND of Numbers Range Coverage Results" MODIFIED="1579310223730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bit manipulation 位运算/数学相关问题" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$Bulb_Switcher_III.coverage" NAME="Bulb Switcher III Coverage Results" MODIFIED="1583638355142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/200308" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$test4.coverage" NAME="test4 Coverage Results" MODIFIED="1584885514392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/未分类题目" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$Time_Needed_to_Inform_All_Employees.coverage" NAME="Time Needed to Inform All Employees Coverage Results" MODIFIED="1583640592800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/200308" />
-    <SUITE FILE_PATH="coverage/code$101__Symmetric_Tree.coverage" NAME="101. Symmetric Tree Coverage Results" MODIFIED="1581404831747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary tree/二叉树性质相关题目" />
-    <SUITE FILE_PATH="coverage/leetcode$.coverage" NAME="单链表的复制 Coverage Results" MODIFIED="1571272578722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/linkedList/复杂链表的复制" />
-    <SUITE FILE_PATH="coverage/leetcode$lc_174.coverage" NAME="lc 174 Coverage Results" MODIFIED="1566340139557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcode$523__Continuous_Subarray_Sum.coverage" NAME="523. Continuous Subarray Sum Coverage Results" MODIFIED="1572301976381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/recursive + backtracking" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$Linked_List_in_Binary_Tree.coverage" NAME="Linked List in Binary Tree Coverage Results" MODIFIED="1583035548819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/200301" />
-    <SUITE FILE_PATH="coverage/leetcode$lc_300.coverage" NAME="lc 300 Coverage Results" MODIFIED="1567081413611" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcode$lc_211.coverage" NAME="lc 211 Coverage Results" MODIFIED="1568030071759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcode$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1572905591905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../leetcode - 教材- 400 -amaGoog" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$Validate_Binary_Tree_Nodes.coverage" NAME="Validate Binary Tree Nodes Coverage Results" MODIFIED="1582429411405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/200223" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$105__Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal.coverage" NAME="105. Construct Binary Tree from Preorder and Inorder Traversal Coverage Results" MODIFIED="1582719248134" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary tree/二叉树的构建" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$207__Course_Schedule.coverage" NAME="207. Course Schedule Coverage Results" MODIFIED="1583025036876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Graph/拓扑排序" />
-    <SUITE FILE_PATH="coverage/leetcode$test.coverage" NAME="test Coverage Results" MODIFIED="1572781581289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcode2_0$test.coverage" NAME="test Coverage Results" MODIFIED="1579417786632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$Remove_Palindromic_Subsequences.coverage" NAME="Remove Palindromic Subsequences Coverage Results" MODIFIED="1580009657925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/200126" />
-    <SUITE FILE_PATH="coverage/leetcode$lc_198.coverage" NAME="lc 198 Coverage Results" MODIFIED="1565939857108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$Reduce_Array_Size_to_The_Half.coverage" NAME="Reduce Array Size to The Half Coverage Results" MODIFIED="1580686968067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/20200202" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$Crop_Words.coverage" NAME="Crop Words Coverage Results" MODIFIED="1585138564552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/巨硬/oa" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$662__Maximum_Width_of_Binary_Tree.coverage" NAME="662. Maximum Width of Binary Tree Coverage Results" MODIFIED="1581555856332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary tree/二叉树性质相关题目" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$5309__Number_of_Operations_to_Make_Network_Connected.coverage" NAME="5309. Number of Operations to Make Network Connected Coverage Results" MODIFIED="1578800350248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/200112" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$Closest_Divisors.coverage" NAME="Closest Divisors Coverage Results" MODIFIED="1582465174294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/200223" />
-    <SUITE FILE_PATH="coverage/leetcode2_0$29__Divide_Two_Integers.coverage" NAME="29. Divide Two Integers Coverage Results" MODIFIED="1579261627332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bit manipulation 位运算/数学相关问题" />
-    <SUITE FILE_PATH="coverage/leetcode$lc_127.coverage" NAME="lc 127 Coverage Results" MODIFIED="1565739744042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcode$codecs.coverage" NAME="codecs Coverage Results" MODIFIED="1571273100538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="C:/ProgramData/Anaconda2/envs/leetcode/Lib" />
-    <SUITE FILE_PATH="coverage/leetcode$lc_322.coverage" NAME="lc 322 Coverage Results" MODIFIED="1566047414356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcode$lc_76.coverage" NAME="lc 76 Coverage Results" MODIFIED="1565229382096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$1360__Number_of_Days_Between_Two_Dates.coverage" NAME="1360. Number of Days Between Two Dates Coverage Results" MODIFIED="1582465191424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/内建模块" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1595131240491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/位运算/数学相关问题" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$google_test.coverage" NAME="google test Coverage Results" MODIFIED="1583329148550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../面经题目/google/OA/2019(1-3月)" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$task1.coverage" NAME="task1水果投票 Coverage Results" MODIFIED="1585123838155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../面经题目/google/OA/2020(1-3月)" />
-    <SUITE FILE_PATH="coverage/leetcode$lc_206.coverage" NAME="lc 206 Coverage Results" MODIFIED="1569370765818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcode$lc_49.coverage" NAME="lc 49 Coverage Results" MODIFIED="1565006152974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcode$24__Swap_Nodes_in_Pairs.coverage" NAME="24. Swap Nodes in Pairs Coverage Results" MODIFIED="1572779202099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../leetcode - 教材- 400 -amaGoog/linkedList/链表逆序" />
-    <SUITE FILE_PATH="coverage/code$100__Same_Tree.coverage" NAME="100. Same Tree Coverage Results" MODIFIED="1581050285296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary tree/二叉树性质相关题目" />
-    <SUITE FILE_PATH="coverage/code$104__Maximum_Depth_of_Binary_Tree.coverage" NAME="104. Maximum Depth of Binary Tree Coverage Results" MODIFIED="1581474429584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary tree/二叉树性质相关题目" />
-    <SUITE FILE_PATH="coverage/leetcode$lc_120.coverage" NAME="lc 120 Coverage Results" MODIFIED="1566093691731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcode2_0$5308__Minimum_Flips_to_Make_a_OR_b_Equal_to_c.coverage" NAME="5308. Minimum Flips to Make a OR b Equal to c Coverage Results" MODIFIED="1579414927974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/200112" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1585959767415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$5308__Minimum_Flips_to_Make_a_OR_b_Equal_to_c.coverage" NAME="5308. Minimum Flips to Make a OR b Equal to c Coverage Results" MODIFIED="1578896596869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/200112" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$113__Path_Sum_II.coverage" NAME="113. Path Sum II Coverage Results" MODIFIED="1582581074357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Binary tree/路径和" />
-    <SUITE FILE_PATH="coverage/leetcode$lc_3.coverage" NAME="lc 3 Coverage Results" MODIFIED="1565048468786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$Generate_a_String_With_Characters_That_Have_Odd_Counts.coverage" NAME="Generate a String With Characters That Have Odd Counts Coverage Results" MODIFIED="1583636932911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/200308" />
-    <SUITE FILE_PATH="coverage/leetcode2_0$Print_Words_Vertically.coverage" NAME="Print Words Vertically Coverage Results" MODIFIED="1579404246129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/200119" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$733__Flood_Fill.coverage" NAME="733. Flood Fill Coverage Results" MODIFIED="1583885268590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Graph/搜索/DFS" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$Max_Chunks_to_Sort_Array.coverage" NAME="Max Chunks to Sort Array Coverage Results" MODIFIED="1585136852105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/巨硬/oa" />
-    <SUITE FILE_PATH="coverage/leetcode$lc_208.coverage" NAME="lc 208 Coverage Results" MODIFIED="1567851886050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$Largest_Alphabetic_Character.coverage" NAME="Largest Alphabetic Character Coverage Results" MODIFIED="1585131688436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/巨硬/oa" />
-    <SUITE FILE_PATH="coverage/leetcode2_0$Maximum_69_Number.coverage" NAME="Maximum 69 Number Coverage Results" MODIFIED="1579402220035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/200119" />
-    <SUITE FILE_PATH="coverage/leetcodeText400AG$5303__Decrypt_String_from_Alphabet_to_Integer_Mapping.coverage" NAME="5303. Decrypt String from Alphabet to Integer Mapping Coverage Results" MODIFIED="1578194112688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode周赛/200105" />
   </component>
 </project>
